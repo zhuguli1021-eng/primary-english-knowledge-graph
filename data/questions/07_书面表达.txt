@@ -1,0 +1,143 @@
+# 书面表达。题目参照河南小升初/分班真卷常见话题；范文按年级词表写，kb.py check 会检查范文词数和超纲词。
+# 格式：## [年级/难度] 题目 …… ##，里面依次写 任务/要求/要点（用；分隔）/词数/好句/范文（范文放最后）。
+
+@ wr.daily
+## [5/1] My Weekend
+任务：周末生活丰富多彩。请以“My Weekend”为题，介绍你周末通常做些什么。
+要求：不少于 40 词；用一般现在时；书写规范。
+要点：周六做什么；周日做什么；你的感受
+词数：40
+好句：On Saturday morning, I usually... / In the afternoon, I often... / I like my weekend because...
+范文：
+I have a happy weekend. On Saturday morning, I usually do my homework. In the afternoon, I often play football with my friends in the park. On Sunday, I help my mother clean the house. Then we go shopping. In the evening, I read books. I like my weekend because it is busy and fun.
+##
+
+## [6/2] My School Day
+任务：假如你叫林辉，请以“My School Day”为题，按照时间顺序介绍自己一天的活动安排。
+要求：不少于 60 词，题目不计入总词数；语法正确，文章流畅；书写规范。
+要点：起床和早饭；到校和上午的课；午饭；下午的课和放学后的活动；晚上的安排
+词数：60
+好句：I get up at... / First... Then... After that... / School is over at... / I go to bed at...
+范文：
+I'm Lin Hui. Let me tell you about my school day. I get up at 6:30 every morning. After breakfast, I go to school by bike. Classes begin at 8:00. We have four classes in the morning. My favourite class is science. At 12:00, I have lunch at school. We have three classes in the afternoon. School is over at 4:30. Then I play basketball with my classmates. I get home at 5:30 and do my homework. After dinner, I read for half an hour. I go to bed at 9:30. My school day is busy, but I enjoy it.
+##
+
+@ wr.self_others
+## [5/2] My Best Friend
+任务：请以“My Best Friend”为题，介绍你最好的朋友。
+要求：不少于 50 词；注意第三人称单数；书写规范。
+要点：名字和年龄；外貌；性格；爱好；你们一起做的事
+词数：50
+好句：He/She is tall and thin. / He/She is kind and helpful. / We often... together.
+范文：
+My best friend is Amy. She is twelve years old. She has long black hair and big eyes. She is kind and friendly, and she often helps others. Amy likes reading and drawing. She can draw very well. After school, we often do our homework together. On weekends, we sometimes fly kites in the park. I am happy to have a friend like her.
+##
+
+## [6/2] My Family
+任务：假如你是李平，请以“My Family”为题，介绍你的家人和他们的爱好。
+要求：不少于 60 词；人称和动词形式正确；书写规范。
+要点：家里有几口人；每个人的职业或特点；每个人的爱好；你对家人的感情
+词数：60
+好句：There are ... people in my family. / My father is a... He likes... / We often... together.
+范文：
+My name is Li Ping. There are four people in my family: my father, my mother, my little brother and me. My father is a doctor. He works hard, and he likes playing basketball. My mother is a teacher. She likes cooking, and she makes delicious food for us. My brother is only six. He likes playing with toy cars. I like reading and singing. On Sundays, we often go to the park together. I love my family very much.
+##
+
+## [7/2] Then and Now
+任务：同学们，你们即将迈入初中。和五年前相比，你有哪些变化？请以“Then and Now”为题写一篇短文。
+要求：不少于 70 词；注意一般过去时和一般现在时的对比；书写规范。
+要点：外貌的变化；性格的变化；爱好或能力的变化；你的感想
+词数：70
+好句：Five years ago, I was... Now I am... / I didn't like... but now I... / I have changed a lot.
+范文：
+Five years ago, I was a little girl. I was short and thin, and I had short hair. Now I am tall, and I have long hair. I was shy then. I didn't like to talk to others in class. But now I am outgoing, and I often answer questions in class. I didn't like reading before, but now I read a book every week. I could not swim then, but now I can swim very well. I have changed a lot, and I am ready for junior high school.
+##
+
+@ wr.experience
+## [6/2] My Last Weekend
+任务：周末是快乐的。上个周末你做了什么？请以“My Last Weekend”为题写一篇短文。
+要求：不少于 60 词；用一般过去时；书写规范。
+要点：周六做了什么；周日做了什么；和谁一起；你的感受
+词数：60
+好句：Last Saturday, I... / In the afternoon, we... / I had a great time.
+范文：
+Last weekend was busy but happy. On Saturday morning, I finished my homework. In the afternoon, I went to the library with my friend Tom. We read some interesting books about animals. On Sunday, I visited my grandparents with my parents. I helped my grandma water the flowers, and my grandpa told me some old stories. In the evening, we had a big dinner together. I felt tired, but I had a great time.
+##
+
+## [7/3] A Trip to Kaifeng
+任务：假如你上个暑假和家人去了开封旅行。请以“A Trip to Kaifeng”为题，介绍这次旅行。
+要求：不少于 80 词；用一般过去时；书写规范，条理清楚。
+要点：什么时候、和谁去的；怎么去的；参观了哪些地方；吃了什么；感受
+词数：80
+好句：Last summer, I went to... with... / We went there by train. / First... Then... / It was the best trip I have ever had.
+范文：
+Last summer, I went to Kaifeng with my parents. We went there by train. It only took us about half an hour. First, we visited Qingming Riverside Park(清明上河园). The old buildings were beautiful, and we watched an interesting show there. Then we went to see the Iron Pagoda(铁塔). It was very tall and old. In the evening, we walked in a night market and tried soup dumplings. They were really delicious. I learned a lot about the history of Kaifeng. I felt tired but happy. I hope to visit it again.
+##
+
+@ wr.plan_wish
+## [6/2] My Dream
+任务：每个人都有梦想。请以“My Dream”为题，谈谈你将来想做什么、为什么，以及打算怎样实现梦想。
+要求：不少于 60 词；书写规范。
+要点：你的梦想；原因；你现在打算怎么做
+词数：60
+好句：I want to be a... when I grow up. / Because... / To make my dream come true, I will...
+范文：
+I want to be a doctor when I grow up. My grandpa was ill last year. The doctors in the hospital helped him a lot, and now he is healthy again. I think doctors are great because they help sick people. To make my dream come true, I will study hard, especially science. I will also do more sports to keep healthy. I believe my dream will come true one day.
+##
+
+## [7/3] My Plan for Junior High School
+任务：新学期即将开始，你会遇到新的同学和老师。请以“My Plan for Junior High School”为题，写一写你的初中计划。
+要求：不少于 80 词；正确使用一般将来时；书写规范。
+要点：学习方面的计划；交朋友方面的计划；运动或爱好方面的计划；你的期望
+词数：80
+好句：I'm going to... / I will... / I hope... / First... Second... Finally...
+范文：
+I will be a junior high school student soon. I'm excited, and I have made a plan for my new school life. First, I'm going to study harder. I will listen carefully in class and finish my homework on time. If I have any problems, I will ask my teachers for help. Second, I will make some new friends. I'm going to join the English club, because I want to practise speaking English with others. Finally, I will run every morning to keep healthy. I hope I will have a wonderful time in junior high school.
+##
+
+@ wr.letter
+## [7/3] A Reply to Mike
+任务：假如你是李华，你的美国笔友 Mike 发来邮件，问你所在城市怎样进行垃圾分类。请给他回一封邮件。
+要求：不少于 80 词；邮件格式正确（开头和结尾已给出，不计入词数时可不写）；书写规范。
+要点：感谢来信；介绍四种垃圾桶和放什么；垃圾分类的好处；问问他那里的情况
+词数：80
+好句：Thanks for your email. / In my city, there are... / ...is for... / What about your city?
+范文：
+Dear Mike,
+Thanks for your email. I'm glad to tell you about rubbish sorting(垃圾分类) in my city. There are four kinds of rubbish bins here. The blue bin is for paper, plastic bottles and glass, because we can use them again. The green bin is for food waste(厨余垃圾). The red bin is for harmful(有害的) things like old batteries(电池). The grey bin is for other rubbish. Sorting rubbish makes our city cleaner, and it helps us save things. Now my family sorts rubbish every day. What about your city? Please write back soon.
+Yours,
+Li Hua
+##
+
+@ wr.advice
+## [6/3] Good Habits to Keep Healthy
+任务：学校英文报“健康生活”专栏正在征稿。请以“Good Habits to Keep Healthy”为题，写一篇短文，谈谈怎样保持健康。
+要求：不少于 60 词；每条建议说明理由；书写规范。
+要点：饮食；运动；睡眠；其他好习惯；号召
+词数：60
+好句：First, we should... because... / It's good for... / We'd better not... / Let's...
+范文：
+It is important for us to keep healthy. Here are some good habits. First, we should eat more fruit and vegetables, because they are good for our health. We'd better not eat too much junk food(垃圾食品). Second, we should do sports every day, like running or swimming. It makes us strong. Third, we should go to bed early and sleep for about nine hours. Also, we should wash our hands before meals. Let's keep these good habits and be healthy!
+##
+
+@ wr.culture
+## [6/2] My Favourite Festival
+任务：请以“My Favourite Festival”为题，介绍你最喜欢的中国传统节日。
+要求：不少于 60 词；节日名称首字母大写；书写规范。
+要点：是什么节日、在什么时候；人们怎样庆祝；你最喜欢做的事；你喜欢它的原因
+词数：60
+好句：My favourite festival is... / It is usually in... / People usually... / It's a time for...
+范文：
+My favourite festival is the Spring Festival. It is usually in January or February. It's the most important festival in China. Before the festival, people clean their houses and put up red paper-cuts on the windows. On the evening before the festival, the whole family gets together and has a big dinner. We make dumplings and watch TV. Children get red packets(红包) from their grandparents. I love the Spring Festival because it is a time for family and happiness.
+##
+
+## [7/3] An Old Skill in My Hometown
+任务：学校英语社团举办“用英语讲中国故事”活动。请介绍你家乡河南的一项传统技艺（如剪纸、少林功夫、汴绣、皮影戏等）。题目自拟。
+要求：不少于 80 词；说明它是什么、有什么特点、你对它的看法；书写规范。
+要点：技艺名称和历史；怎么做或有什么特点；你的体验；为什么要传承
+词数：80
+好句：...has a long history. / It is famous for... / I tried it... / We should... so that...
+范文：
+Paper-cutting in My Hometown
+I come from Henan. Paper-cutting is a traditional skill in my hometown, and it has a long history. People cut beautiful pictures out of red paper with scissors. Some pictures show animals, and some show flowers or Chinese characters. During the Spring Festival, people put paper-cuts on their windows for good luck. Last winter, I learned paper-cutting from my grandma. It was not easy, but I made a little red rabbit. I felt very proud. I think we should learn more about old skills like this, so that they will not be forgotten.
+##

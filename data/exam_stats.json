@@ -1,0 +1,3068 @@
+{
+ "papers": 239,
+ "note": "按每份真卷（扫描件按每4页计一份）是否出现该知识点的信号统计；信号是关键词/正则，结果是近似值。",
+ "topics": {
+  "ph.letters": {
+   "paperRate": 0.092,
+   "hits": 46,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )1. Playground 中共有 ______ 个辅音字母。",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )1. Playground 中共有 ______ 个辅音字母。",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    }
+   ]
+  },
+  "ph.short_vowels": {
+   "paperRate": 0.042,
+   "hits": 15,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "ph.magic_e": {
+   "paperRate": 0.042,
+   "hits": 15,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "ph.letter_teams": {
+   "paperRate": 0.092,
+   "hits": 59,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "ph.same_sound": {
+   "paperRate": 0.092,
+   "hits": 59,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "ph.stress_intonation": {
+   "paperRate": 0.0,
+   "hits": 0,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "vo.basic_themes": {
+   "paperRate": 0.393,
+   "hits": 207,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "5. Will you please ______ (give) this eraser to Xiao Ling?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. ______ do farm animals live? Look at the map of a farm. Red hens have nests in the barn. In",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "lot of lovely red 2.______. “Oh,” she said. “How lovely! If only Mamma could have one!”",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "Mary was so surprised. She thanked the man and ran to the 10.______ and bought a big red apple and went",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )10. The red bag is ______, but it's ______ than the green one.",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )8. The trees ______ green in spring.",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    }
+   ]
+  },
+  "vo.daily_themes": {
+   "paperRate": 0.427,
+   "hits": 216,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "5. —Where are Mike and Liu Tao? —They ______ (jump) in the playground. They can jump very high.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. They came into the bedroom while I ______. (dance)",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "There ______ ______ library in my school.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )1. Playground 中共有 ______ 个辅音字母。",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "One windy day in March, Mary was on her way to 1.______ when she looked in a shop window. She saw a",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "now she was 3.______. The doctor asked her to stay in bed. Mary looked after her. She cooked her food. She",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "vo.activity_themes": {
+   "paperRate": 0.356,
+   "hits": 187,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )8. He arrived ______ Beijing ______ a winter night.",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )8. The trees ______ green in spring.",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "(   )3. My mother’s hobby is ______ cooking ______ watching TV. It’s square dancing.",
+     "src": "20_2026年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "3. My family and I ______ (go) to Hainan last summer holiday.",
+     "src": "23_郑Z惠济区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "children often choose different sports and hobbies to show independence. 9.______ They are often",
+     "src": "28_2026年郑Z桐柏一中入学英语真卷（一）"
+    },
+    {
+     "text": "But her hobby for collecting the shoes did not begin 12.______ 2000, when she found a beautiful pair at a",
+     "src": "28_2026年郑Z桐柏一中入学英语真卷（一）"
+    }
+   ]
+  },
+  "vo.world_themes": {
+   "paperRate": 0.326,
+   "hits": 164,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "12. After the storm, people saw ______ (fall) trees here and there. The traffic was cut off.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. You can buy healthy drinks in this place. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. Robot dogs ______ as volunteers in some big events before.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. —What did you do in class this morning, Sally? —We had a ______ (discuss) about Chinese culture.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )7.—All of us ______ follow the traffic rules when going out.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "Every day, the girls' mother 4. ______ healthy sandwiches for their lunch. But Rebecca 5. ______ ice cream and snacks. Soon she had no money.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "vo.categories": {
+   "paperRate": 0.042,
+   "hits": 14,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "vo.word_relations": {
+   "paperRate": 0.025,
+   "hits": 13,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "vo.spelling": {
+   "paperRate": 0.079,
+   "hits": 33,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "vo.phrases": {
+   "paperRate": 0.268,
+   "hits": 109,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "3. ______ do farm animals live? Look at the map of a farm. Red hens have nests in the barn. In",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "7. ______ do farm animals eat? Hens use their feet to scratch in dirt. They look for seeds and bugs to",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "seven; then Alicia at 7:30. Rick is the last 9.______ take a shower. Why? He likes to get up a little late",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "10. Noah is always the ______ (one) to arrive at the classroom.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )3. The story is very ______. Nobody wants to listen to it.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. Look at the pictures on the wall in the hallways! They are ______ (我们的).",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "vo.confusables": {
+   "paperRate": 0.138,
+   "hits": 63,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "They also have beautiful sweaters __8__ good prices. They also have __9__ and cheap(便宜的) socks and shoes. Do you need __10__?",
+     "src": "21_郑Z扶轮外国语学校初中部新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )3. The weather is not too cold ______ too hot in this season. Let’s go ______ a science trip.",
+     "src": "24_2025年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "some weight(减肥), so he tries not to eat too much food. He also 5.______ more exercise than before. Every",
+     "src": "36_2025年郑Z第二初级中学入学英语真卷"
+    },
+    {
+     "text": "he says. “Pears are too heavy. How 8.______ some small tomatoes?” says Jack. “That 9.______",
+     "src": "46_2026年郑Z第四十七初级中学入学英语真卷"
+    },
+    {
+     "text": "5. The weather in England is ______ too hot or too cold.",
+     "src": "54_2025年郑Z第九十六中学入学英语真卷"
+    },
+    {
+     "text": "7.______ The bedroom light should be neither too bright nor too dark. If the light is too dark, it will",
+     "src": "69_郑Z管城回族区外国语学校入学英语真卷（一）"
+    }
+   ]
+  },
+  "vo.word_formation": {
+   "paperRate": 0.109,
+   "hits": 31,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "agreed, putting the drum in a 8.______. Max couldn’t find his drum and was unhappy. I noticed they both were",
+     "src": "29_2026年郑Z桐柏一中入学英语真卷（二）"
+    },
+    {
+     "text": "Everybody may get unhappy. That’s 1.______ people eat a lot of junk food or spend lots of money on",
+     "src": "42_2026年郑Z第七初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "1. Our classroom is bright and clean, but ______ (they) is a little untidy.",
+     "src": "71_2026年郑Z金水外国语学校入学英语真卷（一）"
+    },
+    {
+     "text": "unhappy in the zoos, but Animal World is different. There are big green 4.______ (tree) for the giraffes.",
+     "src": "73_2025年郑Z金水外国语学校入学英语真卷（一）"
+    },
+    {
+     "text": "agreed, putting the drum in a 8.______. Max couldn’t find his drum and was unhappy. I noticed they both were",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    }
+   ]
+  },
+  "nn.plural": {
+   "paperRate": 0.582,
+   "hits": 365,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "—By doing creative activities with him, he may not ______ the screen too much.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "4. When he was a little boy, he usually ______(prefer)reading books which tell traditional Chinese stories.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )8. Mr. Cheng teaches ______ math. We all like ______ very much.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "—______ Every time I make dishes for my mum, she is very happy.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "that kids enjoy, like collecting toys. 13. ______ For example, Carrillo loves the CryBaby toy because she sees herself as a “crybaby” sometimes.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "enemies decided to cheat them out of their property（财产） 1.______ making them quarrel about it. The",
+     "src": "14_2026年郑Z郑东新区外国语学校入学英语真卷（四）"
+    }
+   ]
+  },
+  "nn.plural_irregular": {
+   "paperRate": 0.402,
+   "hits": 213,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )12. The policeman helped the child ______ the road and told him not to play on the street.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. He ______ (know) me since I was a little child.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. Alice always ______ (brush) her teeth after meals to have good teeth.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "4. f ______ of the barn (谷仓), some pigs have pens (围栏) in the barnyard. Sheep and cows stay out",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "7. ______ do farm animals eat? Hens use their feet to scratch in dirt. They look for seeds and bugs to",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "2. My sister is only six and still missing her front ______ (tooth).",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "nn.countable": {
+   "paperRate": 0.569,
+   "hits": 335,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "—______ exciting news it is! We are so happy about it.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "On weekends I either do homework at home or play outside with my friends. However, my last weekend was a little __1__.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "juice 1.______ his father drove the family home. After Jacob finished his juice, he threw the bottle out of the",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )1. There’s ______ juice and ______ eggs in the fridge.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "mountain into the sea at that place, there would be 9.______ kilometers of water above it!",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "Rebecca and Maise are twin (双胞胎的) sisters, but they are very 1. ______. Rebecca always spends (花费) a lot of her money. Maise is careful with 2. ______.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "nn.quantity": {
+   "paperRate": 0.381,
+   "hits": 420,
+   "optionHits": 9,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "Stay 5. ______ your family. We all need our family time. Talk with your mum or dad or maybe even your cousins.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "—______ Every time I make dishes for my mum, she is very happy.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "What is the size of animal farms? The size of animal farms is different. Some farms are large. Some are small. Some have 6. m ______ size.",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "juice 1.______ his father drove the family home. After Jacob finished his juice, he threw the bottle out of the",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "Each one worked hard to break the bundle. They tried many times but they 4.______. They all said that it",
+     "src": "14_2026年郑Z郑东新区外国语学校入学英语真卷（四）"
+    },
+    {
+     "text": "(   )1. There’s ______ juice and ______ eggs in the fridge.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "nn.possessive": {
+   "paperRate": 0.172,
+   "hits": 104,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )14. Books are people's friends. ______ books you read, ______ you will be.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—It's easy. I just followed the ______.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )3. —Shenzhou-18 with three astronauts was sent up on April 25th, 2024. It's such ______ exciting event.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "—That's true. It can ______ express their own fantastic ideas ______ improve their hands-on ability.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "A: It's about the growing-up experience of four sisters. 5. ______.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "ar.a_an": {
+   "paperRate": 0.1,
+   "hits": 37,
+   "optionHits": 2,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—Yes. And the astronauts are our heroes. I want to be ______ useful person like them.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )1. More and more foreign students come to China to learn ______ Chinese, because it is ______ useful language.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "20:00. Then she watches TV __4__ half an hour. She goes to bed at 21:00. On Saturdays, she either plays",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "B: 5. ______ Because the store will be closed(关闭) half an hour later.",
+     "src": "33_开F第十四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )1. After school, we usually play ______ soccer for half ______ hour on ______ sports ground.",
+     "src": "42_2026年郑Z第七初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "ar.the": {
+   "paperRate": 0.674,
+   "hits": 315,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "9. When is the best time ______ (plant) vegetables?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. Every year around March, the days slowly become longer and the sun comes out ______ (early) in the Northern Hemisphere(北半球).",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )9. The best title for the story is “______”.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )6. I think music is ______ important subject and I can play ______ piano very well.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "What do we know about the sea? We 1.______ that it looks very beautiful when the sun is shining 2.______ it.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "The first thing to remember is that the sea is very big. 4.______ the map of the world. There is 5.______ sea",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    }
+   ]
+  },
+  "ar.zero": {
+   "paperRate": 0.268,
+   "hits": 94,
+   "optionHits": 19,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.  A. /          B. the          C. a            D. an",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. I ______ go to school by bike, but when it rains I go to school by bus.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "__13__ the ones next to Lucy and Lily? They are his cousins. __14__ a big family! Tony's father and mother are __15__ . They teach English in a university.  (   )1. A. a            B. an            C. the           D. /",
+     "src": "12_郑Z第四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )2. There is ______ “s” in the word “student”.  A. a  B. an  C. the  D. /",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )4. Mike is ______ university student.  A. an　B. a　C. the　D. /",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "At 12:00, she has lunch at school. She usually 6.______ some vegetables, chicken and rice. After",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "pr.personal": {
+   "paperRate": 0.385,
+   "hits": 402,
+   "optionHits": 27,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )9. I'm sorry. I am late again because I ______ catch the early bus.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. He ______ (know) me since I was a little child.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )8. I'm expecting a friend. I'm afraid I ______ later.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Mark's class planted fruit and vegetables in the school's garden. Mark liked watering them and he especially liked __1__ them grow well.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "alone for four years. 15.______ It was her love for our family that supported her when she was under so",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "She walked for a long time. She was hungry. She wanted to have something to eat, 1.______ she didn’t have",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "pr.possessive_adj": {
+   "paperRate": 0.397,
+   "hits": 651,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )7. —Must I finish my work now? —______. You can finish it tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )14. Books are people's friends. ______ books you read, ______ you will be.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "10. —Where are you, Tom? —I am in my study ______ (read) books, Mum!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—Yes. And the astronauts are our heroes. I want to be ______ useful person like them.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "—That's true. It can ______ express their own fantastic ideas ______ improve their hands-on ability.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "A: Looking after your mother? 2. ______?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "pr.possessive_pron": {
+   "paperRate": 0.13,
+   "hits": 23,
+   "optionHits": 26,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )2. —Which sweater is yours? —The ______ is ______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "This house is ours and that one near the lake is ______ (他们的).",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )7. My shoes are size 35. Zhang Peng’s shoes are size 36. Zhang Peng’s shoes are ______ than mine.",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. This pen isn’t yours. I think it’s ______.",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "______________________________________________________________________________________  A. my  B. his  C. mine  D. yours",
+     "src": "26_周K第十九初级中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. My bag is heavier than ______ (yours/your).",
+     "src": "28_周K市实验学校新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "pr.demonstrative": {
+   "paperRate": 0.351,
+   "hits": 334,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )2. We can learn from Paragraph 2 that people in the UK ______.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. It will not be possible to buy food here this morning. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. Talk to this person if you are interested in this sport. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. You can buy healthy drinks in this place. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—That's true. It can ______ express their own fantastic ideas ______ improve their hands-on ability.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "pr.reflexive": {
+   "paperRate": 0.167,
+   "hits": 68,
+   "optionHits": 2,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "8. ______ (put) down the knife, or you may hurt yourself!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )2. —I have great ______ in finishing the work by myself. I'm so proud!",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "that kids enjoy, like collecting toys. 13. ______ For example, Carrillo loves the CryBaby toy because she sees herself as a “crybaby” sometimes.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "1. A smile ______ (cost) nothing but it brings light to other people and yourself.",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "good advice. The next 8.______ you find yourself sad about school, try this: write down 9.______ things you enjoy",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    }
+   ]
+  },
+  "pr.indefinite": {
+   "paperRate": 0.536,
+   "hits": 314,
+   "optionHits": 22,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "Do something nice for someone. 3. ______ others always makes you feel good.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "—______. I prefer more exciting jobs.  A. Both       B. Either        C. Neither       D. None",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. Listen! Someone ______ (knock) at the door of the meeting room.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "There's something in this box that might be __8__ .\" Mr James led his class out to the garden. \"Insects called aphids(蚜虫) are eating our lettuce,\" he said.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "If 7.______ ate the cream on the cake, it would be destroyed（破坏的）. If everyone 8.______ trash out of their",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "She walked for a long time. She was hungry. She wanted to have something to eat, 1.______ she didn’t have",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "pr.it": {
+   "paperRate": 0.05,
+   "hits": 13,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "7. It's time ______ (write) a composition about \"My School\".",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )2. It's time ______ us ______ have lunch.",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "9. It takes me half an hour _",
+     "src": "扫描:最新小升初_p041"
+    },
+    {
+     "text": "7. It's time ______ (write) a composition about \"My School\".",
+     "src": "新初一分班英语试卷_合订本_修订版"
+    },
+    {
+     "text": "(   )2. It's time ______ us ______ have lunch.",
+     "src": "新初一分班英语试卷_合订本_修订版"
+    },
+    {
+     "text": "9. It takes me half an hour ________ (finish) the work.",
+     "src": "第7套_2025年郑Z外国语中学入学英语真卷（一）"
+    }
+   ]
+  },
+  "nu.cardinal": {
+   "paperRate": 0.121,
+   "hits": 45,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )8. There ______ a library in our school twenty years ago. But now there ______ a big one.",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "8. ______ (Be) there any computers in your school twenty years ago?",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )4. The man can read twenty books a year—one thousand during his lifetime, because ______.",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "A: 5.______ Here’s twenty five dollars.",
+     "src": "23_2025年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "4. Tuesday is my sister’s ______ (twenty) birthday.",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "At 10:30 a. m., Susan’s mother 6.______ her to buy some food. She says to Susan, “Here is twenty yuan,",
+     "src": "35_2026年郑Z第二初级中学入学英语真卷"
+    }
+   ]
+  },
+  "nu.ordinal": {
+   "paperRate": 0.481,
+   "hits": 219,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "13. ______ When you first start, no activity is considered too small. When you're creating a timetable",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "The first thing to remember is that the sea is very big. 4.______ the map of the world. There is 5.______ sea",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )1. I have ______ to tell you. But first, please help ______ to ______ fish, children.",
+     "src": "24_2025年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "(   )2. The first man touched the ______.",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )3. The second man touched the ______.",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )4. The third man touched the ______.",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "nu.time_date": {
+   "paperRate": 0.13,
+   "hits": 38,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )8. What time ______ you and Jim ______ up?",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )7. —What time ______ you go to bed? —At 9:00.",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "(   )7. —What time ______ you go to bed? —At 9:00.",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    },
+    {
+     "text": "(   )8. What time ______ you and Jim ______ up?",
+     "src": "新初一分班英语试卷_合订本_修订版"
+    },
+    {
+     "text": "(　　) 4. It's ten o'clock. I think my father ________ on a narrow piece of wood high up in the clouds now.",
+     "src": "第7套_2025年郑Z外国语中学入学英语真卷（一）"
+    },
+    {
+     "text": "“Get up! Mum!” Andy calls out 2. ________ (happy). “Do you know what day it is today?”",
+     "src": "第94套_2026年郑Z第五十四中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "pp.place": {
+   "paperRate": 0.305,
+   "hits": 138,
+   "optionHits": 6,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "__13__ the ones next to Lucy and Lily? They are his cousins. __14__ a big family! Tony's father and mother are __15__ . They teach English in a university.",
+     "src": "12_郑Z第四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "alone for four years. 15.______ It was her love for our family that supported her when she was under so",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )4. ______ was next to Wang Lin in yesterday's English class.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "Some parts of the sea 7.______ very shallow. But some places are very deep. There is one place near Japan.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "4. The two bikes are the same, so there is nothing ______ (difference) between them.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "This house is ours and that one near the lake is ______ (他们的).",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "pp.time": {
+   "paperRate": 0.1,
+   "hits": 44,
+   "optionHits": 3,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )9. We have an English class ______ Tuesday afternoon.",
+     "src": "21_郑Z扶轮外国语学校初中部新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "China’s National Day is ______ ______ 1st.",
+     "src": "26_周K第十九初级中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "But her hobby for collecting the shoes did not begin 12.______ 2000, when she found a beautiful pair at a",
+     "src": "28_2026年郑Z桐柏一中入学英语真卷（一）"
+    },
+    {
+     "text": "Hu often goes collecting 15.______ September and December. “Kids wear tiger-head shoes in winter,” she",
+     "src": "28_2026年郑Z桐柏一中入学英语真卷（一）"
+    },
+    {
+     "text": "1.potato(复数)______ 2.scarf(复数)______ 3.long(比较级)______",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "4.thin(比较级)______ 5.climb(-ing形式)______ 6.dance(-ing形式)______",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "pp.common": {
+   "paperRate": 0.41,
+   "hits": 754,
+   "optionHits": 58,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )2. We can learn from Paragraph 2 that people in the UK ______.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Do something nice for someone. 3. ______ others always makes you feel good.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )14. Books are people's friends. ______ books you read, ______ you will be.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—Just remember: Never judge a man by ______ he wears.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. A family with four members will spend ______ if they watch the show at 7:00 p.m.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. —Shenzhou-18 with three astronauts was sent up on April 25th, 2024. It's such ______ exciting event.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "ad.adj_basic": {
+   "paperRate": 0.004,
+   "hits": 1,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(　　) 6. Look ________ the nice car.",
+     "src": "第89套_入学英语真卷三"
+    }
+   ]
+  },
+  "ad.adverb": {
+   "paperRate": 0.264,
+   "hits": 144,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "“Is it a good baby?” 7. ______ Joe with a puzzled(困惑的) look on his face.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—It’s a good habit. It helps you keep in good ______.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )4. If you are good at using computers and love teaching, you can go to ______.",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "1. Does the cake taste good? I made it by ______ (me).",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "7. Mum is a good ______ (listen). I feel better after a talk with her.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "ad.frequency": {
+   "paperRate": 0.753,
+   "hits": 517,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "Do something nice for someone. 3. ______ others always makes you feel good.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "—Just remember: Never judge a man by ______ he wears.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "15. Tom often ______ (study) two or three hours every day.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. In the TV show Once Upon a Time, ______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. When he was a little boy, he usually ______(prefer)reading books which tell traditional Chinese stories.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "4. Alice always ______ (brush) her teeth after meals to have good teeth.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    }
+   ]
+  },
+  "ad.comparative_form": {
+   "paperRate": 0.188,
+   "hits": 86,
+   "optionHits": 5,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )9. The schoolbag is heavier than ______.",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )10. I’m taller and ______ than you.",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "10. She plays the violin really ______ (good).",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "1. My bag is heavier than ______ (yours/your).",
+     "src": "28_周K市实验学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "1.potato(复数)______ 2.scarf(复数)______ 3.long(比较级)______",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "4.thin(比较级)______ 5.climb(-ing形式)______ 6.dance(-ing形式)______",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "ad.comparative_use": {
+   "paperRate": 0.222,
+   "hits": 112,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "—Thank you. I write ______ than before.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "than land. The sea covers three quarters of the 6.______.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "John can carry this big desk, but Mike can't. John is ______ (strong) than Mike.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "__4__ “having more than enough” in Chinese.",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )6. ______ pencil box is beautiful. But ______ is more beautiful than ______.",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )7. My shoes are size 35. Zhang Peng’s shoes are size 36. Zhang Peng’s shoes are ______ than mine.",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "ad.superlative": {
+   "paperRate": 0.556,
+   "hits": 257,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "9. When is the best time ______ (plant) vegetables?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )9. The best title for the story is “______”.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )6. The best way to learn English well is ______ it.",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )7. Which can be the best to fill in the blank “ ▲______ ” in Paragraph 2?",
+     "src": "29_2026年郑Z桐柏一中入学英语真卷（二）"
+    },
+    {
+     "text": "(   )6. There are ______ lessons in this book. The ______ lesson is the most difficult.",
+     "src": "31_郸C县第八实验中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )2. What is the biggest animal ______ the world?",
+     "src": "36_2025年郑Z第二初级中学入学英语真卷"
+    }
+   ]
+  },
+  "vb.be": {
+   "paperRate": 0.548,
+   "hits": 547,
+   "optionHits": 29,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Stay 5. ______ your family. We all need our family time. Talk with your mum or dad or maybe even your cousins.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )2. —Which sweater is yours? —The ______ is ______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )12. The policeman helped the child ______ the road and told him not to play on the street.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "10. —Where are you, Tom? —I am in my study ______ (read) books, Mum!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—______ exciting news it is! We are so happy about it.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "vb.there_be": {
+   "paperRate": 0.586,
+   "hits": 323,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )5. There are ______ flowers on the hills.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "6. There ______ (be) two English films next week.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. At present, there are more and more ______ (visit) coming to Sanxingdui.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "2. There is a river going through the ______.",
+     "src": "12_郑Z第四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "Then she saw a 2.______ shop. There was an old woman in the shop. She asked Kate, “Would you like to",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "3.______ and two sisters. But there is 4.______ one shower in their home. Do you think it is difficult?",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "vb.have": {
+   "paperRate": 0.326,
+   "hits": 342,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "—It was great. We ______ a tent by the lake and had much fun.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "What is the size of animal farms? The size of animal farms is different. Some farms are large. Some are small. Some have 6. m ______ size.",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "She walked for a long time. She was hungry. She wanted to have something to eat, 1.______ she didn’t have",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "3.______ a bowl of noodles?”",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "“But I have no 4.______,” said the girl.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "Rick is a tall boy with blond hair. He is sixteen 1.______ old. He has a big 2.______. He has two",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "vb.modal_can": {
+   "paperRate": 0.092,
+   "hits": 36,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "—That's true. It can ______ express their own fantastic ideas ______ improve their hands-on ability.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )5. Who can ______ a good idea?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )4. If you want to buy some apples, you can ______.",
+     "src": "22_郑Z第六十二中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "can you turn to? 15.______ Maybe that person can help you solve your problems and make you feel better.",
+     "src": "30_2025年郑Z桐柏一中入学英语真卷"
+    },
+    {
+     "text": "(   )4. If you want to get a ticket, you can ______.",
+     "src": "32_河N大学附属中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )2. You can ______ if you want to make yourself relaxed.",
+     "src": "46_2026年郑Z第四十七初级中学入学英语真卷"
+    }
+   ]
+  },
+  "vb.modal_must": {
+   "paperRate": 0.657,
+   "hits": 409,
+   "optionHits": 6,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. May is ______ of the two girls.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. —Must I finish my work now? —______. You can finish it tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )8. You must remember ______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "8. ______ (put) down the knife, or you may hurt yourself!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—By doing creative activities with him, he may not ______ the screen too much.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "vb.would_like": {
+   "paperRate": 0.209,
+   "hits": 76,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "7. Would you like ______ (come) to my birthday party?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "Then she saw a 2.______ shop. There was an old woman in the shop. She asked Kate, “Would you like to",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "1. Would you like ______ (practise) English with me?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "He smiled 8.______ and said, “You are a good little girl to return my wallet. I would like to give you a little",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )1. —Would you like to play ______ basketball?",
+     "src": "31_郸C县第八实验中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "—No. I'd like to play ______ piano.",
+     "src": "31_郸C县第八实验中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "vb.nonfinite": {
+   "paperRate": 0.372,
+   "hits": 419,
+   "optionHits": 77,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )10. You'd better keep the window ______. It's so hot here.  A. open       B. opening       C. opens         D. opened",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "7. Would you like ______ (come) to my birthday party?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )8. Mr. Cheng teaches ______ math. We all like ______ very much.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "—Oh, she ______ the classroom. She is on duty today.  A. cleans     B. is cleaning  C. clean       D. are cleaning",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "—I'm afraid not. We should keep ______.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "9. Daisy is good at ______ (play) the piano.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "vb.third_person": {
+   "paperRate": 0.858,
+   "hits": 827,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "11. I found it hard ______ (play) basketball well.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "15. Tom often ______ (study) two or three hours every day.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )2. Make sure ______ has the textbooks when the new term starts.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )6.—______ does it take you to get there?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "2. Sounds like you are having a great time ______ (play) the drums.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "Jenny: 4. ______. There goes the bell. I have to go now.",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "vb.ing_form": {
+   "paperRate": 0.402,
+   "hits": 201,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "8. ______ (put) down the knife, or you may hurt yourself!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "work. My mum came home just once a month at the beginning. 13.______",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "3. They came into the bedroom while I ______. (dance)",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "5. My friend Lily ______ (buy) a new coat in Wanda shopping center last weekend.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "4. Please be quiet. Students ______ (take) lessons in the classroom.",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "7. It's time ______ (write) a composition about \"My School\".",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "vb.past_form": {
+   "paperRate": 0.887,
+   "hits": 1549,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )14. Books are people's friends. ______ books you read, ______ you will be.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. He ______ (know) me since I was a little child.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "2. When Miss Zhao came into the classroom, the students ______ (talk).",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "10. —Where are you, Tom? —I am in my study ______ (read) books, Mum!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "12. After the storm, people saw ______ (fall) trees here and there. The traffic was cut off.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. —Shenzhou-18 with three astronauts was sent up on April 25th, 2024. It's such ______ exciting event.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "vb.verb_forms": {
+   "paperRate": 0.314,
+   "hits": 100,
+   "optionHits": 76,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "1. ______ → 2. ______ → 3. ______ → 4. ______ → 5. ______  A. 11 days. B. 10 days. C. 9 days. D. 8 days.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "______________________________________________________________________________________  A. 7 years old.　B. 11 years old.　C. 17 years old.　D. 18 years old.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )9. What ______ the weather ______ tomorrow?  A. will; like　B. will; be like　C. does; like",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )3. There are ______. You can buy a pair for your mother.  A. woman sock　B. women sock　C. women socks　D. woman socks",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )2. You can do homework ______.  A. at 5:00 p.m. B. during 3:40－4:30 p.m. C. during 4:30－5:30 p.m.",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )8. What time ______ you and Jim ______ up?  A. does; get  B. do; gets  C. does; gets  D. do; get",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "te.present_simple": {
+   "paperRate": 0.745,
+   "hits": 508,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "Do something nice for someone. 3. ______ others always makes you feel good.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "15. Tom often ______ (study) two or three hours every day.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "4. When he was a little boy, he usually ______(prefer)reading books which tell traditional Chinese stories.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "On weekends I either do homework at home or play outside with my friends. However, my last weekend was a little __1__.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "4. Alice always ______ (brush) her teeth after meals to have good teeth.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "time. However, their kids don’t always like this. 11.______ I was once like this.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "te.present_simple_3rd": {
+   "paperRate": 0.745,
+   "hits": 499,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )6.—______ does it take you to get there?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "—Oh, she ______ the classroom. She is on duty today.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "“That may be so. But 4.______ will happen if everybody does that?” she said. But Jacob didn’t think much",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "1. Does the cake taste good? I made it by ______ (me).",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "______ does he ______ art?",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. She ______ a pair of new shoes.",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "te.present_continuous": {
+   "paperRate": 0.582,
+   "hits": 367,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )7. —Must I finish my work now? —______. You can finish it tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—It ______ be him. My brother is studying in Shenzhen.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "There's something in this box that might be __8__ .\" Mr James led his class out to the garden. \"Insects called aphids(蚜虫) are eating our lettuce,\" he said.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "1. Sorry, buddy. I ______(drive)at the moment. Can I call you back later?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. Sounds like you are having a great time ______ (play) the drums.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    }
+   ]
+  },
+  "te.past_simple": {
+   "paperRate": 0.753,
+   "hits": 646,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "Students were in __11__ because they didn’t understand what Mr James did.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. —What did you do in class this morning, Sally? —We had a ______ (discuss) about Chinese culture.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "A: I called you at six yesterday evening. But you didn't pick up. 1. ______?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "On weekends I either do homework at home or play outside with my friends. However, my last weekend was a little __1__.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "5. ______ (lucky), a hiker saw him and helped him walk out of the park last weekend.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "do. Unfortunately, the trip did not take place due to the sudden outbreak of the pandemic. 14.______ I",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "te.past_be": {
+   "paperRate": 0.632,
+   "hits": 540,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "1. He ______ (know) me since I was a little child.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "12. After the storm, people saw ______ (fall) trees here and there. The traffic was cut off.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )3. —Shenzhou-18 with three astronauts was sent up on April 25th, 2024. It's such ______ exciting event.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Students were in __11__ because they didn’t understand what Mr James did.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Dynasty. Fuhao was the wife of King Wuding. When I 9. ______ its ancient history and amazing technology to visitors, they were all very interested in it.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "4. When he was a little boy, he usually ______(prefer)reading books which tell traditional Chinese stories.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "te.future": {
+   "paperRate": 0.653,
+   "hits": 482,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )6. I don't think it will rain tomorrow, ______?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. —Must I finish my work now? —______. You can finish it tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )14. Books are people's friends. ______ books you read, ______ you will be.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. We won't go to the Great Wall if it ______ (rain) tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "5. Will you please ______ (give) this eraser to Xiao Ling?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "6. There ______ (be) two English films next week.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "te.tense_choice": {
+   "paperRate": 0.36,
+   "hits": 367,
+   "optionHits": 35,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )6. I don't think it will rain tomorrow, ______?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. —Must I finish my work now? —______. You can finish it tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. We won't go to the Great Wall if it ______ (rain) tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "6. There ______ (be) two English films next week.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "15. Tom often ______ (study) two or three hours every day.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "A: I called you at six yesterday evening. But you didn't pick up. 1. ______?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "te.present_perfect": {
+   "paperRate": 0.163,
+   "hits": 68,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "1. He ______ (know) me since I was a little child.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "12.______ I was excited about the freedom I would enjoy, since my dad was always busy with his own",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "“And yet, my 5.______,” said the father. “Nothing is easier to do.” He then untied the bundle, and broke",
+     "src": "14_2026年郑Z郑东新区外国语学校入学英语真卷（四）"
+    },
+    {
+     "text": "(   )1. My father ______ as a doctor since he graduated from a medical school.",
+     "src": "20_2026年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "—No, it ______ be him. He has gone to Shanghai.",
+     "src": "36_2025年郑Z第二初级中学入学英语真卷"
+    },
+    {
+     "text": "beautiful card I’ve ever seen.” He turned to Emma and handed her a 12.______. “It makes my birthday card for",
+     "src": "51_2025年郑Z第五十七中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "te.past_continuous": {
+   "paperRate": 0.218,
+   "hits": 95,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "“Don’t worry.” Soon, the old woman 5.______ the girl a bowl of noodles. The girl ate for a while and started",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "After that the girl went 10.______ at once. Her mum was waiting for her for supper. The girl felt sorry.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )8. ______ a cold morning, I opened the window and found that it was snowing outside.",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "—I'm sorry, ______ there aren't any seats now. Would you mind waiting for a while?",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )1. He was looking forward to ______ with the new maths teacher.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "3. They came into the bedroom while I ______. (dance)",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    }
+   ]
+  },
+  "te.passive": {
+   "paperRate": 0.075,
+   "hits": 28,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )9. The dictionary on the teacher’s desk is used by students to ______ the new words.",
+     "src": "55_2026年郑Z实验外国语学校入学英语真卷"
+    },
+    {
+     "text": "is used to ______ to music in the square.",
+     "src": "55_2026年郑Z实验外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )7. People called it the Silk Road because most of the goods going on the road were made ______",
+     "src": "56_2025年郑Z实验外国语学校入学英语真卷"
+    },
+    {
+     "text": "6. He is used to ______(cross) the river to school, so he is not afraid.",
+     "src": "56_2025年郑Z实验外国语学校入学英语真卷"
+    },
+    {
+     "text": "AI is used for more and more practical work. And machines will become more humanlike. 19.______",
+     "src": "65_2026年郑Z经开区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )9. The dictionary on the teacher’s desk is used by students to ______ the new words.",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    }
+   ]
+  },
+  "sy.word_order": {
+   "paperRate": 0.088,
+   "hits": 35,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "sy.basic_patterns": {
+   "paperRate": 0.151,
+   "hits": 62,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )2. Make sure ______ has the textbooks when the new term starts.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )2. I have trouble remembering new words. Could you please give me some ______?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "He smiled 8.______ and said, “You are a good little girl to return my wallet. I would like to give you a little",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )4. Can you tell me the reason ______ learning English?",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )7. Ask the boy not to make any ______. I can’t fall asleep(入睡).",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "than 4.______ else. Think about this: A boy has nothing, and you give him some food or just a candy. Then",
+     "src": "42_2026年郑Z第七初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "sy.yes_no": {
+   "paperRate": 0.665,
+   "hits": 502,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "5. Will you please ______ (give) this eraser to Xiao Ling?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "10. —Where are you, Tom? —I am in my study ______ (read) books, Mum!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "“Is it a good baby?” 7. ______ Joe with a puzzled(困惑的) look on his face.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "2. —What did you do in class this morning, Sally? —We had a ______ (discuss) about Chinese culture.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )6.—______ does it take you to get there?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "“7.______ can you think that way? I just 8.______ you a bowl of noodles. Your mother cooks for you every",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "sy.wh_questions": {
+   "paperRate": 0.238,
+   "hits": 86,
+   "optionHits": 49,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )5. ______ will not be allowed in.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )6.—______ does it take you to get there?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )9. —______ are these trousers?",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "______ does he ______ art?",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )4. ______ was next to Wang Lin in yesterday's English class.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )7. —______ was your weekend?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    }
+   ]
+  },
+  "sy.how_phrases": {
+   "paperRate": 0.544,
+   "hits": 221,
+   "optionHits": 24,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )6.—______ does it take you to get there?  A. How many  B. How much    C. How far     D. How long",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )10. —Millie, ______ do you take the course in DIY?  A. how often      B. how far      C. how much      D. how long",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )5. —______ is Chen Jie?  A. How old      B. How heavy      C. How tall",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )5. How many eggs ______ in the bag?",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )4. —______ is the park from your home? —It’s five minutes’ walk.  A. How far　B. How old　C. How many　D. How much",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "4. How many ______ does he have every day?",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "sy.ask_underlined": {
+   "paperRate": 0.067,
+   "hits": 40,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "sy.negative": {
+   "paperRate": 0.038,
+   "hits": 13,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "sy.imperative": {
+   "paperRate": 0.301,
+   "hits": 124,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )6. I don't think it will rain tomorrow, ______?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "B: Sounds great. Let's go and see it together. 4. ______?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "—Why don't you relax and ______ the countryside?",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "4. There are a lot of ______ (tomato) in the fridge. Let's cook some tomato soup.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )1. —Let's play ______ basketball after school.",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "—But I don't have ______ basketball.",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "sy.exclamation": {
+   "paperRate": 0.042,
+   "hits": 16,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "—______ exciting news it is! We are so happy about it.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )2. ______ clever you are!",
+     "src": "21_2025年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )5. ______ clever you are!",
+     "src": "24_2025年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "______ great ______ it is to have a swim in such hot weather!",
+     "src": "65_2026年郑Z经开区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )2. ______ clever you are!",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    },
+    {
+     "text": "(   )5. ______ clever you are!",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    }
+   ]
+  },
+  "sy.conjunctions": {
+   "paperRate": 0.715,
+   "hits": 1244,
+   "optionHits": 46,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Stay 5. ______ your family. We all need our family time. Talk with your mum or dad or maybe even your cousins.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )1. —Why should we learn English well? —Because it's such ______ useful tool.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )9. I'm sorry. I am late again because I ______ catch the early bus.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )10. You'd better keep the window ______. It's so hot here.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )12. The policeman helped the child ______ the road and told him not to play on the street.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "sy.adverbial_clause": {
+   "paperRate": 0.268,
+   "hits": 191,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "2. When Miss Zhao came into the classroom, the students ______ (talk).",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "3. We won't go to the Great Wall if it ______ (rain) tomorrow.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "9. When is the best time ______ (plant) vegetables?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "12. After the storm, people saw ______ (fall) trees here and there. The traffic was cut off.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "13. When I passed the classroom, I heard a girl ______ (sing) an English song.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "sy.object_clause": {
+   "paperRate": 0.272,
+   "hits": 107,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )8. From Paragraph 4, we know that ______.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )8. From the passage, we can know that ______.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "“7.______ can you think that way? I just 8.______ you a bowl of noodles. Your mother cooks for you every",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )1. From the passage, we know that ______.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )10. From the passage, we know that ______.",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )5. After reading, we know that ______.",
+     "src": "25_南Y第三中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "sy.paraphrase": {
+   "paperRate": 0.038,
+   "hits": 11,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "fn.greetings": {
+   "paperRate": 0.063,
+   "hits": 22,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "A: Good morning, sir. 1.______",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "B: Good morning. Welcome! 1.______",
+     "src": "23_2025年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "“Good morning, everyone! I take some boxes 3.______ you. Everyone can choose one. But you can’t",
+     "src": "41_2026年郑Z第七初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "A: Good morning. 1.______?",
+     "src": "53_2025年郑Z第五十八中学入学英语真卷"
+    },
+    {
+     "text": "(   )9. A. How are you B. Goodbye C. Excuse me D. Let me help you",
+     "src": "59_2026年郑Z枫杨外国语学校入学英语真卷"
+    },
+    {
+     "text": "2. How are you [] \"Fine, thanks.\"",
+     "src": "扫描:百校联盟专卷_p149"
+    }
+   ]
+  },
+  "fn.thanks_apology": {
+   "paperRate": 0.071,
+   "hits": 25,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )9. —Excuse me. Do you have a table for two?",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "She knew this would be 5.______, so she hurried after the man. She said to him, “Excuse me, sir, you",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "A: Excuse me. 1.______ ?",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "That's all about me. If you want to __14__ more about me, you're welcome to call or write to me! __15__ for listening to me.",
+     "src": "31_郸C县第八实验中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )15. A. Thanks       B. Sorry         C. Hello         D. Excuse me",
+     "src": "31_郸C县第八实验中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "A: Excuse me. I'm new in town. 1. ______",
+     "src": "33_开F第十四中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "fn.request_help": {
+   "paperRate": 0.448,
+   "hits": 186,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )11. —Could you please tell me whether you want to be a doctor or teacher, Mike?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )13. —Could you please help me carry the box? —______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "14. ______ For example, you can ask a question like: Which task do you need to do to make sure you",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )2. Make sure ______ has the textbooks when the new term starts.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )5. Where can you read the text?",
+     "src": "12_郑Z第四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "“7.______ can you think that way? I just 8.______ you a bowl of noodles. Your mother cooks for you every",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    }
+   ]
+  },
+  "fn.shopping": {
+   "paperRate": 0.134,
+   "hits": 40,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )1. How much is a super cup?",
+     "src": "20_2026年郑Z第四初级中学入学英语真卷（四）"
+    },
+    {
+     "text": "(   )8. You want to buy a sweater and a T-shirt. How much will you have to pay?",
+     "src": "21_2025年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "(   )3. How much will Li Lei’s family（Li Lei, 13, his parents and his little brother, 4）pay for a five-day",
+     "src": "45_2026年郑Z第八中学入学英语真卷"
+    },
+    {
+     "text": "(   )3. How much should a 17-year-old student (with valid ID) and her 66-year-old grandma pay for the",
+     "src": "66_2026年郑Z经开区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "8. This pair of shoes looks cool. Can I try ______ (they) on?",
+     "src": "71_2026年郑Z金水外国语学校入学英语真卷（一）"
+    },
+    {
+     "text": "The old man said joyfully how much he 2.______ it and asked whether it would follow him home. Though",
+     "src": "74_2025年郑Z金水外国语学校入学英语真卷（二）"
+    }
+   ]
+  },
+  "fn.ask_way": {
+   "paperRate": 0.096,
+   "hits": 24,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )9. Where is the birthday present?",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "8. Go straight and turn l______ at the crossing.",
+     "src": "29_商S县第一初级中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )5. Where is the text probably from?",
+     "src": "45_2026年郑Z第八中学入学英语真卷"
+    },
+    {
+     "text": ")6. You can't turn left when you see the sign",
+     "src": "扫描:27真题卷_p017"
+    },
+    {
+     "text": ")5. Where is the text probably from?",
+     "src": "扫描:27真题卷_p061"
+    },
+    {
+     "text": ")1. Where is the cinema?",
+     "src": "扫描:27真题卷_p149"
+    }
+   ]
+  },
+  "fn.advice_health": {
+   "paperRate": 0.138,
+   "hits": 47,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "(   )10. You'd better keep the window ______. It's so hot here.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—Why don't you relax and ______ the countryside?",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )7. You should finish your homework on time every day.",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "When you see a friend feeling stressed or in trouble, you should always be ready to give a 1.______.",
+     "src": "29_2026年郑Z桐柏一中入学英语真卷（二）"
+    },
+    {
+     "text": "You should always remember that your parents love you very much. 14.______ They have much",
+     "src": "30_2025年郑Z桐柏一中入学英语真卷"
+    },
+    {
+     "text": "—Sorry, I’ve only got one. Lily has many. Why not go to ask ______?",
+     "src": "42_2026年郑Z第七初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "fn.invite_suggest": {
+   "paperRate": 0.201,
+   "hits": 69,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "2. Sounds like you are having a great time ______ (play) the drums.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "B: Sounds great. Let's go and see it together. 4. ______?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )5. Who can ______ a good idea?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "How to make things better? Finding 6.______ from others and feeling better about school. It’s a good idea to",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "7. How about ______ to have a picnic next Sunday?",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )7. —It’s so hot. What about ______ in the pool this afternoon?",
+     "src": "20_2026年郑Z第四初级中学入学英语真卷（四）"
+    }
+   ]
+  },
+  "fn.dialogue": {
+   "paperRate": 0.155,
+   "hits": 101,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "rd.detail": {
+   "paperRate": 0.929,
+   "hits": 1920,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )1. Where did tea drinking start?",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )3. What is coffee made from?",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )5. What is the best title for the passage?",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )17. What's the date of Christmas Day?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )19. \"I am sorry. I can't help you. I am a small potato.\" What is the meaning of \"a small potato\"?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )20. We are in the dark about their plan. What do the underlined words mean in Chinese?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "rd.true_false": {
+   "paperRate": 0.762,
+   "hits": 431,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )4. Which of the following is NOT true according to Paragraph 3?",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )12. The policeman helped the child ______ the road and told him not to play on the street.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "14. ______ (drink) too much coffee is not good for your sleep.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "2. It will not be possible to buy food here this morning. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )5. ______ will not be allowed in.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "—By doing creative activities with him, he may not ______ the screen too much.",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "rd.main_idea": {
+   "paperRate": 0.527,
+   "hits": 230,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )5. What is the best title for the passage?",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )5. What’s the best title for the text?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )5. What is probably the best title for the passage?",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )8. What is probably the main idea of paragraph 4?",
+     "src": "11_郑Z管城回族区外国语学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )1. What is the passage mainly about?",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )10. What is the best title for the passage?",
+     "src": "12_郑Z第四中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "rd.inference": {
+   "paperRate": 0.536,
+   "hits": 264,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )2. We can learn from Paragraph 2 that people in the UK ______.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Do something nice for someone. 3. ______ others always makes you feel good.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )2. If the show begins at 10:00 a.m., it will probably finish at ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )8. How did the writer feel about the show at first?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )4. Which of the following shows how the writer’s feelings changed over time?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "rd.word_guess": {
+   "paperRate": 0.573,
+   "hits": 247,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "(   )20. We are in the dark about their plan. What do the underlined words mean in Chinese?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )6. What does the underlined word “breed” probably mean in Paragraph 1?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )3. The underlined word “experienced” means “______” in Chinese.",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )7. What does the underlined word “exploration” probably mean in Chinese?",
+     "src": "12_2026年郑Z郑东新区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )7. What does the underlined word “wobble” mean in Chinese?",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )2. The underlined word “reused” means “______” in English.",
+     "src": "14_2026年郑Z郑东新区外国语学校入学英语真卷（四）"
+    }
+   ]
+  },
+  "rd.practical": {
+   "paperRate": 0.167,
+   "hits": 80,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "13. ______ When you first start, no activity is considered too small. When you're creating a timetable",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )5. Who approached to look at Emily’s poster?",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "B: That’s a good price. 5.______",
+     "src": "19_2026年郑Z第四初级中学入学英语真卷（三）"
+    },
+    {
+     "text": "A: Oh, dear! You’re right. It is closed. 4.______?",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "(   )2. A. early\tB. dear\tC. near\tD. ear",
+     "src": "23_郑Z惠济区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )11. A. Forget B. Make C. See D. Notice",
+     "src": "29_2026年郑Z桐柏一中入学英语真卷（二）"
+    }
+   ]
+  },
+  "rd.cloze": {
+   "paperRate": 0.314,
+   "hits": 123,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": []
+  },
+  "rd.passage_fill": {
+   "paperRate": 0.146,
+   "hits": 59,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "rd.task": {
+   "paperRate": 0.113,
+   "hits": 73,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "wr.mechanics": {
+   "paperRate": 0.033,
+   "hits": 12,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "wr.sentence": {
+   "paperRate": 0.063,
+   "hits": 27,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "4. I go shopping every week. (用last week改写句子)",
+     "src": "18_郑Z郑东新区春华学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "4. He ate fresh food yesterday. (用now改写句子)",
+     "src": "26_周K第十九初级中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "2. I drew some pictures in the park yesterday. (用tomorrow改写句子)",
+     "src": "28_周K市实验学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "5. He visits his grandparents in the countryside on Friday evenings.（用 next Friday evening 改写句子）",
+     "src": "35_2026年郑Z第二初级中学入学英语真卷"
+    },
+    {
+     "text": "1. Mark and I are going to travel around the world together. （翻译画线部分）",
+     "src": "54_2025年郑Z第九十六中学入学英语真卷"
+    },
+    {
+     "text": "2. To find more food in the forest, the tiger had to walk on. （翻译画线部分）",
+     "src": "54_2025年郑Z第九十六中学入学英语真卷"
+    }
+   ]
+  },
+  "wr.paragraph": {
+   "paperRate": 0.331,
+   "hits": 231,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "请以 \"I Love ______\" 为题，把题目补充完整，写一篇不少于 50 词的短文。",
+     "src": "第112套_2025年郑Z一中金水校区入学英语真卷（一）"
+    }
+   ]
+  },
+  "wr.self_others": {
+   "paperRate": 0.586,
+   "hits": 303,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "On weekends I either do homework at home or play outside with my friends. However, my last weekend was a little __1__.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )2. —I have great ______ in finishing the work by myself. I'm so proud!",
+     "src": "13_郑Z实验外国语中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "5. My friend Lily ______ (buy) a new coat in Wanda shopping center last weekend.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )9. I have to be off now. My friends ______ outside.",
+     "src": "20_郑Z四中管城校区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "3. My family and I ______ (go) to Hainan last summer holiday.",
+     "src": "23_郑Z惠济区新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "1. My friend often does his homework on Sundays. (对画线部分提问)",
+     "src": "28_周K市实验学校新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "wr.experience": {
+   "paperRate": 0.289,
+   "hits": 202,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )5.—How was your camping in the countryside last weekend?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "On weekends I either do homework at home or play outside with my friends. However, my last weekend was a little __1__.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "5. ______ (lucky), a hiker saw him and helped him walk out of the park last weekend.",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )1. When can we go to Renmin Park for summer holidays?",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "5. My friend Lily ______ (buy) a new coat in Wanda shopping center last weekend.",
+     "src": "15_2025年郑Z郑东新区外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )1. —Did you ______ Beijing last holiday?",
+     "src": "17_郑Z第八十二中学新初一入学分班英语真卷(二)_修订版"
+    }
+   ]
+  },
+  "wr.plan_wish": {
+   "paperRate": 0.071,
+   "hits": 41,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": []
+  },
+  "wr.letter": {
+   "paperRate": 0.556,
+   "hits": 345,
+   "optionHits": 0,
+   "tier": 3,
+   "examples": [
+    {
+     "text": "When you are feeling unhappy or forget how great you are, these are five 1. ______ to make you feel good about yourself.",
+     "src": "07_郑Z第五十七中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )2. —Which sweater is yours? —The ______ is ______.",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "8. ______ (put) down the knife, or you may hurt yourself!",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "1. A smile ______ (cost) nothing but it brings light to other people and yourself.",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "good advice. The next 8.______ you find yourself sad about school, try this: write down 9.______ things you enjoy",
+     "src": "17_2026年郑Z第四初级中学入学英语真卷（一）"
+    },
+    {
+     "text": "2. This pen isn’t yours. I think it’s ______.",
+     "src": "19_郑Z第八十中学新初一入学分班英语真卷_修订版"
+    }
+   ]
+  },
+  "rd.structure": {
+   "paperRate": 0.213,
+   "hits": 65,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )2. What is the right order of the story?",
+     "src": "55_2026年郑Z实验外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )2. What does Paragraph 2 mainly talk about?",
+     "src": "59_2026年郑Z枫杨外国语学校入学英语真卷"
+    },
+    {
+     "text": "(   )15. What’s the structure of the passage? (① = Paragraph 1)",
+     "src": "65_2026年郑Z经开区外国语学校入学英语真卷（二）"
+    },
+    {
+     "text": "(   )3. Which is the RIGHT order of the text?",
+     "src": "69_郑Z管城回族区外国语学校入学英语真卷（一）"
+    },
+    {
+     "text": "(   )14. Paragraph 2 mainly tells us about ______.",
+     "src": "79_2026年郑Z四中实验学校入学英语真卷（一）"
+    },
+    {
+     "text": ")3. What is the right order of the following events?",
+     "src": "扫描:27真题卷_p013"
+    }
+   ]
+  },
+  "rd.purpose": {
+   "paperRate": 0.209,
+   "hits": 68,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "(   )8. How did the writer feel about the show at first?",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )4. Which of the following shows how the writer’s feelings changed over time?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )10. What is the main purpose of the text?",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "(   )10. What may be the real purpose of the planting experiment?",
+     "src": "10_郑Z第七十三中学新初一入学分班英语真卷(三)_修订版"
+    },
+    {
+     "text": "(   )10. The writer wants to tell us ______.",
+     "src": "13_2026年郑Z郑东新区外国语学校入学英语真卷（三）"
+    },
+    {
+     "text": "(   )6. How did Emily feel as the judges approached?",
+     "src": "16_郑Z第八十二中学新初一入学分班英语真卷(一)_修订版"
+    }
+   ]
+  },
+  "wr.daily": {
+   "paperRate": 0.05,
+   "hits": 24,
+   "optionHits": 0,
+   "tier": 1,
+   "examples": [
+    {
+     "text": "My weekend is colourful. ______",
+     "src": "54_2025年郑Z第九十六中学入学英语真卷"
+    },
+    {
+     "text": "1. My school day in WFLA is busy but rewarding. (XJi])",
+     "src": "扫描:27真题卷_p133"
+    },
+    {
+     "text": "My weekend is colourful. ______",
+     "src": "新初一分班考试卷_合订本_全部164页"
+    },
+    {
+     "text": "1. My school day in WFLA is busy but rewarding. (对画线部分提问)",
+     "src": "第106套_2026年郑东新区春华学校入学英语真卷"
+    }
+   ]
+  },
+  "wr.advice": {
+   "paperRate": 0.469,
+   "hits": 296,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "4. You can buy healthy drinks in this place. ______",
+     "src": "08_郑Z第七十三中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "(   )15. A. short B. smart C. healthy D. ugly",
+     "src": "09_郑Z第七十三中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "Every day, the girls' mother 4. ______ healthy sandwiches for their lunch. But Rebecca 5. ______ ice cream and snacks. Soon she had no money.",
+     "src": "15_郑Z第九十六中学新初一入学分班英语真卷(二)_修订版"
+    },
+    {
+     "text": "play it 2.______. She has a good eating 3.______. She is very healthy. She has some bread, two eggs",
+     "src": "18_2026年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "1. are, she, healthy, thinks, they, food (.)",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    },
+    {
+     "text": "5. healthy, He, because, is, very, well, he, eats (.)",
+     "src": "22_2025年郑Z第四初级中学入学英语真卷（二）"
+    }
+   ]
+  },
+  "wr.culture": {
+   "paperRate": 0.264,
+   "hits": 173,
+   "optionHits": 0,
+   "tier": 2,
+   "examples": [
+    {
+     "text": "3. Can you show ______ (I) around your hometown(家乡)?",
+     "src": "14_郑Z第九十六中学新初一入学分班英语真卷(一)_修订版"
+    },
+    {
+     "text": "Spring Festival fair. “The images of tigers on the 13.______ were embroidered according to paper-cutting",
+     "src": "28_2026年郑Z桐柏一中入学英语真卷（一）"
+    },
+    {
+     "text": "(   )2. A. Dragon Boat Festival B. Mid-Autumn Festival C. Christmas",
+     "src": "28_周K市实验学校新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": "(   )8. If you are a fishing lover, which lake can you go to for the Fishing Festival?",
+     "src": "33_开F第十四中学新初一入学分班英语真卷_修订版"
+    },
+    {
+     "text": ")8. Where does the Twins Days Festival take place?",
+     "src": "扫描:27真题卷_p009"
+    },
+    {
+     "text": ")6. What do we know about the Flower Festival?",
+     "src": "扫描:27真题卷_p133"
+    }
+   ]
+  }
+ },
+ "related": [
+  {
+   "a": "sy.how_phrases",
+   "b": "sy.yes_no",
+   "count": 17,
+   "lift": 10.96,
+   "reason": "真题中 17 道单选题：选项考「sy.how_phrases」时题干同时涉及「sy.yes_no」"
+  },
+  {
+   "a": "te.tense_choice",
+   "b": "vb.nonfinite",
+   "count": 15,
+   "lift": 2.05,
+   "reason": "真题中 15 道单选题：选项考「te.tense_choice」时题干同时涉及「vb.nonfinite」"
+  },
+  {
+   "a": "te.future",
+   "b": "vb.nonfinite",
+   "count": 11,
+   "lift": 3.71,
+   "reason": "真题中 11 道题同时考这两个点"
+  },
+  {
+   "a": "vb.be",
+   "b": "vb.verb_forms",
+   "count": 11,
+   "lift": 1.22,
+   "reason": "真题中 11 道单选题：选项考「vb.be」时题干同时涉及「vb.verb_forms」"
+  },
+  {
+   "a": "te.tense_choice",
+   "b": "vb.be",
+   "count": 11,
+   "lift": 1.34,
+   "reason": "真题中 11 道单选题：选项考「te.tense_choice」时题干同时涉及「vb.be」"
+  },
+  {
+   "a": "pp.common",
+   "b": "vb.be",
+   "count": 11,
+   "lift": 1.54,
+   "reason": "真题中 11 道单选题：选项考「pp.common」时题干同时涉及「vb.be」"
+  },
+  {
+   "a": "sy.conjunctions",
+   "b": "te.past_be",
+   "count": 10,
+   "lift": 6.3,
+   "reason": "真题中 10 道单选题：选项考「sy.conjunctions」时题干同时涉及「te.past_be」"
+  },
+  {
+   "a": "pr.indefinite",
+   "b": "sy.conjunctions",
+   "count": 9,
+   "lift": 4.57,
+   "reason": "真题中 9 道单选题：选项考「pr.indefinite」时题干同时涉及「sy.conjunctions」"
+  },
+  {
+   "a": "vb.be",
+   "b": "vb.have",
+   "count": 8,
+   "lift": 2.21,
+   "reason": "真题中 8 道单选题：选项考「vb.be」时题干同时涉及「vb.have」"
+  },
+  {
+   "a": "sy.yes_no",
+   "b": "vb.nonfinite",
+   "count": 8,
+   "lift": 2.0,
+   "reason": "真题中 8 道题同时考这两个点"
+  },
+  {
+   "a": "pr.demonstrative",
+   "b": "sy.conjunctions",
+   "count": 7,
+   "lift": 4.0,
+   "reason": "真题中 7 道题同时考这两个点"
+  },
+  {
+   "a": "vb.modal_must",
+   "b": "vb.nonfinite",
+   "count": 7,
+   "lift": 3.65,
+   "reason": "真题中 7 道单选题：选项考「vb.modal_must」时题干同时涉及「vb.nonfinite」"
+  },
+  {
+   "a": "vb.have",
+   "b": "vb.nonfinite",
+   "count": 7,
+   "lift": 2.17,
+   "reason": "真题中 7 道题同时考这两个点"
+  },
+  {
+   "a": "te.present_continuous",
+   "b": "vb.nonfinite",
+   "count": 7,
+   "lift": 2.29,
+   "reason": "真题中 7 道题同时考这两个点"
+  },
+  {
+   "a": "sy.conjunctions",
+   "b": "te.past_continuous",
+   "count": 6,
+   "lift": 9.97,
+   "reason": "真题中 6 道单选题：选项考「sy.conjunctions」时题干同时涉及「te.past_continuous」"
+  },
+  {
+   "a": "te.future",
+   "b": "vb.verb_forms",
+   "count": 6,
+   "lift": 3.02,
+   "reason": "真题中 6 道题同时考这两个点"
+  },
+  {
+   "a": "nn.quantity",
+   "b": "vb.be",
+   "count": 6,
+   "lift": 1.61,
+   "reason": "真题中 6 道单选题：选项考「nn.quantity」时题干同时涉及「vb.be」"
+  },
+  {
+   "a": "te.past_simple",
+   "b": "vb.be",
+   "count": 6,
+   "lift": 2.92,
+   "reason": "真题中 6 道题同时考这两个点"
+  },
+  {
+   "a": "te.present_simple",
+   "b": "vb.verb_forms",
+   "count": 6,
+   "lift": 5.13,
+   "reason": "真题中 6 道题同时考这两个点"
+  },
+  {
+   "a": "pp.common",
+   "b": "te.tense_choice",
+   "count": 6,
+   "lift": 1.54,
+   "reason": "真题中 6 道单选题：选项考「pp.common」时题干同时涉及「te.tense_choice」"
+  },
+  {
+   "a": "sy.how_phrases",
+   "b": "te.present_simple_3rd",
+   "count": 5,
+   "lift": 9.89,
+   "reason": "真题中 5 道单选题：选项考「sy.how_phrases」时题干同时涉及「te.present_simple_3rd」"
+  },
+  {
+   "a": "pp.common",
+   "b": "te.future",
+   "count": 5,
+   "lift": 3.17,
+   "reason": "真题中 5 道单选题：选项考「pp.common」时题干同时涉及「te.future」"
+  },
+  {
+   "a": "pr.demonstrative",
+   "b": "sy.wh_questions",
+   "count": 5,
+   "lift": 2.92,
+   "reason": "真题中 5 道题同时考这两个点"
+  },
+  {
+   "a": "pp.common",
+   "b": "vb.ing_form",
+   "count": 5,
+   "lift": 7.18,
+   "reason": "真题中 5 道单选题：选项考「pp.common」时题干同时涉及「vb.ing_form」"
+  },
+  {
+   "a": "vb.have",
+   "b": "vb.verb_forms",
+   "count": 5,
+   "lift": 2.31,
+   "reason": "真题中 5 道题同时考这两个点"
+  },
+  {
+   "a": "nn.quantity",
+   "b": "sy.conjunctions",
+   "count": 5,
+   "lift": 2.41,
+   "reason": "真题中 5 道单选题：选项考「nn.quantity」时题干同时涉及「sy.conjunctions」"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+# 新课标趋势阅读：应用文、科普跨学科、中国文化、记叙情感。
+# 题材：应用文 / 科普跨学科 / 中国文化 / 记叙情感。“来源”是改编所依据的真实报道，正文为原创改写，不照抄原句。
+# 带“最佳标题”题的短文不写“标题”，以免泄题。
+
+@ rd.detail
+%% 题材=中国文化 | 来源=https://en.wikipedia.org/wiki/Shenzhou_23 | 标题=A Dream Comes True in Space
+On May 24, 2026, the spaceship Shenzhou-23 took off from Jiuquan, a city in northwest China. A few hours later, it reached China's space station, Tiangong.
+There were three astronauts on board. Zhu Yangzhu was the leader of the crew(乘组). It was his second time in space. Zhang Zhiyuan was the pilot, and this was his first trip. The third astronaut, Lai Ka-ying, made history. She is the first person from Hong Kong to travel to space.
+Lai is a scientist. In the space station, she does experiments(实验) and looks after the science machines. Up there, nothing stays on the floor. People, pens and even water float in the air.
+This mission(任务) is special in another way, too. Most astronauts stay in the station for about six months, but one of the crew will stay for about a year. No Chinese astronaut has stayed in space that long before. Doctors will check everyone's body and mind before they choose who will stay.
+Lai's story shows that a dream can come true if you keep working hard for it.
+%%
+[7/1] Where did Shenzhou-23 take off? | A In Beijing. | B In Jiuquan. | C In Hong Kong. | D In Tiangong. | =B | 第一段：took off from Jiuquan。
+[7/2] Why is Lai Ka-ying special? | A She is the leader of the crew. | B She has been to space twice. | C She is the first person from Hong Kong to go to space. | D She will stay in space for a year. | =C | 第二段 made history 的原因：first person from Hong Kong。D 原文只说“一名乘员”会留一年，没有说是她。
+@ rd.word_guess
+[7/2] The underlined word "float" in Paragraph 3 probably means ____. | A 漂浮 | B 掉落 | C 燃烧 | D 消失 | =A | 前文说“没有东西会停在地板上”，人、笔和水都在空中，所以是“漂浮”。
+@ rd.inference
+[7/3] What can we learn from Paragraph 4? | A All astronauts stay in space for a year. | B The person who stays for a year will be chosen after checks. | C Lai Ka-ying will stay in space for a year. | D Six months is too short for any mission. | =B | 原文 Doctors will check... before they choose who will stay，说明要检查后再选人。
+@ rd.purpose
+[7/3] Why does the writer write this passage? | A To tell us how to build a spaceship. | B To introduce a special space trip and its astronauts. | C To ask us to visit Hong Kong. | D To show that space is too dangerous. | =B | 全文介绍神舟二十三号这次飞行和三名航天员，最后点出“坚持努力，梦想可以实现”。
+%%end
+
+@ rd.detail
+%% 题材=中国文化 | 来源=https://global.chinadaily.com.cn/a/202608/13/WS6a7d1a3ba31073853ec530d6.html | 标题=Summer Mornings in Gongyi
+It is five o'clock in the morning. Most children are still asleep, but in Gongyi, a city in Henan, dozens of children are already at a training base, ready to practise. During the summer holiday, they practise in the morning and again in the evening.
+Gongyi has a long history. It is famous for its old kilns(窑) and white porcelain(白瓷). Today, people there are working hard to pass old skills like the lion dance, wood carving(木雕) and porcelain making on to young people.
+Chen Tingang is a wood carver. For years, Chen has taught wood carving in local schools. In these classes, students learn to carve, and they learn about history and art at the same time. "We pursue perfection in every detail," Chen says. That means they always try to make every small part perfect.
+Not every old skill is easy to keep. Han Hongli, a porcelain maker, says young people need many years to learn this skill, and they can't make much money at first. So Han started a study base. There, students make porcelain with their own hands and learn about the culture behind it.
+Old skills are like old friends. If no one visits them, they will be forgotten. Thanks to these teachers, more and more children in Gongyi are getting to know them.
+%%
+[7/1] When do the children get to the training base in the summer holiday? | A At about 5 a.m. | B At about 8 a.m. | C At noon. | D After dinner only. | =A | 第一段 It is five o'clock in the morning... already at a training base。
+@ rd.word_guess
+[7/2] The phrase "pass ... on to" in Paragraph 2 means ____. | A 传给 | B 路过 | C 通过考试 | D 放弃 | =A | 把老手艺“传给”年轻人。
+@ rd.detail
+[7/2] Why is it hard to keep porcelain making alive? | A Because it is too easy to learn. | B Because it takes years to learn and pays little at first. | C Because no one likes porcelain any more. | D Because machines can do it better. | =B | 第四段 need many years to learn... can't make much money at first。
+@ rd.structure
+[7/3] How is the passage organized? | A A scene → background → two teachers' stories → the writer's idea. | B A question → three answers → a test. | C The writer's idea → a scene → a story. | D A story → a list of rules → a poem. | =A | 第一段描写清晨练习的场景，第二段介绍巩义背景，第三、四段讲两位手艺人，最后一段是作者观点。
+@ rd.purpose
+[7/3] What does the writer mean by "Old skills are like old friends"? | A Old people are our best friends. | B We should keep learning old skills, or they will be lost. | C Friends can teach us old skills. | D Old skills are not useful today. | =B | 下一句 If no one visits them, they will be forgotten，用“老朋友”比喻：不去学，就会被遗忘。
+%%end
+
+@ rd.main_idea
+%% 题材=科普跨学科 | 来源=https://english.henan.gov.cn/2025/11-26/3267778.html
+Every year, when winter comes, some special guests fly to Sanmenxia, a city in Henan. They are whooper swans(大天鹅). These big white birds come from the cold north. They fly a long way to spend the winter on the Yellow River, because the water there doesn't freeze(结冰) and they can find enough food.
+In November 2025, more than 4,000 swans arrived. The wetland(湿地) in Sanmenxia is a great home for birds. More than 270 kinds of birds live there or visit it.
+People in Sanmenxia love their winter guests. In 2017, the city made China's first local rules to protect swans, and November 22nd became White Swans' Day there. In winter, some roads near the lake are closed to cars, so the birds can rest quietly.
+In early March, the swans fly back to the north. They will come back next winter. As long as we protect their home, the Yellow River will always welcome them.
+%%
+[7/1] When do the swans fly back to the north? | A In November. | B In early March. | C On November 22nd. | D In summer. | =B | 最后一段 In early March, the swans fly back to the north.
+@ rd.detail
+[7/2] Why do the swans spend the winter on the Yellow River in Sanmenxia? | A Because the water doesn't freeze and there is food. | B Because people give them toys. | C Because it is hot there. | D Because they were born there. | =A | 第一段 because the water there doesn't freeze and they can find enough food.
+@ rd.word_guess
+[7/2] The word "guests" in Paragraph 1 means ____. | A 主人 | B 客人 | C 邻居 | D 老师 | =B | 天鹅每年冬天“来访”，被比作客人。
+@ rd.structure
+[7/3] Which paragraph tells us how people protect the swans? | A Paragraph 1. | B Paragraph 2. | C Paragraph 3. | D Paragraph 4. | =C | 第三段讲立法保护、设白天鹅日、冬天封路。
+[7/3] What is the best title for the passage? | A How to Cook Fish | B Winter Guests on the Yellow River | C The History of Henan | D A Trip to the North | =B | 全文讲大天鹅冬天来三门峡黄河过冬以及人们的保护，B 概括全文。
+%%end
+
+@ rd.detail
+%% 题材=中国文化 | 来源=https://www.wect.com/2026/09/28/2-giant-pandas-arrive-atlanta-under-us-china-government-agreement/ | 标题=Pandas on a Long Trip
+Two giant pandas, Ping Ping and Fu Shuang, took a long trip in September 2026. They flew from Chengdu, China, to Atlanta, a city in the US. Their plane had a funny name: the "Panda Express".
+The two pandas were both born in 2020 at a panda base in Chengdu. Now they will live at Zoo Atlanta for ten years. The zoo had no pandas after its last ones left in 2024, so many people there were very excited.
+But visitors can't see the pandas right away. The pandas need about a month to rest and get used to their new home. Zoo workers will make sure they are healthy and happy first.
+Pandas are a symbol(象征) of China. The two countries will work together to learn more about pandas and protect them.
+%%
+[6/1] When were Ping Ping and Fu Shuang born? | A In 2020. | B In 2024. | C In 2026. | =A | 第二段 both born in 2020。
+[6/2] How long will the pandas live in Atlanta? | A For a month. | B For ten years. | C For two years. | =B | 第二段 for ten years。
+@ rd.inference
+[6/2] Why can't visitors see the pandas right away? | A Because the zoo is closed. | B Because the pandas need time to rest and get used to the new home. | C Because the pandas are ill. | =B | 第三段 need about a month to rest and get used to their new home。
+@ rd.true_false
+[6/3] Which of the following is TRUE? | A The pandas flew from Beijing. | B Zoo Atlanta had pandas in 2025. | C Their plane was called the "Panda Express". | D Visitors saw them the next day. | =C | A 应为成都；B 2024 年后就没有熊猫了；D 要先休息约一个月。
+%%end
+
+@ rd.practical
+%% 题材=应用文 | 来源=原创（参考 China Daily 2026-09-30 报道：学校将开设非遗课程） | 标题=Heritage Week at Sunshine School
+Heritage Week at Sunshine School (October 26–30)
+Come and learn the skills of our grandparents!
+Monday — Paper-cutting — 3:30–4:30 p.m. — Art Room
+Tuesday — Shadow puppetry(皮影戏) — 3:30–5:00 p.m. — Music Hall
+Wednesday — Lion dance — 7:00–8:00 a.m. — Playground
+Thursday — Clay figures(泥塑) — 3:30–4:30 p.m. — Room 203
+Friday — Show Time: show your works to your parents — 2:00–4:00 p.m. — School Hall
+Notes:
+* All activities are free. Only for students in Grades 4–6.
+* Please bring your own scissors on Monday.
+* Each activity has only 20 places. Sign up with Miss Zhao before October 23.
+%%
+[6/1] Where can students learn shadow puppetry(皮影戏)? | A In the Art Room. | B In the Music Hall. | C On the playground. | D In Room 203. | =B | 周二皮影戏在 Music Hall。
+[6/2] Lily wants to learn paper-cutting. What should she bring? | A Some paper. | B Her own scissors. | C Some clay. | D Money. | =B | Notes：周一（剪纸）自带剪刀。
+[6/2] Which activity takes place in the morning? | A Paper-cutting. | B Shadow puppetry. | C Lion dance. | D Clay figures. | =C | 舞狮在 7:00–8:00 a.m.
+[6/3] How long is the shadow puppetry(皮影戏) class? | A Half an hour. | B One hour. | C One and a half hours. | D Two hours. | =C | 3:30 到 5:00 是一个半小时，需要计算。
+[7/3] Which of the following is TRUE? | A Tom, a Grade 3 student, can join the lion dance. | B Students need to pay for the clay figures class. | C Students should sign up before October 23. | D Parents can learn paper-cutting on Monday. | =C | A 只限 4~6 年级；B 活动免费；D 周五才请家长来看作品。
+%%end
+
+@ rd.practical
+%% 题材=应用文 | 来源=原创 | 标题=Class 5 Trip to Kaifeng
+Class 5 Trip to Kaifeng
+Date: Saturday, May 9
+7:30 a.m.  Meet at Zhengzhou East Railway Station
+8:10 a.m.  Take the train to Kaifeng
+9:00 a.m.  Visit Qingming Riverside Park(清明上河园)
+12:00      Lunch: try Kaifeng soup dumplings(灌汤包)
+2:00 p.m.  Visit the Iron Pagoda(铁塔)
+5:30 p.m.  Take the train back to Zhengzhou
+Please bring: a cap, a water bottle and 50 yuan for lunch.
+%%
+[5/1] Where will the students meet? | A At the Iron Pagoda. | B At Zhengzhou East Railway Station. | C At school. | =B | 7:30 在郑州东站集合。
+[5/1] What will they eat for lunch? | A Noodles. | B Soup dumplings. | C Hamburgers. | =B | 12:00 Lunch: try Kaifeng soup dumplings。
+[5/2] What do the students NOT need to bring? | A A cap. | B A water bottle. | C A camera. | =C | 要带帽子、水杯和 50 元，没有要求带相机。
+[6/2] What will the students do at 2:00 p.m.? | A Have lunch. | B Visit the Iron Pagoda. | C Take the train back. | =B | 2:00 p.m. Visit the Iron Pagoda。
+%%end
+
+@ rd.detail
+%% 题材=科普跨学科 | 来源=原创（自然科学常识） | 标题=Why Do Leaves Change Colour?
+In spring and summer, most leaves are green. Why? Leaves have something green in them. It is called chlorophyll(叶绿素). It helps the tree make food from sunlight, water and air.
+In autumn, the days get shorter and colder. Trees get less sunlight, so they stop making food. The green chlorophyll slowly goes away. Then we can see other colours, like yellow and orange. These colours were in the leaves all the time, but the green colour covered them.
+Some leaves turn red, too. This red colour is made in autumn, when there is a lot of sugar in the leaves and the nights are cool.
+At last, the leaves fall to the ground. This helps trees save water in the cold winter. Next spring, new green leaves will grow again.
+%%
+[6/1] What does chlorophyll help the tree do? | A Drink water. | B Make food. | C Fall down. | D Turn red. | =B | 第一段 It helps the tree make food from sunlight, water and air.
+@ rd.inference
+[6/2] Why do we see yellow leaves in autumn? | A Because the yellow colour comes from the sun. | B Because the green colour goes away and the yellow colour can be seen. | C Because people paint the leaves. | D Because the leaves are ill. | =B | 第二段：绿色消失后，原本就在叶子里的黄色、橙色才显现出来。
+@ rd.word_guess
+[6/2] The word "covered" in Paragraph 2 means ____. | A 盖住 | B 画出 | C 吃掉 | D 打开 | =A | 绿色“盖住”了黄色和橙色，所以之前看不见。
+@ rd.structure
+[6/3] How does the writer explain the changes? | A By telling a story about a boy. | B By following the order of the seasons. | C By comparing two cities. | D By asking readers to do a test. | =B | 文章按春夏 → 秋 → 冬 → 来年春天的顺序说明。
+@ rd.purpose
+[7/2] Where can we most probably read this passage? | A In a cookbook. | B In a science book for children. | C In a travel guide. | D In a newspaper ad. | =B | 用简单的语言解释自然现象，最可能出自少儿科普读物。
+%%end
+
+@ rd.purpose
+%% 题材=记叙情感 | 来源=原创
+Last Friday was our school sports day. I was in the 800-metre race. I had practised every morning for a month, and I really wanted to win.
+When the race began, I ran fast and soon I was in second place. Then, in front of me, a girl from Class 3 fell down. She held her leg and couldn't get up. The other runners ran past her. I stopped. If I helped her, I would lose the race. But how could I just leave her there?
+I helped her up and we walked to the finish line together. We came last. I felt a little sad, because all my hard work seemed to be for nothing.
+But then something surprising happened. Everyone stood up and clapped for us. Our PE teacher came over and said, "Today you didn't win the race, but you won something more important." The girl smiled at me and said thank you.
+On my way home, I thought about the teacher's words. Now I understand what he meant. I lost a race, but I found a friend.
+%%
+@ rd.detail
+[7/1] How long had the writer practised for the race? | A For a week. | B For a month. | C For a year. | D For a day. | =B | 第一段 I had practised every morning for a month。
+@ rd.word_guess
+[7/2] The underlined word "clapped" in Paragraph 4 means ____. | A 鼓掌 | B 大笑 | C 喊叫 | D 离开 | =A | 大家站起来为“我们”clap，结合语境是“鼓掌”。
+@ rd.purpose
+[7/3] How did the writer's feelings change? | A Hopeful → Sad → Happy. | B Sad → Hopeful → Angry. | C Happy → Angry → Sad. | D Nervous → Happy → Sad. | =A | 赛前很想赢（满怀希望），得了最后一名有点难过，被大家鼓掌、交到朋友后很高兴。
+@ rd.inference
+[7/3] What did the PE teacher mean? | A Winning the race is the most important thing. | B Helping others is more important than winning. | C The writer should practise harder. | D The race was not fair. | =B | 老师说“你赢得了更重要的东西”，指帮助他人的品质。
+@ rd.main_idea
+[7/3] What is the best title for the story? | A How to Run Fast | B A Race I Lost, a Friend I Found | C Our PE Teacher | D The Rules of the 800-metre Race | =B | 最后一句 I lost a race, but I found a friend 点题。
+%%end
+
+@ rd.detail
+%% 题材=科普跨学科 | 来源=原创（生活常识：我国垃圾分类四色垃圾桶） | 标题=Sort Your Rubbish!
+In many Chinese cities, there are four kinds of rubbish bins. They have different colours.
+The blue bin is for things we can use again, like paper, plastic bottles and glass. The green bin is for food waste(厨余垃圾), like vegetable leaves and fruit skins. The red bin is for harmful(有害的) things, like old batteries(电池) and medicine. The grey bin is for other rubbish.
+Why do we sort(分类) rubbish? Sorting makes our city cleaner. It also helps us save things. For example, old paper can become new paper, so we can cut down fewer trees.
+Let's sort our rubbish every day. It is easy, and it helps the Earth!
+%%
+[5/1] Which bin is for old batteries(电池)? | A The blue bin. | B The green bin. | C The red bin. | =C | 红色垃圾桶装有害垃圾，如旧电池。
+[5/1] Where should we put a plastic bottle? | A In the blue bin. | B In the green bin. | C In the grey bin. | =A | 蓝色桶装可回收物，如塑料瓶。
+@ rd.inference
+[6/2] Old paper can become new paper. What does this tell us? | A We don't need paper. | B Sorting rubbish helps save trees. | C Trees grow faster. | =B | 第三段：旧纸再造新纸，就能少砍树。
+@ rd.main_idea
+[6/2] What is the passage mainly about? | A How to make paper. | B How and why we sort rubbish. | C Colours we like. | =B | 前两段讲怎么分类，第三段讲为什么，最后号召大家分类。
+%%end

@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小学英语知识图谱</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<script src="data.js"></script>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1f2328;--muted:#6b6f76;--line:#e3e1da;--accent:#2f6fde;--good:#2e9d5b;--mid:#d99a1e;--bad:#d2493e;--chip:#efede7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181b;--card:#202226;--ink:#e8e6e1;--muted:#9a9ea6;--line:#33363c;--accent:#6f9dff;--chip:#2a2d33;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17181b;--card:#202226;--ink:#e8e6e1;--muted:#9a9ea6;--line:#33363c;--accent:#6f9dff;--chip:#2a2d33;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+header{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+header h1{font-size:17px;margin:0}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button,.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:8px;cursor:pointer;font:inherit}
+nav button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:default}
+.who{margin-left:auto;display:flex;gap:6px;align-items:center;color:var(--muted)}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+main{padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:1280px;margin:0 auto}
+.scroll{overflow-x:auto}
+.tab{display:none}.tab.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.muted{color:var(--muted)}.small{font-size:13px}
+.chip{display:inline-block;padding:1px 8px;border-radius:99px;background:var(--chip);font-size:12px;margin:2px 4px 2px 0;cursor:pointer;border:1px solid transparent}
+.chip.off{opacity:.35}
+.tier3{background:#fde3df;color:#9b2c22}.tier2{background:#fdf0d5;color:#8a5a00}.tier1{background:var(--chip);color:var(--muted)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tier3{background:#4a2422;color:#ffb4aa}:root:not([data-theme="light"]) .tier2{background:#3f3418;color:#ffd27a}}
+#graphWrap{display:grid;grid-template-columns:1fr 380px;gap:14px}
+#cy{height:72vh;min-height:480px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+#panel{height:72vh;min-height:480px;overflow:auto}
+@media (max-width:900px){#graphWrap{grid-template-columns:1fr}#cy{height:60vh}#panel{height:auto}}
+#panel h2{font-size:18px;margin:0 0 6px}
+#panel h3{font-size:14px;margin:14px 0 4px;color:var(--muted)}
+#panel ul{margin:0;padding-left:18px}
+.link{color:var(--accent);cursor:pointer}
+.q{border-top:1px dashed var(--line);padding:12px 0}
+.q:first-child{border-top:0}
+.qhead{display:flex;gap:8px;align-items:baseline}
+.qnum{font-weight:600;min-width:2em}
+.meta{font-size:12px;color:var(--muted)}
+.opts label{display:block;padding:3px 6px;border-radius:6px;cursor:pointer}
+.opts label:hover{background:var(--chip)}
+.essay{width:100%;min-height:180px;font:15px/1.7 inherit;font-family:inherit}
+.lines div{border-bottom:1px solid var(--line);height:30px}
+.sec{font-weight:600;margin:18px 0 4px;padding-top:10px;border-top:2px solid var(--line)}
+.ptag{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:12px;color:var(--muted)}
+.passage{white-space:pre-wrap;background:var(--chip);border-radius:8px;padding:10px 12px;margin:8px 0;font-size:14px}
+.res-ok{color:var(--good)}.res-bad{color:var(--bad)}
+.explain{font-size:13px;color:var(--muted);margin-top:4px}
+.bar{height:8px;border-radius:4px;background:var(--chip);overflow:hidden;min-width:80px}
+.bar i{display:block;height:100%}
+table{border-collapse:collapse;width:100%}
+td,th{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
+.mark button{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:2px 10px;cursor:pointer;color:var(--ink)}
+.mark button.sel.ok{background:var(--good);color:#fff}.mark button.sel.bad{background:var(--bad);color:#fff}
+textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;font-size:13px}
+.legend span{display:inline-flex;align-items:center;gap:4px;margin-right:12px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:18px;height:0;border-top:2px solid}
+@media print{header,nav,.noprint{display:none!important}main{padding:0}.card{border:0;padding:0}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<header>
+  <h1>小学英语知识图谱</h1>
+  <nav id="nav">
+    <button data-tab="graph" class="on">知识图谱</button>
+    <button data-tab="paper">出题组卷</button>
+    <button data-tab="report">诊断与训练</button>
+    <button data-tab="ai">AI 出题</button>
+  </nav>
+  <div class="who">学生 <input id="student" size="8" placeholder="姓名"></div>
+</header>
+<main>
+
+<section id="tab-graph" class="tab on">
+  <div class="card row small noprint">
+    <span class="muted">领域</span><span id="domainChips"></span>
+    <label><input type="checkbox" id="onlyCore"> 只看必考</label>
+    <label><input type="checkbox" id="showRelated" checked> 显示真题共考关联</label>
+    <label><input type="checkbox" id="showMastery"> 按当前学生掌握情况着色</label>
+    <input id="search" placeholder="搜索知识点" size="10">
+  </div>
+  <div class="legend small noprint" style="margin:-6px 0 8px 4px">
+    <span><i style="border-color:#8a8f98"></i>必须先学（hard）</span>
+    <span><i style="border-color:#b8bcc4;border-top-style:dashed"></i>建议先学（soft）</span>
+    <span><i style="border-color:#e08a2c;border-top-style:dotted"></i>真题常一起考</span>
+    <span>圆圈越大 = 真题考频越高；横向是首学年级（7 = 小升初衔接）</span>
+  </div>
+  <div id="graphWrap">
+    <div id="cy"></div>
+    <div id="panel" class="card"><p class="muted">点一个知识点，查看说明、易错点、先修关系和真题例句。</p><div id="stats"></div></div>
+  </div>
+</section>
+
+<section id="tab-paper" class="tab">
+  <div class="card noprint">
+    <div class="row">
+      <label>年级 <select id="pGrade"></select></label>
+      <label><span id="pCountLabel">基础题数</span> <input id="pCount" type="number" value="20" min="5" max="60" style="width:64px"></label>
+      <label>组卷方式 <select id="pMode"><option value="exam">按真卷结构（单选、完形、阅读、填空、书面表达）</option><option value="mix">按知识点随机</option></select></label>
+      <label>范围 <select id="pScope"><option value="all">全部知识点（按考频加权）</option><option value="domain">指定领域</option><option value="topics">指定知识点</option></select></label>
+      <span id="pScopeExtra"></span>
+      <button class="btn primary" id="pMake">生成试卷</button>
+    </div>
+    <p class="small muted" id="pRule"></p>
+  </div>
+  <div id="paperBox"></div>
+</section>
+
+<section id="tab-report" class="tab">
+  <div id="reportBox"><div class="card muted">先在「出题组卷」生成一套题，让孩子在线作答或由老师录入对错，这里会给出诊断、点评和针对性练习。</div></div>
+  <div id="practiceBox"></div>
+</section>
+
+<section id="tab-ai" class="tab">
+  <div class="card">
+    <h3 style="margin-top:0">1. 选题型、年级和难度</h3>
+    <div class="row">
+      <select id="aKind"><option value="single">单项题（选择 / 填空）</option><option value="passage">阅读理解篇章</option><option value="writing">书面表达</option></select>
+      <select id="aTheme" hidden><option>应用文</option><option>科普跨学科</option><option>中国文化</option><option>记叙情感</option></select>
+      <select id="aTopic"></select>
+      <select id="aGrade"></select>
+      <select id="aDiff"><option value="1">难度1 基础</option><option value="2" selected>难度2 标准</option><option value="3">难度3 提高</option></select>
+      <label>题数 <input id="aN" type="number" value="5" min="1" max="20" style="width:56px"></label>
+    </div>
+    <p class="small muted" id="aHint"></p>
+    <textarea id="aMat" hidden style="min-height:90px" placeholder="（可选）粘贴新闻报道（如 China Daily）的原文或要点、原文链接。AI 只取其中的事实，改写成适合孩子读的原创短文，不照抄原句。"></textarea>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">2. 直接调用大模型出题</h3>
+    <div class="row">
+      <label>模型 <select id="mProv">
+        <option value="claude">Claude（在线版内置，用你自己的 Claude 账号，不需要密钥）</option>
+        <option value="server">本机 llm.json 里配置的模型</option>
+        <option value="openai">OpenAI 兼容接口（DeepSeek、通义千问、Kimi、智谱、豆包、OpenAI）</option>
+        <option value="anthropic">Anthropic Claude API</option>
+      </select></label>
+      <select id="mPreset"></select>
+    </div>
+    <div class="row" id="mFields" style="margin-top:8px">
+      <input id="mBase" placeholder="接口地址，如 https://api.deepseek.com/v1" style="flex:2;min-width:220px">
+      <input id="mModel" placeholder="模型名" style="flex:1;min-width:120px">
+      <input id="mKey" type="password" placeholder="API Key" autocomplete="off" style="flex:1;min-width:140px">
+    </div>
+    <label class="small" style="display:block;margin-top:8px"><input type="checkbox" id="mVerify" checked> 盲解复核：出完后让模型不看答案再做一遍，答案对不上或认为有歧义的题不入库</label>
+    <div class="row" style="margin-top:8px"><button class="btn primary" id="mGo">直接出题</button><button class="btn" id="mStop" hidden>停止</button><span class="small muted" id="mStatus"></span></div>
+    <p class="small muted" id="mNote"></p>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">3. 或者：复制提示词给任意 AI，再把返回的 JSON 粘贴回来</h3>
+    <div class="row"><button class="btn" id="aMake">生成提示词</button><button class="btn" id="aCopy">复制提示词</button></div>
+    <textarea id="aPrompt" readonly style="margin-top:8px"></textarea>
+    <textarea id="aJson" placeholder='[{"topic":"te.past_simple","grade":6,"difficulty":2,"type":"choice","stem":"...","choices":[["A","..."],["B","..."]],"answer":"A","explain":"..."}]'></textarea>
+    <div class="row" style="margin-top:8px"><button class="btn primary" id="aCheck">质检并导入</button><button class="btn" id="aExport">导出我导入的题</button><span class="small muted" id="aCount"></span></div>
+  </div>
+  <div id="aResult"></div>
+</section>
+</main>
+
+<script>
+const KB = window.KB;
+const CAN_PRINT = !window.KB_HOSTED;   // 托管页面不允许打印，只保留卷面视图
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const T = Object.fromEntries(KB.topics.map(t => [t.id, t]));
+const ST = KB.exam_stats.topics;
+const GRADES = KB.levels.grades;
+const DOMAINS = [...new Set(KB.topics.map(t => t.domain))];
+const COLORS = {'语音':'#8e6cc4','词汇':'#2f9e8f','词法':'#2f6fde','时态':'#d2493e','句法':'#d98a1e','交际':'#c4508e','阅读':'#4f8a2e','写作':'#6b6f76'};
+const prereq = id => KB.dependencies.filter(d => d.topicId === id);
+const unlocks = id => KB.dependencies.filter(d => d.prerequisiteId === id);
+const related = id => KB.exam_stats.related.filter(r => r.a === id || r.b === id);
+const tierName = {3:'必考',2:'常考',1:'偶考'};
+const gname = g => GRADES[g].name;
+
+// ---------- 本地存储（每个浏览器各自保存，换设备不会同步） ----------
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch { return d } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch {} }
+};
+const extraQs = () => store.get('kb.extraQuestions', []);
+const allQs = () => KB.questions.concat(extraQs());
+const who = () => ($('#student').value.trim() || '未命名');
+$('#student').value = store.get('kb.student', '');
+$('#student').onchange = () => { store.set('kb.student', $('#student').value.trim()); renderGraphStyle(); };
+const mastery = () => store.get('kb.mastery.' + who(), {});           // {topicId: {r, w}}
+function record(results) {
+  const m = mastery();
+  for (const {q, ok} of results) { const x = m[q.topic] ||= {r: 0, w: 0}; ok ? x.r++ : x.w++; }
+  store.set('kb.mastery.' + who(), m);
+}
+
+// ---------- 年级匹配（与 scripts/kb.py 相同的规则） ----------
+function recDiff(g, tg) { const gap = g - tg; return gap < 0 ? [] : gap === 0 ? [1, 2] : gap === 1 ? [1, 2, 3] : [2, 3]; }
+function fits(q, g) { return q.grade <= g && q.grade >= g - 1 && recDiff(g, T[q.topic].grade).includes(q.difficulty); }
+function pick(pool, n, used = {}) {
+  const out = [], left = pool.slice();
+  while (left.length && out.length < n) {
+    const w = left.map(q => (1 + 2 * (ST[q.topic]?.paperRate || 0)) / (1 + 3 * (used[q.topic] || 0)));
+    let r = Math.random() * w.reduce((a, b) => a + b), i = 0;
+    while ((r -= w[i]) > 0) i++;
+    const q = left.splice(i, 1)[0]; used[q.topic] = (used[q.topic] || 0) + 1;
+    if (q.passage) {   // 短文题整组带出
+      const group = left.filter(x => x.passage === q.passage);
+      group.forEach(x => left.splice(left.indexOf(x), 1));
+      out.push(q, ...group);
+    } else out.push(q);
+  }
+  return out;
+}
+
+// ---------- 知识图谱 ----------
+let cy;
+function layout() {
+  const pos = {}, colW = 330, rowH = 50, lanePad = 34; let y = 0;
+  for (const d of DOMAINS) {
+    const cells = {}; KB.topics.filter(t => t.domain === d).forEach(t => (cells[t.grade] ||= []).push(t));
+    const rows = Math.max(...Object.values(cells).map(c => Math.ceil(c.length / 2)));
+    for (const [g, ts] of Object.entries(cells))
+      ts.forEach((t, i) => pos[t.id] = {x: (g - 3) * colW + (i % 2) * 150, y: y + Math.floor(i / 2) * rowH});
+    y += rows * rowH + lanePad;
+  }
+  return pos;
+}
+function shortName(n) { n = n.split('：')[0]; return n.length > 12 ? n.slice(0, 11) + '…' : n; }
+function initGraph() {
+  if (!window.cytoscape) { $('#cy').innerHTML = '<p class="muted" style="padding:16px">图谱组件需要联网加载（cdnjs）。离线时仍可使用出题和诊断功能。</p>'; return; }
+  const pos = layout();
+  const els = KB.topics.map(t => ({data: {id: t.id, label: shortName(t.name), domain: t.domain, size: 14 + 34 * (ST[t.id]?.paperRate || 0)}, position: pos[t.id]}))
+    .concat(KB.dependencies.map((d, i) => ({data: {id: 'e' + i, source: d.prerequisiteId, target: d.topicId, kind: d.strength}})))
+    .concat(KB.exam_stats.related.map((r, i) => ({data: {id: 'r' + i, source: r.a, target: r.b, kind: 'related'}})))
+    .concat(Object.keys(GRADES).map(g => ({data: {id: 'hdr' + g, label: GRADES[g].name}, position: {x: (g - 3) * 330 + 75, y: -50}, classes: 'hdr', selectable: false, grabbable: false})));
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  cy = cytoscape({container: $('#cy'), elements: els, layout: {name: 'preset'}, wheelSensitivity: .25, minZoom: .2, maxZoom: 3,
+    style: [
+      {selector: 'node', style: {'background-color': e => COLORS[e.data('domain')] || '#888', width: 'data(size)', height: 'data(size)', label: 'data(label)',
+        'font-size': 11, color: dark ? '#e8e6e1' : '#1f2328', 'text-valign': 'bottom', 'text-margin-y': 3, 'text-wrap': 'wrap', 'text-max-width': 130}},
+      {selector: 'node.hdr', style: {'background-opacity': 0, width: 1, height: 1, 'font-size': 18, 'font-weight': 600, 'text-valign': 'center', color: dark ? '#9a9ea6' : '#6b6f76', events: 'no'}},
+      {selector: 'edge', style: {width: 1.2, 'line-color': '#8a8f98', 'target-arrow-color': '#8a8f98', 'target-arrow-shape': 'triangle', 'arrow-scale': .7, 'curve-style': 'bezier', opacity: .55}},
+      {selector: 'edge[kind="soft"]', style: {'line-style': 'dashed', 'line-color': '#b8bcc4', 'target-arrow-color': '#b8bcc4'}},
+      {selector: 'edge[kind="related"]', style: {'line-style': 'dotted', 'line-color': '#e08a2c', 'target-arrow-shape': 'none', width: 1.6}},
+      {selector: '.faded', style: {opacity: .08}},
+      {selector: 'node.hl', style: {'border-width': 3, 'border-color': '#f5b400'}},
+      {selector: 'edge.hl', style: {opacity: 1, width: 2.2}},
+      {selector: '.hidden', style: {display: 'none'}},
+    ]});
+  cy.fit(undefined, 20);
+  cy.on('tap', 'node', e => T[e.target.id()] && showTopic(e.target.id()));
+  cy.on('tap', e => { if (e.target === cy) cy.elements().removeClass('faded hl'); });
+  renderGraphStyle();
+}
+const domainOn = Object.fromEntries(DOMAINS.map(d => [d, true]));
+$('#domainChips').innerHTML = DOMAINS.map(d => `<span class="chip" data-d="${d}" style="border-color:${COLORS[d]}">${d}</span>`).join('');
+$('#domainChips').onclick = e => { const d = e.target.dataset.d; if (!d) return; domainOn[d] = !domainOn[d]; e.target.classList.toggle('off'); renderGraphStyle(); };
+['onlyCore', 'showRelated', 'showMastery'].forEach(id => $('#' + id).onchange = renderGraphStyle);
+$('#search').oninput = () => { const s = $('#search').value.trim(); if (!s || !cy) return; const t = KB.topics.find(t => t.name.includes(s) || t.id.includes(s)); if (t) showTopic(t.id); };
+function masteryColor(id) {
+  const x = mastery()[id]; if (!x) return '#c9ccd1';
+  const a = x.r / (x.r + x.w); return a >= .8 ? '#2e9d5b' : a >= .5 ? '#d99a1e' : '#d2493e';
+}
+function renderGraphStyle() {
+  if (!cy) return;
+  const core = $('#onlyCore').checked, rel = $('#showRelated').checked, mc = $('#showMastery').checked;
+  cy.nodes().not('.hdr').forEach(n => {
+    const t = T[n.id()];
+    n.toggleClass('hidden', !domainOn[t.domain] || (core && ST[t.id]?.tier !== 3));
+    n.style('background-color', mc ? masteryColor(t.id) : COLORS[t.domain]);
+  });
+  cy.edges('[kind="related"]').toggleClass('hidden', !rel);
+}
+function topicLink(id) { return `<span class="link" data-topic="${id}">${esc(T[id].name)}</span>`; }
+document.addEventListener('click', e => { const id = e.target.dataset?.topic; if (id) { switchTab('graph'); showTopic(id); } });
+function showTopic(id) {
+  const t = T[id], s = ST[id] || {}, qs = allQs().filter(q => q.topic === id), m = mastery()[id];
+  if (cy) {
+    cy.elements().removeClass('hl').addClass('faded');
+    const n = cy.getElementById(id), nb = n.closedNeighborhood();
+    nb.removeClass('faded').addClass('hl');
+    cy.animate({center: {eles: n}, duration: 250});
+  }
+  const byD = [1, 2, 3].map(d => qs.filter(q => q.difficulty === d).length);
+  $('#panel').innerHTML = `
+    <h2>${esc(t.name)}</h2>
+    <div class="small"><span class="chip" style="cursor:default;background:${COLORS[t.domain]};color:#fff">${t.domain}·${t.sub}</span>
+      <span class="chip tier${s.tier || 1}" style="cursor:default">${tierName[s.tier || 1]} ${Math.round((s.paperRate || 0) * 100)}% 的真卷出现</span>
+      <span class="chip" style="cursor:default">首学：${gname(t.grade)}</span>${t.stretch ? '<span class="chip" style="cursor:default">衔接/拓展</span>' : ''}</div>
+    <p>${esc(t.desc)}</p>
+    <div class="small muted">课标：${esc(t.std)}</div>
+    ${m ? `<p class="small">${esc(who())}：答对 ${m.r} / ${m.r + m.w}</p>` : ''}
+    <h3>掌握标准</h3><ul>${t.evidence.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+    <h3>孩子常见错误</h3><ul>${t.errors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+    <h3>教学建议</h3><p>${esc(t.tips)}</p>
+    <h3>先学（${prereq(id).length}）</h3><ul>${prereq(id).map(d => `<li>${topicLink(d.prerequisiteId)} <span class="meta">${d.strength === 'hard' ? '必须' : '建议'}：${esc(d.reason)}</span></li>`).join('') || '<li class="muted">无</li>'}</ul>
+    <h3>学完可以学（${unlocks(id).length}）</h3><ul>${unlocks(id).map(d => `<li>${topicLink(d.topicId)}</li>`).join('') || '<li class="muted">无</li>'}</ul>
+    ${related(id).length ? `<h3>真题中常一起考</h3><ul>${related(id).map(r => `<li>${topicLink(r.a === id ? r.b : r.a)} <span class="meta">${r.count} 道题</span></li>`).join('')}</ul>` : ''}
+    <h3>真题例句</h3><ul class="small">${(s.examples || []).slice(0, 4).map(e => `<li>${esc(e.text)} <span class="meta">${esc(e.src)}</span></li>`).join('') || '<li class="muted">暂无</li>'}</ul>
+    <h3>题库：${qs.length} 题（基础 ${byD[0]} / 标准 ${byD[1]} / 提高 ${byD[2]}）</h3>
+    <div class="row"><button class="btn primary" onclick="startPractice(['${id}'])">练这个点</button><button class="btn" onclick="aiFor('${id}')">让 AI 再出几题</button></div>`;
+}
+function renderStats() {
+  const tiers = [3, 2, 1].map(k => KB.topics.filter(t => (ST[t.id]?.tier || 1) === k).length);
+  $('#stats').innerHTML = `<p class="small">知识点 <b>${KB.topics.length}</b> · 先修关系 <b>${KB.dependencies.length}</b> · 真题共考关联 <b>${KB.exam_stats.related.length}</b> · 题库 <b>${allQs().length}</b> 题<br>
+    依据 <b>${KB.exam_stats.papers}</b> 份河南小升初/分班真卷统计：必考 ${tiers[0]}、常考 ${tiers[1]}、偶考 ${tiers[2]}</p>
+    <h3>考频最高的 12 个点</h3><ol class="small">${KB.topics.slice().sort((a, b) => (ST[b.id]?.paperRate || 0) - (ST[a.id]?.paperRate || 0)).slice(0, 12)
+      .map(t => `<li>${topicLink(t.id)} <span class="meta">${Math.round(ST[t.id].paperRate * 100)}%</span></li>`).join('')}</ol>`;
+}
+
+// ---------- 出题组卷 ----------
+const gradeOpts = Object.entries(GRADES).map(([g, x]) => `<option value="${g}">${x.name}</option>`).join('');
+$('#pGrade').innerHTML = gradeOpts; $('#pGrade').value = 6;
+$('#aGrade').innerHTML = gradeOpts; $('#aGrade').value = 6;
+function updateRule() {
+  const g = +$('#pGrade').value, x = GRADES[g];
+  $('#pRule').textContent = `${$('#pMode')?.value === 'exam' ? '按真卷结构时，“基础题数”是单选和词汇填空的总数，另外整篇带出完形、2~3 篇不同题材的阅读和 1 道书面表达。' : ''}${x.name}：词汇 ${x.band}，单句不超过 ${x.maxWords} 词，已学语法：${x.grammar}。只出首学年级不晚于 ${x.name} 的知识点；学过很久的点不出基础题，刚学的点不出提高题。`;
+}
+$('#pGrade').onchange = updateRule; updateRule();
+$('#pMode').onchange = () => { $('#pCountLabel').textContent = $('#pMode').value === 'exam' ? '基础题数' : '题数'; updateRule(); };
+$('#pScope').onchange = () => {
+  const v = $('#pScope').value;
+  $('#pScopeExtra').innerHTML = v === 'domain' ? `<select id="pDomain">${DOMAINS.map(d => `<option>${d}</option>`).join('')}</select>`
+    : v === 'topics' ? `<select id="pTopics" multiple size="6" style="min-width:240px">${KB.topics.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select>` : '';
+};
+let paper = null;
+// 真卷结构：单选 → 完形 → 阅读（不同题材 2~3 篇）→ 词汇/语篇填空 → 书面表达
+function groupsOf(qs) { const m = new Map(); qs.forEach(q => q.passage && (m.get(q.passage) || m.set(q.passage, []).get(q.passage)).push(q)); return [...m.values()]; }
+const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
+function makeExam(g, n) {
+  const all = allQs(), fit = all.filter(q => fits(q, g));
+  const groups = groupsOf(all.filter(q => q.grade <= g)).filter(gr => gr.filter(q => fits(q, g)).length >= 2);
+  const cloze = groups.filter(gr => gr[0].topic === 'rd.cloze'), pfill = groups.filter(gr => gr[0].topic === 'rd.passage_fill');
+  const reading = shuffle(groups.filter(gr => !['rd.cloze', 'rd.passage_fill'].includes(gr[0].topic) && gr[0].type === 'choice'));
+  const read = [], themes = new Set();
+  for (const gr of reading) if (read.length < (g >= 6 ? 3 : 2) && !themes.has(gr[0].theme || gr[0].passage)) { read.push(gr); themes.add(gr[0].theme || gr[0].passage); }
+  const nonP = fit.filter(q => !q.passage && q.type !== 'writing' && !['阅读', '写作'].includes(T[q.topic].domain));
+  const essays = fit.filter(q => q.type === 'writing');
+  const secs = [
+    ['单项选择', pick(nonP.filter(q => q.type === 'choice'), Math.round(n * .6))],
+    ['完形填空', g >= 6 && cloze.length ? shuffle(cloze)[0] : []],
+    ['阅读理解', read.flat()],
+    ['词汇运用', pick(nonP.filter(q => q.type === 'fill'), Math.round(n * .4)).concat(g >= 6 && pfill.length ? shuffle(pfill)[0] : [])],
+    ['书面表达', g >= 5 && essays.length ? [shuffle(essays)[0]] : []],
+  ].filter(x => x[1].length);
+  const qs = [], sections = [];
+  secs.forEach(([name, list]) => { sections.push({name, start: qs.length}); qs.push(...list); });
+  return {qs, sections};
+}
+$('#pMake').onclick = () => {
+  const g = +$('#pGrade').value, n = +$('#pCount').value, scope = $('#pScope').value;
+  if ($('#pMode').value === 'exam' && scope === 'all') {
+    const {qs, sections} = makeExam(g, n);
+    paper = {id: Date.now(), grade: g, qs, sections, answers: {}, marks: {}, scores: {}};
+    return renderPaper();
+  }
+  let pool = allQs().filter(q => fits(q, g));
+  if (scope === 'domain') pool = pool.filter(q => T[q.topic].domain === $('#pDomain').value);
+  if (scope === 'topics') {
+    const ids = [...$('#pTopics').selectedOptions].map(o => o.value);
+    pool = allQs().filter(q => ids.includes(q.topic) && q.grade <= g);   // 指定知识点时放宽到本年级及以下
+  }
+  if (!pool.length) { $('#paperBox').innerHTML = '<div class="card">这个范围在该年级没有合适的题。可以换年级，或去「AI 出题」补题。</div>'; return; }
+  const qs = pick(pool.filter(q => q.type !== 'writing'), n);
+  qs.sort((a, b) => !!a.passage - !!b.passage || a.difficulty - b.difficulty);
+  paper = {id: Date.now(), grade: g, qs, sections: [], answers: {}, marks: {}, scores: {}};
+  renderPaper();
+};
+const RUBRIC = '第一档 9–10 分：要点齐全，语言准确连贯，几乎无错；第二档 7–8 分：要点基本齐全，少量错误不影响理解；第三档 5–6 分：漏 1~2 个要点或错误较多；第四档 3–4 分：要点缺失较多，错误影响理解；第五档 0–2 分：与题目无关或只写了几个词。词数不足酌情扣 1~2 分，书写、大小写、标点错误酌情扣分。';
+const wcount = t => (String(t).match(/[A-Za-z]+(?:'[a-z]+)?/g) || []).length;
+function essayHtml(q, i, mode) {
+  let h = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1"><div>${esc(q.stem)}</div>
+    <div class="small" style="margin-top:4px">要求：${esc(q.require)}</div>
+    ${q.points?.length ? `<div class="small">要点：${q.points.map(esc).join('；')}</div>` : ''}
+    <div style="text-align:center;font-weight:600;margin:8px 0">${esc(q.title)}</div>
+    ${mode === 'answer' || mode === 'print' ? '' : `<div class="meta">${esc(T[q.topic].name)} · ${gname(q.grade)} · 满分 10 分</div>`}`;
+  if (mode === 'answer') h += `<textarea class="essay" data-essay="${i}" placeholder="在这里写作文…"></textarea><div class="small muted">已写 <b data-wc="${i}">0</b> 词，要求不少于 ${q.minWords} 词</div>`;
+  else if (mode === 'print') h += `<div class="lines">${'<div></div>'.repeat(Math.ceil(q.minWords / 9) + 2)}</div>`;
+  else h += `${q.phrases ? `<div class="explain">好句：${esc(q.phrases)}</div>` : ''}<div class="explain">评分标准：${RUBRIC}</div>
+      <div class="passage">范文（${wcount(q.sample)} 词）：\n${esc(q.sample)}</div>
+      ${mode === 'mark' ? `<label class="small noprint">得分 <input type="number" min="0" max="10" step="0.5" data-score="${i}" style="width:70px"> / 10</label>` : ''}`;
+  return h + '</div></div>';
+}
+function qHtml(q, i, mode) {
+  if (q.type === 'writing') return essayHtml(q, i, mode);
+  const head = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1">${esc(q.stem)}
+    ${mode === 'answer' || mode === 'print' ? '' : `<div class="meta">${esc(T[q.topic].name)} · ${gname(q.grade)} · 难度${q.difficulty}</div>`}`;
+  let body = '';
+  if (mode === 'answer') {
+    body = q.type === 'choice'
+      ? `<div class="opts">${q.choices.map(([k, v]) => `<label><input type="radio" name="q${i}" value="${k}"> ${k}. ${esc(v)}</label>`).join('')}</div>`
+      : `<input data-fill="${i}" style="min-width:260px" placeholder="填写答案">`;
+  } else if (mode === 'mark' || mode === 'teacher') {
+    body = (q.type === 'choice' ? `<div class="small">${q.choices.map(([k, v]) => `${k}. ${esc(v)}`).join('　')}</div>` : '')
+      + `<div class="explain">答案：${esc(q.type === 'choice' ? q.answer : q.answer.join(' / '))}　${esc(q.explain)}</div>`
+      + (mode === 'mark' ? `<div class="mark noprint" data-i="${i}" style="margin-top:4px"><button data-v="1">对</button> <button data-v="0">错</button></div>` : '');
+  } else {
+    body = q.type === 'choice' ? `<div class="small">${q.choices.map(([k, v]) => `${k}. ${esc(v)}`).join('　')}</div>` : '<div style="border-bottom:1px solid var(--line);width:260px;height:22px"></div>';
+  }
+  return head + body + '</div></div>';
+}
+function renderPaper(mode = 'answer') {
+  let lastP = null;
+  const items = paper.qs.map((q, i) => {
+    const p = q.passage && q.passage !== lastP ? passageHtml(q) : '';
+    lastP = q.passage || null;
+    const sec = (paper.sections || []).findIndex(x => x.start === i);
+    const head = sec >= 0 ? `<div class="sec">${'一二三四五六'[sec]}、${paper.sections[sec].name}</div>` : '';
+    return `${head}<div class="q">${p}${qHtml(q, i, mode)}</div>`;
+  }).join('');
+  const dist = [1, 2, 3].map(d => paper.qs.filter(q => q.difficulty === d).length);
+  $('#paperBox').innerHTML = `<div class="card">
+    <div class="row noprint" style="margin-bottom:10px">
+      <b>${gname(paper.grade)} · ${paper.qs.length} 题</b><span class="small muted">${paper.sections?.length ? paper.sections.map(x => x.name).join('、') + '；' : ''}基础 ${dist[0]} / 标准 ${dist[1]} / 提高 ${dist[2]}，覆盖 ${new Set(paper.qs.map(q => q.topic)).size} 个知识点</span>
+      <span style="flex:1"></span>
+      <button class="btn ${mode === 'answer' ? 'primary' : ''}" onclick="renderPaper('answer')">孩子在线作答</button>
+      <button class="btn ${mode === 'mark' ? 'primary' : ''}" onclick="renderPaper('mark')">老师录入对错</button>
+      <button class="btn ${mode === 'print' ? 'primary' : ''}" onclick="renderPaper('print');CAN_PRINT&&setTimeout(print,50)">${CAN_PRINT ? '打印' : ''}学生卷</button>
+      <button class="btn ${mode === 'teacher' ? 'primary' : ''}" onclick="renderPaper('teacher');CAN_PRINT&&setTimeout(print,50)">${CAN_PRINT ? '打印' : ''}答案卷</button>
+    </div>
+    ${items}
+    <div class="noprint" style="margin-top:12px">${mode === 'answer' ? '<button class="btn primary" onclick="submitAnswers()">交卷并诊断</button>' : mode === 'mark' ? '<button class="btn primary" onclick="submitMarks()">按录入结果诊断</button> <span class="small muted">没点的题按“未作答”跳过</span>' : ''}</div>
+  </div>`;
+  document.querySelectorAll('[data-essay]').forEach(t => t.oninput = () => { document.querySelector(`[data-wc="${t.dataset.essay}"]`).textContent = wcount(t.value); });
+  if (mode === 'mark') document.querySelectorAll('.mark').forEach(m => m.onclick = e => {
+    const v = e.target.dataset.v; if (v === undefined) return;
+    paper.marks[m.dataset.i] = v === '1';
+    m.querySelectorAll('button').forEach(b => b.className = b.dataset.v === v ? 'sel ' + (v === '1' ? 'ok' : 'bad') : '');
+  });
+}
+function passageHtml(q) {
+  const paras = q.passage.split('\n').filter(x => x.trim()), numbered = q.theme && q.theme !== '应用文' && paras.length >= 3;
+  const text = numbered ? paras.map((x, k) => '①②③④⑤⑥⑦⑧⑨⑩'[k] + ' ' + x).join('\n') : q.passage;
+  const src = q.source ? (/^https?:/.test(q.source) ? `<a href="${esc(q.source)}" target="_blank" rel="noopener">改编自真实报道</a>` : esc(q.source)) : '';
+  return `${q.title ? `<div style="text-align:center;font-weight:600;margin-top:10px">${esc(q.title)}</div>` : ''}<div class="passage">${esc(text)}</div>
+    ${q.theme || src ? `<div class="ptag noprint">${q.theme ? `<span class="chip" style="cursor:default">${esc(q.theme)}</span>` : ''}${src}</div>` : ''}`;
+}
+const norm = s => String(s).toLowerCase().replace(/[’‘]/g, "'").replace(/[.,!?;:，。！？；：]/g, ' ').replace(/\s+/g, ' ').trim();
+function isRight(q, given) {
+  if (given == null || given === '') return false;
+  return q.type === 'choice' ? given === q.answer : q.answer.some(a => norm(a) === norm(given));
+}
+async function submitAnswers() {
+  const res = paper.qs.map((q, i) => {
+    if (q.type === 'writing') return {q, given: document.querySelector(`[data-essay="${i}"]`).value.trim()};
+    const given = q.type === 'choice' ? document.querySelector(`input[name="q${i}"]:checked`)?.value : document.querySelector(`[data-fill="${i}"]`).value;
+    return {q, given, ok: isRight(q, given)};
+  });
+  for (const r of res.filter(r => r.q.type === 'writing' && r.given)) {
+    if (!canUseModel()) break;
+    switchTab('report');
+    $('#reportBox').innerHTML = '<div class="card">正在批改作文…（推理模型可能要 1~2 分钟）</div>';
+    try { r.essay = await gradeEssay(r.q, r.given); r.score = Math.max(0, Math.min(10, +r.essay.score || 0)); }
+    catch (e) { r.essayError = e.message || String(e); }
+  }
+  finish(res);
+}
+function submitMarks() {
+  finish(paper.qs.map((q, i) => {
+    if (q.type !== 'writing') return {q, ok: paper.marks[i]};
+    const v = document.querySelector(`[data-score="${i}"]`)?.value;
+    return {q, score: v === '' || v == null ? undefined : +v, ok: undefined};
+  }).filter(r => r.ok !== undefined || r.score !== undefined));
+}
+function essayPrompt(q, text) {
+  const topics = KB.topics.filter(t => ['词法', '时态', '句法', '词汇', '写作'].includes(t.domain)).map(t => `${t.id} ${t.name}`).join('；');
+  return `你是河南小升初英语阅卷老师。请按评分标准给${gname(q.grade)}学生的作文打分（满分 10 分），按这个年级的水平要求，不要求超出年级的语法和词汇。
+题目：${q.title}
+任务：${q.stem}
+要求：${q.require}
+要点：${(q.points || []).join('；')}
+评分标准：${RUBRIC}
+学生作文（${wcount(text)} 词）：
+"""
+${text}
+"""
+只输出 JSON：{"score":7,"level":"第二档","good":"一句话说优点","errors":[{"wrong":"原文中的错误片段","right":"改正后","why":"中文原因","topic":"知识点id"}],"missing":"漏掉的要点，没有就写空字符串","suggestion":"一两句中文改进建议","polished":"保留学生原意、只改错误和不地道之处的版本"}
+errors 最多 6 条，按严重程度排序；topic 只能从下面选：${topics}`;
+}
+async function gradeEssay(q, text) {
+  ctl = new AbortController();
+  const m = String(await callModel(essayPrompt(q, text))).match(/\{[\s\S]*\}/);
+  if (!m) throw new Error('批改结果格式不对');
+  return JSON.parse(m[0]);
+}
+function canUseModel() {
+  const p = $('#mProv').value;
+  return p === 'claude' ? !!sampleFn : p === 'server' ? !!proxy?.configured : !!$('#mKey').value.trim();
+}
+
+// ---------- 诊断：错题 → 知识点 → 沿先修边回溯 ----------
+function finish(res) {
+  if (!res.length) return;
+  const essays = res.filter(r => r.q.type === 'writing');
+  res = res.filter(r => r.q.type !== 'writing');
+  for (const r of essays) if (r.score !== undefined) {
+    res.push({q: r.q, ok: r.score >= 7, given: `${r.score} 分`});
+    for (const e of r.essay?.errors || []) if (T[e.topic])   // 作文里的错误也记到对应知识点上
+      res.push({q: {topic: e.topic, stem: '作文：' + e.wrong, type: 'fill', answer: [e.right], explain: e.why}, ok: false, given: e.wrong});
+  }
+  record(res);
+  const by = {};
+  res.forEach(r => { const x = by[r.q.topic] ||= {r: 0, n: 0, wrong: []}; x.n++; if (r.ok) x.r++; else x.wrong.push(r); });
+  const weak = Object.keys(by).filter(id => by[id].r / by[id].n < .67);
+  const strong = Object.keys(by).filter(id => by[id].r === by[id].n);
+  const m = mastery();
+  // 回溯：薄弱点的“必须先学”里，哪些也薄弱（根因）或从没测过（需要补测）
+  const roots = {}, untested = new Set();
+  for (const id of weak) {
+    for (const d of prereq(id).filter(d => d.strength === 'hard')) {
+      const p = d.prerequisiteId, pm = m[p];
+      if (pm && pm.r / (pm.r + pm.w) < .67) (roots[id] ||= []).push(p);
+      else if (!pm) untested.add(p);
+    }
+  }
+  const rate = Math.round(res.filter(r => r.ok).length / res.length * 100);
+  const order = weak.flatMap(id => [...(roots[id] || []), id]).filter((v, i, a) => a.indexOf(v) === i)
+    .sort((a, b) => T[a].grade - T[b].grade);
+  const comment = makeComment(rate, res.length, weak, strong, roots, by);
+  $('#reportBox').innerHTML = `<div class="card">
+      <div class="row"><h2 style="margin:0">诊断报告 · ${esc(who())}</h2><span class="muted">${gname(paper.grade)} · ${res.length} 题 · 正确率 ${rate}%</span><span style="flex:1"></span>${CAN_PRINT ? '<button class="btn noprint" onclick="print()">打印报告</button>' : ''}</div>
+      <h3>老师点评</h3><div>${comment}</div>
+    </div>
+    ${essays.map(essayReport).join('')}
+    <div class="card"><h3 style="margin-top:0">各知识点得分</h3><div class="scroll"><table><tr><th>知识点</th><th>得分</th><th></th><th>本次错题</th></tr>
+      ${Object.entries(by).sort((a, b) => a[1].r / a[1].n - b[1].r / b[1].n).map(([id, x]) => {
+        const a = x.r / x.n, c = a >= .8 ? 'var(--good)' : a >= .5 ? 'var(--mid)' : 'var(--bad)';
+        return `<tr><td>${topicLink(id)}<div class="meta">${tierName[ST[id]?.tier || 1]}</div></td><td>${x.r}/${x.n}</td><td><div class="bar"><i style="width:${a * 100}%;background:${c}"></i></div></td>
+          <td class="small">${x.wrong.map(w => w.q.type === 'writing' ? `书面表达《${esc(w.q.title)}》得 ${esc(w.given)}，见下方作文批改` : `${esc(w.q.stem)}<div class="explain">正确：${esc(w.q.type === 'choice' ? w.q.answer + '. ' + Object.fromEntries(w.q.choices)[w.q.answer] : w.q.answer[0])}${w.given ? '；孩子答：' + esc(w.given) : ''}。${esc(w.q.explain)}</div>`).join('') || '—'}</td></tr>`;
+      }).join('')}</table></div></div>
+    ${weak.length ? `<div class="card"><h3 style="margin-top:0">针对性训练</h3>
+      <p class="small">按“先补先修、再练本点”的顺序：${order.map(topicLink).join(' → ')}</p>
+      ${untested.size ? `<p class="small muted">这些先修点还没测过，建议顺带测一下，判断是不是根因：${[...untested].map(topicLink).join('、')}</p>` : ''}
+      <div class="row"><button class="btn primary" onclick='startPractice(${JSON.stringify(order)})'>开始针对性训练</button>
+      ${untested.size ? `<button class="btn" onclick='startPractice(${JSON.stringify([...untested])})'>补测先修点</button>` : ''}</div></div>` : ''}`;
+  $('#practiceBox').innerHTML = '';
+  switchTab('report');
+}
+function essayReport(r) {
+  const q = r.q, e = r.essay;
+  if (!r.given && r.score === undefined) return `<div class="card"><h3 style="margin-top:0">书面表达：${esc(q.title)}</h3><p class="muted">没有作答。</p></div>`;
+  const head = `<h3 style="margin-top:0">书面表达：${esc(q.title)} ${r.score !== undefined ? `<span class="${r.score >= 7 ? 'res-ok' : 'res-bad'}">${r.score} / 10${e?.level ? '（' + esc(e.level) + '）' : ''}</span>` : ''}</h3>`;
+  const mine = r.given && !/^\d/.test(r.given) ? `<div class="passage">孩子的作文（${wcount(r.given)} 词）：\n${esc(r.given)}</div>` : '';
+  const ai = e ? `<p><b>优点：</b>${esc(e.good || '')}</p>${e.missing ? `<p><b>漏掉的要点：</b>${esc(e.missing)}</p>` : ''}
+    ${e.errors?.length ? `<div class="scroll"><table><tr><th>原文</th><th>改正</th><th>原因</th><th>知识点</th></tr>${e.errors.map(x => `<tr><td class="res-bad">${esc(x.wrong)}</td><td class="res-ok">${esc(x.right)}</td><td class="small">${esc(x.why)}</td><td class="small">${T[x.topic] ? topicLink(x.topic) : ''}</td></tr>`).join('')}</table></div>` : ''}
+    <p><b>建议：</b>${esc(e.suggestion || '')}</p>${e.polished ? `<div class="passage">修改后的版本：\n${esc(e.polished)}</div>` : ''}` :
+    `<p class="small muted">${r.essayError ? '自动批改失败：' + esc(r.essayError) + '。' : r.score === undefined ? '还没有评分：可在「AI 出题」页接入模型后自动批改，或在「老师录入对错」里给作文打分。' : ''}</p>`;
+  return `<div class="card">${head}${mine}${ai}<details><summary class="small">范文与评分标准</summary><div class="passage">${esc(q.sample)}</div><p class="small muted">${RUBRIC}</p></details></div>`;
+}
+function makeComment(rate, n, weak, strong, roots, by) {
+  const lv = rate >= 90 ? '整体掌握很扎实' : rate >= 75 ? '整体掌握较好，有个别薄弱点' : rate >= 60 ? '基础基本具备，但有几处明显漏洞' : '基础还不稳，需要从先修知识点补起';
+  let s = `<p>本次共 ${n} 题，正确率 ${rate}%，${lv}。</p>`;
+  if (strong.length) s += `<p><b>掌握较好：</b>${strong.slice(0, 6).map(id => esc(T[id].name)).join('、')}。</p>`;
+  for (const id of weak.sort((a, b) => (ST[b]?.paperRate || 0) - (ST[a]?.paperRate || 0)).slice(0, 5)) {
+    const t = T[id], x = by[id];
+    s += `<p><b>${x.n === 1 ? '待确认' : '需要加强'}：${esc(t.name)}</b>（${x.r}/${x.n}${ST[id]?.tier === 3 ? '，小升初必考' : ''}${x.n === 1 ? '，只考了 1 题，建议再练 2~3 题确认' : ''}）。这类题孩子常见的错误是：${t.errors.slice(0, 2).map(esc).join('；')}。建议：${esc(t.tips)}`;
+    if (roots[id]) s += ` <span class="res-bad">根因提示：</span>先修点「${roots[id].map(p => esc(T[p].name)).join('」「')}」也不扎实，建议先复习它再回到本点。`;
+    s += '</p>';
+  }
+  if (!weak.length) s += '<p>没有明显薄弱点，可以升高一个年级或难度继续练习。</p>';
+  return s;
+}
+
+// ---------- 自适应练习：答对两题升难度，答错降难度；基础题也错就回溯到先修点 ----------
+let pr = null;
+function startPractice(ids) {
+  const g = +$('#pGrade').value;
+  pr = {queue: ids.slice(), g, d: {}, streak: 0, done: [], seen: new Set(), cur: null};
+  switchTab('report'); nextPractice();
+}
+function nextPractice() {
+  while (pr.queue.length) {
+    const id = pr.queue[0], g = Math.max(pr.g, T[id].grade);
+    const d = pr.d[id] ??= Math.min(...(recDiff(g, T[id].grade).length ? recDiff(g, T[id].grade) : [1]));
+    const cand = allQs().filter(q => q.topic === id && q.type !== 'writing' && q.grade <= g && !pr.seen.has(q.id));
+    const q = cand.sort((a, b) => Math.abs(a.difficulty - d) - Math.abs(b.difficulty - d) || b.grade - a.grade)[0];
+    const doneHere = pr.done.filter(r => r.q.topic === id).length;
+    if (!q || doneHere >= 4) { pr.queue.shift(); pr.streak = 0; continue; }
+    pr.cur = q; pr.seen.add(q.id); return renderPractice();
+  }
+  const ok = pr.done.filter(r => r.ok).length;
+  $('#practiceBox').innerHTML = `<div class="card"><h3 style="margin-top:0">练习完成</h3><p>共 ${pr.done.length} 题，答对 ${ok} 题。结果已记入 ${esc(who())} 的掌握情况，可以在知识图谱里勾选「按掌握情况着色」查看。</p></div>`;
+}
+function renderPractice() {
+  const q = pr.cur;
+  $('#practiceBox').innerHTML = `<div class="card"><div class="row"><b>针对性训练</b><span class="small muted">当前：${esc(T[q.topic].name)} · 难度 ${q.difficulty}　剩余知识点 ${pr.queue.length}</span></div>
+    ${q.passage ? `<div class="passage">${esc(q.passage)}</div>` : ''}<div class="q">${qHtml(q, 0, 'answer')}</div>
+    <div id="prFb"></div><button class="btn primary" id="prGo">提交</button></div>`;
+  $('#practiceBox').scrollIntoView({behavior: 'smooth'});
+  $('#prGo').onclick = () => {
+    const given = q.type === 'choice' ? document.querySelector('input[name="q0"]:checked')?.value : document.querySelector('[data-fill="0"]').value;
+    const ok = isRight(q, given); pr.done.push({q, ok}); record([{q, ok}]);
+    const id = q.topic;
+    if (ok) { if (++pr.streak >= 2) { pr.d[id] = Math.min(3, pr.d[id] + 1); pr.streak = 0; } }
+    else {
+      pr.streak = 0;
+      if (pr.d[id] > 1) pr.d[id]--;
+      else {   // 基础题也错：回溯到一个必须先学的点
+        const p = prereq(id).filter(d => d.strength === 'hard').map(d => d.prerequisiteId).find(p => !pr.queue.includes(p) && !pr.done.some(r => r.q.topic === p));
+        if (p) pr.queue.unshift(p);
+      }
+    }
+    $('#prFb').innerHTML = `<p class="${ok ? 'res-ok' : 'res-bad'}">${ok ? '答对了！' : '答错了。'}正确答案：${esc(q.type === 'choice' ? q.answer : q.answer[0])}</p>
+      <div class="explain">${esc(q.explain)}${ok ? '' : '<br>提示：' + esc(T[id].tips)}</div>`;
+    $('#prGo').textContent = '下一题'; $('#prGo').onclick = nextPractice;
+  };
+}
+
+// ---------- AI 出题：提示词 + 导入质检 ----------
+$('#aTopic').innerHTML = KB.topics.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('');
+function aiFor(id) { switchTab('ai'); $('#aKind').value = id.startsWith('wr.') && !['wr.mechanics', 'wr.sentence'].includes(id) ? 'writing' : 'single'; syncKind(); $('#aTopic').value = id; $('#aGrade').value = Math.max(T[id].grade, +$('#aGrade').value); makePrompt(); }
+const THEMES = {
+  '应用文': '海报、通知、活动指南、车票行程、社团招新、菜单、时间表等真实生活材料，考查快速检索和整合信息',
+  '科普跨学科': '动植物、自然现象、环境保护、简单科技原理、地理历史小知识，用英语学其他学科的知识',
+  '中国文化': '传统节日、非遗手艺、古代故事、中国科技成就、河南本地文化，用英语讲中国故事',
+  '记叙情感': '校园或家庭故事，有情节和人物情感变化，蕴含道理',
+};
+const VOCAB = g => g <= 4 ? '三四年级核心词' : g <= 6 ? '课标二级词表（约 500 词）及人教 PEP 三至六年级常用词' : '课标二级词表 + 三级词表（超出二级的词不超过 6%）';
+function syncKind() {
+  const k = $('#aKind').value, cur = $('#aTopic').value;
+  $('#aTheme').hidden = $('#aMat').hidden = k !== 'passage';
+  $('#aTopic').hidden = k === 'passage';
+  const list = KB.topics.filter(t => k === 'writing' ? t.domain === '写作' && !['wr.mechanics', 'wr.sentence'].includes(t.id) : true);
+  $('#aTopic').innerHTML = list.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('');
+  $('#aTopic').value = list.some(t => t.id === cur) ? cur : list[0].id;
+  $('#aN').closest('label').hidden = k === 'writing';
+}
+function passagePrompt(g, d, n) {
+  const gp = GRADES[g], theme = $('#aTheme').value, mat = $('#aMat').value.trim(), dr = KB.levels.difficulty[d];
+  return `你是河南小升初英语命题老师。请为【${gp.name}】学生写一篇阅读理解短文，并出 ${n} 道选择题。
+题材：${theme}（${THEMES[theme]}）
+${mat ? '素材如下。只取其中的事实，用自己的话改写成适合孩子读的原创短文，不要照抄原句；人名、地名、数字、时间必须与素材一致；不要添加素材里没有的事实或细节（包括人物做了什么、活动过程），可以补充一两句通用的背景解释：\n"""\n' + mat.slice(0, 6000) + '\n"""' : '请写原创内容；涉及真实事物时只用确定无误、众所周知的事实。'}
+短文要求：${gp.passageWords} 词左右，分 3~5 段，段与段之间只用一个换行，不要空行；词汇只用${VOCAB(g)}，个别超纲词必须在词后用括号加中文注释，如 wetland(湿地)，全文注释不超过 6 个；单句一般不超过 ${gp.maxWords + 5} 词。
+难度：${d}·${dr.name}。难度越高，推理、主旨、结构类题越多，细节题越少。
+题目要求（体现新课标趋势：少送分题，多考思维）：
+- 题型搭配：细节理解 1~2 道；词义猜测 1 道；推理判断 1 道；主旨/最佳标题或篇章结构 1 道${theme === '记叙情感' ? '；人物情感变化或作者意图 1 道' : ''}${theme === '应用文' ? '；至少 1 道需要简单计算或整合多处信息' : ''}。
+- 每题 ${g >= 6 ? 4 : 3} 个选项，只有一个正确答案，答案在文中有明确依据；干扰项似是而非，不出现明显荒谬的选项。
+- 如果出“最佳标题”题，title 留空。
+- 每题标注考查的知识点 topic，只能从下面选：rd.detail 细节理解、rd.word_guess 词义猜测、rd.inference 推理判断、rd.main_idea 主旨标题、rd.structure 篇章结构、rd.purpose 作者意图与情感、rd.true_false 判断正误、rd.practical 应用文信息提取。
+只输出 JSON：{"title":"","theme":"${theme}","passage":"第一段\n第二段\n第三段","questions":[{"topic":"rd.detail","type":"choice","stem":"...","choices":[["A","..."],["B","..."],["C","..."],["D","..."]],"answer":"B","explain":"中文解析，指出原文依据"}]}`;
+}
+function writingPrompt(t, g) {
+  const gp = GRADES[g], min = g <= 5 ? 40 : g === 6 ? 60 : 80;
+  return `你是河南小升初英语命题老师。请为【${gp.name}】学生出一道书面表达题，话题方向：「${t.name}」（${t.desc}），并写一篇范文。
+要求：
+- 仿照河南小升初、新初一分班考真题：用中文写情境任务，如“假如你是李华……请以“……”为题……”，给出 3~5 个要点。
+- 词数要求 ${min} 词；范文只用${VOCAB(g)}，本年级已学语法：${gp.grammar}；范文比要求多 10~20 词，覆盖全部要点，句子简单、地道。
+- 给 3~4 个可以套用的好句型。
+只输出 JSON：{"title":"英文题目","stem":"中文任务","require":"不少于${min}词；……","points":["要点1","要点2"],"minWords":${min},"phrases":"句型1 / 句型2","sample":"范文"}`;
+}
+function makePrompt() {
+  const k = $('#aKind').value, g0 = +$('#aGrade').value;
+  if (k === 'passage') { $('#aHint').textContent = `阅读篇章约 ${GRADES[g0].passageWords} 词。题目会标注各自考查的阅读技能。`; $('#aPrompt').value = passagePrompt(g0, +$('#aDiff').value, +$('#aN').value); return; }
+  if (k === 'writing') { $('#aHint').textContent = `书面表达范文会按${GRADES[g0].name}词表检查。`; $('#aPrompt').value = writingPrompt(T[$('#aTopic').value], g0); return; }
+  const t = T[$('#aTopic').value], g = +$('#aGrade').value, d = +$('#aDiff').value, n = +$('#aN').value, gp = GRADES[g], dr = KB.levels.difficulty[d];
+  const rec = recDiff(g, t.grade);
+  $('#aHint').textContent = !rec.length ? `「${t.name}」首学在${gname(t.grade)}，${gp.name}还没学，不建议出。` : rec.includes(d) ? `推荐难度 ${rec.join('、')}，当前合适。` : `${gp.name}做这个点推荐难度 ${rec.join('、')}，当前 ${d} 可能${d < rec[0] ? '太简单' : '太难'}。`;
+  const vocab = g <= 4 ? '三四年级核心词' : g <= 6 ? '课标二级词表（约 500 词）及人教 PEP 五六年级常用词' : '课标二级词表 + 三级词表（超出二级的词不超过 6%，生词加中文注释，如 twins(双胞胎)）';
+  const ex = (ST[t.id]?.examples || []).slice(0, 4).map(e => '- ' + e.text).join('\n');
+  $('#aPrompt').value = `你是河南小学英语教研老师，为【${gp.name}】学生出【${n}】道题，考查知识点「${t.name}」。
+
+知识点说明：${t.desc}
+掌握标准：${t.evidence.join('；')}
+孩子常见错误（干扰项从这里来）：${t.errors.join('；')}
+
+难度：${d}·${dr.name} —— ${dr.rule}
+年级约束：
+- 词汇只用${vocab}；人名用 Tom、Amy、Mike 等常见名。
+- 单句不超过 ${gp.maxWords} 个词；本年级已学语法：${gp.grammar}。不得用到没学过的语法点。
+- 风格：${gp.style}
+质量要求：
+- 每题只有一个正确答案；把正确答案代入后句子必须完全地道。
+- 干扰项必须是该年级孩子真会犯的错误形式，不出现明显荒谬的选项，也不出现两个都对的选项。
+- 题干给足判断依据，不靠常识或背景知识。
+- 每题写一句中文解析，点明判断依据。
+${ex ? '参考真题风格（不要照抄）：\n' + ex + '\n' : ''}
+只输出 JSON 数组，每项：
+{"topic":"${t.id}","grade":${g},"difficulty":${d},"type":"choice","stem":"...","choices":[["A","..."],["B","..."],["C","..."]],"answer":"A","explain":"..."}
+填空题用 "type":"fill"，"answer" 为可接受答案列表，如 ["goes"]。`;
+}
+$('#aMake').onclick = makePrompt;
+['aTopic', 'aGrade', 'aDiff', 'aN', 'aTheme'].forEach(id => $('#' + id).onchange = makePrompt);
+$('#aKind').onchange = () => { syncKind(); makePrompt(); };
+$('#aCopy').onclick = () => {
+  makePrompt(); const done = () => { $('#aCopy').textContent = '已复制'; setTimeout(() => $('#aCopy').textContent = '复制', 1200); };
+  const sel = () => { $('#aPrompt').focus(); $('#aPrompt').select(); $('#aCopy').textContent = '已选中，请按复制'; };
+  try { navigator.clipboard.writeText($('#aPrompt').value).then(done, sel); } catch { sel(); }
+};
+
+// 词汇分级检查（与 scripts/kb.py 的 out_of_band 同一规则）
+const WL = KB.wordlists, LV = KB.levels;
+const IRR = {}; Object.entries(WL.irregular).forEach(([b, fs]) => fs.forEach(f => IRR[f] = b));
+Object.assign(IRR, {better: 'good', best: 'good', worse: 'bad', worst: 'bad', more: 'many', most: 'many', children: 'child', men: 'man', women: 'woman', feet: 'foot', teeth: 'tooth', am: 'be', is: 'be', are: 'be', was: 'be', were: 'be', has: 'have', had: 'have', does: 'do', did: 'do', went: 'go', mine: 'my', yours: 'your', hers: 'her', ours: 'our', theirs: 'their'});
+const G34 = new Set(LV.grade34.toLowerCase().split(/\s+/)), L2 = new Set([...WL.level2, ...G34, ...LV.pep_extra.toLowerCase().split(/\s+/)]), L3 = new Set([...L2, ...WL.level3]);
+const BAND = {3: G34, 4: G34, 5: L2, 6: L2, 7: L3};
+const FUNC = new Set('a an the and or but so because if when than then as to of in on at by for with from about into up down out off over after before not no yes'.split(' '));
+function cands(w) {
+  const out = [w]; if (IRR[w]) out.push(IRR[w]);
+  for (const [suf, rep] of [['ies','y'],['ied','y'],['ier','y'],['iest','y'],['ily','y'],['es',''],['s',''],['ed',''],['ed','e'],['d',''],['ing',''],['ing','e'],['er',''],['er','e'],['est',''],['est','e'],['ly',''],['ves','f'],['ves','fe'],['th',''],['iness','y'],['ness',''],['ful',''],['less','']])
+    if (w.endsWith(suf) && w.length - suf.length >= 2) { const s = w.slice(0, -suf.length) + rep; out.push(s); if (s.length > 2 && s.at(-1) === s.at(-2)) out.push(s.slice(0, -1)); if (IRR[s]) out.push(IRR[s]); }
+  if (w.startsWith('un') && w.length > 4) out.push(...cands(w.slice(2)));
+  return out;
+}
+function outOfBand(text, g) {
+  text = text.replace(/[A-Za-z' -]+\s*[（(][^)）]*[一-鿿][^)）]*[)）]/g, ' ').replace(/\d+(st|nd|rd|th)\b/g, ' ');
+  const ok = (w, set) => cands(w).some(c => set.has(c)) || w.split('-').every(x => cands(x).some(c => set.has(c)));
+  const bad = [];
+  for (const tok of text.match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g) || []) {
+    let w = tok.toLowerCase();
+    if (w.endsWith("n't")) w = {"can't": 'can', "won't": 'will'}[w] || w.slice(0, -3);
+    w = w.replace(/'(s|re|m|ve|ll|d)$/, '');
+    if (w.length <= 1 || FUNC.has(w) || ok(w, BAND[g])) continue;
+    if (tok[0] === tok[0].toUpperCase() && !ok(w, L3)) continue;
+    bad.push(tok);
+  }
+  return bad;
+}
+function checkQ(q) {
+  const errs = [], warns = [];
+  const t = T[q.topic]; if (!t) return {errs: ['知识点 id 不存在：' + q.topic], warns};
+  if (![3, 4, 5, 6, 7].includes(q.grade)) errs.push('年级应为 3~7');
+  if (q.grade < t.grade) errs.push(`知识点首学在${gname(t.grade)}，不能出给${gname(q.grade)}`);
+  if (![1, 2, 3].includes(q.difficulty)) errs.push('难度应为 1~3');
+  if (!q.stem) errs.push('缺少题干');
+  if (q.type === 'choice') {
+    if (!Array.isArray(q.choices) || q.choices.length < 2) errs.push('选项不足');
+    else {
+      if (!q.choices.some(c => c[0] === q.answer)) errs.push('答案不在选项里');
+      if (new Set(q.choices.map(c => c[1].trim())).size !== q.choices.length) errs.push('有重复选项');
+    }
+  } else if (q.type === 'fill') { if (!Array.isArray(q.answer) || !q.answer.length) errs.push('填空题答案应为数组'); }
+  else if (q.type === 'writing') {
+    if (!q.sample) errs.push('缺少范文');
+    else if (wcount(q.sample) < q.minWords) errs.push(`范文只有 ${wcount(q.sample)} 词，少于要求的 ${q.minWords} 词`);
+    if (!errs.length) {
+      const bad = outOfBand(q.sample, q.grade);
+      if (bad.length / wcount(q.sample) > GRADES[q.grade].newWords + .02) warns.push('范文可能超纲的词：' + [...new Set(bad)].join(', '));
+      if (allQs().some(x => x.type === 'writing' && x.title === q.title && x.grade === q.grade)) warns.push('题库里已有同名作文题');
+    }
+    return {errs, warns};
+  }
+  else errs.push('type 只能是 choice、fill 或 writing');
+  if (errs.length) return {errs, warns};
+  const right = q.type === 'choice' ? q.choices.find(c => c[0] === q.answer)[1] : '';
+  let text = q.stem + ' ' + right + ' ' + (q.passage || '');
+  (q.stem.match(/"([^"]+)"/g) || []).forEach(x => text = text.replace(x.slice(1, -1), ' '));
+  const bad = q.topic.startsWith('ph.') ? [] : outOfBand(text, q.grade), words = (text.match(/[A-Za-z]+/g) || []).length || 1;
+  if (bad.length / words > GRADES[q.grade].newWords) warns.push('可能超纲的词：' + [...new Set(bad)].join(', '));
+  const longest = Math.max(...q.stem.split(/[.!?—]/).map(s => s.trim().split(/\s+/).filter(Boolean).length));
+  if (!q.passage && longest > GRADES[q.grade].maxWords + 2) warns.push(`句子 ${longest} 词，超过${gname(q.grade)}建议长度`);
+  if (!recDiff(q.grade, t.grade).includes(q.difficulty)) warns.push(`${gname(q.grade)}做这个点推荐难度 ${recDiff(q.grade, t.grade).join('、')}`);
+  if (allQs().some(x => x.stem === q.stem && JSON.stringify(x.choices) === JSON.stringify(q.choices))) errs.push('与题库已有题重复');
+  return {errs, warns};
+}
+$('#aCheck').onclick = () => {
+  let arr;
+  try {
+    const raw = $('#aJson').value.trim(), v = raw.startsWith('[') ? parseArr(raw) : parseObj(raw);
+    arr = normalizeAi(v, {g: +$('#aGrade').value, d: +$('#aDiff').value, topic: $('#aKind').value === 'passage' ? 'rd.detail' : $('#aTopic').value, theme: $('#aTheme').value, mat: $('#aMat').value});
+  } catch (e) { $('#aResult').innerHTML = `<p class="res-bad">JSON 格式不对：${esc(e.message)}</p>`; return; }
+  importQs(arr);
+};
+function importQs(arr, extraErr = null, source = 'AI') {
+  const kept = [], rows = [];
+  arr.forEach((q, i) => {
+    q.grade = +q.grade; q.difficulty = +q.difficulty;
+    const {errs, warns} = checkQ(q);
+    const x = !errs.length && extraErr?.(q, i); if (x) errs.push(x);
+    rows.push(`<tr><td>${i + 1}</td><td>${q.type === 'writing' ? `<b>${esc(q.title)}</b><div class="small">${esc(q.stem)}</div><div class="passage">${esc(q.sample || '')}</div>` : ''}${q.passage && (i === 0 || arr[i - 1].passage !== q.passage) ? passageHtml(q) : ''}${q.type === 'writing' ? '' : esc(q.stem || '')}${q.choices ? `<div class="small muted">${q.choices.map(c => esc(c[0] + '. ' + c[1])).join('　')}</div>` : ''}${q.type === 'writing' ? '' : `<div class="small muted">答案：${esc(Array.isArray(q.answer) ? q.answer.join(' / ') : q.answer)}　${esc(q.explain || '')}</div>`}</td><td>${errs.length ? `<span class="res-bad">未导入：${esc(errs.join('；'))}</span>` : warns.length ? `<span style="color:var(--mid)">已导入，请人工核对：${esc(warns.join('；'))}</span>` : '<span class="res-ok">通过</span>'}</td></tr>`);
+    if (!errs.length) kept.push({...q, id: 'ai-' + Date.now() + '-' + i, source, review: warns.length ? '待核' : '机检通过'});
+  });
+  store.set('kb.extraQuestions', extraQs().concat(kept));
+  $('#aResult').innerHTML = `<div class="card"><p>导入 ${kept.length} / ${arr.length} 题。机检查格式、年级词汇和句长${extraErr ? '，盲解复核查答案是否唯一' : ''}；<b>入库前仍建议老师看一遍</b>。</p>
+    <div class="scroll"><table>${rows.join('')}</table></div>
+    ${kept.length ? `<div class="row" style="margin-top:8px"><button class="btn" onclick="startPractice(['${esc(arr[0].topic)}'])" ${arr[0].type === 'writing' ? 'hidden' : ''}>用这些题练一练</button></div>` : ''}</div>`;
+  updateCount(); renderStats();
+}
+$('#aExport').onclick = () => {
+  $('#aResult').innerHTML = `<p class="small">下面是你导入的 ${extraQs().length} 道题（JSON），全选复制后可以发给我合并进正式题库：</p><textarea id="aOut" readonly>${esc(JSON.stringify(extraQs(), null, 1))}</textarea>`;
+  $('#aOut').select();
+};
+// ---------- 直接调用大模型 ----------
+const PRESETS = {
+  'DeepSeek V4 Pro（质量优先）': ['openai', 'https://api.deepseek.com/v1', 'deepseek-v4-pro'],
+  'DeepSeek Flash（速度优先）': ['openai', 'https://api.deepseek.com/v1', 'deepseek-flash'],
+  '通义千问': ['openai', 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'qwen-plus'],
+  'Kimi': ['openai', 'https://api.moonshot.cn/v1', 'moonshot-v1-8k'],
+  '智谱 GLM': ['openai', 'https://open.bigmodel.cn/api/paas/v4', 'glm-4-flash'],
+  '豆包': ['openai', 'https://ark.cn-beijing.volces.com/api/v3', ''],
+  'OpenAI': ['openai', 'https://api.openai.com/v1', 'gpt-4o-mini'],
+  'Claude': ['anthropic', 'https://api.anthropic.com', 'claude-opus-5-5'],
+};
+let sampleFn = null, proxy = null, ctl = null;
+const llmCfg = () => store.get('kb.llm', {prov: '', base: '', model: '', key: ''});
+function saveLlm() { store.set('kb.llm', {prov: $('#mProv').value, base: $('#mBase').value.trim(), model: $('#mModel').value.trim(), key: $('#mKey').value.trim()}); }
+function renderModelUi() {
+  const p = $('#mProv').value, custom = p === 'openai' || p === 'anthropic';
+  $('#mFields').hidden = !custom; $('#mPreset').hidden = !custom;
+  $('#mPreset').innerHTML = '<option value="">选常用接口…</option>' + Object.entries(PRESETS).filter(([, v]) => v[0] === p).map(([k]) => `<option>${k}</option>`).join('');
+  $('#mNote').textContent = {
+    claude: '用的是你在 claude.ai 的账号额度。第一次出题时页面会请你允许它使用 Claude。',
+    server: `密钥只在本机 llm.json 里，浏览器拿不到。当前模型：${proxy?.model || ''}`,
+    openai: proxy ? '通过本机 kb.py serve 转发。API Key 只保存在这台电脑的浏览器里。' : 'API Key 只保存在这台电脑的浏览器里。有的接口不允许浏览器直接调用，出错时请改用 python3 scripts/kb.py serve 打开本页。',
+    anthropic: proxy ? '通过本机 kb.py serve 转发。API Key 只保存在这台电脑的浏览器里。' : 'API Key 只保存在这台电脑的浏览器里。',
+  }[p];
+}
+async function initModels() {
+  const opt = v => $(`#mProv option[value="${v}"]`);
+  if (window.KB_HOSTED) {   // 托管页面禁止访问外部网址，只能用内置 Claude
+    opt('openai').disabled = opt('anthropic').disabled = opt('server').disabled = true;
+    opt('openai').textContent += '（只在本地版可用）'; opt('anthropic').textContent += '（只在本地版可用）'; opt('server').hidden = true;
+  } else {
+    opt('claude').hidden = true;
+    if (location.protocol.startsWith('http')) {
+      try { const r = await fetch('/api/llm-config'); if (r.ok) proxy = await r.json(); } catch {}
+    }
+    if (!proxy?.configured) { opt('server').disabled = true; opt('server').textContent += '（未配置）'; }
+  }
+  const c = llmCfg();
+  $('#mBase').value = c.base || ''; $('#mModel').value = c.model || ''; $('#mKey').value = c.key || '';
+  const ok = v => v && !opt(v).disabled && !opt(v).hidden;
+  $('#mProv').value = ok(c.prov) ? c.prov : ['claude', 'server', 'openai'].find(ok);
+  renderModelUi();
+  if (window.KB_HOSTED && window.claude?.use) {
+    sampleFn = await claude.use('sample');
+    if (!sampleFn) { opt('claude').disabled = true; opt('claude').textContent += '（当前环境不可用）'; $('#mGo').disabled = true; $('#mNote').textContent = '这里用不了内置 Claude，可以改用下面的“复制提示词”。'; }
+  }
+}
+$('#mProv').onchange = () => { saveLlm(); renderModelUi(); };
+$('#mPreset').onchange = () => { const v = PRESETS[$('#mPreset').value]; if (!v) return; $('#mBase').value = v[1]; $('#mModel').value = v[2]; saveLlm(); if (!v[2]) $('#mModel').placeholder = '填推理接入点 ID'; };
+['mBase', 'mModel', 'mKey'].forEach(id => $('#' + id).onchange = saveLlm);
+
+async function postJson(url, body, headers = {}) {
+  const r = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json', ...headers}, body: JSON.stringify(body), signal: ctl.signal});
+  const t = await r.text(); let j; try { j = JSON.parse(t); } catch { j = null; }
+  if (!r.ok) throw new Error(`接口返回 ${r.status}：${(j?.error?.message || j?.error || t).toString().slice(0, 200)}`);
+  return j;
+}
+async function callModel(prompt) {
+  const p = $('#mProv').value;
+  if (p === 'claude') {
+    try { return (await sampleFn(prompt, {signal: ctl.signal, cache: false})).text; }
+    catch (e) { throw new Error({not_granted: '你没有允许这个页面使用 Claude', rate_limited: '调用太频繁或额度用完，请稍后再试', cancelled: '已停止', sampling_disabled: '这个账号不能在页面里使用 Claude'}[e.code] || e.message || String(e)); }
+  }
+  if (p === 'server') return (await postJson('/api/llm', {prompt})).text;
+  const cfg = {provider: p, base_url: $('#mBase').value.trim(), model: $('#mModel').value.trim(), api_key: $('#mKey').value.trim()};
+  if (!cfg.api_key || (p === 'openai' && (!cfg.base_url || !cfg.model))) throw new Error('请先填写接口地址、模型名和 API Key');
+  if (proxy) return (await postJson('/api/llm', {prompt, cfg})).text;
+  try {
+    if (p === 'openai') return (await postJson(cfg.base_url.replace(/\/$/, '') + '/chat/completions', {model: cfg.model, messages: [{role: 'user', content: prompt}]}, {Authorization: 'Bearer ' + cfg.api_key})).choices[0].message.content;
+    const r = await postJson((cfg.base_url || 'https://api.anthropic.com').replace(/\/$/, '') + '/v1/messages',
+      {model: cfg.model || 'claude-opus-5-5', max_tokens: 16000, fallbacks: 'default', messages: [{role: 'user', content: prompt}]},
+      {'x-api-key': cfg.api_key, 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01', 'anthropic-dangerous-direct-browser-access': 'true'});
+    if (r.stop_reason === 'refusal') throw new Error('模型拒绝了这次请求');
+    return r.content.filter(b => b.type === 'text').map(b => b.text).join('');
+  } catch (e) {
+    if (e.name === 'TypeError') throw new Error('浏览器无法直接连这个接口（多半是跨域限制）。请在项目目录运行 python3 scripts/kb.py serve，再打开 http://localhost:8765');
+    throw e;
+  }
+}
+const parseObj = t => { const m = String(t).match(/\{[\s\S]*\}/); if (!m) throw new Error('模型没有返回 JSON'); return JSON.parse(m[0]); };
+function normalizeAi(v, ctx) {   // 单题数组 / 篇章对象 / 作文对象 → 题目数组
+  const {g, d, topic, theme, mat} = ctx;
+  if (Array.isArray(v)) return v.filter(q => q && typeof q === 'object').map(q => ({...q, topic: q.topic || topic, grade: +(q.grade || g), difficulty: +(q.difficulty || d)}));
+  if (v.passage && Array.isArray(v.questions)) {
+    const url = (mat || '').match(/https?:\/\/\S+/)?.[0];
+    const hasTitleQ = v.questions.some(q => /title/i.test(q.stem || ''));
+    return v.questions.map(q => ({...q, topic: T[q.topic] && q.topic.startsWith('rd.') ? q.topic : 'rd.detail', type: q.type || 'choice', grade: g, difficulty: d,
+      passage: String(v.passage).split('\n').map(x => x.trim()).filter(Boolean).join('\n'), theme: v.theme || theme, title: hasTitleQ ? '' : (v.title || ''), source: url || (mat ? 'AI 根据素材改写' : 'AI 原创')}));
+  }
+  if (v.sample) return [{topic, grade: g, difficulty: d, type: 'writing', title: v.title || '', stem: v.stem || '', require: v.require || '',
+    points: v.points || [], minWords: +v.minWords || 60, phrases: v.phrases || '', sample: v.sample, explain: ''}];
+  throw new Error('看不懂这段 JSON：既不是题目数组，也不是篇章或作文');
+}
+const parseArr = t => { const m = String(t).match(/\[[\s\S]*\]/); if (!m) throw new Error('模型没有返回题目 JSON'); return JSON.parse(m[0]); };
+function blindPrompt(qs, g) {
+  const shared = qs.length && qs.every(q => q.passage && q.passage === qs[0].passage) ? qs[0].passage : '';
+  const lines = qs.map((q, i) => `${i + 1}. ${q.stem}${q.passage && !shared ? '\n（短文）' + q.passage : ''}${(q.choices || []).map(c => `\n   ${c[0]}. ${c[1]}`).join('')}`);
+  if (shared) lines.unshift('短文：\n' + shared + '\n');
+  return `你是认真的英语老师。下面是给${gname(g)}学生的英语题，请独立作答，每题给一个最佳答案。选择题回答选项字母；填空题回答要填的内容，多个空用逗号隔开。如果某题没有正确答案或不止一个正确答案，answer 写 "?"，并在 note 里说明原因。
+只输出 JSON 数组：[{"i":1,"answer":"B","note":""}]
+
+${lines.join('\n')}`;
+}
+function blindErr(q, a) {
+  if (!a) return '复核没有作答';
+  const got = String(a.answer ?? '').trim();
+  if (got === '?') return '复核认为有歧义：' + (a.note || '');
+  const ok = q.type === 'choice' ? got.slice(0, 1).toUpperCase() === q.answer : isRight(q, got);
+  return ok ? null : `复核作答为 ${got}，与给定答案不一致`;
+}
+$('#mStop').onclick = () => ctl?.abort();
+$('#mGo').onclick = async () => {
+  makePrompt();
+  const k = $('#aKind').value, t = k === 'passage' ? 'rd.detail' : $('#aTopic').value, g = +$('#aGrade').value, d = +$('#aDiff').value;
+  if (k !== 'passage' && !recDiff(g, T[t].grade).length) { $('#mStatus').textContent = `「${T[t].name}」首学在${gname(T[t].grade)}，${gname(g)}还没学。`; return; }
+  ctl = new AbortController(); $('#mGo').disabled = true; $('#mStop').hidden = false;
+  try {
+    $('#mStatus').textContent = '正在出题…（快速模型约半分钟，DeepSeek-V4-Pro 等推理模型要 1~3 分钟）';
+    const reply = await callModel($('#aPrompt').value);
+    const arr = normalizeAi(k === 'single' ? parseArr(reply) : parseObj(reply), {g, d, topic: t, theme: $('#aTheme').value, mat: $('#aMat').value});
+    if (k === 'single') arr.forEach(q => Object.assign(q, {topic: t, grade: g, difficulty: d}));
+    let solved = {};
+    if ($('#mVerify').checked && k !== 'writing' && arr.length) {
+      $('#mStatus').textContent = `出了 ${arr.length} 题，正在盲解复核…`;
+      parseArr(await callModel(blindPrompt(arr, g))).forEach(a => solved[+a.i] = a);
+    }
+    importQs(arr, $('#mVerify').checked && k !== 'writing' ? (q, i) => blindErr(q, solved[i + 1]) : null, 'AI·' + ($('#mProv').value === 'claude' ? 'Claude' : $('#mModel').value || proxy?.model || $('#mProv').value));
+    $('#mStatus').textContent = '完成';
+  } catch (e) {
+    $('#mStatus').innerHTML = `<span class="res-bad">${esc(e.message || e)}</span>`;
+  } finally { $('#mGo').disabled = false; $('#mStop').hidden = true; }
+};
+
+function updateCount() { $('#aCount').textContent = `浏览器里已导入 ${extraQs().length} 道 AI 题（只保存在本机这个浏览器）`; }
+
+// ---------- 启动 ----------
+function switchTab(name) {
+  document.querySelectorAll('#nav button').forEach(b => b.classList.toggle('on', b.dataset.tab === name));
+  document.querySelectorAll('.tab').forEach(s => s.classList.toggle('on', s.id === 'tab-' + name));
+  if (name === 'graph' && cy) { cy.resize(); renderGraphStyle(); }
+}
+$('#nav').onclick = e => e.target.dataset.tab && switchTab(e.target.dataset.tab);
+renderStats(); initGraph(); makePrompt(); updateCount(); initModels();
+</script>
+</body>
+</html>

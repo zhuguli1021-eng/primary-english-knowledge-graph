@@ -1,0 +1,16 @@
+{
+  "_说明": "复制为 llm.json 再填写。llm.json 里有密钥，不要发给别人。provider 填 openai（所有 OpenAI 兼容接口）或 anthropic。",
+  "provider": "openai",
+  "base_url": "https://api.deepseek.com/v1",
+  "model": "deepseek-v4-pro",
+  "api_key": "",
+  "_常用接口": {
+    "DeepSeek": ["openai", "https://api.deepseek.com/v1", "deepseek-v4-pro（或更快的 deepseek-flash）"],
+    "通义千问": ["openai", "https://dashscope.aliyuncs.com/compatible-mode/v1", "qwen-plus"],
+    "Kimi": ["openai", "https://api.moonshot.cn/v1", "moonshot-v1-8k"],
+    "智谱": ["openai", "https://open.bigmodel.cn/api/paas/v4", "glm-4-flash"],
+    "豆包": ["openai", "https://ark.cn-beijing.volces.com/api/v3", "填你的推理接入点 ID"],
+    "OpenAI": ["openai", "https://api.openai.com/v1", "gpt-4o-mini"],
+    "Claude": ["anthropic", "https://api.anthropic.com", "claude-opus-5-5"]
+  }
+}

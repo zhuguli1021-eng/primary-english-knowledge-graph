@@ -1,0 +1,122 @@
+# 语音与词汇。格式见 scripts/kb.py 的 build_questions 说明。
+# 读音题用 [ ] 标出画线部分。
+
+@ ph.letters
+[3/1] 字母 D 后面紧挨着的字母是哪一个？ | A C | B E | C F | =B | 字母表顺序 C、D、E，D 后面是 E。
+[3/1] 下面哪一组是同一个字母的大写和小写？ | A Bd | B Qp | C Gg | =C | G 的小写是 g；b/d、p/q 容易写反。
+[3/2] 下面哪个字母是元音字母？ | A y | B u | C w | =B | 五个元音字母是 a、e、i、o、u，y 不是。
+[4/2] 单词 desk 中有几个辅音字母？ | A 1 | B 2 | C 3 | =C | d、s、k 是辅音字母，只有 e 是元音字母。
+[6/2] 单词 playground 中共有几个辅音字母？ | A 6 | B 7 | C 8 | =B | p、l、y、g、r、n、d 是辅音字母（y 在这里不作元音字母计），a、o、u 是元音字母，共 7 个。
+[6/3] 按字母表顺序排列，哪一组是对的？ | A milk, mother, map | B map, milk, mother | C mother, map, milk | =B | 第一个字母都是 m，比较第二个字母：a 在 i 前，i 在 o 前。
+
+@ ph.short_vowels
+[3/1] 哪个单词中 a 的读音和 cat 中的 a 相同？ | A bag | B cake | C name | =A | bag 是闭音节，a 读短音，和 cat 相同；cake、name 中 a 读字母本身的音。
+[3/1] 哪个单词中 e 的读音和 bed 中的 e 相同？ | A he | B pen | C me | =B | pen 是闭音节，e 读短音。
+[3/2] 下面哪一个单词的元音读音和其他两个不同？ | A dog | B box | C bus | =C | dog、box 中 o 读短音 /ɒ/，bus 中 u 读 /ʌ/。
+[4/2] 下面哪一组单词中括号内字母的读音相同？ | A b[i]g, p[i]g | B b[i]g, b[i]ke | C s[i]t, n[i]ce | =A | big、pig 都是闭音节，i 读短音；bike、nice 是开音节。
+[5/3] 下面哪个单词中括号内字母的读音与其他三个不同？ | A h[o]t | B d[o]ll | C fr[o]g | D h[o]me | =D | hot、doll、frog 都是闭音节，o 读短音；home 是开音节，o 读字母本身的音。
+
+@ ph.magic_e
+[3/1] 哪个单词中 i 的读音和 bike 中的 i 相同？ | A fish | B kite | C milk | =B | kite 和 bike 都是“i+辅音+e”，i 读字母本身的音。
+[3/2] 下面哪个单词中 a 读字母本身的音？ | A hat | B cake | C black | =B | cake 是 a-e 结构，a 读 /eɪ/。
+[4/2] cap 加上字母 e 变成 cape，a 的读音会怎样？ | A 不变 | B 变成字母 A 本身的音 | C 不发音 | =B | 末尾加不发音的 e 后变成开音节，a 读字母本身的音。
+[5/2] 下面哪个单词中括号内字母的读音与其他两个不同？ | A c[u]te | B [u]se | C b[u]s | =C | cute、use 是开音节，u 读 /juː/；bus 是闭音节，u 读 /ʌ/。
+[6/3] 下面哪个单词虽然以 e 结尾，但前面的元音不读字母本身的音？ | A home | B have | C late | D nine | =B | have 是常见例外，a 读短音 /æ/。
+
+@ ph.letter_teams
+[4/1] 哪个单词中括号内字母组合的读音和 tree 中的 ee 相同？ | A t[ea] | B br[ea]d | C h[ea]d | =A | tea 中 ea 读 /iː/；bread、head 中 ea 读 /e/。
+[4/2] 下面哪个单词中 oo 的读音与 book 中的 oo 相同？ | A food | B look | C room | =B | look、book 中 oo 读短音 /ʊ/；food、room 读长音 /uː/。
+[5/2] 下面哪组单词中括号内字母的读音相同？ | A c[ow], sn[ow] | B h[ow], n[ow] | C sh[ow], d[ow]n | =B | how、now 中 ow 都读 /aʊ/；snow、show 中 ow 读 /əʊ/。
+[5/2] 下面哪个单词中括号内字母的读音与其他三个不同？ | A [th]ank | B [th]ree | C [th]is | D [th]in | =C | this 中 th 读浊音 /ð/，其他三个读清音 /θ/。
+[6/3] 下面哪个单词中括号内字母的读音与其他三个不同？ | A b[ir]d | B n[ur]se | C w[or]k | D sh[or]t | =D | bird、nurse、work 中都读 /ɜː/；short 中 or 读 /ɔː/。
+[7/3] 下面哪个单词中括号内字母的读音与其他三个不同？ | A m[ea]t | B br[ea]kfast | C r[ea]d | D t[ea]cher | =B | breakfast 中 ea 读 /e/，其他三个读 /iː/。
+
+@ ph.same_sound
+[5/1] 判断画线部分读音是否相同：n[a]me — c[a]ke | A 相同 | B 不同 | =A | 两个词都是 a-e 开音节，a 读 /eɪ/。
+[5/2] 判断画线部分读音是否相同：f[a]ther — c[a]t | A 相同 | B 不同 | =B | father 中 a 读 /ɑː/，cat 中 a 读 /æ/。
+[6/2] 选出括号内字母读音与其他三个不同的一项。 | A p[ea]ch | B [ea]t | C h[ea]d | D cl[ea]n | =C | head 中 ea 读 /e/，其他读 /iː/。
+[6/3] 选出括号内字母读音与其他三个不同的一项。 | A [ch]air | B tea[ch]er | C s[ch]ool | D lun[ch] | =C | school 中 ch 读 /k/，其他读 /tʃ/。
+[7/3] 选出括号内字母读音与其他三个不同的一项。 | A watch[ed] | B play[ed] | C clean[ed] | D call[ed] | =A | 清辅音 /tʃ/ 后的 -ed 读 /t/，其他浊音后读 /d/。
+[7/3] 选出括号内字母读音与其他三个不同的一项。 | A book[s] | B map[s] | C dog[s] | D cat[s] | =C | dogs 中 s 在浊辅音后读 /z/，其他在清辅音后读 /s/。
+
+@ ph.stress_intonation
+[6/1] 一般疑问句 Is this your bag? 通常用什么语调？ | A 升调 | B 降调 | =A | 一般疑问句通常用升调。
+[6/2] 特殊疑问句 Where is your bag? 通常用什么语调？ | A 升调 | B 降调 | =B | 特殊疑问句通常用降调。
+[7/2] 单词 teacher 的重音在哪个音节？ | A 第一个音节 tea | B 第二个音节 cher | =A | 大多数双音节名词重音在第一个音节。
+
+@ vo.basic_themes
+[3/1] I have ____. It is a red fruit. | A apple | B an apple | C a banana | =B | 红色的水果是苹果；apple 以元音音素开头，用 an。
+[3/1] Look at my ____. I can see with them. | A ears | B eyes | C legs | =B | 用来看东西的是 eyes。
+[3/2] 下面哪个单词拼写正确？ | A yelow | B yellow | C yellou | =B | yellow 中有两个 l。
+[4/2] My mother's father is my ____. | A uncle | B brother | C grandfather | =C | 妈妈的爸爸是外公 grandfather。
+[5/3] An ____ has a long nose. It is very big. | A monkey | B elephant | C panda | =B | 长鼻子、大个子的是大象；前面的 An 也提示单词以元音音素开头。
+
+@ vo.daily_themes
+[4/1] It's ____ today. Take your umbrella. | A sunny | B rainy | C hot | =B | 要带伞，说明是下雨天 rainy。
+[4/1] We read books in the ____. | A library | B kitchen | C bathroom | =A | 在图书馆 library 读书。
+[4/2] My father works in a hospital. He is a ____. | A farmer | B doctor | C driver | =B | 在医院工作的是医生。
+[5/2] It's cold outside. Put on your ____. | A T-shirt | B shorts | C coat | =C | 天冷要穿外套 coat。
+[6/3] —What's the weather like in Harbin in winter? —It's very cold and ____. | A sunny and hot | B snowy | C rainy and warm | =B | 哈尔滨冬天寒冷多雪，cold 后接 snowy 最合理；其他两个选项与 cold 矛盾。
+
+@ vo.activity_themes
+[5/1] There are four seasons in a year. Which season comes after spring? | A Winter. | B Summer. | C Autumn. | =B | 春、夏、秋、冬的顺序，春天之后是夏天。
+[5/1] The second month of the year is ____. | A February | B March | C January | =A | 一年中第二个月是二月 February。
+[5/2] My favourite season is ____ because I can swim in the sea. | A winter | B summer | C autumn | =B | 能在海里游泳的是夏天。
+[6/2] Children's Day is in ____. | A May | B June | C July | =B | 六一儿童节在六月。
+[6/3] Which day comes between Tuesday and Thursday? | A Monday. | B Wednesday. | C Friday. | =B | 周二和周四之间是周三 Wednesday。
+[7/2] Teachers' Day is on ____ 10th in China. | A August | B September | C October | D November | =B | 中国教师节是九月十日。
+
+@ vo.world_themes
+[6/1] We can see many old things in the ____. | A museum | B cinema | C post office | =A | 博物馆里能看到许多古老的东西。
+[7/2] Don't throw rubbish everywhere. Let's keep our city ____. | A dirty | B clean | C noisy | =B | 不乱扔垃圾，是为了让城市保持干净。
+[7/2] We should eat more vegetables and do more sports. It's good for our ____. | A health | B homework | C hobby | D holiday | =A | 多吃蔬菜、多运动有益于健康 health。
+[7/3] Robots can help people do many things, so they are very ____ in our life. | A useful | B useless | C careless | D boring | =A | 能帮人们做很多事，说明“有用的” useful。
+
+@ vo.categories
+[3/1] 找出不同类的单词。 | A dog | B cat | C apple | =C | dog、cat 是动物，apple 是水果。
+[3/2] 找出不同类的单词。 | A red | B green | C pen | =C | red、green 是颜色，pen 是文具。
+[4/2] 找出不同类的单词。 | A father | B teacher | C mother | =B | father、mother 是家庭成员，teacher 是职业。
+[5/3] 找出不同类的单词。 | A sunny | B windy | C snow | =C | sunny、windy 是形容词，snow 是名词（或动词）。
+[6/3] 找出不同类的单词。 | A went | B saw | C see | D had | =C | went、saw、had 都是过去式，see 是原形。
+[7/3] 找出不同类的单词。 | A her | B his | C him | D our | =C | her、his、our 可作形容词性物主代词，him 只是宾格。
+
+@ vo.word_relations
+[4/1] big 的反义词是 ____。 | A small | B long | C tall | =A | big 大 — small 小。
+[4/2] come 的反义词是 ____。 | A go | B run | C walk | =A | come 来 — go 去。
+[5/2] Tom is not short. He is ____. | A tall | B thin | C fat | =A | not short（不矮）就是 tall（高）。
+[6/2] The box is not heavy. It's ____. | A light | B big | C old | =A | heavy 重 — light 轻。
+[6/3] My room is not clean. It's very ____. | A tidy | B dirty | C nice | =B | not clean 就是 dirty（脏的）。
+[7/3] Mr. Li has two bikes, but he only needs one. So he wants to ____ one of them. | A sell | B buy | C find | D lose | =A | 只需要一辆，所以想卖掉一辆；sell 与 buy 是一对反义词。
+
+@ vo.spelling
+[4/1] 根据首字母填空：I have a new p____. I can write with it. | =pen ; pencil | 能用来写字的是 pen 或 pencil。
+[4/2] 根据句意填空：There are seven days in a w____. | =week | 一周有七天，week。
+[5/2] 根据首字母填空：It's 12 o'clock. Let's have l____. | =lunch | 中午 12 点吃午饭 lunch。
+[6/2] 根据首字母填空：My birthday is on May 2nd. I'm going to have a birthday p____. | =party | 生日聚会 birthday party。
+[6/3] 根据首字母填空：There are twelve m____ in a year. | =months | 一年有十二个月，twelve 后用复数 months。
+[7/3] 根据首字母填空：She is good at English. She often helps her classmates with their English h____. | =homework | homework 不可数，不加 s。
+
+@ vo.phrases
+[5/1] Please ____ your coat. It's cold outside. | A put on | B take off | C look at | =A | 天冷要穿上外套，put on。
+[5/2] I ____ at 6:30 every morning. | A get up | B get on | C get off | =A | 起床 get up。
+[5/2] Look! The boy is listening ____ music. | A at | B to | C for | =B | listen to 听……。
+[6/2] My grandma is ill. I have to look ____ her at home. | A at | B for | C after | =C | look after 照顾。
+[6/3] —Where's my pen? I'm looking ____ it. —It's under the desk. | A at | B for | C after | =B | 在找东西用 look for。
+[7/3] Lily is good ____ singing, and she wants to take part ____ the singing competition(比赛). | A at; in | B in; at | C at; on | D for; in | =A | be good at 擅长；take part in 参加。
+
+@ vo.confusables
+[5/1] Can you ____ English? | A speak | B say | C talk | =A | 说某种语言用 speak。
+[5/2] We often ____ TV in the evening. | A look | B see | C watch | =C | 看电视用 watch TV。
+[6/2] Mike can't swim, and I can't swim, ____. | A too | B also | C either | =C | 否定句中“也”用 either。
+[6/3] —Mum, can you ____ me a story? —Sure. | A say | B tell | C speak | =B | 讲故事 tell a story。
+[7/2] The new bike ____ me 500 yuan. | A spent | B paid | C cost | D took | =C | 物作主语表示“花费钱”用 cost。
+[7/3] I ____ two hours doing my homework last night. | A spent | B cost | C paid | D took | =A | 人作主语，spend time doing sth。
+[7/3] The twins(双胞胎) are in my class. ____ names are Lily and Lucy. | A There | B Their | C They're | D They | =B | 后面接名词 names，用形容词性物主代词 their。
+
+@ vo.word_formation
+[6/1] teach 的名词“老师”是 ____。 | A teacher | B teachor | C teach | =A | 动词 + er 表示做这件事的人。
+[6/2] 用所给词的适当形式填空：My father is a ____ (drive). | =driver | drive 以 e 结尾，加 r 构成 driver。
+[6/2] 用所给词的适当形式填空：The children are singing ____ (happy). | =happily | 修饰动词用副词，happy 变 y 为 i 加 ly。
+[7/2] 用所给词的适当形式填空：The dictionary is very ____ (use). It can help me learn new words. | =useful | use + ful 构成形容词“有用的”。
+[7/3] 用所给词的适当形式填空：He is ____ (happy) because he lost his dog. | =unhappy | 丢了狗所以不开心，un- 表示否定。
+[7/3] 用所给词的适当形式填空：It's ____ (rain) today. Don't forget your umbrella. | =rainy | It's 后接形容词，rain + y 构成 rainy。

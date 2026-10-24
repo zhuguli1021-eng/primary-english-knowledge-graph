@@ -1,0 +1,144 @@
+# 句法与交际
+
+@ sy.word_order
+[4/1] 连词成句：is, this, my, bag (.) | =This is my bag. | 陈述句：主语 + be + 表语，句首字母大写。
+[4/2] 连词成句：you, do, like, apples (?) | =Do you like apples? | 一般疑问句以 Do 开头，以问号结尾。
+[5/2] 连词成句：I, every, get up, day, at, 6:30 (.) | =I get up at 6:30 every day. | 时间状语放在句末，具体时刻在前、every day 在后。
+[6/3] 连词成句：often, my, goes, to, by, father, work, bus (.) | =My father often goes to work by bus. | 频度副词放在实义动词前，方式状语放在句末。
+[7/3] 连词成句：the, Sunday, did, you, where, go, last (?) | =Where did you go last Sunday? | 特殊疑问词 + did + 主语 + 动词原形 + 时间状语？
+
+@ sy.basic_patterns
+[5/1] My mother bought ____ a new dress. | A I | B me | C my | =B | buy sb sth，sb 用宾格 me。
+[5/2] Please give the book ____ Tom. | A to | B for | C at | =A | give sth to sb。
+[6/2] The good news made us ____. | A happy | B happily | C happiness | =A | make sb + 形容词。
+[6/3] Dad bought a gift ____ me, and I gave a card ____ him. | A for; to | B to; for | C for; for | =A | buy sth for sb；give sth to sb。
+[7/3] We should keep our classroom ____. | A clean | B cleaning | C to clean | D cleanly | =A | keep sth + 形容词，表示“使……保持某种状态”。
+
+@ sy.yes_no
+[3/1] —Is this your pen? —Yes, ____. | A it is | B this is | C I am | =A | 回答 Is this...? 用 it 代替 this。
+[4/2] —Are you a student? —____. | A Yes, I am. | B Yes, you are. | C Yes, I do. | =A | Are you...? 用 I am 回答。
+[5/2] 把句子改为一般疑问句：I have some pens. → ____ you have ____ pens? | =Do, any | 实义动词借助 do；some 在疑问句中改为 any。
+[6/2] —Can your brother play the piano? —No, ____. | A he can't | B he doesn't | C he isn't | =A | Can 问句用 can't 回答。
+[6/3] 把句子改为一般疑问句：Lucy went to the zoo yesterday. → ____ Lucy ____ to the zoo yesterday? | =Did, go | 过去时借助 did，动词还原为 go。
+[7/3] —Were they at school yesterday? —Yes, ____. | A they are | B they were | C they did | D we were | =B | Were 问句用 were 回答，主语 they 不变。
+
+@ sy.wh_questions
+[4/1] —____ is my bag? —It's on the desk. | A What | B Where | C Who | =B | 回答地点，用 where 提问。
+[4/1] —____ is that man? —He's my father. | A Who | B What | C Where | =A | 问人是谁，用 who。
+[5/2] —____ book is this? —It's Amy's. | A Who | B Who's | C Whose | =C | 问“谁的”，用 whose。
+[5/2] —____ do you like summer? —Because I can swim. | A What | B Why | C How | =B | 用 Because 回答，用 why 提问。
+[6/2] —____ do you have English class? —On Monday and Friday. | A What | B When | C Where | =B | 问时间（星期）用 when。
+[6/3] —____ do you like better, apples or bananas? —Bananas. | A What | B Which | C Who | =B | 在给定范围中选择，用 which。
+[7/3] —____ was your weekend? —It was great. I went to the beach. | A What | B How | C Where | D When | =B | 问“怎么样”用 how。
+
+@ sy.how_phrases
+[4/1] —How ____ are you? —I'm ten. | A old | B many | C much | =A | 问年龄用 How old。
+[4/2] —How ____ is the T-shirt? —It's 50 yuan. | A many | B much | C old | =B | 问价格用 How much。
+[5/2] —How ____ books are there on the desk? —Five. | A much | B many | C old | =B | books 可数，问数量用 How many。
+[6/2] —How ____ is it from your home to school? —About two kilometres. | A long | B far | C often | =B | 问距离用 How far。
+[6/3] —How ____ will you stay in Beijing? —For a week. | A long | B often | C far | =A | 问时间长度用 How long。
+[7/3] —How ____ do you visit your grandparents? —Once a month. | A long | B soon | C often | D far | =C | 问频率用 How often。
+
+@ sy.ask_underlined
+[6/1] 对画线部分提问：The book is [on the desk]. → ____ is the book? | =Where | 画线部分是地点，用 where。
+[6/2] 对画线部分提问：I go to school [by bike]. → ____ do you go to school? | =How | 画线部分是方式，用 how；I 改为 you。
+[6/2] 对画线部分提问：Tom is [twelve] years old. → ____ ____ is Tom? | =How old | 画线部分是年龄，用 How old。
+[6/3] 对画线部分提问：My sister likes [reading books]. → ____ ____ your sister like? | =What does | 画线部分是事物，用 what；主语第三人称单数借助 does，likes 还原为 like。
+[7/3] 对画线部分提问：They went to [the Summer Palace] last Sunday. → ____ ____ they ____ last Sunday? | =Where did, go | 地点用 where；过去时借助 did，went 还原为 go。
+[7/3] 对画线部分提问：There are [forty] students in our class. → ____ ____ students ____ there in your class? | =How many, are | 数量（可数）用 How many；our 改为 your。
+
+@ sy.negative
+[5/1] 改为否定句：I am a teacher. → I ____ a teacher. | =am not ; 'm not | be 动词后加 not。
+[5/2] 改为否定句：He likes apples. → He ____ ____ apples. | =doesn't like ; does not like | 借助 doesn't，likes 还原为 like。
+[6/2] 改为否定句：I have some friends here. → I don't have ____ friends here. | =any | 否定句中 some 改为 any。
+[6/3] 改为否定句：We went to the park yesterday. → We ____ ____ to the park yesterday. | =didn't go ; did not go | 过去时借助 didn't，went 还原为 go。
+[7/3] 改为否定句：I like apples and bananas. → I don't like apples ____ bananas. | =or | 否定句中并列成分用 or 连接。
+
+@ sy.imperative
+[4/1] ____ quiet, please. The baby is sleeping. | A Is | B Be | C Are | =B | 祈使句以动词原形开头，be 不能省。
+[4/2] ____ in the classroom. | A Don't run | B Not run | C No run | =A | 否定祈使句用 Don't + 动词原形。
+[5/2] Let's ____ to the park. | A go | B goes | C going | =A | Let's + 动词原形。
+[6/3] —Don't play with fire, Tom. —____. | A Yes, I do. | B OK, I won't. | C No, I don't. | =B | 回答否定祈使句表示同意，常说 OK, I won't. / Sorry, I won't.
+[7/3] ____ late for school again, Jim! | A Don't be | B Not be | C Don't | D Be not | =A | 否定祈使句 Don't be + 形容词。
+
+@ sy.exclamation
+[6/1] ____ beautiful the flowers are! | A What | B How | C What a | =B | 去掉主谓后只剩形容词 beautiful，用 how。
+[6/2] ____ nice day it is! | A What | B What a | C How | =B | 中心词是可数名词单数 day，用 What a。
+[7/2] ____ clever you are! | A What | B What a | C How | D How a | =C | 去掉主谓后只剩形容词 clever，用 how。
+[7/3] ____ fine weather it is today! | A What | B What a | C How | D How a | =A | weather 不可数，用 What，不加 a。
+
+@ sy.conjunctions
+[5/1] I like apples ____ bananas. | A and | B but | C or | =A | 并列关系用 and。
+[5/2] I like swimming, ____ my sister doesn't. | A and | B but | C so | =B | 前后意思相反，用 but。
+[5/2] —Would you like tea ____ milk? —Tea, please. | A and | B or | C but | =B | 选择疑问句用 or。
+[6/2] It was raining heavily, ____ we stayed at home. | A because | B but | C so | =C | 下大雨是原因，待在家是结果，用 so。
+[6/3] I didn't go to school yesterday ____ I was ill. | A so | B because | C but | =B | 生病是不上学的原因，用 because。
+[7/3] ____ he was tired, ____ he kept working. | A Because; so | B Though; / | C Though; but | D Because; / | =B | 前后是让步关系；though 和 but 不能同时使用。
+
+@ sy.adverbial_clause
+[7/1] I will call you when I ____ home. | A get | B will get | C got | D getting | =A | when 引导时间状语从句，主句将来时，从句用一般现在时。
+[7/2] If it ____ tomorrow, we will stay at home. | A rains | B will rain | C rained | D rain | =A | if 引导条件状语从句，主将从现。
+[7/3] Please wait here ____ I come back. | A until | B because | C so | D but | =A | “直到我回来”，用 until。
+
+@ sy.object_clause
+[7/2] Could you tell me ____? | A where is the library | B where the library is | C where does the library | D the library where is | =B | 宾语从句用陈述语序。
+[7/3] I don't know ____ he will come tomorrow. | A that | B if | C what | D which | =B | 不知道“是否”会来，用 if 引导宾语从句。
+
+@ sy.paraphrase
+[6/1] I have a big bedroom. = ____ a big bedroom in my home. | A There is | B There are | C It has | =A | have 表示拥有，可以改成 there is 表示存在。
+[6/2] Let's go swimming. = ____ going swimming? | A What about | B Why not | C Shall we | =A | Let's do = What about doing...?
+[6/2] I go to school by bus. = I ____ a bus to school. | A take | B by | C on | =A | by bus = take a bus。
+[6/3] Tom is taller than Jim. = Jim is ____ than Tom. | A taller | B shorter | C older | =B | 汤姆比吉姆高，就是吉姆比汤姆矮。
+[7/3] My uncle gave me a new watch. = My uncle gave a new watch ____ me. | A for | B to | C with | D at | =B | give sb sth = give sth to sb。
+[7/3] Why not go to the cinema with us? = Why ____ you go to the cinema with us? | A not | B don't | C doesn't | D aren't | =B | Why not do...? = Why don't you do...?
+
+@ fn.greetings
+[3/1] —Nice to meet you. —____. | A Nice to meet you, too. | B I'm fine. | C Thank you. | =A | 回答 Nice to meet you 要加 too。
+[3/1] —How are you? —____. | A I'm ten. | B I'm fine, thank you. | C I'm Amy. | =B | How are you 问身体状况。
+[4/2] —Good morning, Miss White. —____. | A Good night. | B Good morning. | C Goodbye. | =B | 用同样的问候语回答。
+[5/2] —Hello, Amy. This is my friend, Mike. —____. | A Hello, Mike. Nice to meet you. | B Goodbye, Mike. | C Yes, I am. | =A | 被介绍给别人时，向对方问好。
+
+@ fn.thanks_apology
+[3/1] —Thank you. —____. | A You're welcome. | B Yes, I am. | C Goodbye. | =A | 回应感谢说 You're welcome。
+[3/2] —I'm sorry. —____. | A Thank you. | B That's OK. | C You're welcome. | =B | 回应道歉说 That's OK。
+[4/2] ____, where is the library? | A Sorry | B Excuse me | C Thank you | =B | 问路时先说 Excuse me 打扰一下。
+[6/3] —Sorry, I broke your pencil. —____. I have another one. | A It doesn't matter | B You're welcome | C Not at all | =A | 回应道歉表示没关系，用 It doesn't matter。
+
+@ fn.request_help
+[4/1] —Can I help you? —____. | A Yes, I want a skirt. | B No, I can't. | C Yes, you can't. | =A | 售货员提供帮助，顾客说明需要什么。
+[5/2] —Could you open the window, please? —____. | A Yes, I could. | B Sure. | C No, you can't. | =B | 回应请求，同意时说 Sure./Of course.
+[6/2] —May I use your pen? —____. Here you are. | A Of course | B No, you mustn't | C Sorry | =A | 后面说“给你”，说明同意，用 Of course。
+[7/3] —Could you please play basketball with me this afternoon? —____. I have to help my mother clean the house. | A Yes, I could | B Sorry, I can't | C No problem | D Sure | =B | 后面说要帮妈妈打扫，说明拒绝。
+
+@ fn.shopping
+[4/1] —How much is this skirt? —____. | A It's red. | B It's 60 yuan. | C It's small. | =B | 问价格，回答价钱。
+[4/2] —How much ____ these shoes? —They're 100 yuan. | A is | B are | C am | =B | shoes 是复数，用 are。
+[5/2] —Can I try it on? —____. | A Sure. | B Thank you. | C Here you are. | =A | 同意试穿说 Sure。
+[6/3] —This T-shirt is too big. —____ | A How about this small one? | B It's 30 yuan. | C I'll take it. | =A | 衣服太大，店员会推荐小一点的。
+
+@ fn.ask_way
+[6/1] —Excuse me. ____ is the museum? —It's next to the bookstore. | A What | B Where | C How | =B | 问地点用 where。
+[6/2] —How can I get to the cinema? —Go straight and turn left ____ the hospital. | A at | B on | C in | =A | 在某处转弯用 turn left at。
+[6/2] —Is there a bank near here? —Yes. It's ____ your left. | A at | B on | C in | =B | on your left 在你的左边。
+[7/3] —Excuse me, how can I ____ the post office? —Walk ____ the street and you'll find it. | A get; along | B get to; along | C arrive; at | D reach to; across | =B | get to + 地点；walk along the street 沿着街道走。
+
+@ fn.advice_health
+[6/1] —What's wrong with you? —____. | A I have a cold. | B I'm fine. | C I'm OK, too. | =A | 问哪里不舒服，回答症状。
+[6/2] —I have a toothache. —You ____ eat too many sweets. | A should | B shouldn't | C can | =B | 牙疼时不应该吃太多糖。
+[7/2] —I'm tired. —You'd better ____ a rest. | A have | B to have | C having | D had | =A | had better + 动词原形。
+[7/3] —I can't sleep well at night. —____ drink a glass of warm milk before bed? | A Why don't | B Why not | C How about | D What about | =B | Why not + 动词原形；Why don't you 后面还需要 you。
+
+@ fn.invite_suggest
+[5/1] —Let's go to the zoo. —____. | A Good idea. | B Thank you. | C You're welcome. | =A | 回应建议，表示同意。
+[5/2] —Would you like to come to my party? —____. | A Yes, I would like. | B I'd love to. | C No, I don't. | =B | 接受邀请说 I'd love to。
+[6/2] —How about ____ a kite this afternoon? —Sounds great. | A fly | B flying | C to fly | =B | How about doing...?
+[6/3] —Shall we go swimming this afternoon? —____, but I have to do my homework. | A I'd love to | B Yes, we shall | C I don't like | =A | 委婉拒绝邀请：I'd love to, but...
+[7/3] —Would you like to go shopping with me? —____. I need to buy some new books. | A Sounds good | B No, I wouldn't | C Not at all | D That's right | =A | 后面说要买书，表示乐意同去。
+
+@ fn.dialogue
+[5/1] —____ —It's Tuesday. | A What's the date today? | B What day is it today? | C What time is it? | =B | 回答星期几，问句是 What day is it today?
+[5/2] —____ —I usually play football. | A What do you do on weekends? | B Where do you play football? | C Do you like football? | =A | 回答“平常做什么”，问句询问周末的活动。
+[6/2] —____ —She is tall and thin. | A What's she like? | B What does she look like? | C What does she like? | =B | 回答外貌，用 What does she look like?
+[6/3] —I'm going to Hainan for the holiday. —____ | A Have a good time! | B Good luck! | C Congratulations! | =A | 对去度假的人说“玩得开心”。
+[7/3] —Hello, may I speak to Jenny? —____ | A Yes, I'm Jenny. | B Speaking. | C Who are you? | D I'm Jenny. Who are you? | =B | 电话用语，找的就是自己，回答 Speaking./This is Jenny speaking.
+[7/3] —I'm afraid I can't finish the work on time. —____ I'll help you. | A Don't worry. | B Good idea. | C Well done. | D That's right. | =A | 对方担心完不成，用 Don't worry 安慰，并表示会帮忙。

@@ -1,0 +1,1160 @@
+[
+{
+"topicId": "ph.short_vowels",
+"prerequisiteId": "ph.letters",
+"strength": "hard",
+"reason": "先认识元音字母，才能学它们的短音"
+},
+{
+"topicId": "ph.magic_e",
+"prerequisiteId": "ph.short_vowels",
+"strength": "hard",
+"reason": "开音节规则建立在与闭音节短音的对比上"
+},
+{
+"topicId": "ph.letter_teams",
+"prerequisiteId": "ph.magic_e",
+"strength": "soft",
+"reason": "字母组合常与长元音读音对照学习"
+},
+{
+"topicId": "ph.same_sound",
+"prerequisiteId": "ph.short_vowels",
+"strength": "hard",
+"reason": "判断读音异同要先会读闭音节短音"
+},
+{
+"topicId": "ph.same_sound",
+"prerequisiteId": "ph.magic_e",
+"strength": "hard",
+"reason": "需要区分开音节和闭音节"
+},
+{
+"topicId": "ph.same_sound",
+"prerequisiteId": "ph.letter_teams",
+"strength": "hard",
+"reason": "大量题目考字母组合的不同读音"
+},
+{
+"topicId": "ph.stress_intonation",
+"prerequisiteId": "sy.yes_no",
+"strength": "soft",
+"reason": "升调与一般疑问句对应"
+},
+{
+"topicId": "ph.stress_intonation",
+"prerequisiteId": "sy.wh_questions",
+"strength": "soft",
+"reason": "降调与特殊疑问句对应"
+},
+{
+"topicId": "ar.a_an",
+"prerequisiteId": "ph.letters",
+"strength": "hard",
+"reason": "要知道元音字母和元音音素才能选 a/an"
+},
+{
+"topicId": "ar.a_an",
+"prerequisiteId": "ph.short_vowels",
+"strength": "soft",
+"reason": "按读音而不是字母判断（hour、useful）"
+},
+{
+"topicId": "vo.basic_themes",
+"prerequisiteId": "ph.letters",
+"strength": "hard",
+"reason": "拼写单词以认识字母为前提"
+},
+{
+"topicId": "vo.daily_themes",
+"prerequisiteId": "vo.basic_themes",
+"strength": "soft",
+"reason": "主题词汇按年级逐步扩展"
+},
+{
+"topicId": "vo.activity_themes",
+"prerequisiteId": "vo.daily_themes",
+"strength": "soft",
+"reason": "主题词汇按年级逐步扩展"
+},
+{
+"topicId": "vo.world_themes",
+"prerequisiteId": "vo.activity_themes",
+"strength": "soft",
+"reason": "拓展话题建立在生活话题之上"
+},
+{
+"topicId": "vo.categories",
+"prerequisiteId": "vo.basic_themes",
+"strength": "hard",
+"reason": "要先知道单词意思才能归类"
+},
+{
+"topicId": "vo.word_relations",
+"prerequisiteId": "vo.daily_themes",
+"strength": "soft",
+"reason": "反义词多来自生活主题形容词"
+},
+{
+"topicId": "vo.spelling",
+"prerequisiteId": "ph.magic_e",
+"strength": "soft",
+"reason": "拼读规则帮助拼写"
+},
+{
+"topicId": "vo.spelling",
+"prerequisiteId": "vo.basic_themes",
+"strength": "hard",
+"reason": "拼写的对象是已学主题词"
+},
+{
+"topicId": "vo.phrases",
+"prerequisiteId": "vo.activity_themes",
+"strength": "soft",
+"reason": "短语多描述日常活动"
+},
+{
+"topicId": "vo.phrases",
+"prerequisiteId": "pp.common",
+"strength": "soft",
+"reason": "动词短语中大量使用介词和副词"
+},
+{
+"topicId": "vo.confusables",
+"prerequisiteId": "vo.phrases",
+"strength": "soft",
+"reason": "易混词的区别多体现在搭配上"
+},
+{
+"topicId": "vo.word_formation",
+"prerequisiteId": "ad.adverb",
+"strength": "soft",
+"reason": "-ly 派生副词是构词法的典型"
+},
+{
+"topicId": "vo.word_formation",
+"prerequisiteId": "vo.word_relations",
+"strength": "soft",
+"reason": "un- 等前缀表示反义"
+},
+{
+"topicId": "nn.plural",
+"prerequisiteId": "vo.basic_themes",
+"strength": "hard",
+"reason": "复数变化作用在已学名词上"
+},
+{
+"topicId": "nn.plural",
+"prerequisiteId": "nu.cardinal",
+"strength": "soft",
+"reason": "数量大于一时使用复数"
+},
+{
+"topicId": "nn.plural_irregular",
+"prerequisiteId": "nn.plural",
+"strength": "hard",
+"reason": "先掌握规则变化才能识别不规则"
+},
+{
+"topicId": "nn.countable",
+"prerequisiteId": "nn.plural",
+"strength": "hard",
+"reason": "可数名词才有复数，这是区分的依据"
+},
+{
+"topicId": "nn.quantity",
+"prerequisiteId": "nn.countable",
+"strength": "hard",
+"reason": "many/much 的选择取决于可数与否"
+},
+{
+"topicId": "nn.quantity",
+"prerequisiteId": "sy.yes_no",
+"strength": "soft",
+"reason": "some/any 的选择与句子类型有关"
+},
+{
+"topicId": "nn.possessive",
+"prerequisiteId": "nn.plural",
+"strength": "hard",
+"reason": "复数名词所有格只加撇号"
+},
+{
+"topicId": "nn.possessive",
+"prerequisiteId": "pr.possessive_adj",
+"strength": "soft",
+"reason": "都表示“谁的”，常对照学习"
+},
+{
+"topicId": "ar.the",
+"prerequisiteId": "ar.a_an",
+"strength": "soft",
+"reason": "定冠词与不定冠词对照学习"
+},
+{
+"topicId": "ar.zero",
+"prerequisiteId": "ar.the",
+"strength": "hard",
+"reason": "零冠词要和 a/the 对比判断"
+},
+{
+"topicId": "ar.zero",
+"prerequisiteId": "vo.activity_themes",
+"strength": "soft",
+"reason": "球类、三餐、学科等场景词"
+},
+{
+"topicId": "pr.personal",
+"prerequisiteId": "vb.be",
+"strength": "soft",
+"reason": "I am/He is 中先接触主格"
+},
+{
+"topicId": "pr.possessive_adj",
+"prerequisiteId": "pr.personal",
+"strength": "hard",
+"reason": "物主代词由人称代词对应而来"
+},
+{
+"topicId": "pr.possessive_pron",
+"prerequisiteId": "pr.possessive_adj",
+"strength": "hard",
+"reason": "名词性物主代词 = 形容词性物主代词 + 名词"
+},
+{
+"topicId": "pr.reflexive",
+"prerequisiteId": "pr.possessive_adj",
+"strength": "hard",
+"reason": "myself/yourself 由物主代词构成"
+},
+{
+"topicId": "pr.reflexive",
+"prerequisiteId": "pr.personal",
+"strength": "hard",
+"reason": "himself/themselves 由宾格构成"
+},
+{
+"topicId": "pr.demonstrative",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "This is/These are 要求 be 动词一致"
+},
+{
+"topicId": "pr.indefinite",
+"prerequisiteId": "nn.quantity",
+"strength": "hard",
+"reason": "something/anything 沿用 some/any 的规则"
+},
+{
+"topicId": "pr.indefinite",
+"prerequisiteId": "pr.demonstrative",
+"strength": "soft",
+"reason": "代词系统的延伸"
+},
+{
+"topicId": "pr.it",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "It is 结构"
+},
+{
+"topicId": "pr.it",
+"prerequisiteId": "nu.time_date",
+"strength": "soft",
+"reason": "It's 7 o'clock 表示时间"
+},
+{
+"topicId": "nu.ordinal",
+"prerequisiteId": "nu.cardinal",
+"strength": "hard",
+"reason": "序数词由基数词变化而来"
+},
+{
+"topicId": "nu.time_date",
+"prerequisiteId": "nu.cardinal",
+"strength": "hard",
+"reason": "时刻用基数词表达"
+},
+{
+"topicId": "nu.time_date",
+"prerequisiteId": "nu.ordinal",
+"strength": "hard",
+"reason": "日期用序数词表达"
+},
+{
+"topicId": "pp.place",
+"prerequisiteId": "vo.basic_themes",
+"strength": "soft",
+"reason": "描述物品的位置"
+},
+{
+"topicId": "pp.time",
+"prerequisiteId": "nu.time_date",
+"strength": "hard",
+"reason": "要先会表达时刻、日期"
+},
+{
+"topicId": "pp.time",
+"prerequisiteId": "vo.activity_themes",
+"strength": "soft",
+"reason": "季节、月份、星期是时间介词的对象"
+},
+{
+"topicId": "pp.common",
+"prerequisiteId": "pp.place",
+"strength": "soft",
+"reason": "介词系统的扩展"
+},
+{
+"topicId": "ad.adj_basic",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "形容词作表语放在 be 之后"
+},
+{
+"topicId": "ad.adj_basic",
+"prerequisiteId": "vo.basic_themes",
+"strength": "soft",
+"reason": "颜色、大小等基础形容词"
+},
+{
+"topicId": "ad.adverb",
+"prerequisiteId": "ad.adj_basic",
+"strength": "hard",
+"reason": "副词多由形容词变化而来"
+},
+{
+"topicId": "ad.frequency",
+"prerequisiteId": "te.present_simple",
+"strength": "hard",
+"reason": "频度副词用于描述习惯，即一般现在时"
+},
+{
+"topicId": "ad.comparative_form",
+"prerequisiteId": "ad.adj_basic",
+"strength": "hard",
+"reason": "比较级是形容词的形式变化"
+},
+{
+"topicId": "ad.comparative_form",
+"prerequisiteId": "ph.short_vowels",
+"strength": "soft",
+"reason": "双写规则依赖重读闭音节判断"
+},
+{
+"topicId": "ad.comparative_use",
+"prerequisiteId": "ad.comparative_form",
+"strength": "hard",
+"reason": "句型中要用正确的比较级形式"
+},
+{
+"topicId": "ad.comparative_use",
+"prerequisiteId": "pr.personal",
+"strength": "soft",
+"reason": "than 后的代词和比较对象"
+},
+{
+"topicId": "ad.superlative",
+"prerequisiteId": "ad.comparative_use",
+"strength": "hard",
+"reason": "最高级与比较级对照使用"
+},
+{
+"topicId": "ad.superlative",
+"prerequisiteId": "ar.the",
+"strength": "soft",
+"reason": "最高级前加 the"
+},
+{
+"topicId": "vb.there_be",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "there be 中 be 的单复数选择"
+},
+{
+"topicId": "vb.there_be",
+"prerequisiteId": "nn.countable",
+"strength": "hard",
+"reason": "不可数名词用 there is"
+},
+{
+"topicId": "vb.there_be",
+"prerequisiteId": "pp.place",
+"strength": "soft",
+"reason": "there be 常与方位介词连用"
+},
+{
+"topicId": "vb.there_be",
+"prerequisiteId": "vb.have",
+"strength": "soft",
+"reason": "需要区分“存在”和“拥有”"
+},
+{
+"topicId": "vb.have",
+"prerequisiteId": "pr.personal",
+"strength": "hard",
+"reason": "have/has 由主语人称决定"
+},
+{
+"topicId": "vb.modal_can",
+"prerequisiteId": "pr.personal",
+"strength": "soft",
+"reason": "I can/He can 等基础句"
+},
+{
+"topicId": "vb.modal_must",
+"prerequisiteId": "vb.modal_can",
+"strength": "hard",
+"reason": "情态动词后接原形的规则相同"
+},
+{
+"topicId": "vb.would_like",
+"prerequisiteId": "vb.modal_can",
+"strength": "soft",
+"reason": "情态动词 would 的固定用法"
+},
+{
+"topicId": "vb.nonfinite",
+"prerequisiteId": "vb.would_like",
+"strength": "hard",
+"reason": "would like to do 是 to do 搭配的入门"
+},
+{
+"topicId": "vb.nonfinite",
+"prerequisiteId": "vb.ing_form",
+"strength": "hard",
+"reason": "like doing 要会写 -ing 形式"
+},
+{
+"topicId": "vb.nonfinite",
+"prerequisiteId": "vo.phrases",
+"strength": "soft",
+"reason": "be good at doing 等固定搭配"
+},
+{
+"topicId": "vb.third_person",
+"prerequisiteId": "nn.plural",
+"strength": "soft",
+"reason": "-s/-es 的变化规则与名词复数相同"
+},
+{
+"topicId": "vb.third_person",
+"prerequisiteId": "pr.personal",
+"strength": "hard",
+"reason": "要先判断主语是不是第三人称单数"
+},
+{
+"topicId": "vb.ing_form",
+"prerequisiteId": "ph.short_vowels",
+"strength": "soft",
+"reason": "双写规则依赖重读闭音节"
+},
+{
+"topicId": "vb.ing_form",
+"prerequisiteId": "ph.magic_e",
+"strength": "soft",
+"reason": "不发音 e 结尾去 e"
+},
+{
+"topicId": "vb.past_form",
+"prerequisiteId": "vb.third_person",
+"strength": "soft",
+"reason": "y 变 i 等拼写规则相通"
+},
+{
+"topicId": "vb.past_form",
+"prerequisiteId": "ph.short_vowels",
+"strength": "soft",
+"reason": "stop-stopped 双写规则"
+},
+{
+"topicId": "vb.verb_forms",
+"prerequisiteId": "vb.third_person",
+"strength": "hard",
+"reason": "综合判断要求掌握各种形式"
+},
+{
+"topicId": "vb.verb_forms",
+"prerequisiteId": "vb.ing_form",
+"strength": "hard",
+"reason": "综合判断要求掌握各种形式"
+},
+{
+"topicId": "vb.verb_forms",
+"prerequisiteId": "vb.past_form",
+"strength": "hard",
+"reason": "综合判断要求掌握各种形式"
+},
+{
+"topicId": "vb.verb_forms",
+"prerequisiteId": "vb.nonfinite",
+"strength": "hard",
+"reason": "大量题目考 to do/doing 搭配"
+},
+{
+"topicId": "vb.verb_forms",
+"prerequisiteId": "te.tense_choice",
+"strength": "hard",
+"reason": "要根据时态信号选动词形式"
+},
+{
+"topicId": "te.present_simple",
+"prerequisiteId": "vb.be",
+"strength": "soft",
+"reason": "先掌握 be 动词句，再学实义动词句"
+},
+{
+"topicId": "te.present_simple",
+"prerequisiteId": "pr.personal",
+"strength": "hard",
+"reason": "动词形式由主语人称决定"
+},
+{
+"topicId": "te.present_simple_3rd",
+"prerequisiteId": "te.present_simple",
+"strength": "hard",
+"reason": "三单句是一般现在时的特殊情况"
+},
+{
+"topicId": "te.present_simple_3rd",
+"prerequisiteId": "vb.third_person",
+"strength": "hard",
+"reason": "要会写三单形式"
+},
+{
+"topicId": "te.present_continuous",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "be+doing 结构"
+},
+{
+"topicId": "te.present_continuous",
+"prerequisiteId": "vb.ing_form",
+"strength": "hard",
+"reason": "要会写 -ing 形式"
+},
+{
+"topicId": "te.past_simple",
+"prerequisiteId": "vb.past_form",
+"strength": "hard",
+"reason": "要会写过去式"
+},
+{
+"topicId": "te.past_simple",
+"prerequisiteId": "te.present_simple_3rd",
+"strength": "soft",
+"reason": "did/didn't 与 does/doesn't 规则相同（助动词后还原）"
+},
+{
+"topicId": "te.past_be",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "was/were 是 am/is/are 的过去式"
+},
+{
+"topicId": "te.future",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "be going to 中的 be 随主语变化"
+},
+{
+"topicId": "te.future",
+"prerequisiteId": "vb.modal_can",
+"strength": "soft",
+"reason": "will 后接原形与情态动词相同"
+},
+{
+"topicId": "te.tense_choice",
+"prerequisiteId": "te.present_simple_3rd",
+"strength": "hard",
+"reason": "综合辨析覆盖一般现在时"
+},
+{
+"topicId": "te.tense_choice",
+"prerequisiteId": "te.present_continuous",
+"strength": "hard",
+"reason": "综合辨析覆盖现在进行时"
+},
+{
+"topicId": "te.tense_choice",
+"prerequisiteId": "te.past_simple",
+"strength": "hard",
+"reason": "综合辨析覆盖一般过去时"
+},
+{
+"topicId": "te.tense_choice",
+"prerequisiteId": "te.past_be",
+"strength": "hard",
+"reason": "综合辨析覆盖 was/were"
+},
+{
+"topicId": "te.tense_choice",
+"prerequisiteId": "te.future",
+"strength": "hard",
+"reason": "综合辨析覆盖一般将来时"
+},
+{
+"topicId": "te.present_perfect",
+"prerequisiteId": "te.past_simple",
+"strength": "hard",
+"reason": "现在完成时要和一般过去时区分"
+},
+{
+"topicId": "te.present_perfect",
+"prerequisiteId": "vb.past_form",
+"strength": "hard",
+"reason": "过去分词与过去式的变化密切相关"
+},
+{
+"topicId": "te.past_continuous",
+"prerequisiteId": "te.present_continuous",
+"strength": "hard",
+"reason": "结构相同，只是 be 用过去式"
+},
+{
+"topicId": "te.past_continuous",
+"prerequisiteId": "te.past_be",
+"strength": "hard",
+"reason": "要会选 was/were"
+},
+{
+"topicId": "te.passive",
+"prerequisiteId": "te.past_be",
+"strength": "soft",
+"reason": "被动语态中 be 随时态变化"
+},
+{
+"topicId": "te.passive",
+"prerequisiteId": "vb.past_form",
+"strength": "hard",
+"reason": "过去分词"
+},
+{
+"topicId": "sy.word_order",
+"prerequisiteId": "wr.mechanics",
+"strength": "soft",
+"reason": "连词成句要求首字母大写和标点"
+},
+{
+"topicId": "sy.word_order",
+"prerequisiteId": "te.present_simple",
+"strength": "soft",
+"reason": "排列的句子多为一般现在时"
+},
+{
+"topicId": "sy.basic_patterns",
+"prerequisiteId": "sy.word_order",
+"strength": "hard",
+"reason": "句型分析建立在基本语序上"
+},
+{
+"topicId": "sy.basic_patterns",
+"prerequisiteId": "pr.personal",
+"strength": "soft",
+"reason": "give sb sth 中 sb 用宾格"
+},
+{
+"topicId": "sy.yes_no",
+"prerequisiteId": "vb.be",
+"strength": "hard",
+"reason": "be 动词提前构成一般疑问句"
+},
+{
+"topicId": "sy.wh_questions",
+"prerequisiteId": "sy.yes_no",
+"strength": "hard",
+"reason": "特殊疑问句 = 疑问词 + 一般疑问句语序"
+},
+{
+"topicId": "sy.how_phrases",
+"prerequisiteId": "sy.wh_questions",
+"strength": "hard",
+"reason": "How 短语是特殊疑问词的扩展"
+},
+{
+"topicId": "sy.how_phrases",
+"prerequisiteId": "nn.countable",
+"strength": "hard",
+"reason": "How many/How much 的选择"
+},
+{
+"topicId": "sy.how_phrases",
+"prerequisiteId": "ad.frequency",
+"strength": "soft",
+"reason": "How often 的答语是频度表达"
+},
+{
+"topicId": "sy.ask_underlined",
+"prerequisiteId": "sy.wh_questions",
+"strength": "hard",
+"reason": "第一步是选对疑问词"
+},
+{
+"topicId": "sy.ask_underlined",
+"prerequisiteId": "sy.how_phrases",
+"strength": "hard",
+"reason": "很多题考 How 短语"
+},
+{
+"topicId": "sy.ask_underlined",
+"prerequisiteId": "te.present_simple_3rd",
+"strength": "hard",
+"reason": "三单句提问时要借助 does 并还原动词"
+},
+{
+"topicId": "sy.ask_underlined",
+"prerequisiteId": "te.past_simple",
+"strength": "soft",
+"reason": "过去时句提问时要借助 did"
+},
+{
+"topicId": "sy.negative",
+"prerequisiteId": "sy.yes_no",
+"strength": "soft",
+"reason": "助动词的使用规则相同"
+},
+{
+"topicId": "sy.negative",
+"prerequisiteId": "te.present_simple_3rd",
+"strength": "hard",
+"reason": "doesn't 后还原动词"
+},
+{
+"topicId": "sy.negative",
+"prerequisiteId": "nn.quantity",
+"strength": "hard",
+"reason": "否定句中 some 变 any"
+},
+{
+"topicId": "sy.imperative",
+"prerequisiteId": "vb.be",
+"strength": "soft",
+"reason": "Be quiet 中 be 不能省"
+},
+{
+"topicId": "sy.exclamation",
+"prerequisiteId": "ar.a_an",
+"strength": "hard",
+"reason": "What a/an 的选择"
+},
+{
+"topicId": "sy.exclamation",
+"prerequisiteId": "nn.countable",
+"strength": "hard",
+"reason": "不可数名词前不加 a"
+},
+{
+"topicId": "sy.exclamation",
+"prerequisiteId": "ad.adj_basic",
+"strength": "soft",
+"reason": "How + 形容词"
+},
+{
+"topicId": "sy.conjunctions",
+"prerequisiteId": "sy.word_order",
+"strength": "soft",
+"reason": "连词连接两个完整句子"
+},
+{
+"topicId": "sy.adverbial_clause",
+"prerequisiteId": "sy.conjunctions",
+"strength": "hard",
+"reason": "从属连词与并列连词对比学习"
+},
+{
+"topicId": "sy.adverbial_clause",
+"prerequisiteId": "te.future",
+"strength": "hard",
+"reason": "if 条件句主将从现"
+},
+{
+"topicId": "sy.object_clause",
+"prerequisiteId": "sy.wh_questions",
+"strength": "hard",
+"reason": "宾语从句要把疑问句语序还原为陈述语序"
+},
+{
+"topicId": "sy.paraphrase",
+"prerequisiteId": "vo.phrases",
+"strength": "hard",
+"reason": "同义转换大量依赖短语对应"
+},
+{
+"topicId": "sy.paraphrase",
+"prerequisiteId": "sy.basic_patterns",
+"strength": "hard",
+"reason": "give sb sth/give sth to sb 互换"
+},
+{
+"topicId": "sy.paraphrase",
+"prerequisiteId": "ad.comparative_use",
+"strength": "soft",
+"reason": "比较级正反比较"
+},
+{
+"topicId": "sy.paraphrase",
+"prerequisiteId": "vb.there_be",
+"strength": "soft",
+"reason": "have 与 there be 互换"
+},
+{
+"topicId": "fn.greetings",
+"prerequisiteId": "vb.be",
+"strength": "soft",
+"reason": "I'm.../This is... 等介绍句"
+},
+{
+"topicId": "fn.request_help",
+"prerequisiteId": "vb.modal_can",
+"strength": "hard",
+"reason": "Can/Could you...? 请求句"
+},
+{
+"topicId": "fn.shopping",
+"prerequisiteId": "sy.how_phrases",
+"strength": "hard",
+"reason": "How much 询价"
+},
+{
+"topicId": "fn.shopping",
+"prerequisiteId": "nu.cardinal",
+"strength": "hard",
+"reason": "价格读法"
+},
+{
+"topicId": "fn.ask_way",
+"prerequisiteId": "pp.place",
+"strength": "hard",
+"reason": "next to/between 等描述位置"
+},
+{
+"topicId": "fn.ask_way",
+"prerequisiteId": "sy.imperative",
+"strength": "hard",
+"reason": "Go straight/Turn left 是祈使句"
+},
+{
+"topicId": "fn.advice_health",
+"prerequisiteId": "vb.modal_must",
+"strength": "hard",
+"reason": "You should... 提建议"
+},
+{
+"topicId": "fn.invite_suggest",
+"prerequisiteId": "vb.would_like",
+"strength": "hard",
+"reason": "Would you like to...? 邀请"
+},
+{
+"topicId": "fn.invite_suggest",
+"prerequisiteId": "vb.nonfinite",
+"strength": "soft",
+"reason": "How about doing...?"
+},
+{
+"topicId": "fn.dialogue",
+"prerequisiteId": "sy.wh_questions",
+"strength": "hard",
+"reason": "要根据答语推断问句"
+},
+{
+"topicId": "fn.dialogue",
+"prerequisiteId": "fn.request_help",
+"strength": "soft",
+"reason": "常见交际功能"
+},
+{
+"topicId": "fn.dialogue",
+"prerequisiteId": "fn.invite_suggest",
+"strength": "soft",
+"reason": "常见交际功能"
+},
+{
+"topicId": "fn.dialogue",
+"prerequisiteId": "fn.thanks_apology",
+"strength": "soft",
+"reason": "常见交际功能"
+},
+{
+"topicId": "rd.detail",
+"prerequisiteId": "vo.daily_themes",
+"strength": "soft",
+"reason": "读懂短文需要主题词汇"
+},
+{
+"topicId": "rd.detail",
+"prerequisiteId": "sy.wh_questions",
+"strength": "hard",
+"reason": "细节题以特殊疑问句形式提问"
+},
+{
+"topicId": "rd.true_false",
+"prerequisiteId": "rd.detail",
+"strength": "hard",
+"reason": "判断正误要逐项回原文定位"
+},
+{
+"topicId": "rd.main_idea",
+"prerequisiteId": "rd.detail",
+"strength": "soft",
+"reason": "先读懂细节才能概括"
+},
+{
+"topicId": "rd.inference",
+"prerequisiteId": "rd.main_idea",
+"strength": "soft",
+"reason": "推理以理解全文为基础"
+},
+{
+"topicId": "rd.inference",
+"prerequisiteId": "rd.true_false",
+"strength": "soft",
+"reason": "要区分原文信息和推断"
+},
+{
+"topicId": "rd.word_guess",
+"prerequisiteId": "vo.word_formation",
+"strength": "soft",
+"reason": "构词法帮助猜词"
+},
+{
+"topicId": "rd.word_guess",
+"prerequisiteId": "rd.detail",
+"strength": "soft",
+"reason": "需要读懂上下文"
+},
+{
+"topicId": "rd.practical",
+"prerequisiteId": "rd.detail",
+"strength": "hard",
+"reason": "应用文以提取细节为主"
+},
+{
+"topicId": "rd.practical",
+"prerequisiteId": "nu.time_date",
+"strength": "soft",
+"reason": "通知、时间表中大量出现时间日期"
+},
+{
+"topicId": "rd.cloze",
+"prerequisiteId": "rd.main_idea",
+"strength": "hard",
+"reason": "完形要先把握全文大意"
+},
+{
+"topicId": "rd.cloze",
+"prerequisiteId": "vo.confusables",
+"strength": "hard",
+"reason": "大量考查词义辨析"
+},
+{
+"topicId": "rd.cloze",
+"prerequisiteId": "vo.phrases",
+"strength": "hard",
+"reason": "考查固定搭配"
+},
+{
+"topicId": "rd.cloze",
+"prerequisiteId": "sy.conjunctions",
+"strength": "soft",
+"reason": "考查上下文逻辑关系"
+},
+{
+"topicId": "rd.cloze",
+"prerequisiteId": "te.tense_choice",
+"strength": "soft",
+"reason": "考查语篇中的时态"
+},
+{
+"topicId": "rd.passage_fill",
+"prerequisiteId": "vb.verb_forms",
+"strength": "hard",
+"reason": "大量空考动词形式"
+},
+{
+"topicId": "rd.passage_fill",
+"prerequisiteId": "nn.plural",
+"strength": "hard",
+"reason": "考名词复数"
+},
+{
+"topicId": "rd.passage_fill",
+"prerequisiteId": "ad.comparative_form",
+"strength": "soft",
+"reason": "考比较级"
+},
+{
+"topicId": "rd.passage_fill",
+"prerequisiteId": "ad.adverb",
+"strength": "soft",
+"reason": "考副词"
+},
+{
+"topicId": "rd.passage_fill",
+"prerequisiteId": "vo.spelling",
+"strength": "hard",
+"reason": "首字母填空要求拼写正确"
+},
+{
+"topicId": "rd.task",
+"prerequisiteId": "rd.detail",
+"strength": "hard",
+"reason": "回答问题要先找到信息"
+},
+{
+"topicId": "rd.task",
+"prerequisiteId": "wr.sentence",
+"strength": "hard",
+"reason": "要用完整句子作答"
+},
+{
+"topicId": "wr.sentence",
+"prerequisiteId": "wr.mechanics",
+"strength": "hard",
+"reason": "书写规范是写句子的基础"
+},
+{
+"topicId": "wr.sentence",
+"prerequisiteId": "sy.word_order",
+"strength": "hard",
+"reason": "要按英语语序写句子"
+},
+{
+"topicId": "wr.sentence",
+"prerequisiteId": "te.present_simple",
+"strength": "soft",
+"reason": "最常用的时态"
+},
+{
+"topicId": "wr.paragraph",
+"prerequisiteId": "wr.sentence",
+"strength": "hard",
+"reason": "短文由完整句子组成"
+},
+{
+"topicId": "wr.paragraph",
+"prerequisiteId": "sy.conjunctions",
+"strength": "hard",
+"reason": "句子之间需要连词衔接"
+},
+{
+"topicId": "wr.self_others",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.self_others",
+"prerequisiteId": "te.present_simple_3rd",
+"strength": "hard",
+"reason": "介绍他人要用第三人称单数"
+},
+{
+"topicId": "wr.experience",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.experience",
+"prerequisiteId": "te.past_simple",
+"strength": "hard",
+"reason": "记叙经历用一般过去时"
+},
+{
+"topicId": "wr.plan_wish",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.plan_wish",
+"prerequisiteId": "te.future",
+"strength": "hard",
+"reason": "写计划要用将来时"
+},
+{
+"topicId": "wr.letter",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "书信正文是一篇短文"
+},
+{
+"topicId": "rd.structure",
+"prerequisiteId": "rd.main_idea",
+"strength": "hard",
+"reason": "先会概括各段大意，才能看出结构"
+},
+{
+"topicId": "rd.structure",
+"prerequisiteId": "sy.conjunctions",
+"strength": "soft",
+"reason": "First/Then/However 等衔接词提示结构"
+},
+{
+"topicId": "rd.purpose",
+"prerequisiteId": "rd.inference",
+"strength": "hard",
+"reason": "作者意图和态度需要推断"
+},
+{
+"topicId": "rd.purpose",
+"prerequisiteId": "ad.adj_basic",
+"strength": "soft",
+"reason": "情感态度多由形容词表达"
+},
+{
+"topicId": "wr.daily",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.daily",
+"prerequisiteId": "te.present_simple",
+"strength": "hard",
+"reason": "介绍日常生活用一般现在时"
+},
+{
+"topicId": "wr.daily",
+"prerequisiteId": "pp.time",
+"strength": "hard",
+"reason": "大量使用 at/in/on 时间表达"
+},
+{
+"topicId": "wr.advice",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.advice",
+"prerequisiteId": "vb.modal_must",
+"strength": "hard",
+"reason": "用 should/must 提建议"
+},
+{
+"topicId": "wr.advice",
+"prerequisiteId": "sy.conjunctions",
+"strength": "soft",
+"reason": "用 because 说明理由"
+},
+{
+"topicId": "wr.culture",
+"prerequisiteId": "wr.paragraph",
+"strength": "hard",
+"reason": "话题写作需要短文结构"
+},
+{
+"topicId": "wr.culture",
+"prerequisiteId": "vo.world_themes",
+"strength": "soft",
+"reason": "需要文化类话题词汇"
+},
+{
+"topicId": "wr.culture",
+"prerequisiteId": "te.present_simple",
+"strength": "soft",
+"reason": "介绍习俗用一般现在时"
+}
+]

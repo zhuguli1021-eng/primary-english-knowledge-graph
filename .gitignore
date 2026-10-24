@@ -1,0 +1,4 @@
+# 密钥：每台电脑自己复制 llm.example.json 为 llm.json 再填写
+llm.json
+.DS_Store
+__pycache__/

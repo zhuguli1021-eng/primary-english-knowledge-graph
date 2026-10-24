@@ -1,0 +1,157 @@
+# 动词与时态
+
+@ vb.be
+[3/1] I ____ a student. | A am | B is | C are | =A | 主语 I 用 am。
+[3/1] They ____ my friends. | A am | B is | C are | =C | 主语 they 用 are。
+[4/2] My hair ____ long. | A is | B are | C am | =A | hair（头发总称）不可数，用 is。
+[5/2] Tom and I ____ in the same class. | A am | B is | C are | =C | Tom and I 是两个人，用 are。
+[6/2] The pair of shoes ____ new. | A is | B are | C be | =A | 主语是 the pair（一双），用单数 is。
+[7/3] Not only my parents but also my sister ____ at home now. | A am | B is | C are | D be | =B | not only...but also... 连接主语时，谓语与离它最近的主语 my sister 一致。
+
+@ vb.there_be
+[5/1] There ____ a book on the desk. | A is | B are | C have | =A | a book 是单数，用 There is。
+[5/1] There ____ two birds in the tree. | A is | B are | C has | =B | two birds 是复数，用 There are。
+[5/2] There ____ a pen and two rulers in my pencil box. | A is | B are | C have | =A | 就近原则：be 与最近的 a pen 一致，用 is。
+[5/2] ____ there any juice in the bottle? | A Is | B Are | C Do | =A | juice 不可数，用 Is there。
+[6/3] There ____ some milk and two eggs on the table. | A is | B are | C has | =A | 就近原则：最近的 some milk 不可数，用 is。
+[6/3] There ____ many people in the park yesterday. | A is | B are | C was | D were | =D | yesterday 用过去时，people 是复数，用 were。
+[7/3] There ____ a basketball match in our school tomorrow. | A will have | B is going to have | C will be | D has | =C | there be 的将来时是 there will be，不能与 have 连用。
+
+@ vb.have
+[4/1] I ____ a new bike. | A have | B has | C am | =A | 主语 I 用 have。
+[4/2] My sister ____ long hair. | A have | B has | C is | =B | 主语 my sister 是第三人称单数，用 has。
+[5/2] He doesn't ____ a cat. | A have | B has | C having | =A | doesn't 后用动词原形 have。
+[6/3] —____ your brother ____ a computer? —Yes, he does. | A Do; have | B Does; has | C Does; have | =C | 主语第三人称单数用 Does，Does 后还原为 have。
+
+@ vb.modal_can
+[4/1] I can ____ fast. | A run | B runs | C running | =A | can 后接动词原形。
+[4/2] —Can you swim? —____. | A Yes, I do. | B Yes, I can. | C Yes, I am. | =B | 用 can 提问，用 can 回答。
+[5/2] Amy ____ dance, but she can sing. | A can | B can't | C is | =B | but 表示转折，前面应为“不会跳舞”。
+[6/2] ____ you help me carry the box? It's too heavy. | A Could | B Do | C Are | =A | Could you...? 礼貌地请求别人帮忙。
+[7/3] My grandpa ____ swim when he was young, but now he can't. | A can | B could | C may | D must | =B | when he was young 是过去，用 can 的过去式 could。
+
+@ vb.modal_must
+[6/1] You ____ cross the road when the light is red. | A must | B mustn't | C can | =B | 红灯时禁止过马路，用 mustn't。
+[6/2] You have a fever. You ____ see a doctor. | A should | B shouldn't | C can't | =A | 发烧了应该看医生，用 should 提建议。
+[6/2] My mother ____ get up early because she works far from home. | A have to | B has to | C must to | =B | 主语第三人称单数用 has to。
+[7/3] —Must I finish the work today? —No, you ____. You can finish it tomorrow. | A mustn't | B needn't | C can't | D shouldn't | =B | must 问句的否定回答用 needn't 或 don't have to。
+[7/3] —Is that man Mr. Wang? —It ____ be him. He has gone to Beijing. | A must | B can't | C may | D should | =B | 他去北京了，所以不可能是他，表示否定推测用 can't。
+
+@ vb.would_like
+[4/1] I'd like ____ apples. | A some | B any | C a | =A | 肯定句中用 some。
+[4/2] —Would you like some noodles? —____. | A Yes, I would. | B Yes, please. | C Yes, I like. | =B | 回答 Would you like...? 常用 Yes, please. / No, thanks.
+[6/2] I would like ____ a teacher in the future. | A be | B to be | C being | =B | would like to do sth。
+[6/3] —What would your father like ____? —He'd like some fish. | A eat | B to eat | C eats | =B | would like to do sth；回答 He'd like = He would like。
+
+@ vb.nonfinite
+[5/1] I like ____ books. | A read | B reading | C reads | =B | like doing sth 喜欢做某事。
+[5/2] Let's ____ football after school. | A play | B to play | C playing | =A | let's 后接动词原形。
+[5/2] I want ____ a new bike. | A buy | B to buy | C buying | =B | want to do sth。
+[6/2] Lily is good at ____. | A sing | B sings | C singing | =C | 介词 at 后接动名词。
+[6/3] My mother often helps me ____ my homework, and she makes me ____ happy. | A do; feel | B to doing; feel | C doing; to feel | =A | help sb (to) do；make sb do，不加 to。
+[7/3] —How about ____ a picnic this weekend? —Good idea. I enjoy ____ outside. | A have; being | B having; being | C to have; to be | D having; to be | =B | How about doing；enjoy doing。
+[7/3] Remember ____ off the light when you leave the room. | A turn | B turning | C to turn | D turned | =C | remember to do 记得要去做某事（还没做）。
+
+@ vb.third_person
+[5/1] go → ____ | A gos | B goes | C going | =B | o 结尾的动词加 -es。
+[5/1] watch → ____ | A watchs | B watches | C watching | =B | ch 结尾加 -es。
+[5/2] study → ____ | A studys | B studies | C studyes | =B | 辅音字母 + y 结尾，变 y 为 i 加 -es。
+[5/2] play → ____ | A plaies | B plays | C playes | =B | 元音字母 + y 结尾直接加 -s。
+[6/2] 用所给词的适当形式填空：My father ____ (have) a car. | =has | 主语第三人称单数，have 变 has。
+[6/3] 用所给词的适当形式填空：Mike ____ (fly) a kite every Sunday. | =flies | 辅音字母 + y 结尾，变 y 为 i 加 -es。
+
+@ vb.ing_form
+[5/1] swim → ____ | A swiming | B swimming | C swimmming | =B | 重读闭音节、末尾一个辅音字母，双写再加 -ing。
+[5/1] make → ____ | A making | B makeing | C makking | =A | 不发音的 e 结尾，去 e 加 -ing。
+[5/2] Look! The children ____ in the river. | A swim | B are swiming | C are swimming | =C | 现在进行时 be + doing；swim 双写 m。
+[6/2] 用所给词的适当形式填空：The girl is ____ (sit) under the tree. | =sitting | sit 双写 t 加 -ing。
+[6/3] 用所给词的适当形式填空：Listen! Who is ____ (dance) in the next room? | =dancing | dance 去 e 加 -ing。
+[7/3] 用所给词的适当形式填空：The old man is ____ (lie) on the grass. | =lying | ie 结尾变 ie 为 y 加 -ing。
+
+@ vb.past_form
+[6/1] go → ____ | A goed | B went | C gone | =B | go 的过去式是 went（不规则）。
+[6/1] play → ____ | A plaied | B played | C plaid | =B | 元音字母 + y 结尾直接加 -ed。
+[6/2] stop → ____ | A stoped | B stopped | C stopt | =B | 重读闭音节，双写 p 加 -ed。
+[6/2] 用所给词的适当形式填空：I ____ (buy) a gift for my mother yesterday. | =bought | buy 的过去式是 bought。
+[6/3] 用所给词的适当形式填空：Our English teacher ____ (teach) us a new song last week. | =taught | teach 的过去式是 taught。
+[7/3] 用所给词的适当形式填空：She ____ (study) very hard last term, so she got good grades. | =studied | 辅音字母 + y 结尾，变 y 为 i 加 -ed。
+[7/3] 下面哪组动词的过去式全部正确？ | A eat-ate, see-saw, take-took | B eat-eated, see-saw, take-took | C eat-ate, see-seed, take-taked | D eat-ate, see-saw, take-taked | =A | eat、see、take 都是不规则动词：ate、saw、took。
+
+@ vb.verb_forms
+[6/1] 用所给词的适当形式填空：Look! Tom ____ (run) on the playground. | =is running | Look! 提示现在进行时，run 双写 n。
+[6/2] 用所给词的适当形式填空：My sister ____ (not like) carrots. | =doesn't like ; does not like | 主语第三人称单数，否定用 doesn't + 动词原形。
+[6/2] 用所给词的适当形式填空：We ____ (visit) the zoo last Sunday. | =visited | last Sunday 提示一般过去时。
+[6/3] 用所给词的适当形式填空：I'm going ____ (see) a film tomorrow. | =to see | be going to + 动词原形。
+[7/3] 用所给词的适当形式填空：Thank you for ____ (help) me with my English. | =helping | 介词 for 后接动名词。
+[7/3] 用所给词的适当形式填空：It's time for us ____ (have) a rest. | =to have | It's time for sb to do sth。
+[7/3] 用所给词的适当形式填空：Mr. Green often ____ (tell) us stories, but yesterday he ____ (not tell) us a story. | =tells, didn't tell ; tells, did not tell | often 提示一般现在时第三人称单数；yesterday 提示一般过去时否定。
+
+@ te.present_simple
+[4/1] I ____ to school every day. | A go | B goes | C went | =A | every day 提示一般现在时，主语 I 用原形。
+[4/2] We often ____ football after school. | A play | B plays | C played | =A | often 提示一般现在时，主语 we 用原形。
+[5/2] —Do you like music? —Yes, I ____. | A am | B do | C like | =B | Do 问句用 do 回答。
+[5/2] They ____ like fish. They like meat. | A don't | B doesn't | C aren't | =A | 主语 they，否定用 don't。
+[6/3] The earth ____ around the sun. | A goes | B went | C is going | =A | 客观事实用一般现在时。
+
+@ te.present_simple_3rd
+[5/1] She ____ TV every evening. | A watch | B watches | C watching | =B | 主语 she，一般现在时动词用三单形式。
+[5/2] My brother ____ like vegetables. | A don't | B doesn't | C isn't | =B | 主语第三人称单数，否定用 doesn't。
+[5/2] ____ your father work in a hospital? | A Do | B Does | C Is | =B | 主语 your father 是第三人称单数，助动词用 does。
+[6/2] —Does Amy like dancing? —No, she ____. She ____ singing. | A doesn't; like | B doesn't; likes | C don't; likes | =B | 简略回答 No, she doesn't；后一句主语 she 用 likes。
+[6/3] My mother and my aunt ____ in the same school. | A teach | B teaches | C teaching | =A | 两个人作主语，是复数，用原形 teach。
+[7/3] Everyone in our class ____ English very much. | A like | B likes | C liking | D are liking | =B | everyone 作主语视为单数，用三单 likes。
+
+@ te.present_continuous
+[5/1] Look! The bird ____. | A is singing | B sings | C sing | =A | Look! 提示正在进行，用 be + doing。
+[5/2] —What are you doing? —I ____ a picture. | A draw | B am drawing | C drawing | =B | 问“正在做什么”，用现在进行时回答，be 不能省。
+[5/2] Listen! Someone ____ in the classroom. | A is singing | B are singing | C sings | =A | Listen! 提示现在进行时，someone 用 is。
+[6/3] It's 8 o'clock now. My parents ____ breakfast. | A have | B are having | C has | =B | 表示现在正在吃早饭，用 are having。
+[7/3] —Where's Tom? —He ____ basketball on the playground. He ____ basketball every afternoon. | A plays; is playing | B is playing; plays | C is playing; is playing | D plays; plays | =B | 第一句说现在正在做，第二句说习惯。
+
+@ te.past_simple
+[6/1] I ____ my grandparents last weekend. | A visit | B visited | C visits | =B | last weekend 提示一般过去时。
+[6/2] —Did you go to the park yesterday? —No, I ____. | A don't | B didn't | C wasn't | =B | Did 问句用 didn't 回答。
+[6/2] He didn't ____ his homework last night. | A do | B did | C does | =A | didn't 后用动词原形。
+[6/3] —What ____ you do last Saturday? —I ____ a film with my friends. | A do; see | B did; saw | C did; see | =B | last Saturday 用一般过去时，问句用 did，回答用过去式 saw。
+[7/3] 用所给词的适当形式填空：—____ you ____ (watch) the football match last night? —Yes, it was exciting. | =Did, watch | 一般过去时一般疑问句：Did + 主语 + 动词原形。
+[7/3] —What did you do last weekend? —I ____ my room and then ____ a storybook. | A clean; read | B cleaned; read | C cleaned; reads | D clean; reads | =B | last weekend 用一般过去时；read 的过去式仍拼作 read。
+
+@ te.past_be
+[6/1] I ____ at home yesterday. | A am | B was | C were | =B | yesterday 提示过去时，I 用 was。
+[6/2] They ____ in the park this morning. | A was | B were | C are | =B | this morning（已过去）用过去时，they 用 were。
+[6/2] Before, I ____ short. Now I ____ tall. | A was; am | B am; was | C were; am | =A | Before 用过去时 was，Now 用一般现在时 am。
+[6/3] —Where ____ you last Sunday? —I ____ at my grandma's home. | A are; am | B were; was | C was; were | =B | 主语 you 用 were，I 用 was。
+[7/3] There ____ no TV a hundred years ago, but now there ____ TVs in every home. | A was; are | B were; are | C was; is | D is; are | =A | a hundred years ago 用过去时；no TV 单数用 was；TVs 复数用 are。
+
+@ te.future
+[6/1] I'm going to ____ my grandparents tomorrow. | A visit | B visits | C visited | =A | be going to + 动词原形。
+[6/2] —What ____ you going to do this weekend? —I'm going to play football. | A are | B do | C will | =A | be going to 的问句，be 随主语 you 用 are。
+[6/2] It ____ rainy tomorrow. | A is | B will be | C was | =B | tomorrow 提示将来时，will be。
+[6/3] My sister ____ Hangzhou next week. | A visit | B is going to visit | C visited | =B | next week 提示将来时；主语 my sister 用 is going to。
+[7/3] —Will you go to the party tonight? —Yes, I ____. | A do | B am | C will | D go | =C | Will 问句用 will 回答。
+[7/3] Look at the dark clouds. It ____ rain soon. | A is going to | B was going to | C goes to | D went to | =A | 根据迹象判断即将发生，用 be going to。
+
+@ te.tense_choice
+[6/1] We ____ a party last night. | A have | B had | C will have | =B | last night 提示一般过去时。
+[6/2] Listen! The baby ____. | A cries | B is crying | C cried | =B | Listen! 提示现在进行时。
+[6/2] My uncle usually ____ to work by car. | A drives | B drove | C will drive | =A | usually 提示一般现在时，主语第三人称单数。
+[6/3] —Where is Mum? —She ____ dinner in the kitchen. | A cooks | B is cooking | C cooked | =B | 问“现在在哪儿”，回答现在正在做的事。
+[7/2] I ____ to Beijing next month. | A go | B went | C am going | D have gone | =C | next month 提示将来；go 可以用现在进行时表示按计划的将来。
+[7/3] —Hi, Jim. I called you at 8 last night, but nobody answered. —Sorry, I ____ a bath then. | A take | B took | C was taking | D am taking | =C | 过去某一时刻正在做的事，用过去进行时。
+[7/3] 用所给词的适当形式填空：Mike ____ (live) in Beijing now, but he ____ (live) in Shanghai two years ago. | =lives, lived | now 提示一般现在时，two years ago 提示一般过去时。
+
+@ te.present_perfect
+[7/1] I ____ already ____ my homework. | A have; finish | B have; finished | C has; finished | D am; finished | =B | 现在完成时 have/has + 过去分词；主语 I 用 have。
+[7/2] She ____ in this city since 2020. | A lives | B lived | C has lived | D will live | =C | since + 过去时间点，用现在完成时。
+[7/3] —Have you ever ____ to the Great Wall? —Yes, I went there last year. | A gone | B been | C go | D went | =B | have been to 去过（已回来）；have gone to 去了（还没回来）。
+[7/3] My father ____ in this factory for ten years. | A works | B has worked | C worked | D will work | =B | for + 一段时间，表示持续到现在，用现在完成时。
+
+@ te.past_continuous
+[7/1] At 8 o'clock last night, I ____ TV. | A watch | B watched | C was watching | D am watching | =C | 过去某一时刻正在做的事，用过去进行时。
+[7/2] What ____ you doing at this time yesterday? | A are | B were | C was | D did | =B | at this time yesterday 提示过去进行时，you 用 were。
+[7/3] While Mum ____ dinner, Dad came home. | A cooked | B cooks | C was cooking | D is cooking | =C | while 引导的从句表示持续进行的动作，用过去进行时。
+
+@ te.passive
+[7/1] English ____ in many countries. | A speaks | B is spoken | C spoke | D speaking | =B | 英语“被说”，用被动语态 be + 过去分词。
+[7/2] The bridge ____ in 1998. | A builds | B built | C was built | D is built | =C | 桥是“被建造”的，1998 年是过去，用 was built。
+[7/3] Paper ____ by the Chinese people long ago. | A invented | B was invented | C is invented | D invents | =B | 纸是“被发明”的，过去的事用 was invented。

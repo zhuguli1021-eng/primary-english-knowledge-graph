@@ -1,0 +1,103 @@
+{
+ "_note": "年级画像决定“出给谁、能多难”。level2/level3 词表取自课标附录3（见 wordlists.json）；三四年级的 grade34 核心词由本库整理（参照人教 PEP 三上至四下常见主题），属于二级词表的子集，待教师核对。 pep_extra：课标允许各地在505词基础上增加100~300词，这里补入人教PEP三至六年级教材常用而505词表未收的词，以及阅读题干常用词，用于5~7年级（待教师核对）。",
+ "grades": {
+  "3": {
+   "name": "三年级",
+   "band": "一级",
+   "vocab": [
+    "grade34"
+   ],
+   "maxWords": 8,
+   "newWords": 0,
+   "passageWords": 40,
+   "grammar": "be 动词、This is、I like、Do you like、can 的初步感知；名词复数入门",
+   "types": [
+    "choice",
+    "fill"
+   ],
+   "style": "图意或日常短句，单句为主，选项3个；每个空只考一个点。"
+  },
+  "4": {
+   "name": "四年级",
+   "band": "一级",
+   "vocab": [
+    "grade34"
+   ],
+   "maxWords": 10,
+   "newWords": 0,
+   "passageWords": 60,
+   "grammar": "一般现在时（非三单）、have/has、can、Where is/What's、Whose、祈使句、would like",
+   "types": [
+    "choice",
+    "fill"
+   ],
+   "style": "单句或两句对话，选项3个；语境贴近家庭、学校。"
+  },
+  "5": {
+   "name": "五年级",
+   "band": "二级",
+   "vocab": [
+    "level2"
+   ],
+   "maxWords": 12,
+   "newWords": 0,
+   "passageWords": 100,
+   "grammar": "一般现在时第三人称单数、现在进行时、there be、can、序数词与日期、频度副词、物主代词",
+   "types": [
+    "choice",
+    "fill"
+   ],
+   "style": "两句对话或带语境的单句，选项3~4个。"
+  },
+  "6": {
+   "name": "六年级",
+   "band": "二级",
+   "vocab": [
+    "level2"
+   ],
+   "maxWords": 15,
+   "newWords": 0.03,
+   "passageWords": 150,
+   "grammar": "一般过去时、一般将来时、比较级、should/must、时态综合辨析、对画线部分提问",
+   "types": [
+    "choice",
+    "fill"
+   ],
+   "style": "对话或短语篇，选项4个；可以把两个知识点放在同一题里。"
+  },
+  "7": {
+   "name": "小升初·分班冲刺",
+   "band": "二级+（衔接三级）",
+   "vocab": [
+    "level2",
+    "level3"
+   ],
+   "maxWords": 20,
+   "newWords": 0.06,
+   "passageWords": 250,
+   "grammar": "小学全部语法综合；可考最高级、反身代词、不定代词、感叹句、现在完成时/过去进行时/if 条件句的识别",
+   "types": [
+    "choice",
+    "fill"
+   ],
+   "style": "参照河南名校分班真卷：对话语境、易混干扰、语篇中考语法；超纲词要加中文注释。"
+  }
+ },
+ "difficulty": {
+  "1": {
+   "name": "基础",
+   "rule": "只考一个知识点；判断依据（时间词、主语、数量词）在同一句里且很明显；干扰项只在形式上不同。"
+  },
+  "2": {
+   "name": "标准",
+   "rule": "依据需要从对话另一句或上下文中找，或同时用两个知识点（如三单+否定）；干扰项都是真实存在、孩子常写错的形式。"
+  },
+  "3": {
+   "name": "提高",
+   "rule": "依据隐含在语义中，或设置常见陷阱（就近原则、hour 前用 an、助动词后还原）；词汇和句长仍不超出本年级。"
+  }
+ },
+ "gapRule": "孩子年级 g 与知识点首学年级 t 的差：g<t 不出；差0 推荐难度1~2；差1 推荐1~3；差≥2 推荐2~3（学过很久的点不再出基础题）。",
+ "grade34": "a an the I you he she it we they me him her us them my your his its our their this that these those what where who whose how many much old is am are do does can can't don't not yes no and or but with in on under near behind next to of for to at from please thank thanks ok sorry hello hi goodbye bye see later morning afternoon evening night good nice meet name boy girl man woman friend family father mother dad mum mom brother sister grandfather grandmother grandpa grandma baby aunt uncle parent people teacher student doctor nurse driver farmer cook police officer worker one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty hundred red blue yellow green black white orange brown pink purple colour color cat dog bird fish duck pig rabbit monkey panda tiger lion elephant bear horse cow sheep hen chicken mouse animal zoo apple banana pear peach grape watermelon strawberry fruit cake bread egg milk water juice tea rice noodles meat beef fish soup vegetable potato tomato carrot onion ice cream hamburger hot dog food breakfast lunch dinner hungry thirsty full head face eye ear nose mouth hair arm hand leg foot feet body big small long short tall fat thin old young new happy sad angry tired funny cute beautiful nice cool warm hot cold sunny rainy windy cloudy snowy weather bag book pen pencil ruler eraser crayon pencil box desk chair door window wall floor light picture board computer classroom school library playground garden toilet gym canteen music art PE Chinese English maths class lesson home house room bedroom bathroom kitchen living room bed sofa table phone TV fridge shelf clock box ball car bus bike boat plane train toy doll kite clothes shirt T-shirt skirt dress coat jacket sweater hat cap shoes socks pants shorts jeans glasses look have has like love want need go come run walk jump swim fly sing dance draw read write play eat drink sleep sit stand open close turn clean wash help make put take give get know think say talk speak listen watch see call live work study learn count try wear buy pay cost money yuan dollar time o'clock today day week Monday Tuesday Wednesday Thursday Friday Saturday Sunday birthday party here there now very too also again let let's good bad fine great well right wrong all some any every many lot of more one first second floor up down over would welcome child children tree fast often football park quiet piano umbrella outside cap fruit be between miss excuse hospital",
+ "pep_extra": "usually weekend weekends homework grandparents grandparent ping-pong ping pong start date past museum post office bookstore cinema bank hospital straight cross crossing road traffic fever toothache sweets stay kilometre kilometres metre metres delicious climb trip town ride drive teach classmate twins same each both another something anything nothing everything someone excuse course matter shall sound sounds born coffee bottle carry around future passage title mainly following true false probably means mean phrase price pool sunshine cloth plastic bag supermarket cheap once twice break broke lonely understand teach taught learn lesson word sentence answer question dictionary thing things either round other others brush tooth teeth violin subway storybook grade finally building together important festival different example protect away grow dream leaf leaves rest arrive become enough local north south east west special spend country countries giant visitor base fall ground save sugar sunlight cover order change explain bin rubbish grey gray sort skin activity skill own sign hall station railway camera dumpling dumplings meal habit health healthy whole believe especially sick lantern dragon mooncake minute begin began finish idea plan travel trip visit invite party prize race practise practice club member join welcome culture history traditional famous scientist science space spaceship planet earth moon star sky river lake mountain forest wetland nature environment clean dirty light quiet noisy loud careful carefully happily quickly slowly early late soon ago just already yet ever never few paragraph passage"
+}

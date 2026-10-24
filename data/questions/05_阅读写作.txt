@@ -1,0 +1,167 @@
+# 阅读与写作。%% 之间是短文，后面的题挂在这篇短文上，直到下一个 %% 或 %%end。
+
+@ rd.detail
+%%
+Hi, I'm Amy. I'm ten. I have a cat. Her name is Mimi. She is white and fat. She likes fish. She sleeps on my bed every night. I love her very much.
+%%
+[4/1] What colour is Mimi? | A Black. | B White. | C Yellow. | =B | 原文 She is white and fat.
+[4/1] What does Mimi like? | A Fish. | B Meat. | C Rice. | =A | 原文 She likes fish.
+[4/2] Where does Mimi sleep? | A In a box. | B On Amy's bed. | C Under the desk. | =B | 原文 She sleeps on my bed every night. my 指 Amy。
+%%
+My name is Chen Jie. I'm a student in Class 3, Grade 5. I get up at 6:30 every morning. I usually go to school on foot because my home is near the school. School starts at 8:00. We have four classes in the morning and two in the afternoon. My favourite class is music. I can sing many English songs. After school, I often play ping-pong with my friends. On weekends, I help my mother clean the house.
+%%
+[5/1] When does Chen Jie get up? | A At 6:00. | B At 6:30. | C At 8:00. | =B | 原文 I get up at 6:30 every morning.
+[5/2] How does Chen Jie go to school? | A By bus. | B By bike. | C On foot. | =C | 原文 I usually go to school on foot.
+[5/2] How many classes does Chen Jie have every day? | A Four. | B Two. | C Six. | =C | 上午 4 节，下午 2 节，共 6 节，需要简单计算。
+@ rd.true_false
+[5/2] 判断：Chen Jie's home is far from the school. | A 正确 | B 错误 | =B | 原文说 my home is near the school，离学校近。
+[5/2] 判断：Chen Jie often plays ping-pong after school. | A 正确 | B 错误 | =A | 原文 After school, I often play ping-pong with my friends.
+@ rd.main_idea
+[5/2] What is the passage mainly about? | A Chen Jie's school day. | B Chen Jie's family. | C Chen Jie's music teacher. | =A | 全文按时间顺序介绍陈洁一天的学校生活。
+%%end
+
+@ rd.true_false
+%%
+Last summer, Mike went to Beijing with his parents. They went there by train. It took them about five hours. On the first day, they visited the Palace Museum. It was very big and beautiful. The next day, they climbed the Great Wall. Mike was tired, but he was very happy. He took a lot of photos. They also ate Beijing Duck. Mike thought it was delicious. He wants to go to Beijing again next year.
+%%
+[6/1] 判断：Mike went to Beijing by plane. | A 正确 | B 错误 | =B | 原文 They went there by train.
+[6/2] 判断：Mike visited the Great Wall on the first day. | A 正确 | B 错误 | =B | 第一天去的是故宫，第二天才去长城。
+[6/2] Which of the following is NOT true? | A Mike went to Beijing last summer. | B Mike was tired on the Great Wall. | C Mike didn't like Beijing Duck. | =C | 原文说 Mike thought it was delicious，C 与原文相反。
+@ rd.detail
+[6/2] How long did the trip on the train take? | A About five hours. | B About two days. | C About one hour. | =A | 原文 It took them about five hours.
+@ rd.inference
+[6/3] How did Mike feel about the trip? | A Bored. | B Happy. | C Angry. | =B | 原文 he was very happy，而且明年还想再去，说明他很喜欢这次旅行。
+@ rd.main_idea
+[6/3] What is the best title for the passage? | A Mike's Trip to Beijing | B How to Make Beijing Duck | C The History of the Great Wall | =A | 全文讲 Mike 一家去北京旅行，A 概括全文；B、C 只涉及一个细节或原文没写。
+%%end
+
+@ rd.inference
+%%
+Lucy is a girl from the UK. She is in China now. She is studying Chinese in a school in Zhengzhou. At first, she couldn't understand her classmates, and she felt lonely. Her teacher, Ms. Wang, asked a Chinese girl, Li Mei, to help her. Li Mei taught Lucy Chinese after class, and Lucy taught Li Mei English. Now they are good friends. They often go to the park together on weekends. Lucy's Chinese is getting better and better. She says, "Learning a language is not easy, but it's fun with a friend."
+%%
+[7/2] Why did Lucy feel lonely at first? | A Because she missed her parents. | B Because she couldn't understand her classmates. | C Because Ms. Wang was strict. | D Because she didn't like Zhengzhou. | =B | 原文 she couldn't understand her classmates, and she felt lonely.
+[7/3] What can we learn from the passage? | A Li Mei is Lucy's teacher. | B Lucy and Li Mei help each other. | C Lucy speaks Chinese very well now. | D Lucy goes to the park alone. | =B | Li Mei 教 Lucy 中文，Lucy 教 Li Mei 英文，互相帮助。C 说“很好”过度推断，原文只说越来越好。
+[7/3] What does Lucy want to tell us at the end? | A It's fun to learn a language with a friend. | B Chinese is the hardest language. | C We should study alone. | D Friends are not important. | =A | 原文最后一句 it's fun with a friend。
+@ rd.word_guess
+[7/3] The underlined word "lonely" probably means ____. | A 快乐的 | B 孤独的 | C 忙碌的 | D 生气的 | =B | 听不懂同学说话，没有朋友，所以感到孤独。
+%%end
+
+@ rd.word_guess
+%%
+Jack has a pet dog. It is very clever. When Jack comes home, it always runs to the door and wags its tail. Jack's mother says the dog is happy to see him, because dogs wag their tails when they are happy.
+%%
+[6/2] The word "wags" probably means ____. | A 摇动 | B 咬住 | C 藏起 | =A | 狗开心时会摇尾巴，根据 tail 和 happy 推测 wag 是“摇动”。
+%%end
+%%
+People in many countries are trying to cut down on plastic. Plastic bags are cheap and useful, but they can stay in the earth for hundreds of years. So many supermarkets don't give free plastic bags any more. People bring their own cloth bags when they go shopping. Cloth bags can be used again and again.
+%%
+[7/2] The phrase "cut down on" in the passage means ____. | A 增加 | B 减少 | C 生产 | D 回收 | =B | 下文说超市不再免费提供塑料袋、人们自带布袋，说明要减少塑料的使用。
+[7/3] Why do people use cloth bags? | A Because they are cheaper than plastic bags. | B Because they can be used many times. | C Because supermarkets sell them for free. | D Because they look beautiful. | =B | 原文 Cloth bags can be used again and again.
+%%end
+
+@ rd.practical
+%%
+Summer Swimming Class
+Time: July 10th – August 10th (Monday to Friday)
+Class A (for children aged 6–9): 9:00 a.m. – 10:00 a.m.
+Class B (for children aged 10–12): 10:30 a.m. – 11:30 a.m.
+Price: 300 yuan for each child
+Place: Sunshine Swimming Pool, next to the City Library
+Tel: 6628 3155
+%%
+[5/1] Where is the swimming pool? | A Next to the City Library. | B In the school. | C Near the park. | =A | 原文 Place: ... next to the City Library.
+[5/2] Tom is eleven. Which class can he take? | A Class A. | B Class B. | C Both. | =B | Class B 是给 10 到 12 岁的孩子。
+[6/2] When does Class B start? | A At 9:00 a.m. | B At 10:00 a.m. | C At 10:30 a.m. | =C | Class B 时间是 10:30 a.m.–11:30 a.m.
+[6/3] Mrs. Li wants her two children to take the class. How much should she pay? | A 300 yuan. | B 600 yuan. | C 900 yuan. | =B | 每个孩子 300 元，两个孩子 600 元。
+[7/3] Which of the following is TRUE? | A The class is on weekends. | B The class lasts for one month. | C Children aged 13 can take Class B. | D Each class lasts two hours. | =B | 7 月 10 日到 8 月 10 日，大约一个月；周一到周五上课，每节 1 小时，Class B 只到 12 岁。
+%%end
+
+@ rd.cloze
+%%
+Tom is my good friend. He is twelve years old. He __1__ in a small town. Every morning, he gets up early and goes to school __2__ bike. He likes English very much, __3__ he is not good at maths. So he often asks me for __4__. Last Sunday, I helped him with his maths homework. He was very __5__ and said "Thank you" to me.
+%%
+[6/2] 第1空 | A live | B lives | C living | =B | 主语 he 是第三人称单数，一般现在时用 lives。
+[6/2] 第2空 | A by | B on | C in | =A | by bike 骑自行车。
+[6/3] 第3空 | A and | B so | C but | =C | 喜欢英语，但是数学不好，前后转折用 but。
+[6/3] 第4空 | A help | B food | C money | =A | 数学不好所以向我求助 ask sb for help。
+[6/3] 第5空 | A sad | B happy | C angry | =B | 得到帮助后说谢谢，说明他很高兴。
+%%end
+%%
+Ms. Green is a teacher. She teaches English in a middle school. She __1__ her students very much, and they love her, too. Last week, Ms. Green was ill and she couldn't go to school. Her students __2__ her very much. On Friday afternoon, they made a big card __3__ her. They wrote "We miss you! Get well soon!" on it. Then they __4__ to her home with some flowers. When Ms. Green saw them, she was so __5__ that she couldn't say a word.
+%%
+[7/2] 第1空 | A likes | B liked | C is liking | D will like | =A | 这是对她平时情况的描述，用一般现在时。
+[7/3] 第2空 | A missed | B helped | C forgot | D called | =A | 后面卡片上写 We miss you，说明学生们想念她。
+[7/2] 第3空 | A to | B for | C with | D at | =B | make sth for sb 为某人做某物。
+[7/3] 第4空 | A walk | B walked | C walking | D will walk | =B | 讲述上周五的事，用一般过去时。
+[7/3] 第5空 | A angry | B bored | C moved | D afraid | =C | 学生带着卡片和花来看她，她感动得说不出话，用 moved。
+%%end
+
+@ rd.passage_fill
+%%
+用所给词的适当形式填空。
+My name is Lily. I have a good friend. ____1 (she) name is Kate. She is ____2 (tall) than me. She likes ____3 (draw) pictures. Yesterday she ____4 (give) me a picture of a cat. It is very ____5 (beauty).
+%%
+[6/1] 第1空 | =Her | 后面接名词 name，用形容词性物主代词，句首大写。
+[6/2] 第2空 | =taller | 有 than，用比较级。
+[6/2] 第3空 | =drawing | like doing sth。
+[6/3] 第4空 | =gave | Yesterday 用一般过去时，give 的过去式 gave。
+[6/3] 第5空 | =beautiful | be 后接形容词，beauty 变为 beautiful。
+%%end
+%%
+根据短文内容和首字母提示填空。
+It's Sunday today. The weather is fine. Mr. White and his family are in the park. Mr. White is s____1 under a tree and reading a newspaper. Mrs. White is taking p____2 of the flowers. Their son, Jim, is playing football w____3 his friends. They are all very h____4 today. They will go home at five in the a____5.
+%%
+[7/2] 第1空 | =sitting | 根据 under a tree，用 is sitting，sit 双写 t。
+[7/3] 第2空 | =photos ; pictures | take photos 拍照，photo 复数直接加 -s。
+[7/2] 第3空 | =with | play with 和……一起玩。
+[7/2] 第4空 | =happy | 天气好、全家在公园，都很开心。
+[7/3] 第5空 | =afternoon | five 指下午五点，in the afternoon。
+%%end
+
+@ rd.task
+%%
+Hello! I'm Zhang Peng. I'm twelve. My family has four people: my father, my mother, my sister and me. My father is a doctor. My mother is a teacher. My sister is a middle school student. We are going to visit my grandparents in Shanghai this summer holiday.
+%%
+[6/1] 根据短文回答问题：How old is Zhang Peng? | =He is twelve. ; He's twelve. ; Twelve. ; He is 12. | 原文 I'm twelve，回答时把 I 改为 He。
+[6/2] 根据短文回答问题：What does Zhang Peng's father do? | =He is a doctor. ; He's a doctor. ; A doctor. | 问职业，原文 My father is a doctor.
+[6/3] 根据短文回答问题：Where are they going this summer holiday? | =They are going to Shanghai. ; They're going to Shanghai. ; To Shanghai. ; Shanghai. | 原文 We are going to visit my grandparents in Shanghai，人称改为 they。
+%%end
+
+@ wr.mechanics
+[3/1] 下面哪一句书写正确？ | A my name is amy. | B My name is Amy. | C My name is amy. | =B | 句首字母和人名首字母都要大写。
+[4/2] 下面哪一句书写正确？ | A I go swimming on monday. | B i go swimming on Monday. | C I go swimming on Monday. | =C | I 永远大写，星期首字母大写。
+[5/2] 下面哪一句标点正确？ | A What's your name? | B What's your name. | C What's your name、 | =A | 疑问句以问号结尾；英文没有顿号。
+[6/3] 下面哪一句书写全部正确？ | A We are going to visit beijing in july. | B We are going to visit Beijing in July. | C we are going to visit Beijing in july. | =B | 句首、地名、月份首字母都要大写。
+
+@ wr.sentence
+[4/1] 下面哪个句子是完整、正确的？ | A I very happy. | B I am very happy. | C I am very happily. | =B | 形容词作表语需要 be 动词，不能缺谓语。
+[5/2] 把两句合成一句：I like dogs. I don't like cats. | A I like dogs, but I don't like cats. | B I like dogs, so I don't like cats. | C I like dogs or I don't like cats. | =A | 前后意思相反，用 but 连接。
+[6/2] 下面哪个句子是正确的？ | A Because it rained, so we stayed at home. | B Because it rained, we stayed at home. | C It rained, because we stayed at home. | =B | because 和 so 不能同时用；C 因果颠倒。
+[6/3] 翻译：我每天骑自行车上学。 | =I go to school by bike every day. ; I ride a bike to school every day. ; I ride my bike to school every day. | 骑车上学 go to school by bike / ride a bike to school，时间状语放句末。
+[7/3] 翻译：昨天我和朋友们去了公园。 | =I went to the park with my friends yesterday. ; Yesterday I went to the park with my friends. ; My friends and I went to the park yesterday. | 过去时用 went；with my friends 放在地点后。
+
+@ wr.paragraph
+[5/1] 写一篇介绍自己周末的短文，最适合放在开头的一句是 ____。 | A I like weekends very much. | B First, I do my homework. | C That's my weekend. | =A | 开头先点题；B 适合放在中间，C 适合结尾。
+[6/2] 下面哪个词适合表示“最后”，用在短文结尾的步骤中？ | A First | B Then | C Finally | =C | First 首先，Then 然后，Finally 最后。
+[6/3] 短文“My Favourite Season”中，哪一句与主题无关，应该删去？ | A I like summer best. | B I can swim in summer. | C My brother is a doctor. | =C | 哥哥的职业与“最喜欢的季节”无关。
+[7/3] 下面哪一句最适合作为短文“My Plan for Junior High School”的结尾？ | A I hope I will have a great time in junior high school. | B I was born in 2014. | C I like eating ice cream. | D My father is tall. | =A | 结尾呼应题目，表达对初中生活的期望。
+
+@ wr.self_others
+[5/1] 介绍朋友时，下面哪一句是正确的？ | A She have long hair. | B She has long hair. | C She is have long hair. | =B | 主语 she 用 has。
+[5/2] 介绍朋友的爱好，下面哪一句是正确的？ | A He like playing football. | B He likes playing football. | C He likes play football. | =B | 主语第三人称单数用 likes，like doing。
+[6/3] 描写人物性格，下面哪一句最合适？ | A My friend is kind. She often helps others. | B My friend is kind. She often fights with others. | C My friend is tall. She often helps others. | =A | 用具体事例说明性格，事例要与性格一致。
+
+@ wr.experience
+[6/1] 写“我的暑假”时，下面哪一句时态正确？ | A I go to Hainan last summer. | B I went to Hainan last summer. | C I will go to Hainan last summer. | =B | last summer 用一般过去时。
+[6/2] 下面哪一句最适合写在经历的结尾，表达感受？ | A I had a great time there. | B I go there by plane. | C There are many trees. | =A | 结尾写感受，并且用过去时。
+[7/3] 下面哪一组句子时态一致、正确？ | A We arrived at the farm at 9. We pick apples. | B We arrived at the farm at 9. We picked apples. | C We arrive at the farm at 9. We picked apples. | D We arrived at the farm at 9. We are picking apples. | =B | 记叙过去的经历，前后都用一般过去时。
+
+@ wr.plan_wish
+[6/1] 写计划时，下面哪一句是正确的？ | A I going to read books. | B I am going to read books. | C I am going to reading books. | =B | be going to + 动词原形，be 不能省。
+[6/2] 表达愿望时，下面哪一句正确？ | A I want be a doctor. | B I want to be a doctor. | C I want to am a doctor. | =B | want to be + 职业。
+[7/3] 下面哪一句最适合写在“新学期计划”中？ | A I will listen carefully in class and finish my homework on time. | B I listened carefully in class last year. | C I am listening carefully now. | D I listen to music. | =A | 计划用将来时，内容要具体。
+
+@ wr.letter
+[6/1] 英文书信开头的称呼，下面哪一个正确？ | A Dear Tom, | B Dear Tom. | C Tom dear, | =A | 称呼用 Dear + 名字，后面用逗号。
+[6/2] 英文书信的结尾署名前常写 ____。 | A Dear, | B Yours, | C Hello, | =B | 结束语常用 Yours,/Best wishes,，然后另起一行署名。
+[7/3] 一封给笔友的回信，下面哪一句最适合作为第一句？ | A Thanks for your letter. | B Goodbye. | C Yours, Li Hua | D Best wishes! | =A | 回信开头先感谢来信；其他选项都放在信的结尾。

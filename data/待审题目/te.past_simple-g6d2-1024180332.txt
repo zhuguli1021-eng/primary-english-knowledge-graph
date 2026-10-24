@@ -1,0 +1,7 @@
+# deepseek-v4-pro 生成，已过质检和盲解复核；老师确认后把整段移到 data/questions/ 下的文件里
+@ te.past_simple
+[6/2] Amy didn't ______ her homework yesterday. She was ill. | A do | B did | C does | D doing | =A | didn't 后接动词原形，yesterday 是过去时间信号，故选 do。
+[6/2] —What did you do last Sunday, Tom? —I ______ football with my friends. | A play | B played | C plays | D playing | =B | last Sunday 是过去时间信号，问句 did 也提示过去，play 应用过去式 played。
+[6/2] Mike usually ______ by bus, but he ______ by car yesterday. | A goes; goes | B goes; went | C went; goes | D go; went | =B | usually 描述经常行为，主语 Mike 用三单 goes；yesterday 表过去，go 用过去式 went。
+[6/2] —______ your sister ______ TV last night? —No, she ______. | A Did; watch; didn't | B Did; watched; didn't | C Do; watch; doesn't | D Does; watch; doesn't | =A | last night 是过去时间信号，疑问句用 Did+主语+动词原形 watch，否定回答用 didn't。
+[6/2] —What did you do just now? —I ______ a nice book in the library. | A find | B found | C finds | D finding | =B | just now 是过去时间信号，问句 did 提示过去，find 的过去式是 found。

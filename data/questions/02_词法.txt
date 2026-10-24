@@ -1,0 +1,199 @@
+# 名词、冠词、代词、数词、介词、形容词副词
+
+@ nn.plural
+[3/1] I have two ____. | A box | B boxs | C boxes | =C | x 结尾的名词加 -es。
+[3/1] Look at the ____. They are cute. | A cat | B cats | C cates | =B | They are 说明是复数，cat 直接加 -s。
+[4/2] 写出复数：bus → ____ | =buses | s 结尾加 -es。
+[5/2] There are many ____ in the zoo. | A monkey | B monkeys | C monkeies | =B | 元音字母 + y 结尾直接加 -s。
+[5/2] 写出复数：family → ____ | =families | 辅音字母 + y 结尾，变 y 为 i 加 -es。
+[6/2] I like ____. They are red and round. | A tomato | B tomatos | C tomatoes | =C | tomato 的复数是 tomatoes。
+[6/3] There are two ____ in the room. One is old, and the other is new. | A piano | B pianos | C pianoes | =B | piano 是例外，复数直接加 -s。
+[7/3] 用所给词的适当形式填空：Autumn is coming. The ____ (leaf) on the trees are turning yellow. | =leaves | leaf 的复数 f 变 v 加 -es。
+
+@ nn.plural_irregular
+[4/1] There are three ____ in the classroom. | A child | B children | C childs | =B | child 的复数是 children。
+[4/2] I have two hands and two ____. | A foots | B feet | C feets | =B | foot 的复数是 feet。
+[5/2] There are many ____ on the farm. | A sheep | B sheeps | C sheepes | =A | sheep 单复数同形。
+[6/2] Brush your ____ every morning and evening. | A tooth | B tooths | C teeth | =C | 刷牙指所有牙齿，用复数 teeth。
+[7/3] There are two ____ in our school. Both of them teach music. | A woman teacher | B women teachers | C woman teachers | D women teacher | =B | man/woman 修饰复数名词时两个词都变复数：women teachers。
+
+@ nn.countable
+[4/1] I want some ____. I'm thirsty. | A water | B waters | C a water | =A | water 不可数，不加 -s，也不用 a。
+[5/2] There ____ some bread in the bag. | A is | B are | C am | =A | bread 不可数，谓语用单数 is。
+[6/2] I have a lot of ____ to do today. | A homework | B homeworks | C a homework | =A | homework 不可数。
+[7/3] The teacher gave us some useful ____ on how to learn English well. | A advices | B advice | C an advice | =B | advice 不可数，不加 -s。
+[7/3] —Would you like something to drink? —Yes, two ____, please. | A glass of milk | B glasses of milks | C glasses of milk | D glass of milks | =C | 不可数名词的复数靠量词变复数：two glasses of milk。
+
+@ nn.quantity
+[5/1] —Do you have ____ brothers? —No, I don't. | A some | B any | C a | =B | 疑问句中通常用 any。
+[5/2] —Would you like ____ juice? —Yes, please. | A some | B any | C many | =A | 表示请求或建议的问句用 some。
+[5/2] How ____ apples do you have? | A many | B much | C any | =A | apples 可数，问数量用 How many。
+[6/2] There isn't ____ milk in the fridge. Let's go and buy some. | A many | B much | C some | =B | milk 不可数，否定句用 much。
+[6/3] There are ____ people in the park on Sundays. | A much | B a lot of | C a little | =B | people 可数复数，用 a lot of；much 和 a little 修饰不可数名词。
+[7/3] —How much ____ do you need? —Only ____ . | A money; a few | B money; a little | C moneys; a little | D money; little | =B | money 不可数，“一点儿”用 a little；little 表示“几乎没有”，与 Only 搭配不合语气。
+
+@ nn.possessive
+[4/1] This is ____ bag. | A Amy | B Amy's | C Amys | =B | 表示“某人的”用 's。
+[4/2] —Whose shoes are these? —They're ____. | A Tom | B Tom's | C Toms' | =B | Tom's 表示“汤姆的（鞋）”。
+[5/2] Today is ____ Day. Let's say "Happy Teachers' Day" to our teachers. | A Teacher | B Teachers' | C Teacher's | =B | 教师节 Teachers' Day，复数名词以 s 结尾只加撇号。
+[6/3] Lily and Lucy are twins(双胞胎). ____ room is very clean. | A Lily and Lucy's | B Lily's and Lucy's | C Lily's and Lucy | =A | 两人共有一个房间，只在最后一个名字加 's。
+[7/3] June 1st is ____ Day. | A Children | B Children's | C Childrens' | D Childrens | =B | children 不以 s 结尾，所有格加 's。
+
+@ ar.a_an
+[3/1] I have ____ orange. | A a | B an | C / | =B | orange 以元音音素开头，用 an。
+[3/1] This is ____ pen. | A a | B an | C / | =A | pen 以辅音音素开头，用 a。
+[4/2] I have ____ English book and ____ Chinese book. | A a; an | B an; a | C an; an | =B | English 以元音音素开头用 an，Chinese 以辅音音素开头用 a。
+[5/2] Let's wait for ____ hour. | A a | B an | C the | =B | hour 中 h 不发音，以元音音素开头，用 an。
+[6/3] It's ____ useful book. | A a | B an | C / | =A | useful 以 /j/ 开头，是辅音音素，用 a。
+[7/3] There is ____ "u" and ____ "s" in the word "bus". | A a; a | B an; an | C a; an | D an; a | =C | 字母 u 读 /juː/，以辅音音素 /j/ 开头，用 a；字母 s 读 /es/，以元音音素开头，用 an。
+
+@ ar.the
+[4/1] My brother can play ____ piano. | A a | B the | C / | =B | 乐器前加 the。
+[5/2] ____ sun is very big and hot. | A A | B An | C The | =C | 世界上独一无二的事物前加 the。
+[5/2] I have a cat. ____ cat is black and white. | A A | B The | C An | =B | 第二次提到同一事物用 the。
+[6/2] Jim lives on ____ fifth floor. | A a | B the | C / | =B | 序数词前一般加 the。
+[7/3] Look at ____ girl in a red dress. She is ____ best student in our class. | A a; the | B the; the | C the; a | D a; a | =B | 特指穿红裙子的那个女孩用 the；最高级前用 the。
+
+@ ar.zero
+[5/1] Let's play ____ basketball after school. | A a | B the | C / | =C | 球类运动前不用冠词。
+[5/2] I usually go to school ____. | A by bus | B by a bus | C by the bus | =A | by + 交通工具，中间不用冠词。
+[6/2] We have ____ breakfast at 7:00 every day. | A a | B the | C / | =C | 三餐前一般不用冠词。
+[6/3] Tom plays ____ football well, and his sister plays ____ violin well. | A the; the | B /; the | C the; / | =B | 球类前不用冠词，乐器前用 the。
+[7/3] My father goes to ____ work by ____ subway every day. | A the; / | B /; the | C /; / | D the; the | =C | go to work、by subway 都是固定搭配，不用冠词。
+
+@ pr.personal
+[3/1] This is my sister. ____ is ten. | A He | B She | C It | =B | 指代 sister（姐妹）用 she。
+[3/2] Look at the man. Do you know ____? | A he | B him | C his | =B | 动词 know 后面用宾格 him。
+[4/2] Let ____ help you. | A I | B me | C my | =B | let 后用宾格 me。
+[5/2] Mike and ____ are good friends. | A I | B me | C my | =A | 在句中作主语，用主格 I。
+[6/3] —Who's that girl? —It's ____. She's my new classmate. | A she | B her | C hers | =B | It's 后面常用宾格：It's her.
+[7/3] The teacher asked ____ to clean the classroom, and ____ did it quickly. | A we; us | B us; we | C us; us | D we; we | =B | asked 后作宾语用 us，第二个空作主语用 we。
+
+@ pr.possessive_adj
+[4/1] I have a dog. ____ name is Lucky. | A It | B Its | C It's | =B | 表示“它的”用 its。
+[4/2] —Is this ____ book? —Yes, it's mine. | A you | B your | C yours | =B | 后面接名词 book，用形容词性物主代词 your。
+[5/2] Tom and Jim are brothers. ____ mother is a teacher. | A Their | B There | C They | =A | 表示“他们的”用 their。
+[6/3] The dog is playing with ____ ball. ____ very happy. | A its; Its | B it's; It's | C its; It's | =C | its ball 它的球；It's = It is。
+[7/3] We love ____ school, and the teachers love ____ jobs, too. | A our; their | B ours; theirs | C us; them | D our; theirs | =A | 后面都接名词，用形容词性物主代词 our、their。
+
+@ pr.possessive_pron
+[5/1] This isn't my pencil. ____ is in my bag. | A My | B Mine | C Me | =B | 后面没有名词，用名词性物主代词 mine（= my pencil）。
+[5/2] —Whose dress is this? —It's ____. | A she | B her | C hers | =C | 后面没有名词，用 hers。
+[6/2] My shoes are black. ____ are white. | A Your | B You | C Yours | =C | Yours = Your shoes。
+[6/3] —Is this your kite? —No, it isn't. ____ is over there. | A My | B Mine | C Me | =B | Mine = My kite。
+[7/3] My bike is new, but ____ is old. | A he | B him | C his | D he's | =C | his 既可作形容词性物主代词，也可作名词性物主代词；这里后面没有名词。
+
+@ pr.demonstrative
+[3/1] ____ is my brother. | A This | B These | C Those | =A | is 后面接单数，用 this。
+[3/2] ____ are my books. | A This | B That | C These | =C | are 后面接复数，用 these。
+[4/2] Look at ____ birds in the tree. | A that | B those | C this | =B | 远处的复数名词用 those。
+[5/2] 把句子改为复数：This is a cat. → ____ are cats. | =These | this 的复数是 these，is 改 are。
+[6/3] —Hello, ____ is Mike speaking. Is ____ Amy? —Yes, it is. | A this; that | B that; this | C this; this | =A | 打电话时介绍自己用 this，询问对方用 that。
+
+@ pr.reflexive
+[6/1] I made this card ____. | A me | B my | C myself | =C | 我自己做的，用 myself。
+[6/2] Help ____ to some fish, children. | A you | B yourself | C yourselves | =C | 对 children（复数）说，用 yourselves。
+[7/2] Tom taught ____ English last year. | A him | B his | C himself | D he | =C | 自学 teach oneself。
+[7/3] We enjoyed ____ very much at the party yesterday. | A us | B ourselves | C ours | D ourself | =B | enjoy oneself 玩得开心，主语 we 对应 ourselves。
+
+@ pr.indefinite
+[7/1] Is there ____ in the box? | A something | B anything | C nothing | =B | 疑问句中通常用 anything。
+[7/2] I have ____ to tell you. | A interesting something | B something interesting | C anything interesting | =B | 形容词修饰不定代词要后置；肯定句用 something。
+[7/2] I have two pens. One is red, and ____ is blue. | A other | B the other | C another | D others | =B | 两者中的另一个用 the other。
+[7/3] This T-shirt is too small. Can you show me ____ one? | A other | B the other | C another | D others | =C | 三者及以上中的另一个用 another。
+[7/3] My parents ____ like music, but they like different kinds. | A all | B both | C either | D each | =B | 两个人都用 both。
+[7/3] —Is there anything wrong with your bike? —No, ____ is wrong. It works well. | A something | B anything | C nothing | D everything | =C | 意思是“没有什么毛病”，用 nothing。
+
+@ pr.it
+[4/1] What's the weather like? ____ sunny. | A It's | B Its | C This | =A | 描述天气用 it。
+[4/2] It's 12 o'clock. It's time ____ lunch. | A to | B for | C at | =B | It's time for + 名词。
+[5/2] It's 9:00 p.m. It's time ____ go to bed. | A to | B for | C of | =A | It's time to + 动词原形。
+[6/3] —How long does ____ take you to get to school? —About ten minutes. | A this | B it | C that | =B | It takes sb some time to do sth。
+[7/3] ____ is about ten kilometres from my home to the park. | A This | B That | C It | D There | =C | 表示距离用 it。
+
+@ nu.cardinal
+[3/1] 7 + 3 = ____ | A nine | B ten | C eleven | =B | 七加三等于十。
+[3/2] How many legs does a cat have? | A Two. | B Four. | C Six. | =B | 猫有四条腿。
+[4/2] 40 的英文拼写是 ____。 | A fourty | B forty | C fourteen | =B | 40 是 forty，没有 u。
+[5/2] There are ____ students in our class. (三十二) | A thirty-two | B thirteen-two | C thirty two | =A | 32 写作 thirty-two，中间有连字符。
+[6/3] There are ____ people in the city. | A three thousands | B three thousand | C three thousand of | =B | 前面有具体数字时 thousand 不加 s，也不加 of。
+[7/3] —How much is the bike? —It's ____ yuan. (580) | A five hundred and eighty | B five hundreds and eighty | C five hundred eighty and | D five hundreds eighty | =A | 580 读作 five hundred and eighty；hundred 不加 s，百位后加 and。
+
+@ nu.ordinal
+[5/1] 序数词 one → ____ | A oneth | B first | C once | =B | one 的序数词是 first。
+[5/2] Today is my ____ birthday. I'm nine years old. | A nine | B nineth | C ninth | =C | nine 的序数词去 e 加 th：ninth。
+[6/2] December is the ____ month of the year. | A twelve | B twelfth | C twelveth | =B | twelve 的序数词 ve 变 f 加 th：twelfth。
+[6/3] 用所给词的适当形式填空：Jim lives on the ____ (five) floor. | =fifth | five 的序数词是 fifth。
+[7/3] 用所给词的适当形式填空：This is my ____ (twenty) visit to Beijing. I love it. | =twentieth | ty 结尾变 y 为 ie 加 th：twentieth。
+
+@ nu.time_date
+[5/1] —What time is it? —It's ____. (7:30) | A seven thirty | B thirty seven | C seven three | =A | 7:30 读作 seven thirty。
+[5/2] —What's the date today? —It's ____. | A Monday | B May 1st | C sunny | =B | 问日期，回答几月几日。
+[5/2] —What day is it today? —It's ____. | A Friday | B June 2nd | C 2 o'clock | =A | 问星期几，回答星期。
+[7/2] 8:45 can be read as ____. | A a quarter to nine | B a quarter past eight | C half past eight | =A | 8:45 差一刻九点。
+[7/3] My birthday is on ____. | A October the twenty | B October twenty | C October 20th | D 20 October th | =C | 日期用序数词，October 20th。
+
+@ pp.place
+[3/1] Where is my cat? It's ____ the box. | A in | B at | C to | =A | 在盒子里 in the box。
+[3/2] The ball is ____ the desk and the chair. | A next | B between | C behind | =B | between...and... 在两者之间。
+[4/2] My house is ____ the park. It's very close. | A near | B on | C at | =A | near 在……附近。
+[5/2] There is a big tree ____ our classroom building.（在教学楼前面） | A in front of | B in the front of | C behind | =A | 在某物外部的前面用 in front of；in the front of 指在某物内部的前部。
+[6/3] Lily sits on my left and Tom sits on my right. So I sit ____ them. | A between | B behind | C in front of | =A | 左边是 Lily、右边是 Tom，我坐在两人之间。
+
+@ pp.time
+[5/1] I get up ____ 6:30. | A in | B on | C at | =C | 具体时刻前用 at。
+[5/1] Children's Day is ____ June 1st. | A in | B on | C at | =B | 具体某一天前用 on。
+[5/2] It's very hot ____ summer. | A in | B on | C at | =A | 季节前用 in。
+[6/2] We have an English class ____ Tuesday afternoon. | A in | B on | C at | =B | 具体某一天的上午、下午用 on。
+[6/3] My grandpa was born ____ 1958, and I was born ____ a cold morning ____ 2014. | A in; on; in | B on; in; in | C in; in; on | =A | 年份前用 in，具体某天早上用 on，年份 in。
+[7/3] We stay at home ____ night, but we often go out ____ the evening. | A at; in | B in; at | C on; in | D at; on | =A | at night 和 in the evening 是固定搭配。
+
+@ pp.common
+[5/1] I go to school ____ bike. | A by | B on | C with | =A | by + 交通工具。
+[5/2] —Where are you ____? —I'm from China. | A on | B from | C at | =B | be from 来自。
+[5/2] I often go ____ a walk after dinner. | A to | B for | C at | =B | go for a walk 散步。
+[6/2] This is a book ____ animals. | A about | B with | C at | =A | 关于动物的书 a book about animals。
+[6/3] The girl ____ long hair is my sister. | A in | B with | C of | =B | with 表示“带有”某种特征。
+[7/3] He is kind ____ everyone and he is always ready to help ____ others. | A to; / | B for; with | C with; / | D to; with | =A | be kind to sb；help 后直接接宾语。
+
+@ ad.adj_basic
+[3/1] The cake looks ____. | A nice | B nicely | C a nice | =A | look 是系动词，后接形容词。
+[4/2] I have a ____ dog. | A white big | B big white | C bigs white | =B | 多个形容词修饰名词时，大小在颜色前。
+[5/2] You look ____. What's wrong? | A sad | B sadly | C sadness | =A | look 是系动词，后接形容词 sad。
+[6/3] —How do you feel now? —I feel ____. I want to drink some water. | A full | B thirsty | C hungrily | =B | 想喝水说明口渴 thirsty；feel 后接形容词。
+
+@ ad.adverb
+[5/1] He sings very ____. | A good | B well | C nice | =B | 修饰动词 sings 用副词 well。
+[5/2] The old man walks ____. | A slow | B slowly | C slower | =B | 修饰动词 walks 用副词 slowly。
+[6/2] 用所给词的适当形式填空：The baby is sleeping. Please speak ____ (quiet). | =quietly | 修饰动词 speak 用副词 quietly。
+[6/3] She is a ____ dancer. She dances ____. | A good; good | B well; well | C good; well | =C | 修饰名词用形容词 good，修饰动词用副词 well。
+[7/3] 用所给词的适当形式填空：The children are playing ____ (happy) in the park. | =happily | 辅音字母 + y 结尾，变 y 为 i 加 ly。
+
+@ ad.frequency
+[5/1] I ____ go to school at 7:30. I'm never late. | A always | B never | C sometimes | =A | 从不迟到，说明总是按时：always。
+[5/2] —____ do you go swimming? —Twice a week. | A How many | B How often | C How long | =B | 回答频率，用 How often 提问。
+[6/2] Tom ____ eats vegetables. He only likes meat. | A always | B usually | C never | =C | 只喜欢肉，所以从不吃蔬菜 never。
+[6/3] 下面哪一个按频率从高到低排列是正确的？ | A always, usually, often, sometimes, never | B always, often, usually, sometimes, never | C usually, always, often, never, sometimes | =A | 频率从高到低：always > usually > often > sometimes > never。
+[7/3] She is ____ late for school. She ____ gets up early. | A never; always | B always; never | C often; never | D never; never | =A | 早起所以从不迟到；频度副词放在 be 后、实义动词前。
+
+@ ad.comparative_form
+[6/1] big → ____ | A biger | B bigger | C bigest | =B | 重读闭音节，末尾只有一个辅音字母，双写加 -er。
+[6/1] heavy → ____ | A heavyer | B heavier | C more heavy | =B | 辅音字母 + y 结尾，变 y 为 i 加 -er。
+[6/2] 用所给词的适当形式填空：My bag is ____ (good) than yours. | =better | good 的比较级是 better。
+[6/3] 用所给词的适当形式填空：This book is ____ (interesting) than that one. | =more interesting | 多音节形容词前加 more。
+[7/2] 用所给词的适当形式填空：Today is ____ (bad) than yesterday. | =worse | bad 的比较级是 worse。
+[7/3] 用所给词的适当形式填空：Amy has ____ (many) books than Lily. | =more | many 的比较级是 more。
+
+@ ad.comparative_use
+[6/1] I'm 1.50 metres. You're 1.45 metres. I'm ____ than you. | A tall | B taller | C shorter | =B | 1.50 > 1.45，我比你高，用比较级 taller。
+[6/2] —Who is ____, Tom or Jim? —Tom is. | A tall | B taller | C tallest | =B | 两人比较用比较级。
+[6/2] My hair is longer than ____. | A you | B your | C yours | =C | 和“你的头发”比较，用 yours（= your hair）。
+[6/3] This box is ____ heavier than that one. | A very | B much | C more | =B | 修饰比较级用 much，不用 very。
+[7/3] It's getting ____ in spring. | A warm and warm | B warmer and warmer | C more warmer | D more and more warm | =B | “比较级 and 比较级”表示越来越……
+[7/3] —Which is ____, the sun, the moon or the earth? —The sun. | A big | B bigger | C biggest | D the biggest | =D | 三者比较用最高级，前面加 the。
+
+@ ad.superlative
+[6/2] He is ____ boy in our class. | A tall | B taller | C the tallest | =C | 在班级范围内比较，用最高级。
+[7/2] Shanghai is one of ____ cities in China. | A big | B bigger | C the biggest | D biggest | =C | one of the + 最高级 + 复数名词。
+[7/3] Winter is ____ season of the year in Harbin. | A cold | B colder | C coldest | D the coldest | =D | 在一年（四季）范围内比较用最高级，前面加 the。
+[7/3] Of the three boys, Mike runs ____. | A fast | B faster | C fastest | D the fastest | =D | 三者中比较，用最高级 the fastest。
