@@ -1,0 +1,3458 @@
+{
+ "version": 1,
+ "updated": "2026-11-17T08:50:45.636215+00:00",
+ "counts": {
+  "extracted_pending_review": 41,
+  "outside_primary": 370,
+  "duplicate": 2
+ },
+ "files": [
+  {
+   "path": "2025小升初河南重点名校真卷.pdf",
+   "size": 79655154,
+   "sha256": "30ff68e5ad9ed3be5528386135276f3da4538915f526f0731a8254a4cd915d13",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 128,
+   "extracted_pages": 128,
+   "unclear_pages": []
+  },
+  {
+   "path": "2026年河南中考英语试卷.pdf",
+   "size": 6934409,
+   "sha256": "a701a957729ddbbf73a84c40bac9a28356dd4eda3bab8e988833a3d5352913c9",
+   "scope": "secondary",
+   "grade": 9,
+   "status": "outside_primary"
+  },
+  {
+   "path": "2026年郑州外国语中学中考三模英语试卷及答案.pdf",
+   "size": 18522728,
+   "sha256": "90220330065b3666944c718e775cd034ecbc6d8e096b57d3d5eda6fc25899e31",
+   "scope": "secondary",
+   "grade": 9,
+   "status": "outside_primary"
+  },
+  {
+   "path": "2027年45套卷 .pdf",
+   "size": 141972650,
+   "sha256": "5f334a42fa364f025ff5d7269dd439c16d7b2d29e017335213ddc09af23595bb",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 109,
+   "extracted_pages": 109,
+   "unclear_pages": []
+  },
+  {
+   "path": "26秋季 王朝霞考点梳理时习卷 英语五年级.pdf",
+   "size": 99535532,
+   "sha256": "a31a41bd05bf1354151e478fd659047997497f35c2a92404bd18309960501f3e",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 51,
+   "extracted_pages": 51,
+   "unclear_pages": []
+  },
+  {
+   "path": "26秋季 王朝霞考点梳理时习卷 英语人教三年级.pdf",
+   "size": 72871519,
+   "sha256": "59f17835d8d04c21259113e7ba8ddee4918b7430a452b65e87acd21de2909195",
+   "scope": "primary",
+   "grade": 3,
+   "status": "extracted_pending_review",
+   "pages": 43,
+   "extracted_pages": 43,
+   "unclear_pages": []
+  },
+  {
+   "path": "26秋季王朝霞考点梳理时习卷 英语人教四年级.pdf",
+   "size": 80479282,
+   "sha256": "9844818190e2ab1426bdc9d814e15a0e598eaea88f8398eabbfad01b7c30587d",
+   "scope": "primary",
+   "grade": 4,
+   "status": "extracted_pending_review",
+   "pages": 43,
+   "extracted_pages": 43,
+   "unclear_pages": []
+  },
+  {
+   "path": "7上期中26年期中有答案.pdf",
+   "size": 5160370,
+   "sha256": "af4c1dc6b0d3e3c88c6cd109c95df30fac4f2efc2a64f4488e2a8e0767e3ff16",
+   "scope": "secondary",
+   "grade": 7,
+   "status": "outside_primary"
+  },
+  {
+   "path": "四年级英语试卷(1).pdf",
+   "size": 20393337,
+   "sha256": "76684f9646644fee03086b5ddcbe771df97477f43ea1046af61725b2c4a3c62f",
+   "scope": "primary",
+   "grade": 4,
+   "status": "extracted_pending_review",
+   "pages": 18,
+   "extracted_pages": 18,
+   "unclear_pages": []
+  },
+  {
+   "path": "外总七上英语第一次月考2025.10.10.pdf",
+   "size": 3047248,
+   "sha256": "a09fb49e518dea4c71c8f1cf3c43271b9c844d90b0dc8b33c3523e3f3808f78e",
+   "scope": "secondary",
+   "grade": 7,
+   "status": "outside_primary"
+  },
+  {
+   "path": "小白鸥《2027小升初 重点中学招生 五年真题分类卷》英语.pdf",
+   "size": 162493012,
+   "sha256": "cce564cee47e951e3c4d3f26e996687bcdb1838289fc4192d00d27d87b8f8594",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 157,
+   "extracted_pages": 157,
+   "unclear_pages": []
+  },
+  {
+   "path": "暗考试卷.pdf",
+   "size": 4885795,
+   "sha256": "050c898bca5b0243803e2d34a7a19efde8774372628087056a300f8d1b73f24f",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 46,
+   "extracted_pages": 46,
+   "unclear_pages": [
+    34,
+    46
+   ]
+  },
+  {
+   "path": "河南省实验中学2025-2026学年第二次月考英语试卷.pdf",
+   "size": 5439829,
+   "sha256": "1d6e6b27c2bf9b936168b6d0ec889c27c7b56ba133d06b9cca61992c6eb88836",
+   "scope": "secondary",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "精品解析：2025年河南省中考英语真题 （解析版）.docx",
+   "size": 246176,
+   "sha256": "87f337c6a27ba55f1dc3e3e89b20a0298dd49ff1db09be62a32749c219493d97",
+   "scope": "secondary",
+   "grade": 9,
+   "status": "outside_primary"
+  },
+  {
+   "path": "考点梳理，6年级.pdf",
+   "size": 4304039,
+   "sha256": "8044b6bf81d1a16fa1a837870f4c769865c2494ccfb799a4a57dad40b0546fa8",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 48,
+   "extracted_pages": 48,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/专项习题/(完整版)实义动词练习.doc",
+   "size": 39424,
+   "sha256": "dbf2dd804819a7c5df2388349216459a36e66f9112ddfb8148898f55fe73db18",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/专项习题/语法每日小纸条.pdf",
+   "size": 9218247,
+   "sha256": "0ad0566d2c68e1fe4046ddd1a2dfe7ace677b7314eb245dc79953bc9a7ef61a0",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 67,
+   "extracted_pages": 67,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/2023年新版-FCE-B2必考词汇.pdf",
+   "size": 10516741,
+   "sha256": "3dd2098104dc503f759ca49c52475a0bf14ddce046fa4a8554f931ddb9ef4feb",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/5分钱打印包邮.png",
+   "size": 553750,
+   "sha256": "cc19c051c44cc1a729abed03cffeff6fb486622b5da78589868f2fad975afba6",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE 听力-真题填词词库.pdf",
+   "size": 1952956,
+   "sha256": "b58c8a76a06d59c506f0fc46a47fde0228a70a0f93d0f340387d21bf8d7be999",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE 阅读理解同义替换汇总.docx",
+   "size": 56170,
+   "sha256": "2ce9e99adb1abbdc0b76740851881cb6ae255eb2afadb4d6c577d77f2be76009",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE写作话题词素材库.pdf",
+   "size": 565803,
+   "sha256": "6b7b22313a3002a3c97d1c49fd2414cd5fe49a8c3e4f85b4d5cf6355cc8b8381",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE分类词汇表.pdf",
+   "size": 5942482,
+   "sha256": "40a0ec91ba5d321b9a5a66734de8b472edbe100c625bf25e8d42a393c0dd9ca5",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE单词册.pdf",
+   "size": 276743,
+   "sha256": "8f7753591a8cb587158c03e45040426f4e77ebf0f9aa1636ddd708166d5418d8",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE听力常见同义替换.pdf",
+   "size": 540673,
+   "sha256": "372ec049793e6808a1ca9ded216c57ec294ecca35a2a7e99bb3d1c667b5ef953",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE必备词汇.doc",
+   "size": 269312,
+   "sha256": "8dab3c8a71e39824b3cf20c535f835f40ec8cb05a235403d033bb9d85d9dbbb5",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE真题集词汇总结/FCE2.xlsx",
+   "size": 41911,
+   "sha256": "27b05038d818099f3a821696d63e172511f75970215b81487cafb17d0da53105",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE真题集词汇总结/FCE5.xlsx",
+   "size": 40662,
+   "sha256": "7ce44748b085b6d67d0c4fab41cea1af49fce031279d8f69bc06a5c3c41cb238",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE真题集词汇总结/FCE真题词汇1、3.xlsx",
+   "size": 73674,
+   "sha256": "88a790ff34c0757c0738cc146aaabb56ea2be24979b1ed448da99d3e83510be2",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词表【30单元】.pdf",
+   "size": 3640611,
+   "sha256": "475eb7b285a47288f3c0c6bf224c4c907ecfcee30221f937f50b2348b8834f79",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/FCE单词表【30单元】.pdf",
+   "size": 3640611,
+   "sha256": "475eb7b285a47288f3c0c6bf224c4c907ecfcee30221f937f50b2348b8834f79",
+   "scope": "advanced",
+   "grade": null,
+   "status": "duplicate",
+   "duplicate_of": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词表【30单元】.pdf"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit1.mp3",
+   "size": 15172049,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit10.mp3",
+   "size": 10836055,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit11.mp3",
+   "size": 11783044,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit12.mp3",
+   "size": 11346078,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit13.mp3",
+   "size": 8194182,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit14.mp3",
+   "size": 11583542,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit15.mp3",
+   "size": 6277250,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit16.mp3",
+   "size": 8455295,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit17.mp3",
+   "size": 7849760,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit18.mp3",
+   "size": 13718251,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit19.mp3",
+   "size": 10506410,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit2.mp3",
+   "size": 18816961,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit20.mp3",
+   "size": 11622608,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit21.mp3",
+   "size": 11672826,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit22.mp3",
+   "size": 16211733,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit23.mp3",
+   "size": 14594850,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit24.mp3",
+   "size": 11774801,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit25.mp3",
+   "size": 14154147,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit26.mp3",
+   "size": 14196994,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit27.mp3",
+   "size": 3843001,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit28.mp3",
+   "size": 12583577,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit29.mp3",
+   "size": 7267557,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit3.mp3",
+   "size": 15990191,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit30.mp3",
+   "size": 13111771,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit4.mp3",
+   "size": 15963933,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit5.mp3",
+   "size": 10201967,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit6.mp3",
+   "size": 13218502,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit7.mp3",
+   "size": 12840396,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit8.mp3",
+   "size": 11179768,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE单词音频/Unit9.mp3",
+   "size": 9915630,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE词汇手册【30单元】【无中文有英文版】.pdf",
+   "size": 922840,
+   "sha256": "60c21db592947a764835a35633397020d8b51a25ffad454fbd22c5eea43eb4e8",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE词汇手册【30单元】【有中文无英文版】.pdf",
+   "size": 1522079,
+   "sha256": "2c81efa867a25c6d59f6259a998c86c510a3771b50622d108d5f0e906af83e66",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE词汇手册【30单元】【有中英文版】.pdf",
+   "size": 1690513,
+   "sha256": "13073efd5237388b301c89b88089358f520aaaa975db354bfaace413a4ff1f91",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE词汇练习手册-学生版.pdf",
+   "size": 3011294,
+   "sha256": "7947ace09b60ea8d5d7ee49a4a7769bdaec6f11f735ba89e9412ec18fff7a12d",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE词汇练习手册-教师版.pdf",
+   "size": 3020442,
+   "sha256": "a43618909c3cb9e2770c4df46356e5d2a85f018e82fc790496fd92f68cf7a4a0",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE词汇练习手册/FCE高频词汇表=基础过渡版.pdf",
+   "size": 794555,
+   "sha256": "8c9fca3c8a96dcdea8265719f2d4ae0ccb7a0254d8d7e80aeb071c42abb6f09a",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/FCE阅读理解同义替换汇总.pdf",
+   "size": 793180,
+   "sha256": "98c14edd0a22c80d931fb5f2c1bc367c26e1ae90c23ca2c03494090d863ba486",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/夸克双十一年度会员.jpg",
+   "size": 271817,
+   "sha256": "932132e741f144cecd423ff7d28f5967ba004b513174f1cec67765bdf16bbed1",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/FCE/百度双十一年度会员.jpg",
+   "size": 282882,
+   "sha256": "69b5682015d92f10481f23135af7c6da87f3e59f20e5c7f50fa6c52a90eac0d2",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen To This 1 习题答案.pdf",
+   "size": 772126,
+   "sha256": "fa070ce48e30ad57e97ff88118181a2faa81092eb0aa3468a07ac1faf4ca8715",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen To This 1 听力原文及习题答案.pdf",
+   "size": 1325912,
+   "sha256": "73578b39a65ee4ae2016f86436392af60bcbe0948814c818ffd874edf164f84c",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen To This 2 听力原文及习题答案.pdf",
+   "size": 2524709,
+   "sha256": "af117647a323bd23e4cabfd76a13d2041381e87dad7a4ce119dbf4186b6a6dd9",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen To This 3 听力原文.pdf",
+   "size": 954757,
+   "sha256": "73acf8d0af5ef34645a1c2fe293e20554457ba8ce67cbec0bb0d5f006ca5c971",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen to this 1 MP3（一）.zip",
+   "size": 197014805,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen to this 1 MP3（二）.zip",
+   "size": 287061449,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen to this 2 MP3（一）.zip",
+   "size": 318048167,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen to this 2 MP3（二）.zip",
+   "size": 299833091,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/Listen to This/Listen to this 3 MP3.zip",
+   "size": 371204046,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~写作~黑眼睛雅思系列：IELTS考试技能训练教程(修订版).pdf",
+   "size": 21687356,
+   "sha256": "14c4f05fc16390a02f7877b89d2231182207ef69f2a3961262682173785553b0",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~口语~黑眼睛雅思系列：IELTS考试技能训练教程(修订版).pdf",
+   "size": 9526051,
+   "sha256": "583046f45525ce3bde17ab98a2bfc8e8426c2adbaa6bf0be77809c3775e5ea02",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/~听力~黑眼睛-李亚宾-雅思技能训练教程.pdf",
+   "size": 52752766,
+   "sha256": "c3be0a037b46f3e68bdaeae653d96c0472e7bca259965e71b199c3342d6c1471",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit1.1-1.13).mp3",
+   "size": 6697345,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit1.14-2.3).mp3",
+   "size": 6532051,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit2.16-3.9).mp3",
+   "size": 6709579,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit2.4-2.15).mp3",
+   "size": 6788878,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit3.10-3.19).mp3",
+   "size": 6919490,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit3.20-4.10).mp3",
+   "size": 6341453,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit4.11-4.18).mp3",
+   "size": 6449495,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit4.19-5.8).mp3",
+   "size": 6608947,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit5.19-6.6).mp3",
+   "size": 6464751,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit5.9-5.18).mp3",
+   "size": 6483768,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit6.14-6.18).mp3",
+   "size": 6134981,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit6.7-6.13).mp3",
+   "size": 6803925,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test1).mp3",
+   "size": 5081201,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test2).mp3",
+   "size": 4829694,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test3).mp3",
+   "size": 5340232,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test4).mp3",
+   "size": 4823425,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test5).mp3",
+   "size": 7434834,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~听力~黑眼睛-雅思技能训练教程pdf+mp3/黑眼睛-李亚宾-雅思技能训练教程-听力MP3/北语IELTS听力技能训练(Unit7-Test6).mp3",
+   "size": 7973479,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/~阅读~黑眼睛雅思系列：IELTS考试技能训练教程(修订版).pdf",
+   "size": 20059889,
+   "sha256": "3641a7118277fbaa65e4cd7fd2b0498aad69c82ddd251d755416d6fc2e9e63d0",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/个人经验导读.txt",
+   "size": 985,
+   "sha256": "5c0826be117a2051d011817da70d436bacc0509e9198869aac22c9b7bba754ef",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/【全套课程-黑眼睛】雅思黑眼睛系列合集mp3+文本/阅读说明（必读）.jpg",
+   "size": 228167,
+   "sha256": "30f656327ae2d211510ce93e4c8351994bcc1f3a48febfc27567f7d006448ccb",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Listening/王陆807雅思词汇精讲听力篇（第二版）.zip",
+   "size": 288428716,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/01 Title Information_0.mp3",
+   "size": 189786,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/02 1a.mp3",
+   "size": 1961097,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/03 1b.mp3",
+   "size": 1872072,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/04 1c.mp3",
+   "size": 3423536,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/05 2a.mp3",
+   "size": 3078720,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/06 2b.mp3",
+   "size": 1235938,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/07 3a.mp3",
+   "size": 1075442,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/08 3b.mp3",
+   "size": 1515135,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/09 3c.mp3",
+   "size": 564277,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/10 3d.mp3",
+   "size": 736477,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/11 4a.mp3",
+   "size": 1830276,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/12 4b.mp3",
+   "size": 2817077,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/13 5a.mp3",
+   "size": 920797,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/14 5b.mp3",
+   "size": 2032568,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/15 5c.mp3",
+   "size": 926648,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/16 6a.mp3",
+   "size": 1402286,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/17 6b.mp3",
+   "size": 1009822,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/18 7a.mp3",
+   "size": 2567556,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/19 7b.mp3",
+   "size": 837623,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/20 8a.mp3",
+   "size": 1598308,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/21 8b.mp3",
+   "size": 3036924,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/22 9a.mp3",
+   "size": 885270,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/23 9b.mp3",
+   "size": 510779,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/24 10a.mp3",
+   "size": 1925571,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/25 10b.mp3",
+   "size": 588101,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/26 10c.mp3",
+   "size": 3970227,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/27 11a.mp3",
+   "size": 1705306,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/28 11b.mp3",
+   "size": 534602,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/29 12a.mp3",
+   "size": 1033646,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/30 12b.mp3",
+   "size": 1016091,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/31 13a.mp3",
+   "size": 2329737,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/32 13b.mp3",
+   "size": 677126,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/33 14a.mp3",
+   "size": 1527255,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/34 14b.mp3",
+   "size": 623628,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/35 15a.mp3",
+   "size": 2020447,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/36 15b.mp3",
+   "size": 1057469,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/37 16.mp3",
+   "size": 3334093,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/38 17a.mp3",
+   "size": 2162971,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/39 17b.mp3",
+   "size": 671275,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/40 18.mp3",
+   "size": 2073946,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/41 19a.mp3",
+   "size": 1687752,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/42 19b.mp3",
+   "size": 1663928,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/43 19c.mp3",
+   "size": 599804,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/44 20a.mp3",
+   "size": 2044271,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/45 20b.mp3",
+   "size": 1515135,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/46 20c.mp3",
+   "size": 528333,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/47 21.mp3",
+   "size": 516630,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/48 22a.mp3",
+   "size": 1598308,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇/Cambridge IELTS V/49 22b.mp3",
+   "size": 1728294,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/01 Title Information.wma",
+   "size": 66518,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/02 1a.wma",
+   "size": 584701,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/03 1b.wma",
+   "size": 550762,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/04 1c.wma",
+   "size": 1157098,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/05 2a.wma",
+   "size": 1021350,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/06 2b.wma",
+   "size": 383288,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/07 3a.wma",
+   "size": 351598,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/08 3b.wma",
+   "size": 498671,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/09 3c.wma",
+   "size": 132149,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/10 3d.wma",
+   "size": 202286,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/11 4a.wma",
+   "size": 584671,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/12 4b.wma",
+   "size": 976068,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/13 5a.wma",
+   "size": 267903,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/14 5b.wma",
+   "size": 718118,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/15 5c.wma",
+   "size": 222683,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/16 6a.wma",
+   "size": 453425,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/17 6b.wma",
+   "size": 344797,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/18 7a.wma",
+   "size": 808690,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/19 7b.wma",
+   "size": 191009,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/20 8a.wma",
+   "size": 489649,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/21 8b.wma",
+   "size": 1123089,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/22 9a.wma",
+   "size": 304071,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/23 9b.wma",
+   "size": 123095,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/24 10a.wma",
+   "size": 611829,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/25 10b.wma",
+   "size": 141205,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/26 10c.wma",
+   "size": 1358471,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/27 11a.wma",
+   "size": 557509,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/28 11b.wma",
+   "size": 129888,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/29 12a.wma",
+   "size": 315414,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/30 12b.wma",
+   "size": 283756,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/31 13a.wma",
+   "size": 724979,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/32 13b.wma",
+   "size": 161574,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/33 14a.wma",
+   "size": 496414,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/34 14b.wma",
+   "size": 152518,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/35 15a.wma",
+   "size": 591500,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/36 15b.wma",
+   "size": 261154,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/37 16.wma",
+   "size": 1118643,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/38 17a.wma",
+   "size": 700064,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/39 17b.wma",
+   "size": 157052,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/40 18.wma",
+   "size": 654822,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/41 19a.wma",
+   "size": 591420,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/42 19b.wma",
+   "size": 598195,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/43 19c.wma",
+   "size": 150253,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/44 20a.wma",
+   "size": 828913,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/45 20b.wma",
+   "size": 523546,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/46 20c.wma",
+   "size": 127623,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/47 21.wma",
+   "size": 120834,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/48 22a.wma",
+   "size": 372079,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥词汇音频/49 22b.wma",
+   "size": 534907,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/01 Cambridge Grammar for IELTS.mp3",
+   "size": 233766,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/02 Cambridge Grammar for IELTS.mp3",
+   "size": 2676737,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/03 Cambridge Grammar for IELTS.mp3",
+   "size": 3699901,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/04 Cambridge Grammar for IELTS.mp3",
+   "size": 2012600,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/05 Cambridge Grammar for IELTS.mp3",
+   "size": 1111480,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/06 Cambridge Grammar for IELTS.mp3",
+   "size": 1649394,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/07 Cambridge Grammar for IELTS.mp3",
+   "size": 2054396,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/08 Cambridge Grammar for IELTS.mp3",
+   "size": 2347803,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/09 Cambridge Grammar for IELTS.mp3",
+   "size": 1913126,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/10 Cambridge Grammar for IELTS.mp3",
+   "size": 2131300,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/11 Cambridge Grammar for IELTS.mp3",
+   "size": 2447278,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/12 Cambridge Grammar for IELTS.mp3",
+   "size": 5284385,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/13 Cambridge Grammar for IELTS.mp3",
+   "size": 2179784,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/14 Cambridge Grammar for IELTS.mp3",
+   "size": 2520838,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/15 Cambridge Grammar for IELTS.mp3",
+   "size": 2127121,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/16 Cambridge Grammar for IELTS.mp3",
+   "size": 2046873,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/17 Cambridge Grammar for IELTS.mp3",
+   "size": 2441426,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/18 Cambridge Grammar for IELTS.mp3",
+   "size": 3900104,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/19 Cambridge Grammar for IELTS.mp3",
+   "size": 2636613,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法]-音频1-Cambridge Grammar for IELTS/20 Cambridge Grammar for IELTS.mp3",
+   "size": 1280754,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥语法/[剑桥雅思语法].(英)霍普金斯.(英)库琳.扫描版.pdf",
+   "size": 43013185,
+   "sha256": "1488607dcb288369eeff31c64114aedcdf076538751e8f90a772a5f2cf62c869",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/Reading/剑桥雅思词汇.Cambridge_Vocabulary_for_IELTS-2008.pdf",
+   "size": 16001915,
+   "sha256": "4ab4b05cda887943796ce77cb60db1e727139899b4b6b294f02cf4bbefb5a1d2",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/jianqiao12PDF.pdf",
+   "size": 26097914,
+   "sha256": "d8cc5ac4f92619f02ad1522dad9d4ecae82186775e9fc9d11954bc9c768d30e3",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 5_01.mp3",
+   "size": 12011678,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 5_02.mp3",
+   "size": 9797964,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 5_03.mp3",
+   "size": 9554085,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 5_04.mp3",
+   "size": 12674359,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 6_01.mp3",
+   "size": 12982179,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 6_02.mp3",
+   "size": 11264374,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 6_03.mp3",
+   "size": 10336504,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 6_04.mp3",
+   "size": 12409164,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 7_01.mp3",
+   "size": 13127629,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 7_02.mp3",
+   "size": 10445592,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 7_03.mp3",
+   "size": 12230486,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 7_04.mp3",
+   "size": 11782225,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 8_01.mp3",
+   "size": 11484422,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 8_02.mp3",
+   "size": 8864452,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 8_03.mp3",
+   "size": 11161556,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/剑桥雅思12/mp3/IELTS11_IELTS 12 Test 8_04.mp3",
+   "size": 11382238,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/10-11.zip",
+   "size": 227931007,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (1).mp3",
+   "size": 9250296,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (10).mp3",
+   "size": 6842015,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (11).mp3",
+   "size": 6369721,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (12).mp3",
+   "size": 8200801,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (13).mp3",
+   "size": 7852641,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (14).mp3",
+   "size": 5805894,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (15).mp3",
+   "size": 6992899,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (16).mp3",
+   "size": 8030273,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (2).mp3",
+   "size": 6398561,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (3).mp3",
+   "size": 7879390,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (4).mp3",
+   "size": 8168200,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (5).mp3",
+   "size": 8062456,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (6).mp3",
+   "size": 6902619,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (7).mp3",
+   "size": 7317235,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (8).mp3",
+   "size": 7155903,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/11剑桥/剑桥11 (9).mp3",
+   "size": 7732268,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/3-11listening.zip",
+   "size": 1314645600,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track01.mp3",
+   "size": 10964532,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track02.mp3",
+   "size": 9126347,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track03.mp3",
+   "size": 9362703,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track04.mp3",
+   "size": 9593417,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track05.mp3",
+   "size": 9498122,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track06.mp3",
+   "size": 8686863,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track07.mp3",
+   "size": 10773942,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 1/Track08.mp3",
+   "size": 9917544,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track01.mp3",
+   "size": 12124995,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track02.mp3",
+   "size": 9562697,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track03.mp3",
+   "size": 10164558,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track04.mp3",
+   "size": 11745698,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track05.mp3",
+   "size": 10340728,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track06.mp3",
+   "size": 9390915,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track07.mp3",
+   "size": 10392764,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/Cambridge IELTS 10音频/CD 2/Track08.mp3",
+   "size": 10767673,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track01.mp3",
+   "size": 7358165,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track02.mp3",
+   "size": 5450175,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track03.mp3",
+   "size": 7404138,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track04.mp3",
+   "size": 6357572,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track05.mp3",
+   "size": 7102368,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track06.mp3",
+   "size": 6057058,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track07.mp3",
+   "size": 6746278,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD1/Track08.mp3",
+   "size": 6031442,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track01.mp3",
+   "size": 9869688,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track02.mp3",
+   "size": 5801671,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track03.mp3",
+   "size": 5790816,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track04.mp3",
+   "size": 6592046,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track05.mp3",
+   "size": 6992862,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track06.mp3",
+   "size": 6544816,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track07.mp3",
+   "size": 6096761,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑9听力/CD2/Track08.mp3",
+   "size": 5603451,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思3/剑桥3/3-1.mp3",
+   "size": 11539792,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思3/剑桥3/3-2.mp3",
+   "size": 13339245,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思3/剑桥3/3-3.mp3",
+   "size": 13294496,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思3/剑桥3/3-4.mp3",
+   "size": 12958382,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/01.Test1.Section1.mp3",
+   "size": 7237798,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/02.Test1.Section2.mp3",
+   "size": 5790363,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/03.Test1.Section3.mp3",
+   "size": 6487101,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/04.Test1.Section4.mp3",
+   "size": 5681276,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/05.Test2.Section1.mp3",
+   "size": 6980711,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/06.Test2.Section2.mp3",
+   "size": 5586399,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/07.Test2.Section3.mp3",
+   "size": 4838670,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-1/08.Test2.Section4.mp3",
+   "size": 7841331,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/09.Test3.Section1.mp3",
+   "size": 7009968,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/10.Test3.Section2.mp3",
+   "size": 5774063,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/11.Test3.Section3.mp3",
+   "size": 6508417,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/12.Test3.Section4.mp3",
+   "size": 5691725,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/13.Test4.Section1.mp3",
+   "size": 8043581,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/14.Test4.Section2.mp3",
+   "size": 5359447,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/15.Test4.Section3.mp3",
+   "size": 7343082,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑4-2/16.Test4.Section4.mp3",
+   "size": 5769089,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/01.mp3",
+   "size": 19828996,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/02.mp3",
+   "size": 11579308,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/03.mp3",
+   "size": 15303256,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/04.mp3",
+   "size": 15850312,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/05.mp3",
+   "size": 19045996,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/06.mp3",
+   "size": 16466272,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/07.mp3",
+   "size": 15048520,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-1/08.mp3",
+   "size": 18765160,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/01.mp3",
+   "size": 18905056,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/02.mp3",
+   "size": 19941748,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/03.mp3",
+   "size": 15670744,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/04.mp3",
+   "size": 17066572,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/05.mp3",
+   "size": 17913256,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/06.mp3",
+   "size": 12626440,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/07.mp3",
+   "size": 16647928,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑5-2/08.mp3",
+   "size": 14235244,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/01.mp3",
+   "size": 2112316,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/02.mp3",
+   "size": 17617804,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/03.mp3",
+   "size": 11448808,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/04.mp3",
+   "size": 13581700,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/05.mp3",
+   "size": 13394824,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/06.mp3",
+   "size": 1544380,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/07.mp3",
+   "size": 16239724,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/08.mp3",
+   "size": 13238224,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/09.mp3",
+   "size": 14735320,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6A/剑6-1/10.mp3",
+   "size": 16400500,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/01.mp3",
+   "size": 2138416,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/02.mp3",
+   "size": 16187524,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/03.mp3",
+   "size": 16134280,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/04.mp3",
+   "size": 13590052,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/05.mp3",
+   "size": 18271348,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/06.mp3",
+   "size": 1507840,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/07.mp3",
+   "size": 13723684,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/08.mp3",
+   "size": 15420184,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/09.mp3",
+   "size": 14762464,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑6B/剑6-2/10.mp3",
+   "size": 14544268,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/01-AudioTrack 01.mp3",
+   "size": 8839296,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/02-AudioTrack 02.mp3",
+   "size": 6467584,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/03-AudioTrack 03.mp3",
+   "size": 7278592,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/04-AudioTrack 04.mp3",
+   "size": 6514688,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/05-AudioTrack 05.mp3",
+   "size": 6635520,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/06-AudioTrack 06.mp3",
+   "size": 5036032,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/07-AudioTrack 07.mp3",
+   "size": 6848512,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-1/08-AudioTrack 08.mp3",
+   "size": 7055360,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/01-AudioTrack 01.mp3",
+   "size": 7297024,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/02-AudioTrack 02.mp3",
+   "size": 6201344,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/03-AudioTrack 03.mp3",
+   "size": 6135808,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/04-AudioTrack 04.mp3",
+   "size": 6338560,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/05-AudioTrack 05.mp3",
+   "size": 6744064,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/06-AudioTrack 06.mp3",
+   "size": 6133760,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/07-AudioTrack 07.mp3",
+   "size": 4937728,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/剑7-2/08-AudioTrack 08.mp3",
+   "size": 5543936,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track01.mp3",
+   "size": 10198657,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track02.mp3",
+   "size": 8677076,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track03.mp3",
+   "size": 11927754,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track04.mp3",
+   "size": 10657576,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track05.mp3",
+   "size": 11496420,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track06.mp3",
+   "size": 9310284,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track07.mp3",
+   "size": 9781115,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD1/Track08.mp3",
+   "size": 10018725,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track01.mp3",
+   "size": 10906470,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track02.mp3",
+   "size": 8260162,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track03.mp3",
+   "size": 9492723,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track04.mp3",
+   "size": 11256302,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track05.mp3",
+   "size": 9445703,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track06.mp3",
+   "size": 8138536,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track07.mp3",
+   "size": 9514039,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/剑桥雅思/雅思听力3-11/3-11listening/剑桥雅思4-8/真正的剑8/CD2/Track08.mp3",
+   "size": 9791773,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/雅思机考推荐网址.docx",
+   "size": 16058,
+   "sha256": "853778af0e326143145f971c978c7e28d62a1eab08d37b65958d8a9e6f8ea3f0",
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/顾家北手把手教你雅思写作PDF+MP3/顾家北手把手教你雅思写作.zip",
+   "size": 67403396,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/国际测评/IELTS/顾家北手把手教你雅思写作PDF+MP3(1)/顾家北手把手教你雅思写作配套录音.mp3",
+   "size": 37742968,
+   "sha256": null,
+   "scope": "advanced",
+   "grade": null,
+   "status": "outside_primary"
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025-2026学年期末测试卷/2026中原区五上_202603031418_06365.pdf",
+   "size": 7592689,
+   "sha256": "1e478f1ac2f764d8a94128c770321370210ee0f3cfe781497235410036fe0504",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 8,
+   "extracted_pages": 8,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025-2026学年期末测试卷/2026中原区六上_202603031417_54103.pdf",
+   "size": 4182721,
+   "sha256": "dbf711ca429988c3a690db5f1cf8c29e6e7cefc71e7838554fc3d33f6a0c3d67",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 8,
+   "extracted_pages": 8,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025-2026学年期末测试卷/2026金水区六上_202603031418_2195.pdf",
+   "size": 4200861,
+   "sha256": "6a0ec025fce6123ece710a2a73f0cfb7f96209a7aae9bbc264248861efbae450",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 9,
+   "extracted_pages": 9,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025-2026学年期末测试卷/2026金水区四上_202603031417_41309.pdf",
+   "size": 2803093,
+   "sha256": "2020fc8fedf9f1a4a7d11da7f64c1e7f26da17244aa9d737f72d94f0518bd187",
+   "scope": "primary",
+   "grade": 4,
+   "status": "extracted_pending_review",
+   "pages": 7,
+   "extracted_pages": 7,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年三年级/中原区三年级英语期末测试.docx",
+   "size": 4474774,
+   "sha256": "88f43d6104f751771fea7ce82048f8d2de8daa043a6237b4bfcd015ab192c280",
+   "scope": "primary",
+   "grade": 3,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年三年级/金水区2024年三年级上英语期末试卷.pdf",
+   "size": 921355,
+   "sha256": "82247f7e9c61a8cdbc6c7d3121c8876f9cda725b9655cf83029f3788a5ce99f5",
+   "scope": "primary",
+   "grade": 3,
+   "status": "extracted_pending_review",
+   "pages": 2,
+   "extracted_pages": 2,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年五年级/五年级英语期末测试卷（区域待定）.pdf",
+   "size": 2944432,
+   "sha256": "302381e12c900e92fb12eecd7e455cc0fdc8bfecc703a1199f5d969afcc010ac",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 6,
+   "extracted_pages": 6,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年六年级/中原六年级2024-2025学年第一学期英语学情调研.pdf",
+   "size": 2513130,
+   "sha256": "a3ffaa79005490d7077d7b167d271e7e9a3453f6b74d6a70cc97fcfce1c5688b",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 4,
+   "extracted_pages": 4,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年六年级/惠济区六年级英语期末试卷.pdf",
+   "size": 2986864,
+   "sha256": "56b745763f219a3612533a4d867e734fd90b9f2f608fcef060decf48ed14f7b9",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 6,
+   "extracted_pages": 6,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年六年级/金水区六年级英语2024—2025(1).pdf",
+   "size": 8459319,
+   "sha256": "f62b7499f4e4b8fdaa3a398def4ca1018dde3e75bc874a6376996772ace5431e",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 8,
+   "extracted_pages": 8,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/2025年四年级/金水区四上英语期末卷.pdf",
+   "size": 856931,
+   "sha256": "51cb99d4d5c0ab9378ab9057225df95c715754afbae3f4c7b60f91d3dc3720ab",
+   "scope": "primary",
+   "grade": 4,
+   "status": "extracted_pending_review",
+   "pages": 2,
+   "extracted_pages": 2,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/二七区2026三下英语试卷.pdf",
+   "size": 5943427,
+   "sha256": "e98f16bacdd6007a0cb4696413b9a0fbd35734061bc0277fb3c6a2aa2cac216b",
+   "scope": "primary",
+   "grade": 3,
+   "status": "extracted_pending_review",
+   "pages": 6,
+   "extracted_pages": 6,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 5下/答案.pdf",
+   "size": 35325183,
+   "sha256": "95e574e891f418f30d87b7e3ddcd6ef20633919dd72ac44b3be72deb2309f08c",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 16,
+   "extracted_pages": 16,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 5下/试卷.pdf",
+   "size": 87109627,
+   "sha256": "f68335fbd18b47910c633a46f64af0d59a220a13c5f56337abbc85e2ad863c1e",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 26,
+   "extracted_pages": 26,
+   "unclear_pages": [
+    2
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 5下/试卷a4.pdf",
+   "size": 87124282,
+   "sha256": "d701e2c97266016f2950f009f486bd6edcca0bdebf6bab1c5a787d3eb3e697ca",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 61,
+   "extracted_pages": 61,
+   "unclear_pages": [
+    2
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 5下/过课本.pdf",
+   "size": 57188613,
+   "sha256": "b05a6710b5669ed96e85b3c1477b0e9a25af8eef83e989475b912a4f1af4bb4d",
+   "scope": "primary",
+   "grade": 5,
+   "status": "extracted_pending_review",
+   "pages": 36,
+   "extracted_pages": 36,
+   "unclear_pages": [
+    2,
+    35
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 6下/答案.pdf",
+   "size": 34462662,
+   "sha256": "c94785fc4d73ff4af86168a13d9d5a432aabbf08ee24f54e3a509581eb0378f7",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 16,
+   "extracted_pages": 16,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 6下/试卷.pdf",
+   "size": 93338877,
+   "sha256": "0d2d442d1409719386f1f04ffcad19ef445b333ab2f9a8d23e95db74ffb46feb",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 26,
+   "extracted_pages": 26,
+   "unclear_pages": [
+    2
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 6下/试卷A4.pdf",
+   "size": 93355033,
+   "sha256": "ffc9f26d5e036151c1ef9dd181f8cb31ede4f3f47f92d7eb8de87abf038d330f",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 67,
+   "extracted_pages": 67,
+   "unclear_pages": [
+    2
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/同步/王朝霞期末真题精编 郑州 英语 PEP 6下/过课本.pdf",
+   "size": 55249932,
+   "sha256": "35d6e3011f20b3e2b90294ae4109f493972a5b98514b735b4e202fa9560e568a",
+   "scope": "primary",
+   "grade": 6,
+   "status": "extracted_pending_review",
+   "pages": 36,
+   "extracted_pages": 36,
+   "unclear_pages": [
+    2,
+    35
+   ]
+  },
+  {
+   "path": "试题库(1)/小学/暗考/暗考真题/3_万航小考AK卷子答案.pdf",
+   "size": 81692808,
+   "sha256": "3b4180bda2e6e1db322978a624882b2caf428bc7aa36e7b0782a885f4244a4ec",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 25,
+   "extracted_pages": 25,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/暗考/暗考真题/万航小考真题卷学校2025AK真题——英语.pdf",
+   "size": 88004982,
+   "sha256": "bfddacddcefc037f421b6f69e092ce482fd9aae54d97b98306ed3f9b520ec375",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 89,
+   "extracted_pages": 89,
+   "unclear_pages": []
+  },
+  {
+   "path": "试题库(1)/小学/暗考/暗考试卷.pdf",
+   "size": 4885795,
+   "sha256": "050c898bca5b0243803e2d34a7a19efde8774372628087056a300f8d1b73f24f",
+   "scope": "primary",
+   "grade": 7,
+   "status": "duplicate",
+   "duplicate_of": "暗考试卷.pdf"
+  },
+  {
+   "path": "领跑入学测/1309.jpg",
+   "size": 358389,
+   "sha256": "6e73444a5449ff03d56d056350f6009b0673ae44ca1e20943c86921aeeb712cb",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1310.jpg",
+   "size": 357872,
+   "sha256": "92daf36776b27e930a8fccb4d904226d0f7614d13617ec62280202ca62f20edf",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1311.jpg",
+   "size": 471730,
+   "sha256": "1bb30f504bd93966c9ac914c146121a83437929d8992bb6e1d849c34b4b86e9c",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1312.jpg",
+   "size": 444985,
+   "sha256": "c37c6a802611fb315fa4d1c0564cb67ed474e486f8e32468637bf179e66186bd",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1313.jpg",
+   "size": 456752,
+   "sha256": "41a61671329b66d347b9fb3394856afffa4e3c39d1a80e87135e8108520d2db9",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1314.jpg",
+   "size": 462001,
+   "sha256": "c1575bb23c4341fedae652078bf92584d5a502480ca3f6a0d975bdf4b2235550",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1315.jpg",
+   "size": 370515,
+   "sha256": "6bb1b70de25a93f6f75b848d7d0e220446cfa5b1f25518fe3a18e89fccc224f8",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  },
+  {
+   "path": "领跑入学测/1316.jpg",
+   "size": 291296,
+   "sha256": "61602aad2d3afe7ccb4432cf35b716aa7342672d165dc0f32e62820a5f89f53a",
+   "scope": "primary",
+   "grade": 7,
+   "status": "extracted_pending_review",
+   "pages": 1,
+   "extracted_pages": 1,
+   "unclear_pages": []
+  }
+ ],
+ "note": "文件数不等于试卷份数或可用题数；OCR/信号匹配未经教师核对，不进入已审核题库。高级别资料不用于小学作业。"
+}
