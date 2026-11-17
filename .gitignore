@@ -2,3 +2,6 @@
 llm.json
 .DS_Store
 __pycache__/
+
+# Local source originals, OCR and intake state
+.local/

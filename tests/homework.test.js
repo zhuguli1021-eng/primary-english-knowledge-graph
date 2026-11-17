@@ -1,0 +1,23 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.join(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'app/index.html'),'utf8');
+const ctx=vm.createContext({});vm.runInContext(html.split('/* homework-core:start */')[1].split('/* homework-core:end */')[0],ctx);
+const H=ctx.HomeworkEngine;
+const kb=Object.fromEntries(['topics','questions','exam_stats','levels'].map(k=>[k,JSON.parse(fs.readFileSync(path.join(root,'data',k+'.json'),'utf8'))]));
+const fits=(q,g)=>q.grade<=g&&q.grade>=g-1&&(g-kb.topics.find(t=>t.id===q.topic).grade===0?[1,2]:g-kb.topics.find(t=>t.id===q.topic).grade===1?[1,2,3]:[2,3]).includes(q.difficulty);
+test('all eligible knowledge points keep exact-topic, age and count boundaries',()=>{for(const g of [3,4,5,6,7])for(const t of kb.topics.filter(t=>t.grade<=g)){const p=H.plan(kb,[t.id],g,5,fits);assert.equal(p.rows[0].selected.length+p.rows[0].missing,5);for(const q of p.rows[0].selected){assert.equal(q.topic,t.id);assert.ok(fits(q,g));assert.equal(q.provenance.kind,'bank');assert.equal(q.provenance.referenceIds.length,0);}}});
+test('missing pool never drifts to other topics; plan covers every topic',()=>{const k={...kb,questions:[]};const ids=kb.topics.filter(t=>t.grade<=6).slice(0,3).map(t=>t.id);const p=H.plan(k,ids,6,10,fits);assert.deepEqual(Array.from(p.rows,r=>r.target),[4,3,3]);assert.equal(p.rows.reduce((s,r)=>s+r.missing,0),10);assert.throws(()=>H.plan(k,ids,6,2,fits));});
+test('reject future topics and unknown IDs',()=>{assert.throws(()=>H.plan(kb,['not-real'],6,5,fits));const t=kb.topics.find(t=>t.grade>3);assert.throws(()=>H.plan(kb,[t.id],3,5,fits));});
+const id='te.past_simple',material='Yesterday we played football.';
+const p=H.plan({...kb,questions:[]},[id],6,1,fits);
+const q={topic:id,grade:6,difficulty:2,type:'fill',stem:'We ___ football yesterday.',answer:['played'],explain:'过去时',lessonEvidence:material,referenceIds:[]};
+test('prompt includes exact sources and requires teaching material',()=>{assert.throws(()=>H.prompt(kb,p,''));const text=H.prompt(kb,p,material);assert.ok(text.includes(material));for(const r of p.rows[0].refs){assert.ok(text.includes(r.source));assert.ok(text.includes(r.id));}});
+test('reject invented sources, scope escapes, duplicates and quantity errors',()=>{const check=()=>({errs:[],warns:[]});assert.equal(H.validate([q],p,material,check).length,1);for(const x of [{...q,referenceIds:['fake']},{...q,topic:'ph.letters'},{...q,grade:7},{...q,lessonEvidence:'unprovided text'}])assert.throws(()=>H.validate([x],p,material,check));assert.throws(()=>H.validate([],p,material,check));assert.throws(()=>H.validate([q,q],p,material,check));assert.throws(()=>H.validate([q],p,material,()=>({errs:['invalid'],warns:[]})));});
+test('an AI variant is never labeled as original exam question',()=>{const x=H.validate([q],p,material,()=>({errs:[],warns:[]}))[0];assert.match(x.provenance.label,/无真题参考/);if(p.rows[0].refs.length){const y=H.validate([{...q,referenceIds:[p.rows[0].refs[0].id]}],p,material,()=>({errs:[],warns:[]}))[0];assert.match(y.provenance.label,/非真题/);}});
+test('all inline JavaScript parses',()=>{for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);});
+
+test('new exam evidence respects grade and is linked with a concrete source page',()=>{const k={...kb,exam_references:{topics:{[id]:[{id:'new:1',grade:6,text:'I ___ football yesterday.',source:'卷A.pdf',page:4,review:'待核对'},{id:'advanced:1',grade:9,text:'advanced',source:'中考.pdf',page:1,review:'待核对'}]}}};const x=H.plan(k,[id],6,1,fits);assert.ok(x.rows[0].refs.some(r=>r.id==='new:1'&&r.source.includes('PDF页 4')));assert.ok(!x.rows[0].refs.some(r=>r.id==='advanced:1'));});

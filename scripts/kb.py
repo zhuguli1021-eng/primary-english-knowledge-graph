@@ -450,6 +450,8 @@ def build_questions():
 # ---------- 打包 ----------
 def bundle():
     data = {k: load(f'{k}.json') for k in ('topics', 'dependencies', 'levels', 'questions', 'exam_stats', 'wordlists')}
+    for name in ('source_catalog', 'exam_references'):
+        if (D / f'{name}.json').exists(): data[name] = load(f'{name}.json')
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')
     # 托管发布版：去掉文档骨架（发布时会自动加），把数据内联成单文件
