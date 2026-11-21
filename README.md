@@ -8,11 +8,12 @@
 
 | 内容 | 数量 | 文件 |
 |---|---:|---|
-| 知识点（语音、词汇、词法、时态、句法、交际、阅读、写作） | 101 | `data/topics.json` |
-| 先修关系（hard 必须先学 / soft 建议先学，每条带理由） | 180 | `data/dependencies.json` |
-| 真题共考关联（从真题自动算出） | 26 | `data/exam_stats.json` 的 `related` |
-| 真题考频（每个知识点在多少份真卷出现、真题例句） | 239 份 | `data/exam_stats.json` |
-| 题库（选择 + 填空 + 短文） | 522 | `data/questions/*.txt` → `data/questions.json` |
+| 知识点（语音、词汇、词法、时态、句法、交际、阅读、写作） | 106 | `data/topics.json` |
+| 先修关系（hard 必须先学 / soft 建议先学，每条带理由） | 193 | `data/dependencies.json` |
+| 真题共考关联（从真题自动算出） | 54 | `data/exam_stats.json` 的 `related` |
+| 语料库与分年级考频（含 3~6 年级同步/期末卷 + 小升初真卷） | 470 份（有效统计 460 份） | `corpus/`、`data/corpus_index.json`、`data/exam_stats.json` |
+| 真题题目库与年级真卷蓝图（AI 仿写母题来源） | 10,490 小题 + 620 篇章/作文 | `data/exam_items.json`、`data/exam_blueprint.json` |
+| 正式题库（选择 + 填空 + 短文 + 书面表达） | 577 | `data/questions/*.txt` → `data/questions.json` |
 | 年级画像、难度规则、课标词表 | — | `data/levels.json`、`data/wordlists.json` |
 
 每个知识点有：说明、掌握标准、孩子常见错误、教学建议、首学年级、课标出处、考频等级（必考/常考/偶考）。
@@ -20,7 +21,7 @@
 ## 数据来源
 
 - **课标：** 《义务教育英语课程标准（2022年版2025年修订）》。二级（5~6 年级）505 词、三级 1600 词、不规则动词表由脚本从标准文本抽取；语法项目对照附录 4。标准文本来自第三方转载，未与教育部 PDF 逐页核对。
-- **真题：** 你给的 103 套 Word 版分班/入学真卷，加上 4 本扫描 PDF（励志果、27 套真题、百校联盟专卷、最新小升初）的 OCR 文本，每 4 页算一份，合计 239 份。原文在 `corpus/`。
+- **语料库与真题：** 原 239 份河南小升初/分班真卷，加上新导入的 231 份 3~6 年级人教 PEP 同步/期中/期末/名校真卷及 2027 小升初分类卷、郑州小升初名校 AK 真题卷，合计 **470 份**（其中 460 份非答案卷参与考频统计，拆出 **10,490 道真题小题** 和 **620 个篇章/作文大题** 供 AI 仿写）。原文在 `corpus/`，索引在 `data/corpus_index.json`。
 - **参考：** [cn-math-taxonomy](https://github.com/xiaoyang111222/cn-math-taxonomy) 的小学英语部分（208 个按 PEP 单元划分的点）。只参考了结构和对齐方式，没有复制它的数据（它是 CC BY-NC 许可）。本库按“小升初考点”划分，更适合分班考。
 
 ## 怎么保证题目难度匹配
@@ -34,13 +35,23 @@
 ## 常用命令
 
 ```bash
-python3 scripts/kb.py questions        # 题库文本 → questions.json
-python3 scripts/kb.py check            # 质检
-python3 scripts/kb.py stats corpus     # 重新统计真题考频和共考关联
-python3 scripts/kb.py prompt te.past_simple 6 2 5   # 生成给 AI 的出题提示词
-python3 scripts/kb.py select 7 20      # 按小升初抽一套题看看
-python3 scripts/kb.py bundle           # 打包给网页用
+python3 scripts/kb.py import <试卷目录>            # 导入新试卷文字版到 corpus/ 并更新索引
+python3 scripts/kb.py items                        # 拆成真题题目库 exam_items.json 与年级蓝图
+python3 scripts/kb.py stats                        # 重新统计分年级考频、考法分布和共考关联
+python3 scripts/kb.py topics --grade 6             # 查看某年级知识点考频与高频题型
+python3 scripts/kb.py exemplars te.past_simple 6   # 查看该知识点在该年级的真题母题
+python3 scripts/kb.py blueprint 6                  # 查看该年级真卷大题结构
+python3 scripts/kb.py task te.past_simple 6 2 5 --qtype 适当形式  # 为 Codex/WorkBuddy 创建仿真题任务
+python3 scripts/kb.py generate te.past_simple 6 2 5 --provider codex  # 直接用本地 Codex 或 API 出题
+python3 scripts/kb.py serve                        # 启动本地网页 + HTTP API（http://localhost:8765）
+python3 scripts/kb.py mcp                          # 启动 stdio MCP 服务（Codex/WorkBuddy/Claude Code）
+python3 scripts/kb.py questions                    # 题库文本 → questions.json
+python3 scripts/kb.py check                        # 质检
+python3 scripts/kb.py select 7 20                  # 按该年级真题考频加权抽一套题
+python3 scripts/kb.py bundle                       # 打包给网页用（含精简母题包与蓝图）
 ```
+
+详细接口与本地智能体接入（Codex / WorkBuddy / MCP / HTTP API）见 `docs/API.md` 和 `AGENTS.md`。
 
 **改题：** 直接编辑 `data/questions/*.txt`。每行一道题，格式是 `[年级/难度] 题干 | A 选项 | B 选项 | =答案 | 解析`，然后依次运行 `questions`、`check`、`bundle` 三条命令。
 

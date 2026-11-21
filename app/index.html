@@ -122,9 +122,10 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
 
 <section id="tab-ai" class="tab">
   <div class="card">
-    <h3 style="margin-top:0">1. 选题型、年级和难度</h3>
+    <h3 style="margin-top:0">1. 选知识点、年级、题型与难度（自动匹配语料库与真题母题）</h3>
     <div class="row">
-      <select id="aKind"><option value="single">单项题（选择 / 填空）</option><option value="passage">阅读理解篇章</option><option value="writing">书面表达</option></select>
+      <select id="aKind"><option value="single">单项题（仿写单句/对话真题）</option><option value="passage">篇章题（完形 / 阅读 / 语篇填空）</option><option value="writing">书面表达（仿写真题作文）</option></select>
+      <select id="aQtype"></select>
       <select id="aTheme" hidden><option>应用文</option><option>科普跨学科</option><option>中国文化</option><option>记叙情感</option></select>
       <select id="aTopic"></select>
       <select id="aGrade"></select>
@@ -132,14 +133,15 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
       <label>题数 <input id="aN" type="number" value="5" min="1" max="20" style="width:56px"></label>
     </div>
     <p class="small muted" id="aHint"></p>
+    <div id="aRefs" class="small" style="margin-top:6px"></div>
     <textarea id="aMat" hidden style="min-height:90px" placeholder="（可选）粘贴新闻报道（如 China Daily）的原文或要点、原文链接。AI 只取其中的事实，改写成适合孩子读的原创短文，不照抄原句。"></textarea>
   </div>
   <div class="card">
-    <h3 style="margin-top:0">2. 直接调用大模型出题</h3>
+    <h3 style="margin-top:0">2. 直接调用大模型或本地 Codex / CLI 出题</h3>
     <div class="row">
       <label>模型 <select id="mProv">
         <option value="claude">Claude（在线版内置，用你自己的 Claude 账号，不需要密钥）</option>
-        <option value="server">本机 llm.json 里配置的模型</option>
+        <option value="server">本机配置（llm.json API 或本地 Codex / Claude CLI）</option>
         <option value="openai">OpenAI 兼容接口（DeepSeek、通义千问、Kimi、智谱、豆包、OpenAI）</option>
         <option value="anthropic">Anthropic Claude API</option>
       </select></label>
@@ -201,10 +203,11 @@ function record(results) {
 // ---------- 年级匹配（与 scripts/kb.py 相同的规则） ----------
 function recDiff(g, tg) { const gap = g - tg; return gap < 0 ? [] : gap === 0 ? [1, 2] : gap === 1 ? [1, 2, 3] : [2, 3]; }
 function fits(q, g) { return q.grade <= g && q.grade >= g - 1 && recDiff(g, T[q.topic].grade).includes(q.difficulty); }
-function pick(pool, n, used = {}) {
+function gradeRate(tid, g) { const x = ST[tid] || {}, bg = g && x.byGrade?.[g]; return bg && bg.papers >= 5 ? bg.rate : (x.paperRate || 0); }
+function pick(pool, n, used = {}, g = null) {
   const out = [], left = pool.slice();
   while (left.length && out.length < n) {
-    const w = left.map(q => (1 + 2 * (ST[q.topic]?.paperRate || 0)) / (1 + 3 * (used[q.topic] || 0)));
+    const w = left.map(q => (1 + 2 * gradeRate(q.topic, g)) / (1 + 3 * (used[q.topic] || 0)));
     let r = Math.random() * w.reduce((a, b) => a + b), i = 0;
     while ((r -= w[i]) > 0) i++;
     const q = left.splice(i, 1)[0]; used[q.topic] = (used[q.topic] || 0) + 1;
@@ -301,14 +304,17 @@ function showTopic(id) {
     <h3>先学（${prereq(id).length}）</h3><ul>${prereq(id).map(d => `<li>${topicLink(d.prerequisiteId)} <span class="meta">${d.strength === 'hard' ? '必须' : '建议'}：${esc(d.reason)}</span></li>`).join('') || '<li class="muted">无</li>'}</ul>
     <h3>学完可以学（${unlocks(id).length}）</h3><ul>${unlocks(id).map(d => `<li>${topicLink(d.topicId)}</li>`).join('') || '<li class="muted">无</li>'}</ul>
     ${related(id).length ? `<h3>真题中常一起考</h3><ul>${related(id).map(r => `<li>${topicLink(r.a === id ? r.b : r.a)} <span class="meta">${r.count} 道题</span></li>`).join('')}</ul>` : ''}
-    <h3>真题例句</h3><ul class="small">${(s.examples || []).slice(0, 4).map(e => `<li>${esc(e.text)} <span class="meta">${esc(e.src)}</span></li>`).join('') || '<li class="muted">暂无</li>'}</ul>
+    ${s.byGrade ? `<h3>分年级真卷考频</h3><p class="small">${Object.entries(s.byGrade).filter(([g]) => +g >= t.grade).map(([g, v]) => `${gname(g)} <b>${Math.round(v.rate * 100)}%</b>`).join(' · ') || '—'}</p>` : ''}
+    ${s.formats ? `<h3>语料常见题型</h3><p class="small">${Object.entries(s.formats[7] || Object.values(s.formats)[0] || {}).slice(0, 5).map(([k, v]) => `${esc(k)}(${v})`).join(' · ') || '—'}</p>` : ''}
+    <h3>真题原题</h3><ul class="small">${(s.examples || []).slice(0, 4).map(e => `<li>${esc(e.text)} <span class="meta">${e.grade ? gname(e.grade) + '·' : ''}${esc(e.src)}</span></li>`).join('') || '<li class="muted">暂无</li>'}</ul>
     <h3>题库：${qs.length} 题（基础 ${byD[0]} / 标准 ${byD[1]} / 提高 ${byD[2]}）</h3>
-    <div class="row"><button class="btn primary" onclick="startPractice(['${id}'])">练这个点</button><button class="btn" onclick="aiFor('${id}')">让 AI 再出几题</button></div>`;
+    <div class="row"><button class="btn primary" onclick="startPractice(['${id}'])">练这个点</button><button class="btn" onclick="aiFor('${id}')">让 AI 仿写真题出几题</button></div>`;
 }
 function renderStats() {
   const tiers = [3, 2, 1].map(k => KB.topics.filter(t => (ST[t.id]?.tier || 1) === k).length);
+  const bg = KB.exam_stats.papersByGrade ? Object.entries(KB.exam_stats.papersByGrade).map(([g, n]) => `${gname(g)} ${n}`).join(' / ') : '';
   $('#stats').innerHTML = `<p class="small">知识点 <b>${KB.topics.length}</b> · 先修关系 <b>${KB.dependencies.length}</b> · 真题共考关联 <b>${KB.exam_stats.related.length}</b> · 题库 <b>${allQs().length}</b> 题<br>
-    依据 <b>${KB.exam_stats.papers}</b> 份河南小升初/分班真卷统计：必考 ${tiers[0]}、常考 ${tiers[1]}、偶考 ${tiers[2]}</p>
+    依据语料库 <b>${KB.exam_stats.papers}</b> 份真卷/同步卷统计${bg ? `（${bg}）` : ''}：必考 ${tiers[0]}、常考 ${tiers[1]}、偶考 ${tiers[2]}</p>
     <h3>考频最高的 12 个点</h3><ol class="small">${KB.topics.slice().sort((a, b) => (ST[b.id]?.paperRate || 0) - (ST[a.id]?.paperRate || 0)).slice(0, 12)
       .map(t => `<li>${topicLink(t.id)} <span class="meta">${Math.round(ST[t.id].paperRate * 100)}%</span></li>`).join('')}</ol>`;
 }
@@ -342,10 +348,10 @@ function makeExam(g, n) {
   const nonP = fit.filter(q => !q.passage && q.type !== 'writing' && !['阅读', '写作'].includes(T[q.topic].domain));
   const essays = fit.filter(q => q.type === 'writing');
   const secs = [
-    ['单项选择', pick(nonP.filter(q => q.type === 'choice'), Math.round(n * .6))],
+    ['单项选择', pick(nonP.filter(q => q.type === 'choice'), Math.round(n * .6), {}, g)],
     ['完形填空', g >= 6 && cloze.length ? shuffle(cloze)[0] : []],
     ['阅读理解', read.flat()],
-    ['词汇运用', pick(nonP.filter(q => q.type === 'fill'), Math.round(n * .4)).concat(g >= 6 && pfill.length ? shuffle(pfill)[0] : [])],
+    ['词汇运用', pick(nonP.filter(q => q.type === 'fill'), Math.round(n * .4), {}, g).concat(g >= 6 && pfill.length ? shuffle(pfill)[0] : [])],
     ['书面表达', g >= 5 && essays.length ? [shuffle(essays)[0]] : []],
   ].filter(x => x[1].length);
   const qs = [], sections = [];
@@ -366,7 +372,7 @@ $('#pMake').onclick = () => {
     pool = allQs().filter(q => ids.includes(q.topic) && q.grade <= g);   // 指定知识点时放宽到本年级及以下
   }
   if (!pool.length) { $('#paperBox').innerHTML = '<div class="card">这个范围在该年级没有合适的题。可以换年级，或去「AI 出题」补题。</div>'; return; }
-  const qs = pick(pool.filter(q => q.type !== 'writing'), n);
+  const qs = pick(pool.filter(q => q.type !== 'writing'), n, {}, g);
   qs.sort((a, b) => !!a.passage - !!b.passage || a.difficulty - b.difficulty);
   paper = {id: Date.now(), grade: g, qs, sections: [], answers: {}, marks: {}, scores: {}};
   renderPaper();
@@ -620,71 +626,129 @@ const THEMES = {
   '中国文化': '传统节日、非遗手艺、古代故事、中国科技成就、河南本地文化，用英语讲中国故事',
   '记叙情感': '校园或家庭故事，有情节和人物情感变化，蕴含道理',
 };
+const CHOICE_Q = ['单项选择', '情景交际', '补全对话', '语音辨音', '不同类'];
+const FILL_Q = ['适当形式', '首字母填空', '汉语提示填词', '选词填空', '句型转换', '连词成句', '翻译'];
+const PASSAGE_Q = ['阅读理解', '完形填空', '语篇填空', '任务型阅读'];
+const QTYPE_BY_KIND = {single: [...CHOICE_Q, ...FILL_Q], passage: PASSAGE_Q, writing: ['书面表达']};
+const FORM_RULES = {
+  '单项选择': '题干用 ______ 表示空，对话用“—…  —…”；选项写在 choices 里。',
+  '情景交际': '题干给出情景或问句，选项是答语。',
+  '补全对话': '题干是 2~4 轮短对话，其中一句用 ______ 代替，选项是能补进去的句子。',
+  '语音辨音': '题干写“选出画线部分发音不同的一项”，选项单词里用 <u></u> 标出画线字母。',
+  '不同类': '题干写“选出不同类的一项”，选项为同一主题的词，只有一个不同类。',
+  '适当形式': '句子里用 ______ 表示空，空后括号给原词，如 ______ (go)；answer 写所有可接受形式。',
+  '首字母填空': '空格写成首字母 + ______；answer 写完整单词。',
+  '汉语提示填词': '空后括号给中文提示；answer 写英文单词或短语。',
+  '选词填空': '题干开头列出词库，每题一句一空；answer 写选中的词。',
+  '句型转换': '先写原句和括号要求（如改为一般疑问句/对画线部分提问），换行后给带 ______ 的目标句；answer 写各空用空格连起来的内容。',
+  '连词成句': '题干列出打乱的单词（逗号隔开，标点放括号里）；answer 写完整句子。',
+  '翻译': '题干给中文句子和可选英文框架；answer 写参考译文。',
+};
 const VOCAB = g => g <= 4 ? '三四年级核心词' : g <= 6 ? '课标二级词表（约 500 词）及人教 PEP 三至六年级常用词' : '课标二级词表 + 三级词表（超出二级的词不超过 6%）';
 function syncKind() {
-  const k = $('#aKind').value, cur = $('#aTopic').value;
+  const k = $('#aKind').value, cur = $('#aTopic').value, curQ = $('#aQtype').value;
   $('#aTheme').hidden = $('#aMat').hidden = k !== 'passage';
   $('#aTopic').hidden = k === 'passage';
   const list = KB.topics.filter(t => k === 'writing' ? t.domain === '写作' && !['wr.mechanics', 'wr.sentence'].includes(t.id) : true);
   $('#aTopic').innerHTML = list.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('');
   $('#aTopic').value = list.some(t => t.id === cur) ? cur : list[0].id;
+  const qs = QTYPE_BY_KIND[k];
+  $('#aQtype').innerHTML = qs.map(q => `<option value="${q}">${q}</option>`).join('');
+  $('#aQtype').value = qs.includes(curQ) ? curQ : qs[0];
   $('#aN').closest('label').hidden = k === 'writing';
 }
-function passagePrompt(g, d, n) {
-  const gp = GRADES[g], theme = $('#aTheme').value, mat = $('#aMat').value.trim(), dr = KB.levels.difficulty[d];
-  return `你是河南小升初英语命题老师。请为【${gp.name}】学生写一篇阅读理解短文，并出 ${n} 道选择题。
-题材：${theme}（${THEMES[theme]}）
-${mat ? '素材如下。只取其中的事实，用自己的话改写成适合孩子读的原创短文，不要照抄原句；人名、地名、数字、时间必须与素材一致；不要添加素材里没有的事实或细节（包括人物做了什么、活动过程），可以补充一两句通用的背景解释：\n"""\n' + mat.slice(0, 6000) + '\n"""' : '请写原创内容；涉及真实事物时只用确定无误、众所周知的事实。'}
-短文要求：${gp.passageWords} 词左右，分 3~5 段，段与段之间只用一个换行，不要空行；词汇只用${VOCAB(g)}，个别超纲词必须在词后用括号加中文注释，如 wetland(湿地)，全文注释不超过 6 个；单句一般不超过 ${gp.maxWords + 5} 词。
-难度：${d}·${dr.name}。难度越高，推理、主旨、结构类题越多，细节题越少。
-题目要求（体现新课标趋势：少送分题，多考思维）：
-- 题型搭配：细节理解 1~2 道；词义猜测 1 道；推理判断 1 道；主旨/最佳标题或篇章结构 1 道${theme === '记叙情感' ? '；人物情感变化或作者意图 1 道' : ''}${theme === '应用文' ? '；至少 1 道需要简单计算或整合多处信息' : ''}。
-- 每题 ${g >= 6 ? 4 : 3} 个选项，只有一个正确答案，答案在文中有明确依据；干扰项似是而非，不出现明显荒谬的选项。
-- 如果出“最佳标题”题，title 留空。
-- 每题标注考查的知识点 topic，只能从下面选：rd.detail 细节理解、rd.word_guess 词义猜测、rd.inference 推理判断、rd.main_idea 主旨标题、rd.structure 篇章结构、rd.purpose 作者意图与情感、rd.true_false 判断正误、rd.practical 应用文信息提取。
-只输出 JSON：{"title":"","theme":"${theme}","passage":"第一段\n第二段\n第三段","questions":[{"topic":"rd.detail","type":"choice","stem":"...","choices":[["A","..."],["B","..."],["C","..."],["D","..."]],"answer":"B","explain":"中文解析，指出原文依据"}]}`;
+function getLocalExemplars(kind, tid, g, qtype) {
+  const ex = KB.exemplars || {items: {}, blocks: {}};
+  if (kind === 'passage' || kind === 'writing') {
+    return (ex.blocks[`${qtype}:${g}`] || ex.blocks[`${qtype}:${g - 1}`] || ex.blocks[`${qtype}:7`] || []).slice(0, 2);
+  }
+  const list = ex.items[`${tid}:${g}`] || ex.items[`${tid}:${g - 1}`] || ex.items[`${tid}:7`] || [];
+  const same = list.filter(x => x.qtype === qtype);
+  return (same.length ? same.concat(list.filter(x => x.qtype !== qtype)) : list).slice(0, 4);
 }
-function writingPrompt(t, g) {
+function renderRefs(refs, prefix) {
+  if (!refs.length) { $('#aRefs').innerHTML = '<span class="muted">本年级语料中暂无该题型母题，将按相邻年级/题型规范出题。</span>'; return; }
+  $('#aRefs').innerHTML = `<details><summary class="muted" style="cursor:pointer">本次仿照的 ${refs.length} 道真题母题（点此展开查看）</summary>`
+    + refs.map((r, i) => `<div class="passage" style="margin:4px 0"><b>[${prefix}${i + 1}]</b> <span class="meta">${esc(r.src)} · ${gname(r.grade)} · ${esc(r.kind)} · ${esc(r.qtype)}</span>\n${esc(r.text.slice(0, 320))}</div>`).join('') + '</details>';
+}
+function passagePrompt(g, d, n, qtype, refs) {
+  const gp = GRADES[g], theme = $('#aTheme').value, mat = $('#aMat').value.trim(), dr = KB.levels.difficulty[d];
+  const refTxt = refs.map((b, i) => `[B${i + 1}]〔${b.src} · ${gname(b.grade)} · ${b.kind} · ${b.qtype}〕\n${b.text}`).join('\n\n');
+  const formMap = {
+    '完形填空': `短文中挖 ${n} 个空，写成 __1__、__2__ …；每题 stem 写“第1空”…，选项是可填入的词或短语，主要考上下文理解。`,
+    '语篇填空': `短文中挖 ${n} 个空，写成 __1__ (原词) 或 __1__；每题 stem 写“第1空”…，type 为 fill，answer 为可接受答案数组。`,
+    '任务型阅读': `出 ${n} 道任务题（回答问题、补全表格或判断），type 用 choice 或 fill，与真题一致。`,
+    '阅读理解': `题型搭配：细节理解 1~2 道；词义猜测 1 道；推理判断 1 道；主旨/最佳标题或篇章结构 1 道${theme === '记叙情感' ? '；人物情感变化或作者意图 1 道' : ''}${theme === '应用文' ? '；至少 1 道需要简单计算或整合多处信息' : ''}。每题 ${g >= 6 ? 4 : 3} 个选项。`,
+  };
+  return `你是河南小升初英语命题老师。请严格模仿下面给出的【真题母篇】，为【${gp.name}】学生出一组「${qtype}」（共 ${n} 小题）。
+题材：${theme}（${THEMES[theme]}）
+${mat ? '素材如下。只取其中的事实，用自己的话改写成适合孩子读的原创短文，不要照抄原句；人名、地名、数字、时间必须与素材一致：\n"""\n' + mat.slice(0, 6000) + '\n"""' : '请写原创内容；涉及真实事物时只用确定无误、众所周知的事实。'}
+短文要求：${gp.passageWords} 词左右，分 3~5 段，段与段之间只用一个换行，不要空行；词汇只用${VOCAB(g)}，个别超纲词必须在词后用括号加中文注释，如 wetland(湿地)，全文注释不超过 6 个；单句一般不超过 ${gp.maxWords + 5} 词。
+难度：${d}·${dr.name}。
+题型要求：${formMap[qtype] || formMap['阅读理解']}
+${refTxt ? '\n参考真题母篇（仿照篇幅、设问/设空方式和难度，不得照抄，mimic 写母篇编号如 "B1"）：\n' + refTxt + '\n' : ''}
+- 如果出“最佳标题”题，title 留空。
+- 每题标注考查的知识点 topic（rd.detail / rd.word_guess / rd.inference / rd.main_idea / rd.structure / rd.purpose / rd.true_false / rd.practical / rd.cloze / rd.passage_fill / rd.task）。
+只输出 JSON：{"qtype":"${qtype}","mimic":"B1","title":"","theme":"${theme}","passage":"第一段\\n第二段\\n第三段","questions":[{"topic":"${qtype === '完形填空' ? 'rd.cloze' : qtype === '语篇填空' ? 'rd.passage_fill' : qtype === '任务型阅读' ? 'rd.task' : 'rd.detail'}","type":"${qtype === '语篇填空' ? 'fill' : 'choice'}","stem":"...","choices":[["A","..."],["B","..."],["C","..."],["D","..."]],"answer":"B","explain":"中文解析，指出原文依据"}]}`;
+}
+function writingPrompt(t, g, refs) {
   const gp = GRADES[g], min = g <= 5 ? 40 : g === 6 ? 60 : 80;
-  return `你是河南小升初英语命题老师。请为【${gp.name}】学生出一道书面表达题，话题方向：「${t.name}」（${t.desc}），并写一篇范文。
+  const refTxt = refs.map((b, i) => `[W${i + 1}]〔${b.src} · ${gname(b.grade)} · ${b.kind}〕\n${b.text}`).join('\n\n');
+  return `你是河南小升初英语命题老师。请模仿下面给出的【真题书面表达母题】，为【${gp.name}】学生出一道书面表达题，话题方向：「${t.name}」（${t.desc}），并写一篇范文。
 要求：
-- 仿照河南小升初、新初一分班考真题：用中文写情境任务，如“假如你是李华……请以“……”为题……”，给出 3~5 个要点。
+- 仿照真题的任务写法、要点数量和词数要求：用中文写情境任务，给出 3~5 个要点，不得照抄母题情境，mimic 写母题编号（如 "W1"）。
 - 词数要求 ${min} 词；范文只用${VOCAB(g)}，本年级已学语法：${gp.grammar}；范文比要求多 10~20 词，覆盖全部要点，句子简单、地道。
 - 给 3~4 个可以套用的好句型。
-只输出 JSON：{"title":"英文题目","stem":"中文任务","require":"不少于${min}词；……","points":["要点1","要点2"],"minWords":${min},"phrases":"句型1 / 句型2","sample":"范文"}`;
+${refTxt ? '\n参考真题母题：\n' + refTxt + '\n' : ''}
+只输出 JSON：{"qtype":"书面表达","mimic":"W1","title":"英文题目","stem":"中文任务","require":"不少于${min}词；……","points":["要点1","要点2"],"minWords":${min},"phrases":"句型1 / 句型2","sample":"范文"}`;
 }
 function makePrompt() {
-  const k = $('#aKind').value, g0 = +$('#aGrade').value;
-  if (k === 'passage') { $('#aHint').textContent = `阅读篇章约 ${GRADES[g0].passageWords} 词。题目会标注各自考查的阅读技能。`; $('#aPrompt').value = passagePrompt(g0, +$('#aDiff').value, +$('#aN').value); return; }
-  if (k === 'writing') { $('#aHint').textContent = `书面表达范文会按${GRADES[g0].name}词表检查。`; $('#aPrompt').value = writingPrompt(T[$('#aTopic').value], g0); return; }
+  const k = $('#aKind').value, g0 = +$('#aGrade').value, qtype = $('#aQtype').value;
+  if (k === 'passage') {
+    const refs = getLocalExemplars('passage', 'rd.detail', g0, qtype); renderRefs(refs, 'B');
+    $('#aHint').textContent = `${qtype}：短文约 ${GRADES[g0].passageWords} 词，已匹配 ${refs.length} 篇本年级/相邻年级真题母篇。`;
+    $('#aPrompt').value = passagePrompt(g0, +$('#aDiff').value, +$('#aN').value, qtype, refs); return;
+  }
+  if (k === 'writing') {
+    const refs = getLocalExemplars('writing', $('#aTopic').value, g0, '书面表达'); renderRefs(refs, 'W');
+    $('#aHint').textContent = `书面表达范文会按${GRADES[g0].name}词表检查，已匹配 ${refs.length} 篇真题母题。`;
+    $('#aPrompt').value = writingPrompt(T[$('#aTopic').value], g0, refs); return;
+  }
   const t = T[$('#aTopic').value], g = +$('#aGrade').value, d = +$('#aDiff').value, n = +$('#aN').value, gp = GRADES[g], dr = KB.levels.difficulty[d];
-  const rec = recDiff(g, t.grade);
-  $('#aHint').textContent = !rec.length ? `「${t.name}」首学在${gname(t.grade)}，${gp.name}还没学，不建议出。` : rec.includes(d) ? `推荐难度 ${rec.join('、')}，当前合适。` : `${gp.name}做这个点推荐难度 ${rec.join('、')}，当前 ${d} 可能${d < rec[0] ? '太简单' : '太难'}。`;
-  const vocab = g <= 4 ? '三四年级核心词' : g <= 6 ? '课标二级词表（约 500 词）及人教 PEP 五六年级常用词' : '课标二级词表 + 三级词表（超出二级的词不超过 6%，生词加中文注释，如 twins(双胞胎)）';
-  const ex = (ST[t.id]?.examples || []).slice(0, 4).map(e => '- ' + e.text).join('\n');
-  $('#aPrompt').value = `你是河南小学英语教研老师，为【${gp.name}】学生出【${n}】道题，考查知识点「${t.name}」。
+  const rec = recDiff(g, t.grade), fmts = ST[t.id]?.formats?.[g] || {};
+  const fmtTxt = Object.entries(fmts).slice(0, 5).map(([q, c]) => `${q}(${c})`).join(' · ');
+  $('#aHint').textContent = (!rec.length ? `「${t.name}」首学在${gname(t.grade)}，${gp.name}还没学，不建议出。`
+    : rec.includes(d) ? `推荐难度 ${rec.join('、')}，当前合适。` : `${gp.name}做这个点推荐难度 ${rec.join('、')}，当前 ${d} 可能${d < rec[0] ? '太简单' : '太难'}。`)
+    + (fmtTxt ? ` 语料常见考法：${fmtTxt}` : '');
+  const refs = getLocalExemplars('single', t.id, g, qtype); renderRefs(refs, 'R');
+  const isChoice = CHOICE_Q.includes(qtype);
+  const refTxt = refs.map((e, i) => `[R${i + 1}]〔${e.src} · ${gname(e.grade)} · ${e.kind} · ${e.qtype}〕\n${e.text}`).join('\n');
+  $('#aPrompt').value = `你是河南小学英语教研老师。请严格模仿下面给出的【真题母题】，为【${gp.name}】学生出【${n}】道「${qtype}」，考查知识点「${t.name}」（${t.id}）。
 
-知识点说明：${t.desc}
-掌握标准：${t.evidence.join('；')}
-孩子常见错误（干扰项从这里来）：${t.errors.join('；')}
+一、知识点
+- 说明：${t.desc}
+- 掌握标准：${t.evidence.join('；')}
+- 孩子常见错误（干扰项从这里来）：${t.errors.join('；')}
 
-难度：${d}·${dr.name} —— ${dr.rule}
-年级约束：
-- 词汇只用${vocab}；人名用 Tom、Amy、Mike 等常见名。
+二、年级与语料约束
+- 词汇只用${VOCAB(g)}；人名用 Tom、Amy、Mike 等常见名。
 - 单句不超过 ${gp.maxWords} 个词；本年级已学语法：${gp.grammar}。不得用到没学过的语法点。
 - 风格：${gp.style}
-质量要求：
-- 每题只有一个正确答案；把正确答案代入后句子必须完全地道。
-- 干扰项必须是该年级孩子真会犯的错误形式，不出现明显荒谬的选项，也不出现两个都对的选项。
-- 题干给足判断依据，不靠常识或背景知识。
-- 每题写一句中文解析，点明判断依据。
-${ex ? '参考真题风格（不要照抄）：\n' + ex + '\n' : ''}
+- 难度：${d}·${dr.name} —— ${dr.rule}${fmtTxt ? `\n- 本知识点在${gp.name}语料中的常见考法：${fmtTxt}` : ''}
+- 版式：${FORM_RULES[qtype] || ''}
+
+三、真题母题（逐题对照仿写，保留考查角度、句式与设空方式，只换语境和词汇，不得照抄；mimic 填母题编号如 "R1"）
+${refTxt || '（暂无同年级母题，按上述题型规范出题）'}
+
+四、质量要求
+- 每题只有一个正确答案；正确答案代入后句子完全地道；干扰项是孩子真会犯的错。
+- 题干给足判断依据，每题写一句中文解析，点明判断依据。
+
 只输出 JSON 数组，每项：
-{"topic":"${t.id}","grade":${g},"difficulty":${d},"type":"choice","stem":"...","choices":[["A","..."],["B","..."],["C","..."]],"answer":"A","explain":"..."}
-填空题用 "type":"fill"，"answer" 为可接受答案列表，如 ["goes"]。`;
+{"topic":"${t.id}","grade":${g},"difficulty":${d},"qtype":"${qtype}","type":"${isChoice ? 'choice' : 'fill'}","stem":"...",${isChoice ? '"choices":[["A","..."],["B","..."],["C","..."]],"answer":"A"' : '"answer":["可接受答案1"]'},"explain":"...","mimic":"R1"}`;
 }
 $('#aMake').onclick = makePrompt;
-['aTopic', 'aGrade', 'aDiff', 'aN', 'aTheme'].forEach(id => $('#' + id).onchange = makePrompt);
+['aTopic', 'aGrade', 'aDiff', 'aN', 'aTheme', 'aQtype'].forEach(id => $('#' + id).onchange = makePrompt);
 $('#aKind').onchange = () => { syncKind(); makePrompt(); };
 $('#aCopy').onclick = () => {
   makePrompt(); const done = () => { $('#aCopy').textContent = '已复制'; setTimeout(() => $('#aCopy').textContent = '复制', 1200); };
@@ -804,7 +868,7 @@ function renderModelUi() {
   $('#mPreset').innerHTML = '<option value="">选常用接口…</option>' + Object.entries(PRESETS).filter(([, v]) => v[0] === p).map(([k]) => `<option>${k}</option>`).join('');
   $('#mNote').textContent = {
     claude: '用的是你在 claude.ai 的账号额度。第一次出题时页面会请你允许它使用 Claude。',
-    server: `密钥只在本机 llm.json 里，浏览器拿不到。当前模型：${proxy?.model || ''}`,
+    server: `使用本机 kb.py serve 配置的模型（当前：${proxy?.provider || ''}${proxy?.model ? '/' + proxy.model : ''}）。密钥只在本机 llm.json 里，或直接调用本地 codex / claude CLI。`,
     openai: proxy ? '通过本机 kb.py serve 转发。API Key 只保存在这台电脑的浏览器里。' : 'API Key 只保存在这台电脑的浏览器里。有的接口不允许浏览器直接调用，出错时请改用 python3 scripts/kb.py serve 打开本页。',
     anthropic: proxy ? '通过本机 kb.py serve 转发。API Key 只保存在这台电脑的浏览器里。' : 'API Key 只保存在这台电脑的浏览器里。',
   }[p];
@@ -926,7 +990,7 @@ function switchTab(name) {
   if (name === 'graph' && cy) { cy.resize(); renderGraphStyle(); }
 }
 $('#nav').onclick = e => e.target.dataset.tab && switchTab(e.target.dataset.tab);
-renderStats(); initGraph(); makePrompt(); updateCount(); initModels();
+renderStats(); initGraph(); syncKind(); makePrompt(); updateCount(); initModels();
 </script>
 </body>
 </html>

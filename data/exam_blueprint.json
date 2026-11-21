@@ -1,0 +1,496 @@
+{
+ "3": {
+  "papers": 21,
+  "sections": [
+   {
+    "qtype": "首字母填空",
+    "form": "fill",
+    "rate": 0.1,
+    "items": 5,
+    "pos": 0.13
+   },
+   {
+    "qtype": "字母",
+    "form": "fill",
+    "rate": 0.62,
+    "items": 0,
+    "pos": 0.17
+   },
+   {
+    "qtype": "句型转换",
+    "form": "fill",
+    "rate": 0.1,
+    "items": 3,
+    "pos": 0.29
+   },
+   {
+    "qtype": "不同类",
+    "form": "choice",
+    "rate": 0.38,
+    "items": 5,
+    "pos": 0.3
+   },
+   {
+    "qtype": "翻译",
+    "form": "fill",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.41
+   },
+   {
+    "qtype": "选词填空",
+    "form": "fill",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.41
+   },
+   {
+    "qtype": "看图",
+    "form": "choice",
+    "rate": 0.86,
+    "items": 5,
+    "pos": 0.43
+   },
+   {
+    "qtype": "单项选择",
+    "form": "choice",
+    "rate": 1.0,
+    "items": 5,
+    "pos": 0.45
+   },
+   {
+    "qtype": "连词成句",
+    "form": "fill",
+    "rate": 0.19,
+    "items": 5,
+    "pos": 0.63
+   },
+   {
+    "qtype": "情景交际",
+    "form": "choice",
+    "rate": 0.71,
+    "items": 5,
+    "pos": 0.74
+   },
+   {
+    "qtype": "补全对话",
+    "form": "choice",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.8
+   },
+   {
+    "qtype": "阅读理解",
+    "form": "passage",
+    "rate": 0.71,
+    "items": 4,
+    "pos": 0.89
+   },
+   {
+    "qtype": "判断",
+    "form": "choice",
+    "rate": 0.19,
+    "items": 4,
+    "pos": 0.93
+   },
+   {
+    "qtype": "语篇填空",
+    "form": "passage",
+    "rate": 0.1,
+    "items": 0,
+    "pos": 1.0
+   }
+  ]
+ },
+ "4": {
+  "papers": 21,
+  "sections": [
+   {
+    "qtype": "字母",
+    "form": "fill",
+    "rate": 0.14,
+    "items": 5,
+    "pos": 0.08
+   },
+   {
+    "qtype": "汉语提示填词",
+    "form": "fill",
+    "rate": 0.33,
+    "items": 5,
+    "pos": 0.11
+   },
+   {
+    "qtype": "不同类",
+    "form": "choice",
+    "rate": 0.19,
+    "items": 2,
+    "pos": 0.14
+   },
+   {
+    "qtype": "适当形式",
+    "form": "fill",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.16
+   },
+   {
+    "qtype": "语音辨音",
+    "form": "choice",
+    "rate": 0.19,
+    "items": 5,
+    "pos": 0.17
+   },
+   {
+    "qtype": "单项选择",
+    "form": "choice",
+    "rate": 0.86,
+    "items": 5,
+    "pos": 0.29
+   },
+   {
+    "qtype": "看图",
+    "form": "choice",
+    "rate": 0.67,
+    "items": 5,
+    "pos": 0.29
+   },
+   {
+    "qtype": "翻译",
+    "form": "fill",
+    "rate": 0.1,
+    "items": 5,
+    "pos": 0.45
+   },
+   {
+    "qtype": "句型转换",
+    "form": "fill",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.47
+   },
+   {
+    "qtype": "连词成句",
+    "form": "fill",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.48
+   },
+   {
+    "qtype": "补全对话",
+    "form": "choice",
+    "rate": 0.33,
+    "items": 4,
+    "pos": 0.52
+   },
+   {
+    "qtype": "情景交际",
+    "form": "choice",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.59
+   },
+   {
+    "qtype": "书面表达",
+    "form": "writing",
+    "rate": 0.1,
+    "items": 0,
+    "pos": 0.67
+   },
+   {
+    "qtype": "语篇填空",
+    "form": "passage",
+    "rate": 0.24,
+    "items": 0,
+    "pos": 0.68
+   },
+   {
+    "qtype": "选词填空",
+    "form": "fill",
+    "rate": 0.14,
+    "items": 0,
+    "pos": 0.75
+   },
+   {
+    "qtype": "判断",
+    "form": "choice",
+    "rate": 0.57,
+    "items": 4,
+    "pos": 0.78
+   }
+  ]
+ },
+ "5": {
+  "papers": 21,
+  "sections": [
+   {
+    "qtype": "语音辨音",
+    "form": "choice",
+    "rate": 0.43,
+    "items": 3,
+    "pos": 0.07
+   },
+   {
+    "qtype": "适当形式",
+    "form": "fill",
+    "rate": 0.38,
+    "items": 5,
+    "pos": 0.1
+   },
+   {
+    "qtype": "不同类",
+    "form": "choice",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.1
+   },
+   {
+    "qtype": "汉语提示填词",
+    "form": "fill",
+    "rate": 0.71,
+    "items": 5,
+    "pos": 0.2
+   },
+   {
+    "qtype": "翻译",
+    "form": "fill",
+    "rate": 0.19,
+    "items": 5,
+    "pos": 0.25
+   },
+   {
+    "qtype": "单项选择",
+    "form": "choice",
+    "rate": 0.95,
+    "items": 5,
+    "pos": 0.32
+   },
+   {
+    "qtype": "句型转换",
+    "form": "fill",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.33
+   },
+   {
+    "qtype": "连词成句",
+    "form": "fill",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.5
+   },
+   {
+    "qtype": "看图",
+    "form": "choice",
+    "rate": 0.33,
+    "items": 5,
+    "pos": 0.51
+   },
+   {
+    "qtype": "补全对话",
+    "form": "choice",
+    "rate": 0.62,
+    "items": 2,
+    "pos": 0.53
+   },
+   {
+    "qtype": "情景交际",
+    "form": "choice",
+    "rate": 0.19,
+    "items": 5,
+    "pos": 0.58
+   },
+   {
+    "qtype": "阅读理解",
+    "form": "passage",
+    "rate": 0.1,
+    "items": 2,
+    "pos": 0.62
+   },
+   {
+    "qtype": "语篇填空",
+    "form": "passage",
+    "rate": 0.38,
+    "items": 0,
+    "pos": 0.63
+   },
+   {
+    "qtype": "判断",
+    "form": "choice",
+    "rate": 0.57,
+    "items": 4,
+    "pos": 0.83
+   }
+  ]
+ },
+ "6": {
+  "papers": 21,
+  "sections": [
+   {
+    "qtype": "不同类",
+    "form": "choice",
+    "rate": 0.19,
+    "items": 5,
+    "pos": 0.03
+   },
+   {
+    "qtype": "汉语提示填词",
+    "form": "fill",
+    "rate": 0.67,
+    "items": 5,
+    "pos": 0.1
+   },
+   {
+    "qtype": "适当形式",
+    "form": "fill",
+    "rate": 0.52,
+    "items": 5,
+    "pos": 0.13
+   },
+   {
+    "qtype": "单项选择",
+    "form": "choice",
+    "rate": 0.9,
+    "items": 5,
+    "pos": 0.25
+   },
+   {
+    "qtype": "语音辨音",
+    "form": "choice",
+    "rate": 0.1,
+    "items": 5,
+    "pos": 0.27
+   },
+   {
+    "qtype": "句型转换",
+    "form": "fill",
+    "rate": 0.33,
+    "items": 5,
+    "pos": 0.36
+   },
+   {
+    "qtype": "看图",
+    "form": "choice",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.4
+   },
+   {
+    "qtype": "连词成句",
+    "form": "fill",
+    "rate": 0.29,
+    "items": 5,
+    "pos": 0.44
+   },
+   {
+    "qtype": "补全对话",
+    "form": "choice",
+    "rate": 0.67,
+    "items": 0,
+    "pos": 0.53
+   },
+   {
+    "qtype": "情景交际",
+    "form": "choice",
+    "rate": 0.24,
+    "items": 5,
+    "pos": 0.55
+   },
+   {
+    "qtype": "语篇填空",
+    "form": "passage",
+    "rate": 0.43,
+    "items": 0,
+    "pos": 0.68
+   },
+   {
+    "qtype": "判断",
+    "form": "choice",
+    "rate": 0.52,
+    "items": 4,
+    "pos": 0.8
+   },
+   {
+    "qtype": "书面表达",
+    "form": "writing",
+    "rate": 0.19,
+    "items": 0,
+    "pos": 1.0
+   }
+  ]
+ },
+ "7": {
+  "papers": 128,
+  "sections": [
+   {
+    "qtype": "单项选择",
+    "form": "choice",
+    "rate": 0.43,
+    "items": 10,
+    "pos": 0.28
+   },
+   {
+    "qtype": "连词成句",
+    "form": "fill",
+    "rate": 0.16,
+    "items": 5,
+    "pos": 0.38
+   },
+   {
+    "qtype": "完形填空",
+    "form": "passage",
+    "rate": 0.65,
+    "items": 10,
+    "pos": 0.44
+   },
+   {
+    "qtype": "阅读理解",
+    "form": "passage",
+    "rate": 0.88,
+    "items": 10,
+    "pos": 0.45
+   },
+   {
+    "qtype": "适当形式",
+    "form": "fill",
+    "rate": 0.27,
+    "items": 10,
+    "pos": 0.46
+   },
+   {
+    "qtype": "句型转换",
+    "form": "fill",
+    "rate": 0.2,
+    "items": 5,
+    "pos": 0.5
+   },
+   {
+    "qtype": "选词填空",
+    "form": "fill",
+    "rate": 0.16,
+    "items": 5,
+    "pos": 0.53
+   },
+   {
+    "qtype": "补全对话",
+    "form": "choice",
+    "rate": 0.3,
+    "items": 0,
+    "pos": 0.6
+   },
+   {
+    "qtype": "语篇填空",
+    "form": "passage",
+    "rate": 0.23,
+    "items": 1,
+    "pos": 0.61
+   },
+   {
+    "qtype": "书面表达",
+    "form": "writing",
+    "rate": 0.67,
+    "items": 0,
+    "pos": 0.81
+   }
+  ]
+ }
+}

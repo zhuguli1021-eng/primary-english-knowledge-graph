@@ -1,9 +1,14 @@
 {
-  "_说明": "复制为 llm.json 再填写。llm.json 里有密钥，不要发给别人。provider 填 openai（所有 OpenAI 兼容接口）或 anthropic。",
+  "_说明": "复制为 llm.json 再填写（不要分享含密钥的 llm.json）。provider 可选：openai（OpenAI 兼容接口）、anthropic（Claude API）、codex（本地 codex exec，免 Key）、claude（本地 claude -p，免 Key）、cli（任意自定义本地命令行，如 WorkBuddy/CodeBuddy/ollama）。留空时默认自动检测本地 codex/claude。",
   "provider": "openai",
   "base_url": "https://api.deepseek.com/v1",
   "model": "deepseek-v4-pro",
   "api_key": "",
+  "_本地智能体示例": {
+    "本地 Codex（免 API Key）": {"provider": "codex", "model": ""},
+    "本地 Claude Code（免 API Key）": {"provider": "claude", "model": ""},
+    "自定义 CLI（如 CodeBuddy / WorkBuddy / ollama）": {"provider": "cli", "command": ["codebuddy", "-p"]}
+  },
   "_常用接口": {
     "DeepSeek": ["openai", "https://api.deepseek.com/v1", "deepseek-v4-pro（或更快的 deepseek-flash）"],
     "通义千问": ["openai", "https://dashscope.aliyuncs.com/compatible-mode/v1", "qwen-plus"],
