@@ -70,6 +70,8 @@ python3 scripts/kb.py serve 8765
 | 方法 | 路径 | 说明 |
 |---|---|---|
 | `GET` | `/api/llm-config` | 查看当前已配置的出题模型/本地 CLI 状态 |
+| `GET` | `/api/cpp-units?level=G3&unit=G3-U1` | 查询 CPP V2.1（G0~G6 共 63 单元）映射标准与推荐双向细目表行 |
+| `POST` | `/api/draw-blueprint` | 按双向细目表（知识点 × 选择/填空/阅读/写作）优先从语料真题池抽题并附来源，返回四板块题目与缺口 `shortfalls` |
 | `GET` | `/api/topics?grade=6&domain=时态&q=过去` | 查询知识点、该年级真题考频、推荐难度、常见题型 |
 | `GET` | `/api/exemplars?topic=te.past_simple&grade=6&qtype=适当形式&k=6` | 检索该知识点在该年级的真题原题（母题）与考法分布 |
 | `GET` | `/api/blueprint?grade=6` | 查询该年级真卷大题结构蓝图 |

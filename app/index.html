@@ -64,7 +64,23 @@ td,th{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);font-s
 textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;font-size:13px}
 .legend span{display:inline-flex;align-items:center;gap:4px;margin-right:12px;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:18px;height:0;border-top:2px solid}
-@media print{header,nav,.noprint{display:none!important}main{padding:0}.card{border:0;padding:0}body{background:#fff;color:#000}}
+.steps-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.steps-bar button{flex:1;min-width:150px;text-align:left;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font:inherit}
+.steps-bar button.on{border-color:var(--accent);background:var(--accent);color:#fff}
+.steps-bar button small{display:block;font-size:11px;opacity:.8}
+.badge{display:inline-block;padding:1px 7px;border-radius:6px;font-size:12px;font-weight:500;margin-right:4px}
+.b-real{background:#e3f5ea;color:#1b6e3c}.b-cur{background:#e6eefc;color:#1f52a8}.b-draft{background:#fff1d6;color:#945800;border:1px solid #f0c36d}.b-ok{background:#dff4f0;color:#11695c}.b-warn{background:#fde3df;color:#9b2c22}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .b-real{background:#1c3b29;color:#8ee4af}:root:not([data-theme="light"]) .b-cur{background:#1f2f4d;color:#9ec0ff}:root:not([data-theme="light"]) .b-draft{background:#423112;color:#ffd479}:root:not([data-theme="light"]) .b-ok{background:#173b36;color:#84e3d4}:root:not([data-theme="light"]) .b-warn{background:#4a2422;color:#ffb4aa}}
+.bp-table input[type="number"]{width:58px;text-align:center;padding:3px 4px}
+.sec-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.sec-tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 14px;border-radius:99px;cursor:pointer;font:inherit}
+.sec-tabs button.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.qcard{border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px;background:var(--card)}
+.qcard.draft{border-left:4px solid var(--mid)}
+.qcard.bad{border-left:4px solid var(--bad)}
+.exam-hdr{text-align:center;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.exam-hdr h2{margin:0 0 4px;font-size:21px}
+@media print{header,nav,.noprint{display:none!important}main{padding:0;max-width:none}.card{border:0;padding:0;margin:0}body{background:#fff;color:#000;font-size:13.5px}.q{page-break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -101,18 +117,52 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
 </section>
 
 <section id="tab-paper" class="tab">
-  <div class="card noprint">
-    <div class="row">
-      <label>年级 <select id="pGrade"></select></label>
-      <label><span id="pCountLabel">基础题数</span> <input id="pCount" type="number" value="20" min="5" max="60" style="width:64px"></label>
-      <label>组卷方式 <select id="pMode"><option value="exam">按真卷结构（单选、完形、阅读、填空、书面表达）</option><option value="mix">按知识点随机</option></select></label>
-      <label>范围 <select id="pScope"><option value="all">全部知识点（按考频加权）</option><option value="domain">指定领域</option><option value="topics">指定知识点</option></select></label>
-      <span id="pScopeExtra"></span>
-      <button class="btn primary" id="pMake">生成试卷</button>
-    </div>
-    <p class="small muted" id="pRule"></p>
+  <div class="steps-bar noprint" id="wbSteps">
+    <button data-step="1" class="on"><b>第一步 · 定蓝图</b><small>CPP 单元映射 · 双向细目表</small></button>
+    <button data-step="2"><b>第二步 · 抽素材</b><small>语料库真题优先 · 缺题 AI 补</small></button>
+    <button data-step="3"><b>第三步 · 分板块把关</b><small>一次一板块 · 单题可重出</small></button>
+    <button data-step="4"><b>第四步 · 人工校验</b><small>答案/歧义/超纲/查重 · 初稿生效</small></button>
+    <button data-step="5"><b>第五步 · 打印成卷</b><small>学生卷 · 答案详解卷 · 作答诊断</small></button>
   </div>
-  <div id="paperBox"></div>
+  <div id="wbStep1" class="wb-pane">
+    <div class="card noprint">
+      <div class="row">
+        <label>映射标准
+          <select id="bpStd">
+            <option value="cpp">按 CPP 单元目标卡 V2.1（推荐）</option>
+            <option value="exam">按本年级高频真卷考点</option>
+            <option value="custom">自由勾选指定知识点 / 领域</option>
+          </select>
+        </label>
+        <span id="bpCppBar" class="row">
+          <label>CPP 级别 <select id="bpCppLv"></select></label>
+        </span>
+        <label>词表/对标年级 <select id="pGrade"></select></label>
+        <button class="btn" id="bpReset">重置推荐题量</button>
+      </div>
+      <div id="bpUnitChips" style="margin-top:8px"></div>
+      <div id="bpUnitSummary" class="small muted" style="margin-top:6px"></div>
+      <div id="bpCustomPicker" hidden style="margin-top:8px"></div>
+    </div>
+    <div class="card noprint">
+      <div class="row" style="margin-bottom:8px">
+        <h3 style="margin:0">双向细目表（纵轴：知识点 · 横轴：题型、题量与分值）</h3>
+        <span style="flex:1"></span>
+        <select id="bpAddTopic" style="max-width:240px"></select>
+        <button class="btn" id="bpAddRow">+ 加入知识点行</button>
+      </div>
+      <div class="scroll"><table class="bp-table" id="bpTable"></table></div>
+      <div class="row" style="margin-top:12px">
+        <span id="bpSummary" style="font-weight:600"></span>
+        <span style="flex:1"></span>
+        <button class="btn primary" id="bpDrawBtn">下一步：严格从语料库抽真题 →</button>
+      </div>
+    </div>
+  </div>
+  <div id="wbStep2" class="wb-pane" hidden></div>
+  <div id="wbStep3" class="wb-pane" hidden></div>
+  <div id="wbStep4" class="wb-pane" hidden></div>
+  <div id="wbStep5" class="wb-pane" hidden><div id="paperBox"></div></div>
 </section>
 
 <section id="tab-report" class="tab">
@@ -319,119 +369,824 @@ function renderStats() {
       .map(t => `<li>${topicLink(t.id)} <span class="meta">${Math.round(ST[t.id].paperRate * 100)}%</span></li>`).join('')}</ol>`;
 }
 
-// ---------- 出题组卷 ----------
+// ---------- 出题组卷（四步组卷 + 人工校验 + 打印成卷） ----------
+const safeRich = s => esc(s ?? '').replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi, '<u>$1</u>').replace(/\n/g, '<br>');
 const gradeOpts = Object.entries(GRADES).map(([g, x]) => `<option value="${g}">${x.name}</option>`).join('');
 $('#pGrade').innerHTML = gradeOpts; $('#pGrade').value = 6;
 $('#aGrade').innerHTML = gradeOpts; $('#aGrade').value = 6;
-function updateRule() {
-  const g = +$('#pGrade').value, x = GRADES[g];
-  $('#pRule').textContent = `${$('#pMode')?.value === 'exam' ? '按真卷结构时，“基础题数”是单选和词汇填空的总数，另外整篇带出完形、2~3 篇不同题材的阅读和 1 道书面表达。' : ''}${x.name}：词汇 ${x.band}，单句不超过 ${x.maxWords} 词，已学语法：${x.grammar}。只出首学年级不晚于 ${x.name} 的知识点；学过很久的点不出基础题，刚学的点不出提高题。`;
-}
-$('#pGrade').onchange = updateRule; updateRule();
-$('#pMode').onchange = () => { $('#pCountLabel').textContent = $('#pMode').value === 'exam' ? '基础题数' : '题数'; updateRule(); };
-$('#pScope').onchange = () => {
-  const v = $('#pScope').value;
-  $('#pScopeExtra').innerHTML = v === 'domain' ? `<select id="pDomain">${DOMAINS.map(d => `<option>${d}</option>`).join('')}</select>`
-    : v === 'topics' ? `<select id="pTopics" multiple size="6" style="min-width:240px">${KB.topics.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select>` : '';
-};
+
+const CPP = KB.cpp_units || {levels: [], units: []};
+const RP = KB.real_pool || {sources: [], singles: [], groups: [], writings: []};
+const SEC_META = [
+  ['choice', '选择题', '单项选择、情景交际、语音辨音、不同类'],
+  ['fill', '填空运用', '适当形式、首字母/汉译提示、句型转换、连词成句'],
+  ['reading', '阅读与完形', '阅读理解篇章、完形填空语篇'],
+  ['writing', '书面表达', '情境应用文或话题短文写作'],
+];
 let paper = null;
-// 真卷结构：单选 → 完形 → 阅读（不同题材 2~3 篇）→ 词汇/语篇填空 → 书面表达
-function groupsOf(qs) { const m = new Map(); qs.forEach(q => q.passage && (m.get(q.passage) || m.set(q.passage, []).get(q.passage)).push(q)); return [...m.values()]; }
 const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
-function makeExam(g, n) {
-  const all = allQs(), fit = all.filter(q => fits(q, g));
-  const groups = groupsOf(all.filter(q => q.grade <= g)).filter(gr => gr.filter(q => fits(q, g)).length >= 2);
-  const cloze = groups.filter(gr => gr[0].topic === 'rd.cloze'), pfill = groups.filter(gr => gr[0].topic === 'rd.passage_fill');
-  const reading = shuffle(groups.filter(gr => !['rd.cloze', 'rd.passage_fill'].includes(gr[0].topic) && gr[0].type === 'choice'));
-  const read = [], themes = new Set();
-  for (const gr of reading) if (read.length < (g >= 6 ? 3 : 2) && !themes.has(gr[0].theme || gr[0].passage)) { read.push(gr); themes.add(gr[0].theme || gr[0].passage); }
-  const nonP = fit.filter(q => !q.passage && q.type !== 'writing' && !['阅读', '写作'].includes(T[q.topic].domain));
-  const essays = fit.filter(q => q.type === 'writing');
-  const secs = [
-    ['单项选择', pick(nonP.filter(q => q.type === 'choice'), Math.round(n * .6), {}, g)],
-    ['完形填空', g >= 6 && cloze.length ? shuffle(cloze)[0] : []],
-    ['阅读理解', read.flat()],
-    ['词汇运用', pick(nonP.filter(q => q.type === 'fill'), Math.round(n * .4), {}, g).concat(g >= 6 && pfill.length ? shuffle(pfill)[0] : [])],
-    ['书面表达', g >= 5 && essays.length ? [shuffle(essays)[0]] : []],
-  ].filter(x => x[1].length);
-  const qs = [], sections = [];
-  secs.forEach(([name, list]) => { sections.push({name, start: qs.length}); qs.push(...list); });
-  return {qs, sections};
-}
-$('#pMake').onclick = () => {
-  const g = +$('#pGrade').value, n = +$('#pCount').value, scope = $('#pScope').value;
-  if ($('#pMode').value === 'exam' && scope === 'all') {
-    const {qs, sections} = makeExam(g, n);
-    paper = {id: Date.now(), grade: g, qs, sections, answers: {}, marks: {}, scores: {}};
-    return renderPaper();
-  }
-  let pool = allQs().filter(q => fits(q, g));
-  if (scope === 'domain') pool = pool.filter(q => T[q.topic].domain === $('#pDomain').value);
-  if (scope === 'topics') {
-    const ids = [...$('#pTopics').selectedOptions].map(o => o.value);
-    pool = allQs().filter(q => ids.includes(q.topic) && q.grade <= g);   // 指定知识点时放宽到本年级及以下
-  }
-  if (!pool.length) { $('#paperBox').innerHTML = '<div class="card">这个范围在该年级没有合适的题。可以换年级，或去「AI 出题」补题。</div>'; return; }
-  const qs = pick(pool.filter(q => q.type !== 'writing'), n, {}, g);
-  qs.sort((a, b) => !!a.passage - !!b.passage || a.difficulty - b.difficulty);
-  paper = {id: Date.now(), grade: g, qs, sections: [], answers: {}, marks: {}, scores: {}};
-  renderPaper();
-};
+function groupsOf(qs) { const m = new Map(); qs.forEach(q => q.passage && (m.get(q.passage) || m.set(q.passage, []).get(q.passage)).push(q)); return [...m.values()]; }
 const RUBRIC = '第一档 9–10 分：要点齐全，语言准确连贯，几乎无错；第二档 7–8 分：要点基本齐全，少量错误不影响理解；第三档 5–6 分：漏 1~2 个要点或错误较多；第四档 3–4 分：要点缺失较多，错误影响理解；第五档 0–2 分：与题目无关或只写了几个词。词数不足酌情扣 1~2 分，书写、大小写、标点错误酌情扣分。';
 const wcount = t => (String(t).match(/[A-Za-z]+(?:'[a-z]+)?/g) || []).length;
+
+const wb = {
+  step: 1, std: 'cpp', cppLv: 'G3', cppUnits: ['G3-U1'],
+  customDomain: '全部', customSearch: '',
+  scores: {choice: 2, fill: 2, reading: 2, writing: 10},
+  rows: [],
+  sections: {choice: [], fill: [], reading: [], writing: []},
+  shortfalls: [],
+  usedIds: new Set(),
+  curSec: 'choice',
+  editKey: '',
+  onlyIssues: false,
+  title: '',
+  subtitle: '时间：60 分钟',
+  showSrcStudent: true,
+  manualPrompt: '',
+  manualTarget: null,
+};
+
+function rankGrade(qg, g) { return qg === g ? 3 : qg === g - 1 ? 2 : qg <= g + 1 ? 1 : 0; }
+function realStock(tid, g) {
+  let c = 0, f = 0, r = 0, w = 0;
+  for (const s of RP.singles) if (rankGrade(s.grade, g) && (s.topics || [s.topic]).includes(tid)) s.type === 'choice' ? c++ : f++;
+  if (tid.startsWith('rd.')) for (const gr of RP.groups) if (rankGrade(gr.grade, g) && (tid === 'rd.cloze') === (gr.qtype === '完形填空')) r += gr.questions.length;
+  if (tid.startsWith('wr.')) for (const x of RP.writings) if (rankGrade(x.grade, g)) w++;
+  const cur = allQs().filter(q => rankGrade(q.grade, g) && q.topic === tid).length;
+  return {c, f, r, w, realTotal: c + f + r + w, cur};
+}
+function selectedCppUnits() { return CPP.units.filter(u => wb.cppUnits.includes(u.id)); }
+function cppAllowedWords() {
+  const s = new Set();
+  selectedCppUnits().forEach(u => (u.vocab?.words || []).forEach(w => w.toLowerCase().split(/[\s-]+/).forEach(x => x && s.add(x))));
+  return s;
+}
+
+function loadBlueprintFromMode() {
+  if (wb.std === 'cpp') {
+    const us = selectedCppUnits();
+    if (!us.length && CPP.units.length) { wb.cppUnits = [CPP.units.find(u => u.level === wb.cppLv)?.id || CPP.units[0].id]; }
+    const units = selectedCppUnits();
+    if (units.length) $('#pGrade').value = units[0].grade;
+    const merged = new Map();
+    for (const u of units) {
+      for (const r of u.blueprintRows || []) {
+        if (!merged.has(r.topic)) merged.set(r.topic, {topic: r.topic, role: r.role, basis: `${u.id} · ${r.basis}`, choice: r.cells.choice || 0, fill: r.cells.fill || 0, reading: r.cells.reading || 0, writing: r.cells.writing || 0});
+        else {
+          const ex = merged.get(r.topic);
+          ex.basis += `；${u.id}`;
+          if (units.length <= 2) { ex.choice = Math.max(ex.choice, r.cells.choice || 0); ex.fill = Math.max(ex.fill, r.cells.fill || 0); }
+        }
+      }
+    }
+    wb.rows = [...merged.values()];
+    wb.title = units.length === 1 ? `CPP ${units[0].id}《${units[0].theme}》单元检测卷` : `CPP ${wb.cppLv}（${units.map(u => u.unit).join('+')}）阶段检测卷`;
+  } else if (wb.std === 'exam') {
+    const g = +$('#pGrade').value;
+    const top = KB.topics.filter(t => t.grade <= g && !['阅读', '写作'].includes(t.domain))
+      .sort((a, b) => gradeRate(b.id, g) - gradeRate(a.id, g)).slice(0, 8);
+    wb.rows = top.map((t, i) => ({topic: t.id, role: t.domain, basis: `${gname(g)}真卷考频 ${Math.round(gradeRate(t.id, g) * 100)}%`, choice: i < 5 ? 2 : 1, fill: i < 4 ? 2 : 0, reading: 0, writing: 0}));
+    wb.rows.push({topic: 'rd.detail', role: '阅读', basis: '真卷阅读理解篇章', choice: 0, fill: 0, reading: g >= 6 ? 10 : 5, writing: 0});
+    if (g >= 6) wb.rows.push({topic: 'rd.cloze', role: '阅读', basis: '真卷完形填空语篇', choice: 0, fill: 0, reading: 5, writing: 0});
+    if (g >= 5) wb.rows.push({topic: 'wr.daily', role: '写作', basis: '真卷书面表达', choice: 0, fill: 0, reading: 0, writing: 1});
+    wb.title = `${gname(g)}英语综合真题测试卷`;
+  } else {
+    if (!wb.rows.length) {
+      const g = +$('#pGrade').value;
+      wb.rows = KB.topics.filter(t => t.grade <= g).slice(0, 4).map(t => ({topic: t.id, role: t.domain, basis: '自选知识点', choice: 3, fill: 2, reading: 0, writing: 0}));
+    }
+    wb.title = `${gname(+$('#pGrade').value)}英语专项训练卷`;
+  }
+  renderStep1();
+}
+
+function goStep(n) {
+  if (n === 5) {
+    const drafts = Object.values(wb.sections).flat().filter(q => q.origin === 'ai' && q.status === 'draft');
+    if (drafts.length) {
+      alert(`还有 ${drafts.length} 道 AI 初稿未经人工确认生效！\n按规范「AI 出的题当初稿，人工确认才生效」，请先在第四步逐题确认或删除。`);
+      n = 4;
+    } else buildFinalPaper();
+  }
+  wb.step = n;
+  document.querySelectorAll('#wbSteps button').forEach(b => b.classList.toggle('on', +b.dataset.step === n));
+  for (let i = 1; i <= 5; i++) $('#wbStep' + i).hidden = i !== n;
+  if (n === 1) renderStep1();
+  if (n === 2) renderStep2();
+  if (n === 3) renderStep3();
+  if (n === 4) renderStep4();
+  if (n === 5) renderPaper('print');
+}
+$('#wbSteps').onclick = e => { const b = e.target.closest('button[data-step]'); if (b) goStep(+b.dataset.step); };
+
+function renderStep1() {
+  const g = +$('#pGrade').value;
+  $('#bpCppBar').hidden = $('#bpUnitChips').hidden = $('#bpUnitSummary').hidden = wb.std !== 'cpp';
+  $('#bpCustomPicker').hidden = wb.std !== 'custom';
+  if (wb.std === 'cpp' && CPP.levels.length) {
+    $('#bpCppLv').innerHTML = CPP.levels.map(l => `<option value="${l.id}" ${l.id === wb.cppLv ? 'selected' : ''}>${l.id} · ${esc(l.book)}</option>`).join('');
+    const lvUnits = CPP.units.filter(u => u.level === wb.cppLv);
+    $('#bpUnitChips').innerHTML = `<span class="small muted">勾选单元（可多选合卷）：</span>` + lvUnits.map(u => {
+      const on = wb.cppUnits.includes(u.id);
+      return `<span class="chip" data-uid="${u.id}" style="${on ? 'background:var(--accent);color:#fff;border-color:var(--accent)' : ''}">${u.unit} ${esc(u.theme)}</span>`;
+    }).join('');
+    const us = selectedCppUnits();
+    $('#bpUnitSummary').innerHTML = us.map(u => `<b>${u.id}《${esc(u.theme)}》</b> 大问题：${esc(u.bigQuestionEn)}（${esc(u.bigQuestionZh)}）｜语法：${u.grammar.map(x => esc(x.label)).join('；')}｜核心词 ${u.vocab.count} 个｜写作：${esc(u.writing.task)}`).join('<br>');
+  }
+  if (wb.std === 'custom') {
+    const inTable = new Set(wb.rows.map(r => r.topic));
+    const list = KB.topics.filter(t => (wb.customDomain === '全部' || t.domain === wb.customDomain)
+      && (!wb.customSearch || t.name.includes(wb.customSearch) || t.id.includes(wb.customSearch)));
+    $('#bpCustomPicker').innerHTML = `<div class="row small" style="margin-bottom:6px">
+      <span class="muted">点知识点直接加入/移出细目表（显示当前年级可用真题量）：</span>
+      <select id="bpDomSel">${['全部', ...DOMAINS].map(d => `<option ${d === wb.customDomain ? 'selected' : ''}>${d}</option>`).join('')}</select>
+      <input id="bpSearch" placeholder="搜知识点…" value="${esc(wb.customSearch)}" size="12">
+    </div><div style="max-height:150px;overflow:auto;padding:4px;border:1px solid var(--line);border-radius:8px">`
+      + list.map(t => {
+        const st = realStock(t.id, g), on = inTable.has(t.id);
+        return `<span class="chip" data-pick="${t.id}" style="${on ? 'background:var(--accent);color:#fff' : ''}">${esc(t.name)} <small style="opacity:.8">(真${st.realTotal}/精${st.cur})</small></span>`;
+      }).join('') + `</div>`;
+    $('#bpDomSel').onchange = e => { wb.customDomain = e.target.value; renderStep1(); };
+    $('#bpSearch').oninput = e => { wb.customSearch = e.target.value.trim(); renderStep1(); };
+    $('#bpCustomPicker').onclick = e => {
+      const id = e.target.closest('[data-pick]')?.dataset.pick; if (!id) return;
+      const idx = wb.rows.findIndex(r => r.topic === id);
+      if (idx >= 0) wb.rows.splice(idx, 1);
+      else wb.rows.push({topic: id, role: T[id].domain, basis: '手动指定知识点', choice: id.startsWith('rd.') || id.startsWith('wr.') ? 0 : 3, fill: id.startsWith('rd.') || id.startsWith('wr.') ? 0 : 2, reading: id.startsWith('rd.') ? 5 : 0, writing: id.startsWith('wr.') && !['wr.mechanics', 'wr.sentence'].includes(id) ? 1 : 0});
+      renderStep1();
+    };
+  }
+  $('#bpAddTopic').innerHTML = KB.topics.map(t => `<option value="${t.id}">[${t.domain}] ${esc(t.name)}</option>`).join('');
+
+  let tot = {choice: 0, fill: 0, reading: 0, writing: 0, q: 0, pts: 0};
+  const bodyRows = wb.rows.map((r, idx) => {
+    const t = T[r.topic]; if (!t) return '';
+    const st = realStock(r.topic, g);
+    const rq = (+r.choice || 0) + (+r.fill || 0) + (+r.reading || 0) + (+r.writing || 0);
+    const rpts = (+r.choice || 0) * wb.scores.choice + (+r.fill || 0) * wb.scores.fill + (+r.reading || 0) * wb.scores.reading + (+r.writing || 0) * wb.scores.writing;
+    tot.choice += +r.choice || 0; tot.fill += +r.fill || 0; tot.reading += +r.reading || 0; tot.writing += +r.writing || 0; tot.q += rq; tot.pts += rpts;
+    return `<tr>
+      <td><b>${esc(t.name)}</b> <span class="chip" style="cursor:default">${esc(r.role || t.domain)}</span><div class="meta">${esc(r.basis || '')}</div></td>
+      <td class="small">真题 <b>${st.realTotal}</b> <span class="muted">(选${st.c}/填${st.f}${st.r ? '/读' + st.r : ''}${st.w ? '/写' + st.w : ''})</span><br><span class="muted">精编 ${st.cur}</span></td>
+      <td><input type="number" min="0" max="30" data-ri="${idx}" data-col="choice" value="${r.choice || 0}"></td>
+      <td><input type="number" min="0" max="30" data-ri="${idx}" data-col="fill" value="${r.fill || 0}"></td>
+      <td><input type="number" min="0" max="30" data-ri="${idx}" data-col="reading" value="${r.reading || 0}"></td>
+      <td><input type="number" min="0" max="5" data-ri="${idx}" data-col="writing" value="${r.writing || 0}"></td>
+      <td class="small"><b>${rq}</b> 题 · <b>${rpts}</b> 分</td>
+      <td><button class="btn small" data-delrow="${idx}">✕</button></td>
+    </tr>`;
+  }).join('');
+
+  $('#bpTable').innerHTML = `<thead><tr>
+      <th>纵轴：知识点 & 映射依据</th>
+      <th>语料库可用真题</th>
+      <th>选择题<div class="meta">每题 <input type="number" min="0.5" max="20" step="0.5" data-sc="choice" value="${wb.scores.choice}"> 分</div></th>
+      <th>填空运用<div class="meta">每题 <input type="number" min="0.5" max="20" step="0.5" data-sc="fill" value="${wb.scores.fill}"> 分</div></th>
+      <th>阅读/完形<div class="meta">每小题 <input type="number" min="0.5" max="20" step="0.5" data-sc="reading" value="${wb.scores.reading}"> 分</div></th>
+      <th>书面表达<div class="meta">每篇 <input type="number" min="1" max="30" step="1" data-sc="writing" value="${wb.scores.writing}"> 分</div></th>
+      <th>行小计</th><th></th>
+    </tr></thead><tbody>${bodyRows || '<tr><td colspan="8" class="muted">请先选择单元或添加知识点行</td></tr>'}</tbody>
+    <tfoot><tr style="font-weight:600;background:var(--chip)">
+      <td>合计（共 ${wb.rows.length} 个考点）</td><td>—</td>
+      <td>${tot.choice} 题（${tot.choice * wb.scores.choice} 分）</td>
+      <td>${tot.fill} 题（${tot.fill * wb.scores.fill} 分）</td>
+      <td>${tot.reading} 题（${tot.reading * wb.scores.reading} 分）</td>
+      <td>${tot.writing} 篇（${tot.writing * wb.scores.writing} 分）</td>
+      <td>${tot.q} 题 · ${tot.pts} 分</td><td></td>
+    </tr></tfoot>`;
+  $('#bpSummary').textContent = `蓝图合计：${tot.q} 道题，卷面满分 ${tot.pts} 分（选择 ${tot.choice} / 填空 ${tot.fill} / 阅读完形 ${tot.reading} / 写作 ${tot.writing}）`;
+}
+
+$('#bpStd').onchange = e => { wb.std = e.target.value; loadBlueprintFromMode(); };
+$('#bpCppLv').onchange = e => { wb.cppLv = e.target.value; const first = CPP.units.find(u => u.level === wb.cppLv); wb.cppUnits = first ? [first.id] : []; loadBlueprintFromMode(); };
+$('#bpUnitChips').onclick = e => {
+  const uid = e.target.closest('[data-uid]')?.dataset.uid; if (!uid) return;
+  if (wb.cppUnits.includes(uid)) { if (wb.cppUnits.length > 1) wb.cppUnits = wb.cppUnits.filter(x => x !== uid); }
+  else wb.cppUnits.push(uid);
+  loadBlueprintFromMode();
+};
+$('#pGrade').onchange = () => wb.std === 'exam' ? loadBlueprintFromMode() : renderStep1();
+$('#bpReset').onclick = loadBlueprintFromMode;
+$('#bpAddRow').onclick = () => {
+  const tid = $('#bpAddTopic').value;
+  if (!wb.rows.some(r => r.topic === tid)) wb.rows.push({topic: tid, role: T[tid].domain, basis: '手动补充考点', choice: tid.startsWith('rd.') || tid.startsWith('wr.') ? 0 : 2, fill: 0, reading: tid.startsWith('rd.') ? 5 : 0, writing: tid.startsWith('wr.') ? 1 : 0});
+  renderStep1();
+};
+$('#bpTable').onchange = e => {
+  const t = e.target;
+  if (t.dataset.sc) { wb.scores[t.dataset.sc] = Math.max(0.5, +t.value || 1); renderStep1(); }
+  if (t.dataset.ri !== undefined) { wb.rows[+t.dataset.ri][t.dataset.col] = Math.max(0, Math.round(+t.value || 0)); renderStep1(); }
+};
+$('#bpTable').onclick = e => {
+  const d = e.target.closest('[data-delrow]'); if (!d) return;
+  wb.rows.splice(+d.dataset.delrow, 1); renderStep1();
+};
+
+// ---------- 第二步：严格从语料库抽真题 + 缺题依照真题母题 AI 补齐 ----------
+function drawOneReal(tid, secKey, g, excludeSet) {
+  const cands = [];
+  for (const s of RP.singles) {
+    if (excludeSet.has(s.id) || s.type !== secKey || !(s.topics || [s.topic]).includes(tid)) continue;
+    const rg = rankGrade(s.grade, g); if (!rg) continue;
+    cands.push([100 + rg * 10 + (s.answerVerified ? 4 : 0) + (s.topic === tid ? 5 : 0) + Math.random(), s, true]);
+  }
+  for (const q of allQs()) {
+    if (excludeSet.has(q.id) || q.passage || q.type !== secKey || q.topic !== tid) continue;
+    const rg = rankGrade(q.grade, g); if (!rg) continue;
+    cands.push([rg * 8 + 3 + Math.random(), q, false]);
+  }
+  cands.sort((a, b) => b[0] - a[0]);
+  if (!cands.length) return null;
+  const [, item, isReal] = cands[0];
+  excludeSet.add(item.id);
+  if (isReal) return {...item, topic: tid, difficulty: item.difficulty || 2, origin: 'real', status: item.answerVerified ? 'verified' : 'needs_check', examSrc: RP.sources[item.si], explain: item.explain || '', score: wb.scores[secKey]};
+  return {...item, origin: item.id?.startsWith('ai-') ? 'ai' : 'curated', status: 'verified', examSrc: item.source || '正式精编题库（已审）', score: wb.scores[secKey]};
+}
+
+function drawFromCorpus() {
+  const g = +$('#pGrade').value;
+  wb.sections = {choice: [], fill: [], reading: [], writing: []};
+  wb.shortfalls = []; wb.usedIds = new Set();
+
+  for (const row of wb.rows) {
+    const tid = row.topic;
+    for (const secKey of ['choice', 'fill']) {
+      const need = +row[secKey] || 0;
+      let got = 0;
+      for (let k = 0; k < need; k++) {
+        const q = drawOneReal(tid, secKey, g, wb.usedIds);
+        if (!q) break;
+        wb.sections[secKey].push(q); got++;
+      }
+      if (got < need) wb.shortfalls.push({section: secKey, topic: tid, needed: need - got, grade: g});
+    }
+    const needR = +row.reading || 0;
+    if (needR > 0) {
+      const wantCloze = tid === 'rd.cloze';
+      const gcands = [];
+      for (const gr of RP.groups) {
+        if (wb.usedIds.has(gr.id) || wantCloze !== (gr.qtype === '完形填空')) continue;
+        const rg = rankGrade(gr.grade, g); if (!rg) continue;
+        gcands.push([100 + rg * 10 + gr.questions.filter(x => x.answerVerified).length + Math.random(), gr, true]);
+      }
+      for (const gr of groupsOf(allQs().filter(q => (q.topic === 'rd.cloze') === wantCloze))) {
+        const pid = 'CP-' + gr[0].id;
+        if (wb.usedIds.has(pid)) continue;
+        const rg = rankGrade(gr[0].grade, g); if (!rg) continue;
+        gcands.push([rg * 9 + 5 + Math.random(), {id: pid, passage: gr[0].passage, questions: gr}, false]);
+      }
+      gcands.sort((a, b) => b[0] - a[0]);
+      let gotR = 0;
+      for (const [, gr, isReal] of gcands) {
+        if (gotR >= needR) break;
+        wb.usedIds.add(gr.id);
+        gr.questions.forEach((q, idx) => {
+          wb.sections.reading.push(isReal
+            ? {...q, id: `${gr.id}-${idx + 1}`, groupId: gr.id, grade: gr.grade, difficulty: 2, passage: gr.passage, origin: 'real', status: q.answerVerified ? 'verified' : 'needs_check', examSrc: RP.sources[gr.si], explain: '', score: wb.scores.reading}
+            : {...q, groupId: gr.id, origin: 'curated', status: 'verified', examSrc: q.source || '正式精编题库（已审）', score: wb.scores.reading});
+          gotR++;
+        });
+      }
+      if (gotR < needR) wb.shortfalls.push({section: 'reading', topic: tid, needed: needR - gotR, grade: g});
+    }
+    const needW = +row.writing || 0;
+    if (needW > 0) {
+      const wcands = [];
+      for (const w of RP.writings) {
+        if (wb.usedIds.has(w.id)) continue;
+        const rg = rankGrade(w.grade, g); if (!rg) continue;
+        wcands.push([100 + rg * 10 + (w.topic === tid ? 5 : 0) + Math.random(), w, true]);
+      }
+      for (const q of allQs().filter(x => x.type === 'writing')) {
+        if (wb.usedIds.has(q.id)) continue;
+        const rg = rankGrade(q.grade, g); if (!rg) continue;
+        wcands.push([rg * 9 + (q.topic === tid ? 5 : 0) + Math.random(), q, false]);
+      }
+      wcands.sort((a, b) => b[0] - a[0]);
+      let gotW = 0;
+      for (const [, w, isReal] of wcands) {
+        if (gotW >= needW) break;
+        wb.usedIds.add(w.id);
+        wb.sections.writing.push(isReal
+          ? {...w, topic: tid, difficulty: 2, origin: 'real', status: 'verified', examSrc: RP.sources[w.si], require: w.require || `不少于 ${w.minWords || 60} 词`, sample: w.sample || '', points: w.points || [], phrases: w.phrases || '', explain: '', score: wb.scores.writing}
+          : {...w, origin: 'curated', status: 'verified', examSrc: '正式精编题库（含范文）', score: wb.scores.writing});
+        gotW++;
+      }
+      if (gotW < needW) wb.shortfalls.push({section: 'writing', topic: tid, needed: needW - gotW, grade: g});
+    }
+  }
+  wb.curSec = SEC_META.find(([k]) => wb.sections[k].length)?.[0] || 'choice';
+  goStep(2);
+}
+$('#bpDrawBtn').onclick = drawFromCorpus;
+
+function buildShortfallPrompt(sf) {
+  const {section, topic, needed, grade} = sf, t = T[topic], gp = GRADES[grade];
+  const us = selectedCppUnits();
+  const cppNote = wb.std === 'cpp' && us.length
+    ? `\n【CPP 单元映射要求】：对标 ${us.map(u => `${u.id}《${u.theme}》`).join('、')}，可优先融入单元核心词（${[...cppAllowedWords()].slice(0, 18).join(', ')}）。` : '';
+  if (section === 'reading') {
+    const qtype = topic === 'rd.cloze' ? '完形填空' : '阅读理解';
+    const refs = getLocalExemplars('passage', topic, Math.max(grade, t.grade), qtype);
+    return {kind: 'passage', qtype, refs, prompt: passagePrompt(grade, 2, Math.max(3, needed), qtype, refs) + cppNote};
+  }
+  if (section === 'writing') {
+    const refs = getLocalExemplars('writing', topic, Math.max(grade, t.grade), '书面表达');
+    return {kind: 'writing', qtype: '书面表达', refs, prompt: writingPrompt(t, grade, refs) + cppNote};
+  }
+  const qtype = section === 'choice' ? (topic.startsWith('ph.') ? '语音辨音' : topic.startsWith('fn.') ? '情景交际' : '单项选择')
+    : (topic === 'sy.word_order' ? '连词成句' : topic.startsWith('sy.') ? '句型转换' : topic === 'vo.spelling' ? '汉语提示填词' : '适当形式');
+  const ex = RP.singles.filter(s => s.type === section && (s.topics || [s.topic]).includes(topic)).slice(0, 5);
+  const fallback = getLocalExemplars('single', topic, Math.max(grade, t.grade), qtype);
+  const refs = ex.length ? ex.map(s => ({src: RP.sources[s.si], grade: s.grade, kind: s.kind, qtype: s.qtype, text: s.stem + (s.choices ? '\n' + s.choices.map(c => `${c[0]}. ${c[1]}`).join('　') : '')})) : fallback;
+  const refTxt = refs.map((e, i) => `[R${i + 1}]〔${e.src} · ${gname(e.grade)} · ${e.qtype}〕\n${e.text}`).join('\n');
+  const isChoice = section === 'choice';
+  const prompt = `你是河南小学英语命题老师。语料库在「${t.name}」上还缺 ${needed} 道题，请严格模仿下面给出的【真题母题】，为【${gp.name}】补齐 ${needed} 道「${qtype}」。${cppNote}
+一、知识点：「${t.name}」（${t.desc}）；常见错误：${t.errors.join('；')}
+二、年级约束：词汇只用${VOCAB(grade)}；单句不超过 ${gp.maxWords} 词；已学语法：${gp.grammar}。
+三、版式：${FORM_RULES[qtype] || ''}
+四、真题母题（逐题对照仿写考查角度、句式和设空，换语境和词汇，不得照抄；mimic 写母题编号如 "R1"）：
+${refTxt || '（暂无同题型母题，请按真卷规范命题）'}
+只输出 JSON 数组（共 ${needed} 题）：
+[{"topic":"${topic}","grade":${grade},"difficulty":2,"qtype":"${qtype}","type":"${section}","stem":"...",${isChoice ? '"choices":[["A","..."],["B","..."],["C","..."]],"answer":"A"' : '"answer":["可接受答案"]'},"explain":"中文解析","mimic":"R1"}]`;
+  return {kind: 'single', qtype, refs, prompt};
+}
+
+async function aiFillOneShortfall(idx, statusEl) {
+  const sf = wb.shortfalls[idx]; if (!sf) return;
+  const built = buildShortfallPrompt(sf);
+  if (!canUseModel()) {
+    wb.manualPrompt = built.prompt; wb.manualTarget = idx; renderStep2(); return;
+  }
+  ctl = new AbortController();
+  statusEl.textContent = `正在仿写真题补齐「${T[sf.topic].name}」(${sf.needed} 题)…`;
+  const reply = await callModel(built.prompt);
+  const raw = built.kind === 'single' ? parseArr(reply) : parseObj(reply);
+  const arr = normalizeAi(raw, {g: sf.grade, d: 2, topic: sf.topic, theme: '记叙情感', mat: ''});
+  arr.forEach((q, i) => {
+    const mIdx = parseInt(String(q.mimic || 'R1').replace(/\D+/g, ''), 10) - 1;
+    const mSrc = built.refs[mIdx]?.src || built.refs[0]?.src || '语料库同考点真题';
+    Object.assign(q, {id: `ai-${Date.now()}-${Math.random().toString(36).slice(2, 6)}-${i}`, topic: sf.section === 'reading' ? q.topic : sf.topic, grade: sf.grade, difficulty: 2, qtype: q.qtype || built.qtype, origin: 'ai', status: 'draft', mimicSrc: mSrc, examSrc: `AI 初稿（仿：${mSrc}）`, score: wb.scores[sf.section]});
+    wb.sections[sf.section].push(q);
+  });
+  wb.shortfalls.splice(idx, 1);
+}
+
+function renderStep2() {
+  const all = Object.values(wb.sections).flat();
+  const nReal = all.filter(q => q.origin === 'real').length, nCur = all.filter(q => q.origin === 'curated').length, nAi = all.filter(q => q.origin === 'ai').length;
+  const secCards = SEC_META.map(([k, name]) => {
+    const list = wb.sections[k];
+    return `<div class="card" style="flex:1;min-width:180px;margin:0"><b>${name}：${list.length} ${k === 'writing' ? '篇' : '题'}</b>
+      <div class="small muted">真题原题 ${list.filter(x => x.origin === 'real').length} · 精编 ${list.filter(x => x.origin === 'curated').length} · AI初稿 ${list.filter(x => x.origin === 'ai').length}</div></div>`;
+  }).join('');
+
+  const sfRows = wb.shortfalls.map((sf, i) => `<tr>
+    <td>${SEC_META.find(x => x[0] === sf.section)[1]}</td>
+    <td><b>${esc(T[sf.topic].name)}</b></td>
+    <td>缺 <b>${sf.needed}</b> 题</td>
+    <td><button class="btn primary small" data-aifill="${i}">✨ 依照真题 AI 补齐</button> <button class="btn small" data-copysf="${i}">复制提示词手动补</button></td>
+  </tr>`).join('');
+
+  $('#wbStep2').innerHTML = `<div class="card">
+    <h3 style="margin-top:0">第二步 · 语料库抽题结果（共抽出 ${all.length} 题：真题原题 ${nReal} 道 · 精编题 ${nCur} 道 · AI 仿写初稿 ${nAi} 道）</h3>
+    <div class="row" style="margin-bottom:12px">${secCards}</div>
+    ${wb.shortfalls.length ? `<div class="qcard draft">
+      <div class="row"><b>发现 ${wb.shortfalls.length} 处题量缺口（语料库同年级真题不足，将严格依照真题母题由 AI 补齐初稿）：</b>
+        <span style="flex:1"></span>
+        <button class="btn primary" id="wbFillAll">✨ 一键 AI 仿写真题补齐全部缺口</button>
+      </div>
+      <div class="small muted" id="wbFillStatus" style="margin:6px 0">当前模型状态：${canUseModel() ? '已就绪，可直接调用' : '未配置在线模型接口（可点「AI 出题」页填 API Key，或点右侧「复制提示词手动补」交给本地 Codex/WorkBuddy）'}</div>
+      <table><thead><tr><th>板块</th><th>知识点</th><th>缺口</th><th>操作</th></tr></thead><tbody>${sfRows}</tbody></table>
+    </div>` : `<p class="res-ok">✓ 双向细目表要求的题量已全部配齐！每道语料真题均已附上原始真卷来源。</p>`}
+    ${wb.manualPrompt ? `<div class="card" style="margin-top:10px">
+      <b>手动使用 Codex / WorkBuddy / 外部 AI 补齐缺口：</b>
+      <p class="small muted">复制下方带真题母题的提示词发给 AI，把返回的 JSON 粘回下方框内点「导入初稿」即可（导入后默认标为 AI 初稿，第四步人工确认后生效）。</p>
+      <textarea readonly style="min-height:120px">${esc(wb.manualPrompt)}</textarea>
+      <textarea id="wbManualJson" placeholder="在此粘贴 AI 返回的 JSON…" style="min-height:90px;margin-top:6px"></textarea>
+      <div class="row" style="margin-top:6px"><button class="btn primary" id="wbManualImport">作为 AI 初稿导入本卷</button><button class="btn" onclick="wb.manualPrompt='';renderStep2()">关闭</button></div>
+    </div>` : ''}
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="goStep(1)">← 返回调整细目表</button>
+      <button class="btn" onclick="drawFromCorpus()">🔄 重新随机抽一套真题</button>
+      <span style="flex:1"></span>
+      <button class="btn primary" onclick="goStep(3)">下一步：分板块逐题把关 →</button>
+    </div>
+  </div>`;
+
+  $('#wbStep2').onclick = async e => {
+    const f = e.target.closest('[data-aifill]');
+    if (f) {
+      f.disabled = true;
+      try { await aiFillOneShortfall(+f.dataset.aifill, $('#wbFillStatus')); renderStep2(); }
+      catch (err) { $('#wbFillStatus').innerHTML = `<span class="res-bad">${esc(err.message || err)}</span>`; f.disabled = false; }
+    }
+    const cp = e.target.closest('[data-copysf]');
+    if (cp) { const b = buildShortfallPrompt(wb.shortfalls[+cp.dataset.copysf]); wb.manualPrompt = b.prompt; wb.manualTarget = +cp.dataset.copysf; renderStep2(); }
+  };
+  if ($('#wbFillAll')) $('#wbFillAll').onclick = async () => {
+    if (!canUseModel()) { switchTab('ai'); $('#mProv').focus(); return; }
+    $('#wbFillAll').disabled = true;
+    try { while (wb.shortfalls.length) await aiFillOneShortfall(0, $('#wbFillStatus')); renderStep2(); }
+    catch (err) { $('#wbFillStatus').innerHTML = `<span class="res-bad">${esc(err.message || err)}</span>`; $('#wbFillAll').disabled = false; }
+  };
+  if ($('#wbManualImport')) $('#wbManualImport').onclick = () => {
+    try {
+      const sf = wb.shortfalls[wb.manualTarget] || {section: 'choice', topic: wb.rows[0]?.topic || 'vb.be', grade: +$('#pGrade').value};
+      const raw = $('#wbManualJson').value.trim(), v = raw.startsWith('[') ? parseArr(raw) : parseObj(raw);
+      const arr = normalizeAi(v, {g: sf.grade, d: 2, topic: sf.topic, theme: '记叙情感', mat: ''});
+      arr.forEach((q, i) => wb.sections[sf.section].push({...q, id: `ai-${Date.now()}-${i}`, topic: sf.section === 'reading' ? q.topic : sf.topic, grade: sf.grade, difficulty: 2, origin: 'ai', status: 'draft', examSrc: 'AI 初稿（外部智能体仿写）', score: wb.scores[sf.section]}));
+      if (wb.manualTarget != null) wb.shortfalls.splice(wb.manualTarget, 1);
+      wb.manualPrompt = ''; wb.manualTarget = null; renderStep2();
+    } catch (err) { alert('JSON 解析失败：' + (err.message || err)); }
+  };
+}
+
+// ---------- 第三步：按板块拆开一次一个板块，逐题把关与单独重出 ----------
+function originBadge(q) {
+  if (q.origin === 'real') return `<span class="badge b-real">真题原题 · ${esc(q.examSrc)}</span>` + (q.status === 'needs_check' ? `<span class="badge b-warn">原卷未附答案·待核</span>` : '');
+  if (q.origin === 'ai') return q.status === 'approved'
+    ? `<span class="badge b-ok">AI 仿真题（人工已生效 · ${esc(q.examSrc)}）</span>`
+    : `<span class="badge b-draft">AI 初稿（待人工确认生效 · ${esc(q.examSrc)}）</span>`;
+  return `<span class="badge b-cur">${esc(q.examSrc || '精编题库')}</span>`;
+}
+
+function renderStep3() {
+  const g = +$('#pGrade').value, sec = wb.curSec, list = wb.sections[sec];
+  const tabs = SEC_META.map(([k, name]) => `<button class="${k === sec ? 'on' : ''}" data-sectab="${k}">${name}（${wb.sections[k].length}）</button>`).join('');
+  let lastPassage = null;
+  const cards = list.map((q, i) => {
+    const key = `${sec}:${i}`, editing = wb.editKey === key;
+    const showP = q.passage && q.passage !== lastPassage;
+    lastPassage = q.passage || null;
+    const ansTxt = q.type === 'writing' ? (q.sample ? `范文 ${wcount(q.sample)} 词` : '无范文（可选补写）')
+      : q.type === 'choice' ? (q.answer || '【待定】') : (Array.isArray(q.answer) && q.answer.length ? q.answer.join(' / ') : '【待定】');
+    return `${showP ? `<div class="card" style="background:var(--chip);margin-bottom:6px">
+      <div class="row"><span class="badge b-real">本组共用短文 · ${esc(q.examSrc || '')}</span><span style="flex:1"></span>
+        <button class="btn small" data-swappassage="${i}">🔄 整篇换一篇真题篇章</button></div>
+      <div style="white-space:pre-wrap;margin-top:6px;font-size:14px">${safeRich(q.passage)}</div></div>` : ''}
+    <div class="qcard ${q.origin === 'ai' && q.status === 'draft' ? 'draft' : ''}">
+      <div class="row small" style="margin-bottom:6px">
+        <b>第 ${i + 1} 题</b>（${q.score || wb.scores[sec]} 分）· <span>${esc(T[q.topic]?.name || q.topic)}</span> · ${originBadge(q)}
+        <span style="flex:1"></span>
+        ${sec !== 'reading' ? `<button class="btn small" data-swap="${i}">🔄 换一道真题</button>` : ''}
+        <button class="btn small" data-airegen="${i}">✨ AI 仿此考点单独重出</button>
+        <button class="btn small" data-edit="${i}">${editing ? '收起编辑' : '✏️ 编辑'}</button>
+        <button class="btn small" data-del="${i}">🗑 删除</button>
+      </div>
+      ${editing ? renderInlineEditor(q, sec, i) : `
+        <div>${safeRich(q.stem)}</div>
+        ${q.choices ? `<div class="small" style="margin-top:4px">${q.choices.map(([k, v]) => `<span style="margin-right:14px;${k === q.answer ? 'font-weight:700;color:var(--good)' : ''}">${k}. ${safeRich(v)}</span>`).join('')}</div>` : ''}
+        ${q.type === 'writing' && q.sample ? `<div class="passage small">范文：${esc(q.sample)}</div>` : ''}
+        <div class="explain">参考答案：<b>${esc(ansTxt)}</b>${q.explain ? '　解析：' + esc(q.explain) : ''}</div>`}
+    </div>`;
+  }).join('');
+
+  $('#wbStep3').innerHTML = `<div class="card">
+    <div class="row" style="margin-bottom:8px">
+      <h3 style="margin:0">第三步 · 按板块拆开逐题把关（一次聚焦一个板块，不满意可单题换真题或 AI 重出）</h3>
+      <span style="flex:1"></span><span class="small muted" id="wbSecMsg"></span>
+    </div>
+    <div class="sec-tabs">${tabs}</div>
+    ${cards || `<p class="muted">本板块暂无题目。可在下方直接补抽一道真题或让 AI 仿写一题。</p>`}
+    <div class="row" style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)">
+      <span class="small muted">向本板块补充题目：</span>
+      <select id="wbAddSecTopic">${(wb.rows.length ? wb.rows.map(r => T[r.topic]).filter(Boolean) : KB.topics).map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('')}</select>
+      <button class="btn small" id="wbAddRealBtn">+ 抽 1 道语料真题</button>
+      <button class="btn small" id="wbAddAiBtn">✨ AI 仿写真题出 1 道</button>
+      <span style="flex:1"></span>
+      <button class="btn" onclick="goStep(2)">← 上一步</button>
+      <button class="btn primary" onclick="goStep(4)">下一步：四项人工校验与初稿生效 →</button>
+    </div>
+  </div>`;
+
+  $('#wbStep3').onclick = async e => {
+    const tab = e.target.closest('[data-sectab]'); if (tab) { wb.curSec = tab.dataset.sectab; wb.editKey = ''; renderStep3(); return; }
+    const sw = e.target.closest('[data-swap]');
+    if (sw) {
+      const idx = +sw.dataset.swap, cur = list[idx];
+      const next = sec === 'writing'
+        ? (() => { const w = RP.writings.find(x => !wb.usedIds.has(x.id) && rankGrade(x.grade, g)); if (!w) return null; wb.usedIds.add(w.id); return {...w, topic: cur.topic, difficulty: 2, origin: 'real', status: 'verified', examSrc: RP.sources[w.si], require: w.require || `不少于 ${w.minWords || 60} 词`, sample: '', score: cur.score}; })()
+        : drawOneReal(cur.topic, sec, g, wb.usedIds);
+      if (!next) { $('#wbSecMsg').textContent = '语料库该知识点同年级已无更多未抽真题，可点「✨ AI 仿此考点单独重出」'; return; }
+      list[idx] = next; renderStep3(); return;
+    }
+    const sp = e.target.closest('[data-swappassage]');
+    if (sp) {
+      const idx = +sp.dataset.swappassage, oldP = list[idx].passage, wantCloze = list[idx].qtype === '完形填空';
+      const gr = RP.groups.find(x => !wb.usedIds.has(x.id) && (x.qtype === '完形填空') === wantCloze && rankGrade(x.grade, g));
+      if (!gr) { $('#wbSecMsg').textContent = '语料库已无更多同类真题篇章'; return; }
+      wb.usedIds.add(gr.id);
+      const start = list.findIndex(x => x.passage === oldP), cnt = list.filter(x => x.passage === oldP).length;
+      const newQs = gr.questions.map((q, k) => ({...q, id: `${gr.id}-${k + 1}`, groupId: gr.id, grade: gr.grade, difficulty: 2, passage: gr.passage, origin: 'real', status: q.answerVerified ? 'verified' : 'needs_check', examSrc: RP.sources[gr.si], explain: '', score: wb.scores.reading}));
+      list.splice(start, cnt, ...newQs); renderStep3(); return;
+    }
+    const rg = e.target.closest('[data-airegen]');
+    if (rg) {
+      if (!canUseModel()) { alert('请先在「AI 出题」页配置大模型接口，或在本地运行 python3 scripts/kb.py serve 使用本地 Codex'); return; }
+      const idx = +rg.dataset.airegen, cur = list[idx];
+      rg.disabled = true; $('#wbSecMsg').textContent = '正在仿照真题重出此题…';
+      try {
+        const built = buildShortfallPrompt({section: sec === 'reading' ? 'choice' : sec, topic: cur.topic, needed: 1, grade: g});
+        const reply = await callModel(built.prompt);
+        const arr = normalizeAi(built.kind === 'single' ? parseArr(reply) : parseObj(reply), {g, d: 2, topic: cur.topic, theme: '记叙情感', mat: ''});
+        if (arr[0]) {
+          const mSrc = built.refs[0]?.src || cur.examSrc || '语料真题';
+          list[idx] = {...arr[0], id: 'ai-' + Date.now(), topic: cur.topic, grade: g, difficulty: 2, passage: sec === 'reading' ? cur.passage : undefined, origin: 'ai', status: 'draft', examSrc: `AI 初稿（仿：${mSrc}）`, score: cur.score};
+        }
+        renderStep3();
+      } catch (err) { $('#wbSecMsg').textContent = '重出失败：' + (err.message || err); rg.disabled = false; }
+      return;
+    }
+    const ed = e.target.closest('[data-edit]');
+    if (ed) { const k = `${sec}:${ed.dataset.edit}`; wb.editKey = wb.editKey === k ? '' : k; renderStep3(); return; }
+    const sv = e.target.closest('[data-saveedit]');
+    if (sv) { saveInlineEdit(sec, +sv.dataset.saveedit); return; }
+    const dl = e.target.closest('[data-del]');
+    if (dl) { list.splice(+dl.dataset.del, 1); renderStep3(); return; }
+  };
+  $('#wbAddRealBtn').onclick = () => {
+    const tid = $('#wbAddSecTopic').value;
+    if (sec === 'reading' || sec === 'writing') { $('#wbSecMsg').textContent = '篇章/作文请在细目表加量后抽题，或点右侧 AI 仿写出题'; return; }
+    const q = drawOneReal(tid, sec, g, wb.usedIds);
+    if (!q) { $('#wbSecMsg').textContent = '该考点暂无更多未抽真题，请点右侧 AI 仿写出题'; return; }
+    list.push(q); renderStep3();
+  };
+  $('#wbAddAiBtn').onclick = async () => {
+    if (!canUseModel()) { alert('请先在「AI 出题」页配置 API Key 或启动本机 kb.py serve'); return; }
+    const tid = $('#wbAddSecTopic').value;
+    $('#wbAddAiBtn').disabled = true; $('#wbSecMsg').textContent = '正在 AI 仿写出题…';
+    try {
+      const built = buildShortfallPrompt({section: sec, topic: tid, needed: sec === 'reading' ? 4 : 1, grade: g});
+      const reply = await callModel(built.prompt);
+      const arr = normalizeAi(built.kind === 'single' ? parseArr(reply) : parseObj(reply), {g, d: 2, topic: tid, theme: '记叙情感', mat: ''});
+      const mSrc = built.refs[0]?.src || '语料真题';
+      arr.forEach((q, k) => list.push({...q, id: `ai-${Date.now()}-${k}`, topic: sec === 'reading' ? q.topic : tid, grade: g, difficulty: 2, origin: 'ai', status: 'draft', examSrc: `AI 初稿（仿：${mSrc}）`, score: wb.scores[sec]}));
+      renderStep3();
+    } catch (err) { $('#wbSecMsg').textContent = '失败：' + (err.message || err); $('#wbAddAiBtn').disabled = false; }
+  };
+}
+
+function renderInlineEditor(q, sec, i) {
+  const optsHtml = q.type === 'choice' ? (q.choices || []).map(([k, v], oi) =>
+    `<label class="small">${k}. <input data-edopt="${oi}" value="${esc(v)}" style="min-width:180px"></label>`).join(' ') : '';
+  const ansVal = q.type === 'writing' ? (q.sample || '') : Array.isArray(q.answer) ? q.answer.join(' ; ') : (q.answer || '');
+  return `<div style="background:var(--chip);padding:10px;border-radius:8px">
+    <div class="small">题干：<textarea id="edStem" style="min-height:64px">${esc(q.stem)}</textarea></div>
+    ${optsHtml ? `<div class="row" style="margin-top:6px">${optsHtml}</div>` : ''}
+    <div class="row" style="margin-top:6px">
+      <label class="small">${q.type === 'writing' ? '参考范文' : '标准答案（多解用 ; 隔开）'} <input id="edAns" value="${esc(ansVal)}" style="min-width:220px"></label>
+      <label class="small">分值 <input type="number" id="edScore" value="${q.score || wb.scores[sec]}" step="0.5" style="width:64px"></label>
+    </div>
+    <div class="small" style="margin-top:6px">解析：<input id="edExp" value="${esc(q.explain || '')}" style="width:100%"></div>
+    <div class="row" style="margin-top:6px"><button class="btn primary small" data-saveedit="${i}">保存修改（自动记为人工已核）</button></div>
+  </div>`;
+}
+function saveInlineEdit(sec, i) {
+  const q = wb.sections[sec][i];
+  q.stem = $('#edStem').value.trim();
+  if (q.type === 'choice' && q.choices) document.querySelectorAll('[data-edopt]').forEach(inp => { q.choices[+inp.dataset.edopt][1] = inp.value.trim(); });
+  const av = $('#edAns').value.trim();
+  if (q.type === 'writing') q.sample = av;
+  else if (q.type === 'choice') q.answer = av.toUpperCase().slice(0, 1);
+  else q.answer = av.split(/[;；]/).map(x => x.trim()).filter(Boolean);
+  q.score = +$('#edScore').value || q.score;
+  q.explain = $('#edExp').value.trim();
+  q.status = q.origin === 'ai' ? 'approved' : 'verified';
+  wb.editKey = ''; renderStep3();
+}
+
+// ---------- 第四步：人工校验（答案、歧义、超纲、查重；AI 初稿人工确认才生效） ----------
+function stemWords(s) { return (String(s).toLowerCase().match(/[a-z]{2,}/g) || []); }
+function stemSim(a, b) {
+  const wa = stemWords(a), wb_ = stemWords(b);
+  if (wa.length < 4 || wb_.length < 4) return 0;
+  const sa = new Set(wa), sb = new Set(wb_);
+  let inter = 0; sa.forEach(w => { if (sb.has(w)) inter++; });
+  return (2 * inter) / (sa.size + sb.size);
+}
+
+function inspectPaper() {
+  const g = +$('#pGrade').value, cppWords = cppAllowedWords();
+  const flat = [];
+  SEC_META.forEach(([sec, secName]) => wb.sections[sec].forEach((q, idx) => flat.push({q, sec, secName, idx})));
+  return flat.map((item, fi) => {
+    const {q, sec} = item;
+    const ansIssues = [], ambigIssues = [], oobIssues = [], dupIssues = [];
+    // 1. 答案核查
+    if (q.type === 'choice') {
+      const keys = (q.choices || []).map(c => c[0]);
+      if (!q.answer || !keys.includes(q.answer)) ansIssues.push('未设置有效选项答案');
+    } else if (q.type === 'fill') {
+      if (!Array.isArray(q.answer) || !q.answer.length || !q.answer[0]) ansIssues.push('缺少填空参考答案');
+    }
+    // 2. 歧义检查
+    if (q.type === 'choice') {
+      const vals = (q.choices || []).map(c => c[1].trim().toLowerCase());
+      if (vals.length < 2) ambigIssues.push('选项少于 2 个');
+      if (new Set(vals).size !== vals.length) ambigIssues.push('存在重复选项');
+    }
+    if (!q.stem || q.stem.length < 4) ambigIssues.push('题干过短或缺失');
+    // 3. 超纲检查（豁免所选 CPP 单元核心词）
+    if (!q.topic?.startsWith('ph.') && q.type !== 'writing') {
+      const right = q.type === 'choice' ? (q.choices?.find(c => c[0] === q.answer)?.[1] || '') : '';
+      const rawBad = outOfBand(q.stem + ' ' + right, g).filter(w => !cppWords.has(w.toLowerCase()));
+      const wc = (q.stem.match(/[A-Za-z]+/g) || []).length || 1;
+      if (rawBad.length && rawBad.length / wc > (GRADES[g]?.newWords || 0) + 0.05) {
+        oobIssues.push('疑似超纲词：' + [...new Set(rawBad)].slice(0, 6).join(', '));
+      }
+    }
+    // 4. 卷内题与题查重
+    if (q.type !== 'writing' && !String(q.stem).startsWith('第')) {
+      for (let fj = 0; fj < flat.length; fj++) {
+        if (fi === fj || flat[fj].q.type === 'writing') continue;
+        const sim = stemSim(q.stem, flat[fj].q.stem);
+        if (sim >= 0.75) dupIssues.push(`与「${flat[fj].secName}第${flat[fj].idx + 1}题」高度相似(${Math.round(sim * 100)}%)`);
+      }
+    }
+    const isDraft = q.origin === 'ai' && q.status === 'draft';
+    return {...item, isDraft, ansIssues, ambigIssues, oobIssues, dupIssues, hasIssue: isDraft || ansIssues.length > 0 || ambigIssues.length > 0 || oobIssues.length > 0 || dupIssues.length > 0};
+  });
+}
+
+function renderStep4() {
+  const report = inspectPaper();
+  const nAns = report.filter(r => r.ansIssues.length).length;
+  const nDraft = report.filter(r => r.isDraft).length;
+  const nOob = report.filter(r => r.oobIssues.length).length;
+  const nDup = report.filter(r => r.dupIssues.length).length;
+  const shown = wb.onlyIssues ? report.filter(r => r.hasIssue) : report;
+
+  const rows = shown.map(r => {
+    const {q, sec, secName, idx} = r;
+    const quickAns = q.type === 'choice'
+      ? (q.choices || []).map(([k]) => `<button class="btn small ${q.answer === k ? 'primary' : ''}" data-setans="${sec}:${idx}:${k}">${k}</button>`).join(' ')
+      : q.type === 'fill'
+      ? `<input data-fillans="${sec}:${idx}" value="${esc((q.answer || []).join(' ; '))}" placeholder="填参考答案" style="width:150px">` : '<span class="muted">作文</span>';
+    const tags = [
+      ...r.ansIssues.map(x => `<span class="badge b-warn">答案：${esc(x)}</span>`),
+      ...r.ambigIssues.map(x => `<span class="badge b-warn">歧义：${esc(x)}</span>`),
+      ...r.oobIssues.map(x => `<span class="badge b-draft">${esc(x)}</span>`),
+      ...r.dupIssues.map(x => `<span class="badge b-warn">查重：${esc(x)}</span>`),
+    ].join(' ') || '<span class="res-ok small">✓ 四项机检无异常</span>';
+
+    const statusBtn = r.isDraft
+      ? `<button class="btn primary small" data-approve="${sec}:${idx}">✓ 人工确认生效</button>`
+      : q.origin === 'ai' ? `<span class="badge b-ok">✓ 已生效</span>` : `<span class="small muted">真题/精编</span>`;
+
+    return `<tr class="${r.isDraft ? 'draft' : ''}">
+      <td class="small"><b>${secName} #${idx + 1}</b><div class="meta">${esc(T[q.topic]?.name || '')}</div></td>
+      <td class="small">${originBadge(q)}<div style="margin-top:3px">${safeRich(q.stem)}</div>
+        ${q.choices ? `<div class="muted">${q.choices.map(([k, v]) => `${k}.${esc(v)}`).join('  ')}</div>` : ''}</td>
+      <td>${quickAns}</td>
+      <td>${tags}</td>
+      <td>${statusBtn} <button class="btn small" data-goto="${sec}">${'去板块改'}</button></td>
+    </tr>`;
+  }).join('');
+
+  $('#wbStep4').innerHTML = `<div class="card">
+    <h3 style="margin-top:0">第四步 · 人工四维校验（答案 · 歧义 · 超纲 · 查重；AI 初稿必须人工确认才生效）</h3>
+    <div class="row" style="margin-bottom:10px">
+      <span class="badge ${nDraft ? 'b-draft' : 'b-ok'}">AI 初稿待生效：${nDraft} 题</span>
+      <span class="badge ${nAns ? 'b-warn' : 'b-ok'}">待补/核答案：${nAns} 题</span>
+      <span class="badge ${nOob ? 'b-draft' : 'b-ok'}">疑似超纲提醒：${nOob} 题</span>
+      <span class="badge ${nDup ? 'b-warn' : 'b-ok'}">卷内疑似重复：${nDup} 题</span>
+      <span style="flex:1"></span>
+      <label class="small"><input type="checkbox" id="wbOnlyIssues" ${wb.onlyIssues ? 'checked' : ''}> 只看待处理项</label>
+      ${nAns ? `<button class="btn small" id="wbAiSolveMissing">🤖 AI 辅助拟定无答案真题的答案</button>` : ''}
+      ${nDraft ? `<button class="btn primary small" id="wbApproveAll">✓ 本卷 ${nDraft} 道 AI 初稿已核无误，全部确认生效</button>` : ''}
+    </div>
+    <p class="small muted" id="wbVerifyMsg"></p>
+    <div class="scroll"><table><thead><tr><th style="min-width:95px">位置</th><th>题目与来源</th><th style="min-width:160px">核定答案</th><th>四维校验结果</th><th style="min-width:140px">生效确认</th></tr></thead>
+      <tbody>${rows || '<tr><td colspan="5" class="res-ok">全部题目已通过校验并生效！</td></tr>'}</tbody></table></div>
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="goStep(3)">← 返回分板块微调</button>
+      <span style="flex:1"></span>
+      <button class="btn primary" onclick="goStep(5)" ${nDraft ? 'title="请先确认 AI 初稿生效"' : ''}>${nDraft ? `还有 ${nDraft} 道 AI 初稿待确认` : '校验完成：生成正式打印试卷 →'}</button>
+    </div>
+  </div>`;
+
+  $('#wbOnlyIssues').onchange = e => { wb.onlyIssues = e.target.checked; renderStep4(); };
+  $('#wbStep4').onclick = e => {
+    const sa = e.target.closest('[data-setans]');
+    if (sa) { const [s, i, k] = sa.dataset.setans.split(':'); const q = wb.sections[s][+i]; q.answer = k; if (q.status === 'needs_check') q.status = 'verified'; renderStep4(); return; }
+    const ap = e.target.closest('[data-approve]');
+    if (ap) { const [s, i] = ap.dataset.approve.split(':'); wb.sections[s][+i].status = 'approved'; renderStep4(); return; }
+    const gt = e.target.closest('[data-goto]');
+    if (gt) { wb.curSec = gt.dataset.goto; goStep(3); return; }
+  };
+  $('#wbStep4').onchange = e => {
+    const fa = e.target.closest('[data-fillans]');
+    if (fa) { const [s, i] = fa.dataset.fillans.split(':'); const q = wb.sections[s][+i]; q.answer = fa.value.split(/[;；]/).map(x => x.trim()).filter(Boolean); if (q.answer.length && q.status === 'needs_check') q.status = 'verified'; renderStep4(); }
+  };
+  if ($('#wbApproveAll')) $('#wbApproveAll').onclick = () => {
+    Object.values(wb.sections).flat().forEach(q => { if (q.origin === 'ai' && q.status === 'draft') q.status = 'approved'; });
+    renderStep4();
+  };
+  if ($('#wbAiSolveMissing')) $('#wbAiSolveMissing').onclick = async () => {
+    if (!canUseModel()) { alert('请先在「AI 出题」页配置大模型接口，或在本地运行 kb.py serve'); return; }
+    const miss = report.filter(r => r.ansIssues.length && r.q.type !== 'writing');
+    if (!miss.length) return;
+    $('#wbAiSolveMissing').disabled = true; $('#wbVerifyMsg').textContent = `正在为 ${miss.length} 道无答案真题拟定参考答案（拟定后请老师人工复核）…`;
+    try {
+      const reply = await callModel(blindPrompt(miss.map(m => m.q), +$('#pGrade').value));
+      parseArr(reply).forEach(a => {
+        const m = miss[(+a.i || 0) - 1]; if (!m || !a.answer || a.answer === '?') return;
+        const ans = String(a.answer).trim();
+        if (m.q.type === 'choice') m.q.answer = ans.slice(0, 1).toUpperCase();
+        else m.q.answer = ans.split(/[,;，；]/).map(x => x.trim()).filter(Boolean);
+        if (a.note && !m.q.explain) m.q.explain = a.note;
+        m.q.status = 'verified';
+      });
+      renderStep4();
+    } catch (err) { $('#wbVerifyMsg').textContent = '拟答失败：' + (err.message || err); $('#wbAiSolveMissing').disabled = false; }
+  };
+}
+
+// ---------- 第五步：组装正式试卷、打印与作答诊断 ----------
+function buildFinalPaper() {
+  const g = +$('#pGrade').value, qs = [], sections = [];
+  let totalScore = 0;
+  SEC_META.forEach(([k, name]) => {
+    const list = wb.sections[k];
+    if (!list.length) return;
+    const secPts = list.reduce((s, q) => s + (+q.score || wb.scores[k]), 0);
+    totalScore += secPts;
+    sections.push({key: k, name: `${name}（共 ${list.length} ${k === 'writing' ? '篇' : '小题'}，${secPts} 分）`, start: qs.length});
+    qs.push(...list);
+  });
+  paper = {id: Date.now(), grade: g, title: wb.title || `${gname(g)}英语测试卷`, subtitle: wb.subtitle, totalScore, qs, sections, answers: {}, marks: {}, scores: {}};
+}
+
 function essayHtml(q, i, mode) {
-  let h = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1"><div>${esc(q.stem)}</div>
-    <div class="small" style="margin-top:4px">要求：${esc(q.require)}</div>
+  const pts = q.score || 10;
+  const srcTag = q.examSrc ? `<span class="meta">〔来源：${esc(q.examSrc)}〕</span>` : '';
+  let h = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1"><div>${safeRich(q.stem)} ${mode === 'teacher' || (mode === 'print' && wb.showSrcStudent) ? srcTag : ''}</div>
+    ${q.require ? `<div class="small" style="margin-top:4px">要求：${esc(q.require)}（满分 ${pts} 分）</div>` : ''}
     ${q.points?.length ? `<div class="small">要点：${q.points.map(esc).join('；')}</div>` : ''}
-    <div style="text-align:center;font-weight:600;margin:8px 0">${esc(q.title)}</div>
-    ${mode === 'answer' || mode === 'print' ? '' : `<div class="meta">${esc(T[q.topic].name)} · ${gname(q.grade)} · 满分 10 分</div>`}`;
-  if (mode === 'answer') h += `<textarea class="essay" data-essay="${i}" placeholder="在这里写作文…"></textarea><div class="small muted">已写 <b data-wc="${i}">0</b> 词，要求不少于 ${q.minWords} 词</div>`;
-  else if (mode === 'print') h += `<div class="lines">${'<div></div>'.repeat(Math.ceil(q.minWords / 9) + 2)}</div>`;
+    ${q.title && q.title !== '书面表达' ? `<div style="text-align:center;font-weight:600;margin:8px 0">${esc(q.title)}</div>` : ''}`;
+  if (mode === 'answer') h += `<textarea class="essay" data-essay="${i}" placeholder="在这里写作文…"></textarea><div class="small muted">已写 <b data-wc="${i}">0</b> 词，要求不少于 ${q.minWords || 50} 词</div>`;
+  else if (mode === 'print') h += `<div class="lines">${'<div></div>'.repeat(Math.ceil((q.minWords || 60) / 9) + 3)}</div>`;
   else h += `${q.phrases ? `<div class="explain">好句：${esc(q.phrases)}</div>` : ''}<div class="explain">评分标准：${RUBRIC}</div>
-      <div class="passage">范文（${wcount(q.sample)} 词）：\n${esc(q.sample)}</div>
-      ${mode === 'mark' ? `<label class="small noprint">得分 <input type="number" min="0" max="10" step="0.5" data-score="${i}" style="width:70px"> / 10</label>` : ''}`;
+      ${q.sample ? `<div class="passage">参考范文（${wcount(q.sample)} 词）：\n${esc(q.sample)}</div>` : '<div class="explain">（真卷原题未附固定范文，按五档评分标准批阅）</div>'}
+      ${mode === 'mark' ? `<label class="small noprint">得分 <input type="number" min="0" max="${pts}" step="0.5" data-score="${i}" style="width:70px"> / ${pts}</label>` : ''}`;
   return h + '</div></div>';
 }
 function qHtml(q, i, mode) {
   if (q.type === 'writing') return essayHtml(q, i, mode);
-  const head = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1">${esc(q.stem)}
-    ${mode === 'answer' || mode === 'print' ? '' : `<div class="meta">${esc(T[q.topic].name)} · ${gname(q.grade)} · 难度${q.difficulty}</div>`}`;
+  const srcInline = q.examSrc && (mode === 'teacher' || mode === 'mark' || (mode === 'print' && wb.showSrcStudent && q.origin === 'real'))
+    ? ` <span class="meta">〔${esc(q.examSrc)}〕</span>` : '';
+  const head = `<div class="qhead"><span class="qnum">${i + 1}.</span><div style="flex:1">${safeRich(q.stem)}${srcInline}
+    ${mode === 'teacher' || mode === 'mark' ? `<div class="meta">${esc(T[q.topic]?.name || q.topic)} · ${q.score || 2} 分</div>` : ''}`;
   let body = '';
   if (mode === 'answer') {
     body = q.type === 'choice'
-      ? `<div class="opts">${q.choices.map(([k, v]) => `<label><input type="radio" name="q${i}" value="${k}"> ${k}. ${esc(v)}</label>`).join('')}</div>`
-      : `<input data-fill="${i}" style="min-width:260px" placeholder="填写答案">`;
+      ? `<div class="opts">${q.choices.map(([k, v]) => `<label><input type="radio" name="q${i}" value="${k}"> ${k}. ${safeRich(v)}</label>`).join('')}</div>`
+      : `<input data-fill="${i}" style="min-width:260px;margin-top:4px" placeholder="填写答案">`;
   } else if (mode === 'mark' || mode === 'teacher') {
-    body = (q.type === 'choice' ? `<div class="small">${q.choices.map(([k, v]) => `${k}. ${esc(v)}`).join('　')}</div>` : '')
-      + `<div class="explain">答案：${esc(q.type === 'choice' ? q.answer : q.answer.join(' / '))}　${esc(q.explain)}</div>`
+    const ansStr = q.type === 'choice' ? (q.answer || '待核') : ((q.answer || []).join(' / ') || '待核');
+    body = (q.type === 'choice' ? `<div class="small" style="margin-top:3px">${q.choices.map(([k, v]) => `${k}. ${safeRich(v)}`).join('　　')}</div>` : '')
+      + `<div class="explain"><b>答案：${esc(ansStr)}</b>${q.explain ? '　' + esc(q.explain) : ''}</div>`
       + (mode === 'mark' ? `<div class="mark noprint" data-i="${i}" style="margin-top:4px"><button data-v="1">对</button> <button data-v="0">错</button></div>` : '');
   } else {
-    body = q.type === 'choice' ? `<div class="small">${q.choices.map(([k, v]) => `${k}. ${esc(v)}`).join('　')}</div>` : '<div style="border-bottom:1px solid var(--line);width:260px;height:22px"></div>';
+    body = q.type === 'choice'
+      ? `<div class="small" style="margin-top:4px">${q.choices.map(([k, v]) => `${k}. ${safeRich(v)}`).join('　　')}</div>`
+      : (q.stem.includes('_') ? '' : '<div style="border-bottom:1px solid #333;width:260px;height:22px;margin-top:4px"></div>');
   }
   return head + body + '</div></div>';
 }
-function renderPaper(mode = 'answer') {
+function renderPaper(mode = 'print') {
+  if (!paper) buildFinalPaper();
   let lastP = null;
   const items = paper.qs.map((q, i) => {
-    const p = q.passage && q.passage !== lastP ? passageHtml(q) : '';
+    const p = q.passage && q.passage !== lastP ? passageHtml(q, mode) : '';
     lastP = q.passage || null;
     const sec = (paper.sections || []).findIndex(x => x.start === i);
-    const head = sec >= 0 ? `<div class="sec">${'一二三四五六'[sec]}、${paper.sections[sec].name}</div>` : '';
+    const head = sec >= 0 ? `<div class="sec">${'一二三四五六'[sec]}、${esc(paper.sections[sec].name)}</div>` : '';
     return `${head}<div class="q">${p}${qHtml(q, i, mode)}</div>`;
   }).join('');
-  const dist = [1, 2, 3].map(d => paper.qs.filter(q => q.difficulty === d).length);
+  const nReal = paper.qs.filter(q => q.origin === 'real').length, nAi = paper.qs.filter(q => q.origin === 'ai').length;
   $('#paperBox').innerHTML = `<div class="card">
-    <div class="row noprint" style="margin-bottom:10px">
-      <b>${gname(paper.grade)} · ${paper.qs.length} 题</b><span class="small muted">${paper.sections?.length ? paper.sections.map(x => x.name).join('、') + '；' : ''}基础 ${dist[0]} / 标准 ${dist[1]} / 提高 ${dist[2]}，覆盖 ${new Set(paper.qs.map(q => q.topic)).size} 个知识点</span>
+    <div class="row noprint" style="margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)">
+      <input id="pTitleInp" value="${esc(paper.title)}" style="font-weight:600;min-width:260px">
+      <label class="small"><input type="checkbox" id="pShowSrc" ${wb.showSrcStudent ? 'checked' : ''}> 学生卷显示真题来源</label>
+      <span class="small muted">共 ${paper.qs.length} 题 · 满分 ${paper.totalScore || 100} 分（真题 ${nReal} / AI已审 ${nAi}）</span>
       <span style="flex:1"></span>
+      <button class="btn ${mode === 'print' ? 'primary' : ''}" onclick="renderPaper('print');CAN_PRINT&&setTimeout(print,80)">🖨 ${CAN_PRINT ? '打印' : ''}学生卷</button>
+      <button class="btn ${mode === 'teacher' ? 'primary' : ''}" onclick="renderPaper('teacher');CAN_PRINT&&setTimeout(print,80)">🖨 ${CAN_PRINT ? '打印' : ''}答案详解卷</button>
       <button class="btn ${mode === 'answer' ? 'primary' : ''}" onclick="renderPaper('answer')">孩子在线作答</button>
       <button class="btn ${mode === 'mark' ? 'primary' : ''}" onclick="renderPaper('mark')">老师录入对错</button>
-      <button class="btn ${mode === 'print' ? 'primary' : ''}" onclick="renderPaper('print');CAN_PRINT&&setTimeout(print,50)">${CAN_PRINT ? '打印' : ''}学生卷</button>
-      <button class="btn ${mode === 'teacher' ? 'primary' : ''}" onclick="renderPaper('teacher');CAN_PRINT&&setTimeout(print,50)">${CAN_PRINT ? '打印' : ''}答案卷</button>
+    </div>
+    <div class="exam-hdr">
+      <h2>${esc(paper.title)}${mode === 'teacher' ? ' · 参考答案与真题溯源' : ''}</h2>
+      <div class="small">满分：${paper.totalScore || 100} 分　　${esc(paper.subtitle || '时间：60 分钟')}　　姓名：__________　班级：__________　得分：__________</div>
     </div>
     ${items}
     <div class="noprint" style="margin-top:12px">${mode === 'answer' ? '<button class="btn primary" onclick="submitAnswers()">交卷并诊断</button>' : mode === 'mark' ? '<button class="btn primary" onclick="submitMarks()">按录入结果诊断</button> <span class="small muted">没点的题按“未作答”跳过</span>' : ''}</div>
   </div>`;
+  $('#pTitleInp').onchange = e => { wb.title = paper.title = e.target.value.trim(); renderPaper(mode); };
+  $('#pShowSrc').onchange = e => { wb.showSrcStudent = e.target.checked; renderPaper(mode); };
   document.querySelectorAll('[data-essay]').forEach(t => t.oninput = () => { document.querySelector(`[data-wc="${t.dataset.essay}"]`).textContent = wcount(t.value); });
   if (mode === 'mark') document.querySelectorAll('.mark').forEach(m => m.onclick = e => {
     const v = e.target.dataset.v; if (v === undefined) return;
@@ -439,12 +1194,13 @@ function renderPaper(mode = 'answer') {
     m.querySelectorAll('button').forEach(b => b.className = b.dataset.v === v ? 'sel ' + (v === '1' ? 'ok' : 'bad') : '');
   });
 }
-function passageHtml(q) {
+function passageHtml(q, mode = 'answer') {
   const paras = q.passage.split('\n').filter(x => x.trim()), numbered = q.theme && q.theme !== '应用文' && paras.length >= 3;
   const text = numbered ? paras.map((x, k) => '①②③④⑤⑥⑦⑧⑨⑩'[k] + ' ' + x).join('\n') : q.passage;
-  const src = q.source ? (/^https?:/.test(q.source) ? `<a href="${esc(q.source)}" target="_blank" rel="noopener">改编自真实报道</a>` : esc(q.source)) : '';
+  const srcLabel = q.examSrc || q.source || '';
+  const showSrc = srcLabel && (mode === 'teacher' || mode === 'mark' || (mode === 'print' && wb.showSrcStudent && q.origin === 'real'));
   return `${q.title ? `<div style="text-align:center;font-weight:600;margin-top:10px">${esc(q.title)}</div>` : ''}<div class="passage">${esc(text)}</div>
-    ${q.theme || src ? `<div class="ptag noprint">${q.theme ? `<span class="chip" style="cursor:default">${esc(q.theme)}</span>` : ''}${src}</div>` : ''}`;
+    ${q.theme || showSrc ? `<div class="ptag">${q.theme ? `<span class="chip" style="cursor:default">${esc(q.theme)}</span>` : ''}${showSrc ? `〔真题来源：${esc(srcLabel)}〕` : ''}</div>` : ''}`;
 }
 const norm = s => String(s).toLowerCase().replace(/[’‘]/g, "'").replace(/[.,!?;:，。！？；：]/g, ' ').replace(/\s+/g, ' ').trim();
 function isRight(q, given) {
@@ -583,7 +1339,9 @@ function nextPractice() {
   while (pr.queue.length) {
     const id = pr.queue[0], g = Math.max(pr.g, T[id].grade);
     const d = pr.d[id] ??= Math.min(...(recDiff(g, T[id].grade).length ? recDiff(g, T[id].grade) : [1]));
-    const cand = allQs().filter(q => q.topic === id && q.type !== 'writing' && q.grade <= g && !pr.seen.has(q.id));
+    const realCand = RP.singles.filter(s => s.answerVerified && (s.topics || [s.topic]).includes(id) && s.grade <= g && !pr.seen.has(s.id))
+      .map(s => ({...s, topic: id, difficulty: 2, origin: 'real', examSrc: RP.sources[s.si], explain: `真题来源：${RP.sources[s.si]}`}));
+    const cand = realCand.concat(allQs().filter(q => q.topic === id && q.type !== 'writing' && q.grade <= g && !pr.seen.has(q.id)));
     const q = cand.sort((a, b) => Math.abs(a.difficulty - d) - Math.abs(b.difficulty - d) || b.grade - a.grade)[0];
     const doneHere = pr.done.filter(r => r.q.topic === id).length;
     if (!q || doneHere >= 4) { pr.queue.shift(); pr.streak = 0; continue; }
@@ -990,7 +1748,7 @@ function switchTab(name) {
   if (name === 'graph' && cy) { cy.resize(); renderGraphStyle(); }
 }
 $('#nav').onclick = e => e.target.dataset.tab && switchTab(e.target.dataset.tab);
-renderStats(); initGraph(); syncKind(); makePrompt(); updateCount(); initModels();
+renderStats(); initGraph(); syncKind(); makePrompt(); updateCount(); initModels().then(() => loadBlueprintFromMode()); loadBlueprintFromMode();
 </script>
 </body>
 </html>

@@ -17,6 +17,35 @@ import api, gen
 
 TOOLS = [
     {
+        'name': 'list_cpp_units',
+        'description': '查询 CPP（Cambridge Primary Path V2.1）单元目标卡映射标准（G0~G6 共 63 个单元），返回单元主题、核心词、语法目标及推荐双向细目表行（知识点 × 选择/填空/阅读/写作题量）。',
+        'inputSchema': {
+            'type': 'object',
+            'properties': {
+                'level': {'type': 'string', 'description': '级别 G0~G6'},
+                'unit': {'type': 'string', 'description': '具体单元，如 G3-U1'},
+            },
+        },
+    },
+    {
+        'name': 'draw_blueprint',
+        'description': '按双向细目表（纵轴知识点 × 横轴选择/填空/阅读/写作）从语料库真题池优先抽题并附上真题来源，返回分板块题目与需要 AI 补齐的题量缺口（shortfalls）。',
+        'inputSchema': {
+            'type': 'object',
+            'required': ['grade', 'rows'],
+            'properties': {
+                'grade': {'type': 'integer', 'description': '试卷年级 3~7'},
+                'cpp_unit': {'type': 'string', 'description': '可选对标 CPP 单元，如 G3-U1'},
+                'scores': {'type': 'object', 'description': '各题型单题分值，如 {"choice":2,"fill":2,"reading":2,"writing":10}'},
+                'rows': {
+                    'type': 'array',
+                    'description': '双向细目表行，每项 {"topic":"vb.modal_can","choice":3,"fill":2,"reading":0,"writing":0}',
+                    'items': {'type': 'object'},
+                },
+            },
+        },
+    },
+    {
         'name': 'list_topics',
         'description': '查询小学英语知识点列表，包含指定年级的真题考频、推荐难度和常见题型。',
         'inputSchema': {
@@ -116,6 +145,8 @@ TOOLS = [
 ]
 
 HANDLERS = {
+    'list_cpp_units': api.get_cpp_units,
+    'draw_blueprint': api.post_draw_blueprint,
     'list_topics': api.get_topics,
     'get_exemplars': api.get_exemplars,
     'get_blueprint': api.get_blueprint,

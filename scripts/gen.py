@@ -61,33 +61,50 @@ def ref_label(it):
     tag = f"{it['tag']}，" if it.get('tag') else ''
     return f"〔{tag}{it['src']} · {gname(it['grade'])} · {it['kind']} · {it['qtype']}〕"
 
+def _cpp_unit_info(cpp_unit):
+    if not cpp_unit or not (D / 'cpp_units.json').exists(): return None
+    cu = str(cpp_unit).upper().replace('|', '-')
+    return next((u for u in load('cpp_units.json').get('units', []) if u['id'] == cu), None)
+
 # ---------- 检查参数：知识点 + 年级 ----------
-def resolve(tid, grade, diff=None, qtype=None):
+def resolve(tid, grade, diff=None, qtype=None, allow_cpp=False):
     T = {t['id']: t for t in load('topics.json')}
     if tid not in T: raise ValueError(f'知识点不存在：{tid}（用 kb.py topics 查看）')
     grade = int(grade)
     if grade not in (3, 4, 5, 6, 7): raise ValueError('年级只能是 3~7（7 = 小升初）')
     t = T[tid]; rec = rec_difficulty(grade, t['grade'])
-    if not rec: raise ValueError(f'「{t["name"]}」首学在{gname(t["grade"])}，{gname(grade)}还没学，不能出')
+    if not rec:
+        if allow_cpp: rec = [1, 2]
+        else: raise ValueError(f'「{t["name"]}」首学在{gname(t["grade"])}，{gname(grade)}还没学，不能出（若按 CPP 单元出题可传 --cpp-unit）')
     diff = int(diff) if diff else rec[len(rec) // 2]
-    qtype = qtype or default_qtype(tid, grade)
+    qtype = qtype or default_qtype(tid, max(grade, t['grade']))
     if qtype not in ALL_Q: raise ValueError(f'题型只能是：{"、".join(ALL_Q)}')
     return t, grade, diff, qtype, rec
 
 # ---------- 提示词 ----------
-def build_task(tid, grade, diff=None, n=5, qtype=None, seed=None, material=''):
+def build_task(tid, grade, diff=None, n=5, qtype=None, seed=None, material='', cpp_unit=''):
     """→ {'prompt', 'refs': {R1: 真题}, 'params'}。refs 是本次出题的母题，校验时要用。"""
-    t, grade, diff, qtype, rec = resolve(tid, grade, diff, qtype)
+    uinfo = _cpp_unit_info(cpp_unit)
+    t, grade, diff, qtype, rec = resolve(tid, grade, diff, qtype, allow_cpp=bool(uinfo or cpp_unit))
+    ex_grade = max(grade, t['grade'])
     lv = load('levels.json'); gp = lv['grades'][str(grade)]; dr = lv['difficulty'][str(diff)]
     st = load('exam_stats.json')['topics'].get(tid, {}) if (D / 'exam_stats.json').exists() else {}
-    bg = (st.get('byGrade') or {}).get(str(grade), {})
-    prof = C.format_profile(tid, grade)
+    bg = (st.get('byGrade') or {}).get(str(ex_grade), {})
+    prof = C.format_profile(tid, ex_grade)
     total = sum(c for _, c in prof)
     prof_txt = ' · '.join(f'{q} {round(c * 100 / total)}%' for q, c in prof[:6]) if total else '（语料中较少，按相邻年级和同类题型仿写）'
-    rate_txt = f"{gname(grade)}真卷中 {round(bg['rate'] * 100)}% 的卷子考到（{bg['papers']} 份卷）" if bg else ''
-    params = {'topic': tid, 'grade': grade, 'difficulty': diff, 'n': int(n), 'qtype': qtype, 'seed': seed}
-    head = f"""你是河南小学英语命题老师。请严格模仿下面给出的【真题原题】，为【{gp['name']}】学生出题。出题必须同时围绕：知识点、年级、语料库、真题。
-
+    rate_txt = f"{gname(ex_grade)}真卷中 {round(bg['rate'] * 100)}% 的卷子考到（{bg['papers']} 份卷）" if bg else ''
+    params = {'topic': tid, 'grade': grade, 'difficulty': diff, 'n': int(n), 'qtype': qtype, 'seed': seed, 'cppUnit': uinfo['id'] if uinfo else (cpp_unit or '')}
+    cpp_block = ''
+    if uinfo:
+        gr_txt = '；'.join(f"{g['name']}（{g['zh']}）" for g in uinfo.get('grammar', []))
+        kw_txt = ', '.join(uinfo.get('vocab', {}).get('words', [])[:20])
+        cpp_block = f"""
+【CPP 单元目标卡对标】：{uinfo['id']}《{uinfo['theme']}》（Big Question: {uinfo['bigQuestionEn']}）
+- 单元核心词（语境可自然融入，允许用这些词）：{kw_txt}
+- 单元语法目标：{gr_txt or '见本知识点'}
+"""
+    head = f"""你是河南小学英语命题老师。请严格模仿下面给出的【真题原题】，为【{gp['name']}】学生出题。出题必须同时围绕：知识点、年级、语料库、真题母题。{cpp_block}
 一、知识点：「{t['name']}」（{tid}，首学{gname(t['grade'])}）
 - 说明：{t['desc']}
 - 掌握标准：{'；'.join(t['evidence'])}
@@ -95,16 +112,16 @@ def build_task(tid, grade, diff=None, n=5, qtype=None, seed=None, material=''):
 
 二、年级：{gp['name']}
 - 词汇只用{vocab_rule(grade)}；人名用 Tom、Amy、Mike、Chen Jie 等课本常见名。
-- 单句不超过 {gp['maxWords']} 个词；本年级已学语法：{gp['grammar']}。不得用到没学过的语法点。
+- 单句不超过 {gp['maxWords']} 个词；本年级已学语法：{gp['grammar']}。
 - 风格：{gp['style']}
 
 三、语料库统计
-- 本知识点在{gp['name']}（含相邻年级）语料中的考法：{prof_txt}。{rate_txt}
-- 本次题型：「{qtype}」；难度：{diff}·{dr['name']} —— {dr['rule']}（{gp['name']}做这个点推荐难度 {'、'.join(map(str, rec))}）
+- 本知识点在{gname(ex_grade)}（含相邻年级）语料中的考法：{prof_txt}。{rate_txt}
+- 本次题型：「{qtype}」；难度：{diff}·{dr['name']} —— {dr['rule']}（推荐难度 {'、'.join(map(str, rec))}）
 """
     if qtype in PASSAGE_Q: return _passage_task(head, t, grade, diff, int(n), qtype, seed, material, gp, params)
     if qtype in WRITING_Q: return _writing_task(head, t, grade, diff, qtype, seed, gp, params)
-    ex = C.exemplars(tid, grade, qtype, k=8 if int(n) > 5 else 6, seed=seed)
+    ex = C.exemplars(tid, ex_grade, qtype, k=8 if int(n) > 5 else 6, seed=seed)
     same_q = [e for e in ex if e['qtype'] == qtype]
     if len(same_q) < 2:   # 本知识点这种题型的真题少：再补同年级同题型的真题，只学版式
         extra = [it for it in C.bank()['items'] if it['qtype'] == qtype and C.grade_weight(it['grade'], grade) >= .6 and not it['pic']
@@ -193,15 +210,20 @@ def parse_reply(text):
     return json.loads(re.search(r'\{.*\}', text, re.S).group(0))
 
 def normalize(v, task):
-    """模型返回的题目数组 / 篇章对象 / 作文对象 → 统一的题目数组（带 qtype、mimic）。"""
-    p = task['params']; tid, g, d, qtype = p['topic'], p['grade'], p['difficulty'], p['qtype']
+    """模型返回的题目数组 / 篇章对象 / 作文对象 → 统一的题目数组（带 qtype、mimic、mimicSrc、status='draft'）。"""
+    p = task['params']; tid, g, d, qtype, cu = p['topic'], p['grade'], p['difficulty'], p['qtype'], p.get('cppUnit', '')
+    refs = task.get('refs', {})
+    def msrc(m):
+        r = refs.get(str(m or '').strip().strip('[]'), {})
+        return r.get('tag') or r.get('src', '')
     if isinstance(v, dict) and 'questions' in v and isinstance(v['questions'], list) and qtype not in PASSAGE_Q and not v.get('passage'):
         v = v['questions']
     if isinstance(v, list):
         out = []
         for q in v:
             if not isinstance(q, dict): continue
-            q = dict(q); q.update(topic=tid, grade=g, difficulty=d, qtype=q.get('qtype') or qtype)
+            q = dict(q); q.update(topic=tid, grade=g, difficulty=d, qtype=q.get('qtype') or qtype,
+                                  origin='ai', status='draft', cppUnit=cu, mimicSrc=msrc(q.get('mimic')))
             q.setdefault('type', 'choice' if q.get('choices') else 'fill')
             if q['type'] == 'fill' and isinstance(q.get('answer'), str): q['answer'] = [x.strip() for x in re.split(r'\s*[;/；]\s*', q['answer']) if x.strip()]
             out.append(q)
@@ -213,15 +235,16 @@ def normalize(v, task):
         for q in v.get('questions', []):
             q = dict(q); q.setdefault('type', 'choice' if q.get('choices') else 'fill')
             if q['type'] == 'fill' and isinstance(q.get('answer'), str): q['answer'] = [q['answer']]
-            top = q.get('topic') if q.get('topic') in T and rec_difficulty(g, T[q['topic']]['grade']) else tid
+            top = q.get('topic') if q.get('topic') in T and (cu or rec_difficulty(g, T[q['topic']]['grade'])) else tid
             q.update(topic=top, grade=g, difficulty=d, qtype=qtype, passage=passage, theme=v.get('theme', ''), title=v.get('title', ''),
-                     mimic=v.get('mimic', ''), source='AI 仿真题原创')
+                     mimic=v.get('mimic', ''), mimicSrc=msrc(v.get('mimic')), origin='ai', status='draft', cppUnit=cu, source='AI 仿真题初稿')
             out.append(q)
         return out
     if v.get('sample'):
         return [{'topic': tid, 'grade': g, 'difficulty': d, 'type': 'writing', 'qtype': '书面表达', 'title': v.get('title', ''),
                  'stem': v.get('stem', ''), 'require': v.get('require', ''), 'points': v.get('points', []), 'minWords': int(v.get('minWords') or 60),
-                 'phrases': v.get('phrases', ''), 'sample': v['sample'], 'explain': '', 'mimic': v.get('mimic', '')}]
+                 'phrases': v.get('phrases', ''), 'sample': v['sample'], 'explain': '', 'mimic': v.get('mimic', ''),
+                 'mimicSrc': msrc(v.get('mimic')), 'origin': 'ai', 'status': 'draft', 'cppUnit': cu}]
     raise ValueError('看不懂返回的 JSON：既不是题目数组，也不是篇章或作文')
 
 def check_mimic(q, task, siblings=()):
@@ -361,12 +384,12 @@ def ingest(reply, task, blind_answers=None, cfg=None, verify=False, model='AI'):
         if not e: keep.append((q, w))
     f = save_pending(keep, task, model)
     return {'passed': len(keep), 'total': len(qs), 'file': str(f.relative_to(ROOT)) if f else None, 'blindChecked': blind_answers is not None,
-            'questions': report}
+            'questions': report, 'passedQuestions': [q for q, _ in keep]}
 
-def generate(tid, grade, diff=None, n=5, qtype=None, verify=True, provider=None, model=None, seed=None, material=''):
+def generate(tid, grade, diff=None, n=5, qtype=None, verify=True, provider=None, model=None, seed=None, material='', cpp_unit=''):
     cfg = llm_config({'provider': provider, 'model': model})
     if not cfg.get('provider'): raise SystemExit('没有可用的出题模型：配置 llm.json（API），或安装 codex / claude 命令行，或用 --provider cli')
-    task = build_task(tid, grade, diff, n, qtype, seed if seed is not None else datetime.datetime.now().microsecond, material)
+    task = build_task(tid, grade, diff, n, qtype, seed if seed is not None else datetime.datetime.now().microsecond, material, cpp_unit)
     print(f"# {cfg['provider']}{('/' + cfg['model']) if cfg.get('model') else ''} 出题：{tid} · {gname(task['params']['grade'])} · {task['params']['qtype']} · 母题 {len(task['refs'])} 道", file=sys.stderr)
     rep = ingest(call_model(task['prompt'], cfg), task, cfg=cfg, verify=verify and task['params']['qtype'] not in WRITING_Q,
                  model=f"{cfg['provider']}{('/' + cfg['model']) if cfg.get('model') else ''}")
@@ -376,11 +399,11 @@ def generate(tid, grade, diff=None, n=5, qtype=None, verify=True, provider=None,
 def print_report(rep):
     for r in rep['questions']:
         print(f"{'✓' if r['ok'] else '✗'} [{r['mimic'] or '无母题'}] {r['stem']}  {'；'.join(r['errors'] + r['warnings'])}")
-    print(f"通过 {rep['passed']}/{rep['total']} 题" + (f"，写入 {rep['file']}" if rep['file'] else '') + ('' if rep['blindChecked'] else '（未做盲解复核）'))
+    print(f"通过 {rep['passed']}/{rep['total']} 题（状态：AI 初稿，人工校验确认后正式生效）" + (f"，写入 {rep['file']}" if rep['file'] else '') + ('' if rep['blindChecked'] else '（未做盲解复核）'))
 
 # ---------- 智能体模式：本地 Codex / WorkBuddy / Claude Code 自己当出题模型 ----------
-def new_task(tid, grade, diff=None, n=5, qtype=None, seed=None, material=''):
-    task = build_task(tid, grade, diff, n, qtype, seed if seed is not None else datetime.datetime.now().microsecond, material)
+def new_task(tid, grade, diff=None, n=5, qtype=None, seed=None, material='', cpp_unit=''):
+    task = build_task(tid, grade, diff, n, qtype, seed if seed is not None else datetime.datetime.now().microsecond, material, cpp_unit)
     p = task['params']
     tid_ = f"{p['topic']}-g{p['grade']}d{p['difficulty']}-{p['qtype']}-{datetime.datetime.now():%m%d%H%M%S%f}"[:-3]
     task['id'] = tid_; task['out'] = f'work/out/{tid_}.json'

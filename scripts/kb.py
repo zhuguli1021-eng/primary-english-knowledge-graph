@@ -235,7 +235,11 @@ def check_one(q, T, lv):
     t = T.get(q.get('topic'))
     if not t: return [f"知识点不存在 {q.get('topic')}"], []
     if q.get('grade') not in (3, 4, 5, 6, 7): return ['年级必须是 3~7'], []
-    if q['grade'] < t['grade']: errs.append(f"题目年级 {q['grade']} 早于知识点首学年级 {t['grade']}")
+    if q['grade'] < t['grade']:
+        if q.get('cppUnit') or q.get('allowCpp'):
+            warns.append(f"CPP 单元提前学习点（课标首学在 {t['grade']} 年级），请确认词表难度适合 {q['grade']} 年级")
+        else:
+            errs.append(f"题目年级 {q['grade']} 早于知识点首学年级 {t['grade']}")
     if q.get('difficulty') not in (1, 2, 3): errs.append('难度必须是 1~3')
     if not q.get('stem'): return errs + ['缺少题干'], []
     if q.get('type') == 'choice':
@@ -487,7 +491,8 @@ def _compact_exemplars():
 
 def bundle():
     data = {k: load(f'{k}.json') for k in ('topics', 'dependencies', 'levels', 'questions', 'exam_stats', 'wordlists')}
-    if (D / 'exam_blueprint.json').exists(): data['exam_blueprint'] = load('exam_blueprint.json')
+    for extra in ('exam_blueprint', 'cpp_units', 'real_pool'):
+        if (D / f'{extra}.json').exists(): data[extra] = load(f'{extra}.json')
     data['exemplars'] = _compact_exemplars()
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')
@@ -522,6 +527,20 @@ if __name__ == '__main__':
         import corpus; corpus.import_dir(pos[0], kv.get('prefix', ''))
     elif cmd == 'items':
         import corpus; corpus.build_items()
+        import real_pool; real_pool.build_pool()
+    elif cmd == 'pool':
+        import real_pool; real_pool.build_pool()
+    elif cmd == 'cpp':
+        if pos and pathlib.Path(pos[0]).exists():
+            import cpp_map; cpp_map.build_cpp(pathlib.Path(pos[0]))
+        else:
+            import api
+            r = api.get_cpp_units(kv.get('level'), pos[0] if pos else kv.get('unit'))
+            for u in r['units']:
+                print(f"{u['id']} [{u['theme']}] 对标{u['grade']}年级 · 词{u['vocab']['count']}个 · 细目表 {len(u['blueprintRows'])} 行")
+                if len(r['units']) == 1:
+                    for row in u['blueprintRows']:
+                        print(f"  [{row['role']}] {row['topic']:22s} {row['name']}  {row['cells']}  ({row['basis']})")
     elif cmd == 'stats':
         stats(pos[0] if pos else None)
     elif cmd == 'topics':
@@ -550,12 +569,12 @@ if __name__ == '__main__':
     elif cmd == 'prompt':
         import gen
         t = gen.build_task(pos[0], int(pos[1]), int(pos[2]) if len(pos) > 2 else None, int(pos[3]) if len(pos) > 3 else 5,
-                           kv.get('qtype'), int(kv['seed']) if 'seed' in kv else None, kv.get('material', ''))
+                           kv.get('qtype'), int(kv['seed']) if 'seed' in kv else None, kv.get('material', ''), kv.get('cpp_unit', ''))
         print(t['prompt'])
     elif cmd == 'task':
         import gen
         t = gen.new_task(pos[0], int(pos[1]), int(pos[2]) if len(pos) > 2 else None, int(pos[3]) if len(pos) > 3 else 5,
-                         kv.get('qtype'), int(kv['seed']) if 'seed' in kv else None, kv.get('material', ''))
+                         kv.get('qtype'), int(kv['seed']) if 'seed' in kv else None, kv.get('material', ''), kv.get('cpp_unit', ''))
         print(t['prompt'] + gen.agent_footer(t))
     elif cmd == 'blind':
         import api
@@ -571,7 +590,8 @@ if __name__ == '__main__':
         import gen
         gen.generate(pos[0], int(pos[1]), int(pos[2]) if len(pos) > 2 else None, int(pos[3]) if len(pos) > 3 else 5,
                      qtype=kv.get('qtype'), verify=not bool(kv.get('no_verify')), provider=kv.get('provider'),
-                     model=kv.get('model'), seed=int(kv['seed']) if 'seed' in kv else None, material=kv.get('material', ''))
+                     model=kv.get('model'), seed=int(kv['seed']) if 'seed' in kv else None, material=kv.get('material', ''),
+                     cpp_unit=kv.get('cpp_unit', ''))
     elif cmd == 'serve':
         serve(int(pos[0]) if pos else 8765)
     elif cmd == 'mcp':
