@@ -498,6 +498,9 @@ def bundle():
         if (D / f'{extra}.json').exists(): data[extra] = load(f'{extra}.json')
     for name in ('curriculum', 'cpp_sessions', 'cpp_homework_items'):
         data[name] = load(f'{name}.json')
+    import session_corpus
+    data['cpp_corpus'] = session_corpus.build(load('exam_items.json'), data['real_pool'], load('corpus_index.json'),
+                                             data['cpp_units'], data['cpp_sessions'])
     data['exemplars'] = _compact_exemplars()
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')

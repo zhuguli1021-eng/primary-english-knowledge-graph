@@ -93,7 +93,78 @@ function grammarSections(s, unitId, items, level) {
     '重点核对 '+s.target+'；新句的主语、动词形式及句意应互相一致。');
   return [first,second];
 }
-function makeSessionPaper(unitId,sid,level) {
+function drawSessionOriginals(unitId, sid, level, grade, previousIds) {
+  const corpus=KB.cpp_corpus, route=corpus.routes[unitId+'-'+sid] || {};
+  const requested={L:5,M:6,H:8}[level];
+  const weighted=Object.entries(route).map(([id,skill])=>{
+    const item=corpus.items[id], passage=corpus.passages[item.group] || '';
+    const words=(passage+' '+item.stem+' '+item.options.join(' ')).match(/[a-z]+/ig)?.length || 0;
+    const load=item.grade*6 + Math.min(words,100)/4 + (item.options.length?0:5);
+    const target=grade*6+{L:-1,M:6,H:16}[level];
+    const score= -Math.abs(load-target) + (item.key?3:0)
+      + Math.random()*8 - (previousIds.has(id)?16:0);
+    return {item,skill,score};
+  }).sort((a,b)=>Number(b.item.kind==='真题')-Number(a.item.kind==='真题') || b.score-a.score);
+  const selected=[], seen=new Set();
+  let passageId='', hasWriting=false;
+  for(const {item,skill} of weighted){
+    if(item.group && passageId && item.group!==passageId || item.qtype==='书面表达' && hasWriting)continue;
+    const stem=item.stem.replace(/[\s'’.,!?＿_。？！]/g,'').toLowerCase();
+    // Instruction-only stems must retain their options when identifying duplicates.
+    const signature=stem.length>3 && !/不同类|不相同|发音不同/.test(stem) ? stem :
+      stem+item.options.slice().sort().join('|').toLowerCase();
+    if(seen.has(signature))continue;
+    seen.add(signature);
+    if(item.group)passageId=item.group;
+    if(item.qtype==='书面表达')hasWriting=true;
+    selected.push({item,skill});
+    if(selected.length>=requested)break;
+  }
+  return selected;
+}
+
+function originalSections(selected, templates, session, level) {
+  if(!selected.length)return templates;
+  const groups=new Map();
+  for(const {item,skill} of selected){
+    const name=item.group?'原卷阅读':item.qtype==='书面表达'?'原卷写作':item.options.length?'原卷选择与辨析':'原卷书面运用';
+    if(!groups.has(name))groups.set(name,{name,qs:[]});
+    const group=groups.get(name);
+    if(item.group)group.passage=KB.cpp_corpus.passages[item.group];
+    const head=item.head.replace(/^[一二三四五六七八九十IVXivx\d]+[、.．]\s*/,'')
+      .replace(/[（(](?:共\s*)?\d+\s*分[）)]/g,'').trim();
+    const writing=item.qtype==='书面表达';
+    const key=item.key || (writing?'按原卷题干列出的内容、格式和语言要求批阅。':'尚无可用答案，请教师对照原卷核定。');
+    const task=exercise((head?head+'　':'')+item.stem,key,writing?6:item.options.length?1:2,item.options);
+    const prefix=item.group?'rd.':skill.startsWith('课次词汇')?'vo.':'';
+    const topics=session.topics.filter(id=>id.startsWith(prefix));
+    Object.assign(task,{sourceItem:item,skill,topicIds:topics.length?topics:session.topics,open:writing,
+      keyLabel:writing?'批阅要点':item.reviewed?'核对参考答案':item.key?'配套答案索引':'答案待核'});
+    group.qs.push(task);
+  }
+  const sections=[...groups.values()];
+  // Once the corpus supplies the complete assignment, print only the original items.
+  // Listening, speaking and project sessions still require their textbook performance task.
+  const completeSkill=session.category==='reading'?sections.some(part=>part.passage):
+    session.category==='writing'?selected.some(({item})=>item.qtype==='书面表达'):['grammar','vocab','phonics'].includes(session.category);
+  if(completeSkill && selected.length>={L:5,M:6,H:8}[level])return sections;
+  const supplementary=['oracy','writing'].includes(session.category)?[...templates]:[...templates].reverse();
+  while(sections.length<3 && supplementary.length){
+    const part=supplementary.shift();
+    if(part.name==='完成作品' && selected.some(({item})=>item.qtype==='书面表达'))continue;
+    // Keep prompts referring to a preceding textbook task together.
+    if(part.qs.some(q=>/第 1 题|上述情境/.test(q.stem)))continue;
+    if(part.qs.some(q=>/从作品中选/.test(q.stem)) && !selected.some(({item})=>item.qtype==='书面表达'))continue;
+    sections.push({...part,name:part.name+'（课次配套）'});
+  }
+  return sections;
+}
+
+function originalMarkup(value){
+  return esc(value).replace(/&lt;u&gt;/gi,'<u>').replace(/&lt;\/u&gt;/gi,'</u>').replace(/\n/g,'<br>');
+}
+
+function makeSessionPaper(unitId,sid,level,previousIds=new Set()) {
   if (!Object.hasOwn(homeworkTiers,level)) throw Error('请选择一个难度');
   const [lv,un]=unitId.split('-'), unit=KB.cpp_sessions.levels[lv]?.[un];
   const s=unit?.sessions.find(s=>s.id===sid);
@@ -190,11 +261,13 @@ function makeSessionPaper(unitId,sid,level) {
     }
   }
   if(cat==='oracy')sections[0].qs[0].skill='听取信息 · '+s.audioTitle;
+  const originals=drawSessionOriginals(unitId,sid,level,card.grade,previousIds);
+  sections=originalSections(originals,sections,s,level);
   const qs=sections.flatMap(part=>part.qs);
   // A short homework paper uses 30 points; every printed point belongs to one task.
   qs.forEach((q,i)=>{q.points=Math.floor(30/qs.length)+(i<30%qs.length?1:0);q.sessionKey=unitId+'-'+sid;});
   return {unitId,sid,level,title:'CPP '+unitId+' · '+sid+' '+s.name+'作业卷',sections,instructions,
-    minutes:tier.minutes,scope:s.focus,pages,total:30,topics:s.topics,category:cat};
+    originalCount:originals.length, realCount:originals.filter(({item})=>item.kind==='真题').length, minutes:tier.minutes,scope:s.focus,pages,total:30,topics:s.topics,category:cat};
 }
 
 function initHomework() {
@@ -232,25 +305,37 @@ function initHomework() {
   function render(){
     if(!current)return;
     let number=0;
-    const body=current.sections.map((part,index)=>'<h3 class="sec">'+('一二三四'[index])+'、'+esc(part.name)+'</h3>'+
+    const body=current.sections.map((part,index)=>'<h3 class="sec">'+('一二三四'[index])+'、'+esc(part.name)+'</h3>'+(part.passage?'<div class="passage">'+originalMarkup(part.passage)+'</div>':'')+
       part.qs.map(q=>{
         const lines='<div class="hwLines">'+Array.from({length:q.lines},()=>'<div></div>').join('')+'</div>';
-        return '<div class="q"><strong>'+ ++number +'.</strong> '+esc(q.stem)+' <span class="meta">（'+q.points+' 分）</span>'+
-          (q.options.length?'<div class="hwOptions">'+q.options.map((v,i)=>esc(String.fromCharCode(65+i)+'. '+v)).join('　　')+'</div>':'')+
-          (answerMode?'<p class="explain"><b>'+(q.open?'批阅要点':'参考答案')+'</b>　'+esc(q.key)+'</p>'+
+        return '<div class="q"><strong>'+ ++number +'.</strong> '+originalMarkup(q.stem)+' <span class="meta">（'+q.points+' 分）</span>'+
+          (q.options.length?'<div class="hwOptions">'+q.options.map((v,i)=>originalMarkup((q.sourceItem?.group && /^[TF]（/.test(v)?'':String.fromCharCode(65+i)+'. ')+v)).join('　　')+'</div>':'')+
+          (q.sourceItem?'<div class="meta hwSource">'+esc(q.sourceItem.kind)+'原卷 · '+(q.sourceItem.grade===7?'小升初':q.sourceItem.grade+'年级')+' · <a href="https://github.com/zhuguli1021-eng/primary-english-knowledge-graph/blob/main/corpus/'+q.sourceItem.file.split('/').map(encodeURIComponent).join('/')+'" target="_blank" rel="noopener">'+esc(q.sourceItem.source)+'</a>'+esc(q.sourceItem.no?' · '+(q.sourceItem.group?'篇内第 ':'第 ')+q.sourceItem.no+' 题':'')+'</div>':'')+
+          (answerMode?'<p class="explain"><b>'+(q.keyLabel || (q.open?'批阅要点':'参考答案'))+'</b>　'+esc(q.key)+'</p>'+
            '<small class="meta">'+esc(q.sessionKey+' · '+q.skill+(q.bankId?' · 精编题 '+q.bankId:''))+'</small>':lines)+'</div>';
       }).join('')).join('');
     result.innerHTML='<div class="row noprint hwActions"><button class="btn" id="hwToggle">'+(answerMode?'查看学生卷':'查看教师答案')+'</button>'+
       (CAN_PRINT?'<button class="btn" id="hwPrint">打印当前卷</button>':'')+'</div><article class="card hwSheet"><h2>'+
       esc(current.title)+(answerMode?' · 教师答案':'')+'</h2><p>'+esc(homeworkTiers[current.level].name)+'　满分 '+current.total+
       ' 分　建议 '+current.minutes+' 分钟　姓名 __________</p>'+
+      '<p class="hwCoverage">'+(current.originalCount?'本卷抽取 '+current.originalCount+' 道语料原题，其中 '+current.realCount+' 道来自标记为真题的试卷。':'本课暂无匹配的语料原题，以下为课次配套练习。')+'</p>'+
       (current.instructions?'<p>'+esc(current.instructions)+'</p>':'')+body+'</article>';
     $('#hwToggle').onclick=()=>{answerMode=!answerMode;render();};
     if($('#hwPrint'))$('#hwPrint').onclick=()=>window.print();
   }
   $('#hwGenerate').onclick=()=>{
-    current=makeSessionPaper(unitSelect.value,sessionSelect.value,tier());
-    answerMode=false;render();
+    const previousIds=new Set(current?.sections.flatMap(part=>part.qs.map(q=>q.sourceItem?.id)) || []);
+    current=makeSessionPaper(unitSelect.value,sessionSelect.value,tier(),previousIds);
+    answerMode=false;
+    if(current.originalCount){
+      render();
+    } else {
+      const available=book().sessions.filter(s=>KB.cpp_corpus.routes[current.unitId+'-'+s.id]).map(s=>s.id);
+      result.innerHTML='<div class="card"><p><b>'+esc(current.unitId+' '+current.sid)+' 暂无匹配的语料原题。</b></p>'+
+        (available.length?'<p class="muted">本单元可抽到原题的课次：'+available.join('、')+'。</p>':'')+
+        '<button class="btn" id="hwLessonOnly">查看本课配套练习</button></div>';
+      $('#hwLessonOnly').onclick=render;
+    }
     $('#hwResult').scrollIntoView({block:'start',behavior:'smooth'});
   };
   unitSelect.onchange=()=>{fillSessions(sessionSelect.value);refresh();};
