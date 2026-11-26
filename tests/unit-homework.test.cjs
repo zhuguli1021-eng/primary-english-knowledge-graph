@@ -59,3 +59,36 @@ test('swap, top-up, reroll, and an empty pool retain their grade and scope',()=>
   assert.equal(out.lines(bank,p,true)[0].text,'教师参考答案');
   assert.doesNotMatch(out.lines(bank,p,false).map(x=>x.text).join('\n'),/教师参考答案|满分|得分|答案待核/);
 });
+
+test('printed reading subtasks, dialogue blanks and phonics pairs have their own answer keys',()=>{
+  const items=Object.values(bank.items);
+  const unit3=items.filter(q=>q.file.startsWith('三年级上/03_') && q.parts && q.section);
+  const dialogue=unit3.find(q=>q.section==='七');
+  assert.match(dialogue.stem,/Mike: Good morning/);
+  assert.deepEqual(dialogue.parts.map(p=>p.key),['E','D','B','C','A']);
+  const reading=unit3.find(q=>q.section==='八');
+  assert.deepEqual(reading.parts.map(p=>p.key),['eyes','toy dog','toys']);
+  const pairs=Object.keys(bank.routes['G1-U9'].phonics).map(id=>bank.items[id])
+    .filter(q=>q.file.startsWith('四年级上/10_'));
+  assert.deepEqual(pairs.map(q=>[q.no,q.key]).sort(),[[4,'√'],[5,'√']]);
+  assert.ok(pairs.every(q=>!/[（(]\s*[）)]\s*\d+[.．]/.test(q.stem)));
+});
+
+test('dual-tagged originals leave enough distinct questions for both sections',()=>{
+  const items=Object.fromEntries(['shared','alternative'].map(id=>[id,{stem:id,options:[],grade:3}]));
+  const sample={config:{grades:{G0:[3,4,5]},counts:{vocab:1,grammar:1}},
+    items,routes:{'G0-U1':{vocab:{shared:2},grammar:{shared:5,alternative:1}}}};
+  const p=hw.create(sample,'G0-U1',null,'L');
+  assert.deepEqual([...p.sections[0].ids],['shared']);
+  assert.deepEqual([...p.sections[1].ids],['alternative']);
+});
+
+test('short clothing reading preserves the common options and the printed subtask answers',()=>{
+  const items=Object.keys(bank.routes['G1-U9'].reading).map(id=>bank.items[id]);
+  const reading=items.find(q=>q.file.startsWith('A+全程练考卷-4年级/19_') && q.section==='八');
+  assert.ok(reading.stem.startsWith('This blue coat is'));
+  assert.deepEqual(reading.parts.map(p=>p.key),['the pink socks','the white dress','the orange sweater','the purple skirt']);
+  assert.ok(reading.parts.every(p=>p.options.length===4));
+  const gradeFivePast=Object.keys(bank.routes['G2-U6'].grammar).map(id=>bank.items[id]).filter(q=>q.grade===5);
+  assert.ok(gradeFivePast.every(q=>q.key!=='You need to listen to your friends.'));
+});

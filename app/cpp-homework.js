@@ -3,7 +3,20 @@ const Homework = (() => {
   const names={phonics:'语音 / 拼读',vocab:'词汇',grammar:'语法',dialogue:'情景交际',reading:'阅读理解'};
   const tiers=['L','M','H'], labels=['基础','标准','拔高'];
   const gradeName=g=>g===7?'小升初':'公立'+['','','','三','四','五','六'][g]+'年级';
-  const identity=q=>(q.stem+' '+(q.options||[]).slice().sort().join(' ')+' '+(q.parts||[]).map(p=>p.stem).join(' ')).normalize('NFKC').toLowerCase().replace(/<\/?u>|[\s\p{P}]/gu,'');
+  const normalize=text=>text.normalize('NFKC').toLowerCase().replace(/<\/?u>|[\s\p{P}]/gu,'');
+  function identity(q){
+    if(q.parts?.length===5 && q.parts.every(p=>/^第 \d+ 空/.test(p.stem))){
+      // Reprints may rename the speakers or relocate the bank on the page.
+      const lines=q.stem.split('\n');
+      const turns=lines.filter(l=>/^[A-Za-z][A-Za-z ’'-]{0,24}[:：]/.test(l));
+      const bank=lines.filter(l=>/^[A-G][.．]/.test(l));
+      if(turns.length>=5 && bank.length){
+        const opening=turns.map(l=>l.replace(/^[^:：]+[:：]/,'')).join(' ');
+        return normalize(bank.join(' '))+'|'+normalize(opening).slice(0,160);
+      }
+    }
+    return normalize(q.stem+' '+(q.options||[]).slice().sort().join(' ')+' '+(q.parts||[]).map(p=>p.stem).join(' '));
+  }
   function candidates(bank,paper,section,avoid=new Set()){
     const used=new Set(paper.sections.flatMap(s=>s.ids.map(i=>identity(bank.items[i]))));
     return Object.entries(bank.routes[paper.unit][section.block])
@@ -33,6 +46,22 @@ const Homework = (() => {
     const avoid=exposure(bank,previous);
     for(const section of [...sections].sort((a,b)=>Number(b.block==='grammar')-Number(a.block==='grammar'))){
       section.ids=draw(bank,paper,section,section.goal,avoid);
+    }
+    // A shared grammar/vocabulary item can occupy the only remaining vocabulary slot.
+    // Move it only when grammar has an unused replacement of its own.
+    const grammar=sections.find(s=>s.block==='grammar'), vocab=sections.find(s=>s.block==='vocab');
+    if(grammar && vocab && vocab.ids.length<vocab.goal){
+      const byText=new Map(Object.keys(bank.routes[unit].vocab)
+        .filter(id=>bank.items[id].grade===grade).map(id=>[identity(bank.items[id]),id]));
+      for(const [index,id] of grammar.ids.entries()){
+        const shared=byText.get(identity(bank.items[id]));
+        if(!shared)continue;
+        const [replacement]=draw(bank,paper,grammar,1,avoid);
+        if(!replacement)break;
+        grammar.ids[index]=replacement;
+        vocab.ids.push(shared);
+        if(vocab.ids.length===vocab.goal)break;
+      }
     }
     return paper;
   }
