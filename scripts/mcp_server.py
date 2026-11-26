@@ -17,6 +17,15 @@ import api, gen
 
 TOOLS = [
     {
+        'name': 'list_curriculum',
+        'description': '按人教教材年级、上下册、单元、关键词或原考点编号查询单元学习要求及关联。结果保留待核位置。',
+        'inputSchema': {'type': 'object', 'properties': {
+            'grade': {'type': 'integer', 'minimum': 3, 'maximum': 9},
+            'semester': {'type': 'string', 'enum': ['上', '下']},
+            'unit': {'type': 'string'}, 'q': {'type': 'string'}, 'topic': {'type': 'string'},
+        }},
+    },
+    {
         'name': 'list_cpp_units',
         'description': '查询 CPP（Cambridge Primary Path V2.1）单元目标卡映射标准（G0~G6 共 63 个单元），返回单元主题、核心词、语法目标及推荐双向细目表行（知识点 × 选择/填空/阅读/写作题量）。',
         'inputSchema': {
@@ -146,6 +155,7 @@ TOOLS = [
 
 HANDLERS = {
     'list_cpp_units': api.get_cpp_units,
+    'list_curriculum': api.get_curriculum,
     'draw_blueprint': api.post_draw_blueprint,
     'list_topics': api.get_topics,
     'get_exemplars': api.get_exemplars,

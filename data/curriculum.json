@@ -1,0 +1,7861 @@
+{
+  "source": {
+    "repository": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+    "revision": "601356aa39a9770e979819889846f6885ca9a468",
+    "license": "CC BY-NC 4.0",
+    "scope": "人教版小学三至六年级、初中七至九年级。九下暂无独立记录。",
+    "expectedCount": 532
+  },
+  "details": {
+    "unit.p008": {
+      "name": "读懂自我介绍",
+      "parents": [
+        "rd.detail",
+        "wr.self_others"
+      ]
+    },
+    "unit.p036": {
+      "name": "Who is 询问是谁",
+      "parents": [
+        "sy.wh_questions",
+        "pr.personal"
+      ]
+    },
+    "unit.p037": {
+      "name": "介绍家人",
+      "parents": [
+        "fn.greetings",
+        "pr.possessive_adj"
+      ]
+    },
+    "unit.p038": {
+      "name": "读懂家人介绍",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p017": {
+      "name": "动物",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p018": {
+      "name": "用 This is a 介绍动物",
+      "parents": [
+        "pr.demonstrative",
+        "ar.a_an",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p040": {
+      "name": "大小和高矮",
+      "parents": [
+        "vo.word_relations",
+        "ad.adj_basic"
+      ]
+    },
+    "unit.p041": {
+      "name": "用形容词说大小高矮",
+      "parents": [
+        "ad.adj_basic",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p019": {
+      "name": "读懂动物句子",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p042": {
+      "name": "读懂动物园的句子",
+      "parents": [
+        "rd.true_false",
+        "ad.adj_basic"
+      ]
+    },
+    "unit.p050": {
+      "name": "水果",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p053": {
+      "name": "读懂水果喜好",
+      "parents": [
+        "fn.dialogue",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p009": {
+      "name": "颜色",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p010": {
+      "name": "It is 说明颜色",
+      "parents": [
+        "ad.adj_basic",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p012": {
+      "name": "看图认颜色",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p028": {
+      "name": "读懂数量",
+      "parents": [
+        "rd.detail",
+        "nu.cardinal"
+      ]
+    },
+    "unit.p030": {
+      "name": "国家和来自哪里",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p031": {
+      "name": "I am from 说明来自哪里",
+      "parents": [
+        "pp.common",
+        "vb.be"
+      ]
+    },
+    "unit.p032": {
+      "name": "询问来自哪里",
+      "parents": [
+        "sy.wh_questions",
+        "pp.common"
+      ]
+    },
+    "unit.p033": {
+      "name": "读懂来自哪里",
+      "parents": [
+        "rd.detail",
+        "pp.common"
+      ]
+    },
+    "unit.p013": {
+      "name": "身体部位",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p015": {
+      "name": "介绍身体部位",
+      "parents": [
+        "pr.demonstrative",
+        "pr.possessive_adj",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p016": {
+      "name": "读懂五官介绍",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p058": {
+      "name": "教室物品",
+      "parents": [
+        "vo.daily_themes",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p063": {
+      "name": "学习用品词汇",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p060": {
+      "name": "教室里的建议",
+      "parents": [
+        "sy.imperative",
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.p064": {
+      "name": "谈论书包里有什么",
+      "parents": [
+        "vb.have",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p061": {
+      "name": "读懂教室短文",
+      "parents": [
+        "rd.practical",
+        "sy.imperative"
+      ]
+    },
+    "unit.p065": {
+      "name": "读懂书包里的物品",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p020": {
+      "name": "食物",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p022": {
+      "name": "表达想吃什么",
+      "parents": [
+        "vo.basic_themes",
+        "sy.imperative"
+      ]
+    },
+    "unit.p023": {
+      "name": "读懂喜好短文",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p077": {
+      "name": "用餐食物与菜单词汇",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p079": {
+      "name": "读懂用餐与点餐对话",
+      "parents": [
+        "fn.dialogue",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p025": {
+      "name": "玩具和礼物",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p044": {
+      "name": "房间中的家具和物品",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p047": {
+      "name": "读懂位置",
+      "parents": [
+        "rd.detail",
+        "pp.place"
+      ]
+    },
+    "unit.p080": {
+      "name": "职业",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p081": {
+      "name": "询问职业与 his、her",
+      "parents": [
+        "sy.wh_questions",
+        "pr.possessive_adj",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p082": {
+      "name": "介绍职业与工作地点",
+      "parents": [
+        "vo.daily_themes",
+        "wr.self_others"
+      ]
+    },
+    "unit.p083": {
+      "name": "读懂家人职业",
+      "parents": [
+        "rd.detail",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p210": {
+      "name": "帮忙做家务",
+      "parents": [
+        "fn.request_help",
+        "vb.modal_can"
+      ]
+    },
+    "unit.p211": {
+      "name": "读懂快乐家庭介绍",
+      "parents": [
+        "rd.practical",
+        "rd.detail"
+      ]
+    },
+    "unit.p067": {
+      "name": "人物外貌与性格词汇",
+      "parents": [
+        "ad.adj_basic",
+        "wr.self_others"
+      ]
+    },
+    "unit.p069": {
+      "name": "用 be 和 have 描述人物外貌",
+      "parents": [
+        "wr.self_others",
+        "vb.have"
+      ]
+    },
+    "unit.p070": {
+      "name": "读人物介绍并提取特征",
+      "parents": [
+        "rd.detail",
+        "wr.self_others"
+      ]
+    },
+    "unit.p212": {
+      "name": "人物性格与品质词汇",
+      "parents": [
+        "wr.self_others",
+        "ad.adj_basic"
+      ]
+    },
+    "unit.p213": {
+      "name": "介绍并选择朋友",
+      "parents": [
+        "wr.self_others",
+        "rd.detail"
+      ]
+    },
+    "unit.p072": {
+      "name": "家里的房间",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p073": {
+      "name": "is 和 are 说明人在哪里",
+      "parents": [
+        "vb.be",
+        "pp.place"
+      ]
+    },
+    "unit.p074": {
+      "name": "询问家人在哪个房间",
+      "parents": [
+        "sy.wh_questions",
+        "pp.place"
+      ]
+    },
+    "unit.p075": {
+      "name": "读懂家里的位置",
+      "parents": [
+        "rd.detail",
+        "pp.place"
+      ]
+    },
+    "unit.p214": {
+      "name": "社区场所",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p215": {
+      "name": "社区里人们做什么",
+      "parents": [
+        "vo.world_themes",
+        "te.present_simple"
+      ]
+    },
+    "unit.p084": {
+      "name": "学校场所",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p085": {
+      "name": "楼层与 first、second",
+      "parents": [
+        "nu.ordinal",
+        "pp.place"
+      ]
+    },
+    "unit.p086": {
+      "name": "问路：学校里的场所",
+      "parents": [
+        "fn.ask_way",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p087": {
+      "name": "读懂学校平面说明",
+      "parents": [
+        "rd.practical",
+        "pp.place"
+      ]
+    },
+    "unit.p216": {
+      "name": "年轻人如何帮助社区",
+      "parents": [
+        "vb.modal_can",
+        "fn.request_help"
+      ]
+    },
+    "unit.p217": {
+      "name": "读懂学校帮手介绍",
+      "parents": [
+        "rd.practical",
+        "rd.detail"
+      ]
+    },
+    "unit.p092": {
+      "name": "天气",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p093": {
+      "name": "It is 描述天气",
+      "parents": [
+        "pr.it",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p094": {
+      "name": "谈论天气并给建议",
+      "parents": [
+        "vo.daily_themes",
+        "vb.modal_can"
+      ]
+    },
+    "unit.p095": {
+      "name": "读懂天气预报",
+      "parents": [
+        "rd.detail",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p219": {
+      "name": "恶劣天气提醒",
+      "parents": [
+        "rd.practical",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p102": {
+      "name": "谈论穿着",
+      "parents": [
+        "sy.wh_questions",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p103": {
+      "name": "读懂物品归属",
+      "parents": [
+        "rd.detail",
+        "nn.possessive"
+      ]
+    },
+    "unit.p222": {
+      "name": "复习：一起帮忙",
+      "parents": [
+        "rd.detail",
+        "fn.request_help"
+      ]
+    },
+    "unit.p220": {
+      "name": "季节里的活动",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p221": {
+      "name": "读懂旅行卡片",
+      "parents": [
+        "rd.practical",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p151": {
+      "name": "公共场所行为规范词汇",
+      "parents": [
+        "vo.phrases",
+        "sy.imperative"
+      ]
+    },
+    "unit.p153": {
+      "name": "说规则",
+      "parents": [
+        "sy.imperative"
+      ]
+    },
+    "unit.p154": {
+      "name": "读懂规则",
+      "parents": [
+        "rd.detail",
+        "sy.imperative"
+      ]
+    },
+    "unit.p246": {
+      "name": "用情态动词说明学校规则",
+      "parents": [
+        "vb.modal_must",
+        "sy.imperative"
+      ]
+    },
+    "unit.p247": {
+      "name": "制作班级规则海报",
+      "parents": [
+        "rd.practical",
+        "sy.imperative"
+      ]
+    },
+    "unit.p199": {
+      "name": "家规：have to 与 can't",
+      "parents": [
+        "vb.modal_must",
+        "vb.modal_can"
+      ]
+    },
+    "unit.p229": {
+      "name": "家规用词",
+      "parents": [
+        "vo.phrases",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p231": {
+      "name": "读懂家规短文",
+      "parents": [
+        "rd.detail",
+        "vb.modal_must"
+      ]
+    },
+    "unit.p088": {
+      "name": "一天中的活动",
+      "parents": [
+        "vo.activity_themes",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p091": {
+      "name": "读懂作息时刻",
+      "parents": [
+        "rd.detail",
+        "nu.time_date"
+      ]
+    },
+    "unit.p104": {
+      "name": "商店物品",
+      "parents": [
+        "vo.daily_themes",
+        "fn.shopping"
+      ]
+    },
+    "unit.p107": {
+      "name": "读价签和购物记录",
+      "parents": [
+        "rd.practical",
+        "fn.shopping"
+      ]
+    },
+    "unit.p096": {
+      "name": "农场",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p098": {
+      "name": "在农场谈论动物和蔬菜",
+      "parents": [
+        "pr.demonstrative",
+        "sy.yes_no",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p099": {
+      "name": "读懂农场短文",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p200": {
+      "name": "从农场到餐桌的食物",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.p232": {
+      "name": "农场活动",
+      "parents": [
+        "vo.phrases"
+      ]
+    },
+    "unit.p233": {
+      "name": "在农场做什么",
+      "parents": [
+        "vb.modal_can",
+        "vo.phrases"
+      ]
+    },
+    "unit.p234": {
+      "name": "读懂农场劳动短文",
+      "parents": [
+        "rd.detail",
+        "vo.phrases"
+      ]
+    },
+    "unit.p163": {
+      "name": "周末计划",
+      "parents": [
+        "vo.activity_themes",
+        "wr.plan_wish"
+      ]
+    },
+    "unit.p256": {
+      "name": "讨论精彩周末计划",
+      "parents": [
+        "te.future",
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.p166": {
+      "name": "读懂周末计划",
+      "parents": [
+        "rd.detail",
+        "wr.plan_wish"
+      ]
+    },
+    "unit.p110": {
+      "name": "What is he like",
+      "parents": [
+        "sy.wh_questions",
+        "ad.adj_basic"
+      ]
+    },
+    "unit.p111": {
+      "name": "描述老师",
+      "parents": [
+        "wr.self_others",
+        "ad.adj_basic"
+      ]
+    },
+    "unit.p112": {
+      "name": "读懂老师介绍",
+      "parents": [
+        "rd.detail",
+        "wr.self_others"
+      ]
+    },
+    "unit.p175": {
+      "name": "感受",
+      "parents": [
+        "ad.adj_basic",
+        "rd.purpose"
+      ]
+    },
+    "unit.p177": {
+      "name": "询问感受并建议",
+      "parents": [
+        "fn.advice_health",
+        "vb.modal_must"
+      ]
+    },
+    "unit.p121": {
+      "name": "能力动词",
+      "parents": [
+        "vo.activity_themes",
+        "vb.modal_can"
+      ]
+    },
+    "unit.p123": {
+      "name": "谈论会做的事",
+      "parents": [
+        "vb.modal_can",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p124": {
+      "name": "读懂能力短文",
+      "parents": [
+        "rd.detail",
+        "vb.modal_can"
+      ]
+    },
+    "unit.p167": {
+      "name": "爱好",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p169": {
+      "name": "谈论笔友和爱好",
+      "parents": [
+        "wr.self_others",
+        "te.present_simple_3rd"
+      ]
+    },
+    "unit.p170": {
+      "name": "读懂笔友介绍",
+      "parents": [
+        "rd.detail",
+        "wr.self_others"
+      ]
+    },
+    "unit.p172": {
+      "name": "What does he do",
+      "parents": [
+        "sy.wh_questions",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p174": {
+      "name": "读懂职业短文",
+      "parents": [
+        "rd.detail",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p113": {
+      "name": "星期",
+      "parents": [
+        "vo.activity_themes",
+        "pp.time"
+      ]
+    },
+    "unit.p114": {
+      "name": "have 与 on Mondays",
+      "parents": [
+        "pp.time",
+        "te.present_simple"
+      ]
+    },
+    "unit.p115": {
+      "name": "周末活动",
+      "parents": [
+        "vo.activity_themes",
+        "vo.phrases"
+      ]
+    },
+    "unit.p117": {
+      "name": "读懂一周课程",
+      "parents": [
+        "rd.practical",
+        "rd.detail"
+      ]
+    },
+    "unit.p127": {
+      "name": "描述自己的房间",
+      "parents": [
+        "vb.there_be",
+        "vo.daily_themes"
+      ]
+    },
+    "unit.p128": {
+      "name": "读懂房间短文",
+      "parents": [
+        "rd.detail",
+        "vb.there_be"
+      ]
+    },
+    "unit.p129": {
+      "name": "自然公园",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p131": {
+      "name": "谈论公园里有什么",
+      "parents": [
+        "vb.there_be",
+        "sy.yes_no"
+      ]
+    },
+    "unit.p132": {
+      "name": "读懂自然公园",
+      "parents": [
+        "rd.true_false",
+        "vb.there_be"
+      ]
+    },
+    "unit.p133": {
+      "name": "一天的活动",
+      "parents": [
+        "vo.activity_themes",
+        "vo.phrases"
+      ]
+    },
+    "unit.p134": {
+      "name": "When do you 询问时间",
+      "parents": [
+        "sy.wh_questions",
+        "pp.time"
+      ]
+    },
+    "unit.p135": {
+      "name": "谈论作息",
+      "parents": [
+        "wr.daily",
+        "nu.time_date"
+      ]
+    },
+    "unit.p138": {
+      "name": "谈论最喜欢的季节",
+      "parents": [
+        "sy.wh_questions",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p139": {
+      "name": "读懂季节短文",
+      "parents": [
+        "rd.detail",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p142": {
+      "name": "交流节日或校历活动所在月份",
+      "parents": [
+        "nu.time_date",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p143": {
+      "name": "读懂校历",
+      "parents": [
+        "rd.practical",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.p266": {
+      "name": "When is your birthday",
+      "parents": [
+        "nu.time_date",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p149": {
+      "name": "用 Whose 与物主代词问答归属",
+      "parents": [
+        "pr.possessive_pron",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p150": {
+      "name": "读懂正在做的事",
+      "parents": [
+        "rd.detail",
+        "te.present_continuous"
+      ]
+    },
+    "unit.p271": {
+      "name": "Keep 与 No 类规则",
+      "parents": [
+        "sy.imperative"
+      ]
+    },
+    "unit.p273": {
+      "name": "正在做与遵守规则",
+      "parents": [
+        "te.present_continuous",
+        "sy.imperative"
+      ]
+    },
+    "unit.p274": {
+      "name": "排队与轮流",
+      "parents": [
+        "vo.phrases",
+        "sy.imperative"
+      ]
+    },
+    "unit.p269": {
+      "name": "看图说谁的与正在做什么",
+      "parents": [
+        "sy.wh_questions",
+        "te.present_continuous"
+      ]
+    },
+    "unit.p155": {
+      "name": "城市场所",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p158": {
+      "name": "读懂指路",
+      "parents": [
+        "rd.detail",
+        "fn.ask_way"
+      ]
+    },
+    "unit.p190": {
+      "name": "谈论去过哪里",
+      "parents": [
+        "te.past_simple",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p191": {
+      "name": "读懂旅行日记",
+      "parents": [
+        "rd.detail",
+        "wr.experience"
+      ]
+    },
+    "unit.p238": {
+      "name": "聚会与邀请词汇",
+      "parents": [
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.p178": {
+      "name": "读懂感受和建议",
+      "parents": [
+        "rd.detail",
+        "fn.advice_health"
+      ]
+    },
+    "unit.p235": {
+      "name": "健康生活词汇",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p237": {
+      "name": "读懂健康生活短文",
+      "parents": [
+        "rd.detail",
+        "fn.advice_health"
+      ]
+    },
+    "unit.p201": {
+      "name": "金钱与花销词汇",
+      "parents": [
+        "fn.shopping",
+        "vo.confusables"
+      ]
+    },
+    "unit.p203": {
+      "name": "读懂零花钱计划",
+      "parents": [
+        "rd.practical",
+        "rd.detail"
+      ]
+    },
+    "unit.p239": {
+      "name": "谈论存钱计划",
+      "parents": [
+        "te.future",
+        "wr.plan_wish"
+      ]
+    },
+    "unit.p204": {
+      "name": "太空词汇",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p205": {
+      "name": "用将来时讨论太空生活与探索",
+      "parents": [
+        "te.future",
+        "vo.world_themes"
+      ]
+    },
+    "unit.p206": {
+      "name": "读懂太空短文",
+      "parents": [
+        "rd.detail",
+        "vo.world_themes"
+      ]
+    },
+    "unit.p159": {
+      "name": "交通工具",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p160": {
+      "name": "must 与交通规则",
+      "parents": [
+        "vb.modal_must",
+        "sy.imperative"
+      ]
+    },
+    "unit.p161": {
+      "name": "说明出行方式",
+      "parents": [
+        "pp.common",
+        "sy.paraphrase"
+      ]
+    },
+    "unit.p162": {
+      "name": "读懂交通规则",
+      "parents": [
+        "rd.detail",
+        "vb.modal_must"
+      ]
+    },
+    "unit.p207": {
+      "name": "能源与节约词汇",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.p208": {
+      "name": "阅读环保和节能倡议",
+      "parents": [
+        "rd.detail",
+        "wr.advice"
+      ]
+    },
+    "unit.p180": {
+      "name": "身高和体重",
+      "parents": [
+        "ad.comparative_use",
+        "sy.how_phrases"
+      ]
+    },
+    "unit.p183": {
+      "name": "询问身高",
+      "parents": [
+        "sy.how_phrases"
+      ]
+    },
+    "unit.p184": {
+      "name": "读懂比较短文",
+      "parents": [
+        "rd.detail",
+        "ad.comparative_use"
+      ]
+    },
+    "unit.p243": {
+      "name": "How was your weekend",
+      "parents": [
+        "te.past_simple",
+        "fn.dialogue"
+      ]
+    },
+    "unit.p187": {
+      "name": "谈论上周末",
+      "parents": [
+        "te.past_simple",
+        "wr.experience"
+      ]
+    },
+    "unit.p188": {
+      "name": "读懂上周末日记",
+      "parents": [
+        "rd.detail",
+        "wr.experience"
+      ]
+    },
+    "unit.p223": {
+      "name": "旅行与假期活动词汇",
+      "parents": [
+        "vb.past_form",
+        "wr.experience"
+      ]
+    },
+    "unit.p225": {
+      "name": "What did you do 问活动",
+      "parents": [
+        "te.past_simple",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p226": {
+      "name": "怎么去的与和谁去的",
+      "parents": [
+        "te.past_simple",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p227": {
+      "name": "谈论假期旅行",
+      "parents": [
+        "te.past_simple",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.p228": {
+      "name": "读懂假期旅行短文",
+      "parents": [
+        "rd.detail",
+        "wr.experience"
+      ]
+    },
+    "unit.p192": {
+      "name": "过去和现在",
+      "parents": [
+        "te.past_be",
+        "te.tense_choice"
+      ]
+    },
+    "unit.p195": {
+      "name": "读懂今昔对比",
+      "parents": [
+        "rd.detail",
+        "te.past_be"
+      ]
+    },
+    "unit.p196": {
+      "name": "易混词 there、its、too",
+      "parents": [
+        "vo.confusables"
+      ]
+    },
+    "unit.p197": {
+      "name": "读懂一封短信",
+      "parents": [
+        "rd.practical",
+        "rd.detail"
+      ]
+    },
+    "unit.p245": {
+      "name": "复习：Mike 的快乐日子",
+      "parents": [
+        "rd.detail",
+        "ad.comparative_use",
+        "wr.experience"
+      ]
+    },
+    "unit.j003": {
+      "name": "姓名与称呼",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "unit.j081": {
+      "name": "询问长什么样",
+      "parents": [
+        "sy.wh_questions",
+        "wr.self_others"
+      ]
+    },
+    "unit.j077": {
+      "name": "询问学校场所",
+      "parents": [
+        "fn.ask_way",
+        "vb.there_be"
+      ]
+    },
+    "unit.j098": {
+      "name": "辅音与元音连读",
+      "parents": [
+        "@语音"
+      ]
+    },
+    "unit.j040": {
+      "name": "学科词汇",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.j042": {
+      "name": "谈论最喜欢的学科",
+      "parents": [
+        "sy.wh_questions",
+        "sy.conjunctions"
+      ]
+    },
+    "unit.j043": {
+      "name": "读课程介绍",
+      "parents": [
+        "rd.detail",
+        "sy.conjunctions"
+      ]
+    },
+    "unit.j107": {
+      "name": "不完全爆破",
+      "parents": [
+        "@语音"
+      ]
+    },
+    "unit.j044": {
+      "name": "才艺与俱乐部",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j025": {
+      "name": "谈论个人能力与社团选择",
+      "parents": [
+        "vb.modal_can",
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.j047": {
+      "name": "读俱乐部广告",
+      "parents": [
+        "rd.practical",
+        "vb.modal_can"
+      ]
+    },
+    "unit.j022": {
+      "name": "球类运动",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j026": {
+      "name": "读体育社团短文",
+      "parents": [
+        "rd.detail",
+        "rd.practical"
+      ]
+    },
+    "unit.j054": {
+      "name": "How 问交通",
+      "parents": [
+        "sy.how_phrases",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j056": {
+      "name": "读上学方式",
+      "parents": [
+        "rd.detail",
+        "pp.common"
+      ]
+    },
+    "unit.j035": {
+      "name": "读聚会购物",
+      "parents": [
+        "rd.practical",
+        "fn.shopping"
+      ]
+    },
+    "unit.j065": {
+      "name": "谈论动物",
+      "parents": [
+        "sy.wh_questions",
+        "sy.conjunctions"
+      ]
+    },
+    "unit.j066": {
+      "name": "读动物介绍",
+      "parents": [
+        "rd.detail",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.j057": {
+      "name": "校规词汇",
+      "parents": [
+        "vo.phrases"
+      ]
+    },
+    "unit.j103": {
+      "name": "运动习惯",
+      "parents": [
+        "vo.activity_themes",
+        "ad.frequency"
+      ]
+    },
+    "unit.j106": {
+      "name": "读锻炼调查",
+      "parents": [
+        "rd.detail",
+        "ad.frequency"
+      ]
+    },
+    "unit.j248": {
+      "name": "选择疑问句",
+      "parents": [
+        "sy.yes_no",
+        "sy.conjunctions"
+      ]
+    },
+    "unit.j067": {
+      "name": "正在进行的活动",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j069": {
+      "name": "询问正在做什么",
+      "parents": [
+        "te.present_continuous",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j163": {
+      "name": "故事用词",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j166": {
+      "name": "复述故事",
+      "parents": [
+        "wr.experience",
+        "rd.structure"
+      ]
+    },
+    "unit.j167": {
+      "name": "读神话故事",
+      "parents": [
+        "rd.detail",
+        "rd.structure"
+      ]
+    },
+    "unit.j099": {
+      "name": "假期地点",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j137": {
+      "name": "意群停顿",
+      "parents": [
+        "@语音"
+      ]
+    },
+    "unit.j153": {
+      "name": "读家务对话",
+      "parents": [
+        "rd.detail",
+        "fn.request_help"
+      ]
+    },
+    "unit.j250": {
+      "name": "as ... as 同级比较",
+      "parents": [
+        "ad.comparative_use"
+      ]
+    },
+    "unit.j111": {
+      "name": "比较两人",
+      "parents": [
+        "ad.comparative_use",
+        "wr.self_others"
+      ]
+    },
+    "unit.j113": {
+      "name": "城镇设施",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j115": {
+      "name": "谈论最好的地方",
+      "parents": [
+        "ad.superlative",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j116": {
+      "name": "读影院介绍",
+      "parents": [
+        "rd.detail",
+        "ad.superlative"
+      ]
+    },
+    "unit.j129": {
+      "name": "烹饪用词",
+      "parents": [
+        "vo.basic_themes",
+        "vo.phrases"
+      ]
+    },
+    "unit.j130": {
+      "name": "顺序词 first、next、then",
+      "parents": [
+        "wr.paragraph",
+        "sy.imperative"
+      ]
+    },
+    "unit.j131": {
+      "name": "说明做法",
+      "parents": [
+        "sy.imperative",
+        "wr.paragraph"
+      ]
+    },
+    "unit.j132": {
+      "name": "读食谱",
+      "parents": [
+        "rd.practical",
+        "rd.structure"
+      ]
+    },
+    "unit.j124": {
+      "name": "读计划短文",
+      "parents": [
+        "rd.detail",
+        "wr.plan_wish"
+      ]
+    },
+    "unit.j125": {
+      "name": "未来生活",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j127": {
+      "name": "预测未来",
+      "parents": [
+        "te.future",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j128": {
+      "name": "读未来预测",
+      "parents": [
+        "rd.detail",
+        "te.future"
+      ]
+    },
+    "unit.j138": {
+      "name": "建议用词",
+      "parents": [
+        "fn.advice_health"
+      ]
+    },
+    "unit.j140": {
+      "name": "用条件句给建议",
+      "parents": [
+        "sy.adverbial_clause",
+        "fn.advice_health"
+      ]
+    },
+    "unit.j141": {
+      "name": "读聚会建议",
+      "parents": [
+        "rd.detail",
+        "sy.adverbial_clause"
+      ]
+    },
+    "unit.j134": {
+      "name": "用 can 发出邀请",
+      "parents": [
+        "vb.modal_can",
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.j136": {
+      "name": "读邀请函",
+      "parents": [
+        "rd.practical",
+        "fn.invite_suggest"
+      ]
+    },
+    "unit.j117": {
+      "name": "电视节目",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j147": {
+      "name": "不定式表示目的",
+      "parents": [
+        "vb.nonfinite"
+      ]
+    },
+    "unit.j119": {
+      "name": "谈论想看的节目",
+      "parents": [
+        "vb.would_like",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j120": {
+      "name": "读节目选择",
+      "parents": [
+        "rd.detail",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j142": {
+      "name": "身体不适",
+      "parents": [
+        "vo.world_themes",
+        "fn.advice_health"
+      ]
+    },
+    "unit.j145": {
+      "name": "读健康建议",
+      "parents": [
+        "rd.detail",
+        "fn.advice_health"
+      ]
+    },
+    "unit.j154": {
+      "name": "情绪与压力",
+      "parents": [
+        "ad.adj_basic",
+        "vo.world_themes"
+      ]
+    },
+    "unit.j155": {
+      "name": "although 引导让步",
+      "parents": [
+        "sy.adverbial_clause"
+      ]
+    },
+    "unit.j165": {
+      "name": "so that 表示目的",
+      "parents": [
+        "sy.adverbial_clause"
+      ]
+    },
+    "unit.j157": {
+      "name": "读建议信",
+      "parents": [
+        "rd.detail",
+        "rd.practical"
+      ]
+    },
+    "unit.j168": {
+      "name": "地理名称",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j170": {
+      "name": "陈述地理事实",
+      "parents": [
+        "sy.how_phrases",
+        "ad.comparative_use"
+      ]
+    },
+    "unit.j171": {
+      "name": "读地理短文",
+      "parents": [
+        "rd.detail",
+        "ad.superlative"
+      ]
+    },
+    "unit.j158": {
+      "name": "暴风雨",
+      "parents": [
+        "vo.daily_themes",
+        "vo.world_themes"
+      ]
+    },
+    "unit.j160": {
+      "name": "when 与 while",
+      "parents": [
+        "te.past_continuous",
+        "sy.adverbial_clause"
+      ]
+    },
+    "unit.j161": {
+      "name": "描述当时的动作",
+      "parents": [
+        "te.past_continuous",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j162": {
+      "name": "读暴风雨故事",
+      "parents": [
+        "rd.detail",
+        "te.past_continuous"
+      ]
+    },
+    "unit.j224": {
+      "name": "社交习俗",
+      "parents": [
+        "vo.world_themes",
+        "fn.greetings"
+      ]
+    },
+    "unit.j164": {
+      "name": "unless 表示除非",
+      "parents": [
+        "sy.adverbial_clause"
+      ]
+    },
+    "unit.j225": {
+      "name": "be supposed to",
+      "parents": [
+        "vb.modal_must"
+      ]
+    },
+    "unit.j226": {
+      "name": "说明该怎么做",
+      "parents": [
+        "fn.greetings",
+        "vo.world_themes"
+      ]
+    },
+    "unit.j227": {
+      "name": "读习俗说明",
+      "parents": [
+        "rd.detail",
+        "vo.world_themes"
+      ]
+    },
+    "unit.j173": {
+      "name": "书籍与阅读",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j176": {
+      "name": "谈论读过的书",
+      "parents": [
+        "te.present_perfect",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j177": {
+      "name": "读阅读记录",
+      "parents": [
+        "rd.detail",
+        "te.present_perfect"
+      ]
+    },
+    "unit.j178": {
+      "name": "场馆经历",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j180": {
+      "name": "been 与 gone",
+      "parents": [
+        "te.present_perfect"
+      ]
+    },
+    "unit.j181": {
+      "name": "询问去过哪里",
+      "parents": [
+        "te.present_perfect",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j182": {
+      "name": "读场馆经历",
+      "parents": [
+        "rd.detail",
+        "te.present_perfect"
+      ]
+    },
+    "unit.j146": {
+      "name": "志愿服务",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j149": {
+      "name": "读志愿活动",
+      "parents": [
+        "rd.practical",
+        "fn.request_help"
+      ]
+    },
+    "unit.j183": {
+      "name": "旧物与回忆",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "unit.j186": {
+      "name": "读旧物故事",
+      "parents": [
+        "rd.detail",
+        "te.present_perfect"
+      ]
+    },
+    "unit.j200": {
+      "name": "今昔变化",
+      "parents": [
+        "te.past_be"
+      ]
+    },
+    "unit.j253": {
+      "name": "It is ... (for sb) to do",
+      "parents": [
+        "pr.it",
+        "vb.nonfinite"
+      ]
+    },
+    "unit.j187": {
+      "name": "学习方法",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j188": {
+      "name": "by 加动名词",
+      "parents": [
+        "pp.common",
+        "vb.nonfinite"
+      ]
+    },
+    "unit.j189": {
+      "name": "交流学习方法",
+      "parents": [
+        "sy.wh_questions",
+        "wr.advice"
+      ]
+    },
+    "unit.j190": {
+      "name": "读学习建议",
+      "parents": [
+        "rd.detail",
+        "wr.advice"
+      ]
+    },
+    "unit.j193": {
+      "name": "if 与 whether 宾语从句",
+      "parents": [
+        "sy.object_clause"
+      ]
+    },
+    "unit.j196": {
+      "name": "公共场所",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j198": {
+      "name": "礼貌问路",
+      "parents": [
+        "fn.ask_way",
+        "sy.object_clause"
+      ]
+    },
+    "unit.j204": {
+      "name": "材料",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j206": {
+      "name": "询问由什么制成",
+      "parents": [
+        "te.passive",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j207": {
+      "name": "读产品介绍",
+      "parents": [
+        "rd.detail",
+        "te.passive"
+      ]
+    },
+    "unit.j208": {
+      "name": "发明物",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j210": {
+      "name": "询问发明时间",
+      "parents": [
+        "te.passive",
+        "sy.wh_questions"
+      ]
+    },
+    "unit.j211": {
+      "name": "读发明介绍",
+      "parents": [
+        "rd.detail",
+        "te.passive"
+      ]
+    },
+    "unit.j220": {
+      "name": "音乐类型",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j222": {
+      "name": "说明喜欢的音乐",
+      "parents": [
+        "sy.conjunctions",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j223": {
+      "name": "读音乐偏好",
+      "parents": [
+        "rd.detail",
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j257": {
+      "name": "体育赛事词汇",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j256": {
+      "name": "主谓一致",
+      "parents": [
+        "vb.be",
+        "vb.third_person"
+      ]
+    },
+    "unit.j191": {
+      "name": "节日食物",
+      "parents": [
+        "vo.activity_themes",
+        "vo.basic_themes"
+      ]
+    },
+    "unit.j194": {
+      "name": "谈论节日",
+      "parents": [
+        "wr.culture"
+      ]
+    },
+    "unit.j195": {
+      "name": "读中秋短文",
+      "parents": [
+        "rd.detail",
+        "wr.culture"
+      ]
+    },
+    "unit.j212": {
+      "name": "青少年规则",
+      "parents": [
+        "vo.phrases",
+        "vb.modal_must"
+      ]
+    },
+    "unit.j213": {
+      "name": "be allowed to",
+      "parents": [
+        "te.passive"
+      ]
+    },
+    "unit.j214": {
+      "name": "讨论是否允许",
+      "parents": [
+        "vb.modal_must",
+        "wr.advice"
+      ]
+    },
+    "unit.j215": {
+      "name": "读规则意见",
+      "parents": [
+        "rd.detail",
+        "vb.modal_must"
+      ]
+    },
+    "unit.j216": {
+      "name": "物品主人",
+      "parents": [
+        "nn.possessive",
+        "pr.possessive_pron"
+      ]
+    },
+    "unit.j218": {
+      "name": "推测物品归属",
+      "parents": [
+        "pr.possessive_pron",
+        "vb.modal_must"
+      ]
+    },
+    "unit.j219": {
+      "name": "读推测短文",
+      "parents": [
+        "rd.inference",
+        "pr.possessive_pron"
+      ]
+    },
+    "unit.j228": {
+      "name": "情绪反应",
+      "parents": [
+        "ad.adj_basic"
+      ]
+    },
+    "unit.j230": {
+      "name": "表达电影感受",
+      "parents": [
+        "ad.adj_basic",
+        "sy.basic_patterns"
+      ]
+    },
+    "unit.j231": {
+      "name": "读观后感",
+      "parents": [
+        "rd.detail",
+        "rd.purpose"
+      ]
+    },
+    "unit.j232": {
+      "name": "意外事件",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j234": {
+      "name": "叙述意外经过",
+      "parents": [
+        "wr.experience",
+        "rd.structure"
+      ]
+    },
+    "unit.j235": {
+      "name": "读意外故事",
+      "parents": [
+        "rd.structure",
+        "rd.detail"
+      ]
+    },
+    "unit.j236": {
+      "name": "环境保护",
+      "parents": [
+        "vo.world_themes"
+      ]
+    },
+    "unit.j241": {
+      "name": "毕业回忆",
+      "parents": [
+        "vo.activity_themes"
+      ]
+    },
+    "unit.j244": {
+      "name": "回忆学校生活",
+      "parents": [
+        "wr.experience",
+        "wr.daily"
+      ]
+    }
+  },
+  "cppRefs": {
+    "cpp.G0-U2.phonics": {
+      "unit": "G0-U2",
+      "field": "phonics",
+      "parents": [
+        "@语音"
+      ],
+      "alsoUnits": [
+        "G0-U6"
+      ]
+    },
+    "cpp.G1-U1.vocab": {
+      "unit": "G1-U1",
+      "field": "vocab",
+      "parents": [
+        "vo.basic_themes"
+      ]
+    },
+    "cpp.G0-U7.grammar.p021": {
+      "unit": "G0-U7",
+      "field": "grammar",
+      "parents": [
+        "te.present_simple"
+      ],
+      "items": [
+        "like / don’t like"
+      ]
+    },
+    "cpp.G0-U4.pragmatics": {
+      "unit": "G0-U4",
+      "field": "pragmatics",
+      "parents": [
+        "pp.place",
+        "sy.wh_questions"
+      ]
+    },
+    "cpp.G1-U6.vocab": {
+      "unit": "G1-U6",
+      "field": "vocab",
+      "parents": [
+        "vo.phrases"
+      ]
+    },
+    "cpp.G0-U9.vocab": {
+      "unit": "G0-U9",
+      "field": "vocab",
+      "parents": [
+        "vo.daily_themes"
+      ]
+    },
+    "cpp.G3-U2.phonics": {
+      "unit": "G3-U2",
+      "field": "phonics",
+      "parents": [
+        "ph.letter_teams"
+      ]
+    },
+    "cpp.G3-U2.pragmatics": {
+      "unit": "G3-U2",
+      "field": "pragmatics",
+      "parents": [
+        "vb.would_like"
+      ]
+    },
+    "cpp.G1-U6.phonics": {
+      "unit": "G1-U6",
+      "field": "phonics",
+      "parents": [
+        "@语音"
+      ]
+    },
+    "cpp.G2-U6.phonics": {
+      "unit": "G2-U6",
+      "field": "phonics",
+      "parents": [
+        "@语音"
+      ]
+    },
+    "cpp.G4-U4.grammar.j175": {
+      "unit": "G4-U4",
+      "field": "grammar",
+      "parents": [
+        "te.present_perfect"
+      ],
+      "items": [
+        "Present Perfect with already, just, and yet"
+      ]
+    },
+    "cpp.G4-U4.grammar.j179": {
+      "unit": "G4-U4",
+      "field": "grammar",
+      "parents": [
+        "te.present_perfect"
+      ],
+      "items": [
+        "Present Perfect with ever and never"
+      ]
+    },
+    "cpp.G4-U5.grammar.j184": {
+      "unit": "G4-U5",
+      "field": "grammar",
+      "parents": [
+        "te.present_perfect"
+      ],
+      "items": [
+        "Present Perfect (for/since) vs. Past Simple"
+      ]
+    },
+    "cpp.G4-U5.grammar.j185": {
+      "unit": "G4-U5",
+      "field": "grammar",
+      "parents": [
+        "te.present_perfect",
+        "sy.how_phrases"
+      ],
+      "items": [
+        "Present Perfect with how long"
+      ]
+    },
+    "cpp.G4-U3.grammar.j201": {
+      "unit": "G4-U3",
+      "field": "grammar",
+      "parents": [
+        "te.past_simple"
+      ],
+      "items": [
+        "Used to / didn’t use to"
+      ]
+    },
+    "cpp.G5-U3.grammar.j205": {
+      "unit": "G5-U3",
+      "field": "grammar",
+      "parents": [
+        "te.passive"
+      ],
+      "items": [
+        "The Present Simple Passive Voice"
+      ]
+    },
+    "cpp.G5-U8.grammar.j209": {
+      "unit": "G5-U8",
+      "field": "grammar",
+      "parents": [
+        "te.passive"
+      ],
+      "items": [
+        "The Past Simple Passive Voice"
+      ]
+    },
+    "cpp.G6-U1.grammar.j254": {
+      "unit": "G6-U1",
+      "field": "grammar",
+      "parents": [
+        "te.passive"
+      ],
+      "items": [
+        "Future Passive"
+      ]
+    },
+    "cpp.G6-U2.grammar.j221": {
+      "unit": "G6-U2",
+      "field": "grammar",
+      "parents": [
+        "@句法"
+      ],
+      "items": [
+        "Defining Relative Clauses Using that or where",
+        "Defining Relative Clauses Using who or whose"
+      ]
+    },
+    "cpp.G5-U8.grammar.j217": {
+      "unit": "G5-U8",
+      "field": "grammar",
+      "parents": [
+        "vb.modal_must"
+      ],
+      "items": [
+        "Modal Verbs of Deduction: must, might, and can’t"
+      ]
+    },
+    "cpp.G6-U6.grammar.j233": {
+      "unit": "G6-U6",
+      "field": "grammar",
+      "parents": [
+        "@时态"
+      ],
+      "items": [
+        "Past Perfect Simple"
+      ]
+    },
+    "cpp.G4-U6.grammar.j243": {
+      "unit": "G4-U6",
+      "field": "grammar",
+      "parents": [
+        "@句法"
+      ],
+      "items": [
+        "Tag Questions"
+      ]
+    }
+  },
+  "units": [
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第1单元 Making friends",
+      "placements": [
+        {
+          "sourceId": "cne_p001",
+          "name": "英语字母表",
+          "objective": "按字母顺序读写 A 至 Z，并找出指定字母的前后项。",
+          "targets": [
+            "ph.letters"
+          ]
+        },
+        {
+          "sourceId": "cne_p002",
+          "name": "字母的大写和小写",
+          "objective": "把印刷体大小写正确配对，例如 G/g。",
+          "targets": [
+            "ph.letters"
+          ]
+        },
+        {
+          "sourceId": "cne_p004",
+          "name": "辅音字母 b 的开头音",
+          "objective": "听词时识别起始音 /b/，并找到与之相应的字母 b。",
+          "targets": [
+            "cpp.G0-U2.phonics"
+          ]
+        },
+        {
+          "sourceId": "cne_p005",
+          "name": "问候用语",
+          "objective": "按见面、离开和致谢三个场合选用表达。",
+          "targets": [
+            "fn.greetings",
+            "fn.thanks_apology"
+          ],
+          "words": [
+            "hello",
+            "hi",
+            "goodbye",
+            "thanks"
+          ]
+        },
+        {
+          "sourceId": "cne_p006",
+          "name": "be 动词 am",
+          "objective": "用 I am 加姓名或年龄完成一句自我介绍。",
+          "targets": [
+            "vb.be"
+          ]
+        },
+        {
+          "sourceId": "cne_p007",
+          "name": "问候、告别和致谢",
+          "objective": "与同伴完成见面问候、道谢和告别。",
+          "targets": [
+            "fn.greetings",
+            "fn.thanks_apology"
+          ]
+        },
+        {
+          "sourceId": "cne_p008",
+          "name": "读懂自我介绍",
+          "objective": "从人物的自述中提取姓名。",
+          "targets": [
+            "unit.p008"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第2单元 Different families",
+      "placements": [
+        {
+          "sourceId": "cne_p035",
+          "name": "家庭成员",
+          "objective": "按亲属关系选用相应的英文称谓。",
+          "targets": [
+            "cpp.G1-U1.vocab"
+          ],
+          "words": [
+            "father",
+            "mother",
+            "brother",
+            "sister"
+          ]
+        },
+        {
+          "sourceId": "cne_p036",
+          "name": "Who is 询问是谁",
+          "objective": "用 Who is …? 确认亲属身份，并选 he 或 she 作答。",
+          "targets": [
+            "unit.p036"
+          ]
+        },
+        {
+          "sourceId": "cne_p014",
+          "name": "This is 与 That is",
+          "objective": "根据物品的远近选 this 或 that。",
+          "targets": [
+            "pr.demonstrative"
+          ]
+        },
+        {
+          "sourceId": "cne_p037",
+          "name": "介绍家人",
+          "objective": "用 This is my … 把家人介绍给别人。",
+          "targets": [
+            "unit.p037"
+          ]
+        },
+        {
+          "sourceId": "cne_p038",
+          "name": "读懂家人介绍",
+          "objective": "根据介绍判断人物之间的亲属关系。",
+          "targets": [
+            "unit.p038"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第3单元 Our animal friends",
+      "placements": [
+        {
+          "sourceId": "cne_p017",
+          "name": "动物",
+          "objective": "用英文辨认常见动物。",
+          "targets": [
+            "unit.p017"
+          ],
+          "words": [
+            "cat",
+            "dog",
+            "bird",
+            "duck"
+          ]
+        },
+        {
+          "sourceId": "cne_p018",
+          "name": "用 This is a 介绍动物",
+          "objective": "指着动物图用 This is a … 说出名称。",
+          "targets": [
+            "unit.p018"
+          ]
+        },
+        {
+          "sourceId": "cne_p040",
+          "name": "大小和高矮",
+          "objective": "按大小、高矮区分描述词，并判断 short 在语境中的意思。",
+          "targets": [
+            "unit.p040"
+          ],
+          "words": [
+            "big",
+            "small",
+            "tall",
+            "short"
+          ]
+        },
+        {
+          "sourceId": "cne_p041",
+          "name": "用形容词说大小高矮",
+          "objective": "用 be 加形容词描述动物的大小或高矮。",
+          "targets": [
+            "unit.p041"
+          ]
+        },
+        {
+          "sourceId": "cne_p019",
+          "name": "读懂动物句子",
+          "objective": "从描述中找出动物的种类和颜色。",
+          "targets": [
+            "unit.p019"
+          ]
+        },
+        {
+          "sourceId": "cne_p042",
+          "name": "读懂动物园的句子",
+          "objective": "读动物园介绍，判断一条关于动物大小的陈述是否符合原文。",
+          "targets": [
+            "unit.p042"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第4单元 Plants around us",
+      "placements": [
+        {
+          "sourceId": "cne_p050",
+          "name": "水果",
+          "objective": "在水果摊场景里辨认常见水果名称。",
+          "targets": [
+            "unit.p050"
+          ],
+          "words": [
+            "pear",
+            "apple",
+            "banana",
+            "orange"
+          ]
+        },
+        {
+          "sourceId": "cne_p052",
+          "name": "可数名词复数",
+          "objective": "把常见可数名词从单数变为复数，区分 -s 与 -es。",
+          "targets": [
+            "nn.plural"
+          ]
+        },
+        {
+          "sourceId": "cne_p021",
+          "name": "I like 表达喜好",
+          "objective": "用 I like 或 I don’t like 表达自己的偏好。",
+          "targets": [
+            "cpp.G0-U7.grammar.p021"
+          ]
+        },
+        {
+          "sourceId": "cne_p051",
+          "name": "Do you like 一般疑问句",
+          "objective": "用 Do you like …? 询问喜好，并用 do 或 don’t 简答。",
+          "targets": [
+            "te.present_simple",
+            "sy.yes_no"
+          ]
+        },
+        {
+          "sourceId": "cne_p053",
+          "name": "读懂水果喜好",
+          "objective": "读水果喜好对话，把人和喜欢的水果配对。",
+          "targets": [
+            "unit.p053"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第5单元 The colourful world",
+      "placements": [
+        {
+          "sourceId": "cne_p009",
+          "name": "颜色",
+          "objective": "认读常用颜色词，并把颜色词与物品配对。",
+          "targets": [
+            "unit.p009"
+          ],
+          "words": [
+            "red",
+            "yellow",
+            "green",
+            "blue"
+          ]
+        },
+        {
+          "sourceId": "cne_p010",
+          "name": "It is 说明颜色",
+          "objective": "用 It is 加颜色描述一件物品。",
+          "targets": [
+            "unit.p010"
+          ]
+        },
+        {
+          "sourceId": "cne_p011",
+          "name": "询问颜色",
+          "objective": "围绕物品颜色用 What colour …? 一问一答。",
+          "targets": [
+            "sy.wh_questions"
+          ]
+        },
+        {
+          "sourceId": "cne_p012",
+          "name": "看图认颜色",
+          "objective": "根据文字标注选择颜色相符的物品。",
+          "targets": [
+            "unit.p012"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "上",
+      "unit": "第6单元 Useful numbers",
+      "placements": [
+        {
+          "sourceId": "cne_p003",
+          "name": "元音字母",
+          "objective": "从混排字母中圈出 a、e、i、o、u。",
+          "targets": [
+            "ph.letters"
+          ]
+        },
+        {
+          "sourceId": "cne_p024",
+          "name": "1 到 10",
+          "objective": "把 1 至 10 与对应英文数词配对。",
+          "targets": [
+            "nu.cardinal"
+          ],
+          "words": [
+            "one",
+            "two",
+            "three",
+            "ten"
+          ]
+        },
+        {
+          "sourceId": "cne_p026",
+          "name": "How many 问数量",
+          "objective": "用 How many 加复数名词提问并报出数量。",
+          "targets": [
+            "sy.how_phrases",
+            "nu.cardinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p027",
+          "name": "询问年龄",
+          "objective": "用 How old …? 询问年龄并用完整句作答。",
+          "targets": [
+            "sy.how_phrases",
+            "nu.cardinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p028",
+          "name": "读懂数量",
+          "objective": "读含数词的句子，记录每种物品的件数。",
+          "targets": [
+            "unit.p028"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第1单元 Meeting new people",
+      "placements": [
+        {
+          "sourceId": "cne_p029",
+          "name": "短元音 a",
+          "objective": "比较含 a 的短词，读出闭音节里的 /æ/。",
+          "targets": [
+            "ph.short_vowels"
+          ]
+        },
+        {
+          "sourceId": "cne_p057",
+          "name": "a-e 的读音",
+          "objective": "读出 a…e 结构中的 /eɪ/，比较 cap 与 cape。",
+          "targets": [
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p030",
+          "name": "国家和来自哪里",
+          "objective": "把国家名称或英文简称与中文国家名配对。",
+          "targets": [
+            "unit.p030"
+          ],
+          "words": [
+            "China",
+            "Canada",
+            "UK",
+            "USA"
+          ]
+        },
+        {
+          "sourceId": "cne_p031",
+          "name": "I am from 说明来自哪里",
+          "objective": "用 be from 说明自己或他人的来处。",
+          "targets": [
+            "unit.p031"
+          ]
+        },
+        {
+          "sourceId": "cne_p032",
+          "name": "询问来自哪里",
+          "objective": "用 Where … from? 发问并用国家名作答。",
+          "targets": [
+            "unit.p032"
+          ]
+        },
+        {
+          "sourceId": "cne_p033",
+          "name": "读懂来自哪里",
+          "objective": "从自我介绍中找到人物的来源国。",
+          "targets": [
+            "unit.p033"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第2单元 My words and actions",
+      "placements": [
+        {
+          "sourceId": "cne_p039",
+          "name": "短元音 i",
+          "objective": "拼读含短音 /ɪ/ 的闭音节词。",
+          "targets": [
+            "ph.short_vowels"
+          ]
+        },
+        {
+          "sourceId": "cne_p062",
+          "name": "i-e 的读音",
+          "objective": "读出 i…e 结构中的 /aɪ/，比较 kit 与 kite。",
+          "targets": [
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p013",
+          "name": "身体部位",
+          "objective": "按指令指出身体部位并说出名称。",
+          "targets": [
+            "unit.p013"
+          ],
+          "words": [
+            "face",
+            "eye",
+            "nose",
+            "mouth"
+          ]
+        },
+        {
+          "sourceId": "cne_p015",
+          "name": "介绍身体部位",
+          "objective": "边指边用 This is my … 介绍自己的五官。",
+          "targets": [
+            "unit.p015"
+          ]
+        },
+        {
+          "sourceId": "cne_p016",
+          "name": "读懂五官介绍",
+          "objective": "听读五官介绍，指出句子描述的部位。",
+          "targets": [
+            "unit.p016"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第3单元 Tools and senses for learning",
+      "placements": [
+        {
+          "sourceId": "cne_p043",
+          "name": "短元音 o",
+          "objective": "辨读闭音节 o 的短音，如 dog 中的元音。",
+          "targets": [
+            "ph.short_vowels"
+          ]
+        },
+        {
+          "sourceId": "cne_p066",
+          "name": "o-e 的读音",
+          "objective": "通过 note、home 等词辨读 o…e 的长音。",
+          "targets": [
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p058",
+          "name": "教室物品",
+          "objective": "给教室设施与物品贴上相应的英文标签。",
+          "targets": [
+            "unit.p058"
+          ],
+          "words": [
+            "classroom",
+            "window",
+            "door",
+            "blackboard"
+          ]
+        },
+        {
+          "sourceId": "cne_p063",
+          "name": "书包里的文具",
+          "objective": "打开书包，按名称找出所说的文具。",
+          "targets": [
+            "unit.p063"
+          ],
+          "words": [
+            "schoolbag",
+            "pencil",
+            "ruler",
+            "eraser"
+          ]
+        },
+        {
+          "sourceId": "cne_p059",
+          "name": "Let's 建议句",
+          "objective": "用 Let’s 加动词原形发出共同活动的建议。",
+          "targets": [
+            "sy.imperative",
+            "fn.invite_suggest"
+          ]
+        },
+        {
+          "sourceId": "cne_p060",
+          "name": "教室里的建议",
+          "objective": "就开灯、擦黑板等教室事务提出建议。",
+          "targets": [
+            "unit.p060"
+          ]
+        },
+        {
+          "sourceId": "cne_p064",
+          "name": "谈论书包里有什么",
+          "objective": "询问书包里有什么，并用 I have … 回答。",
+          "targets": [
+            "unit.p064"
+          ]
+        },
+        {
+          "sourceId": "cne_p061",
+          "name": "读懂教室短文",
+          "objective": "从教室通知中找出被要求完成的事项。",
+          "targets": [
+            "unit.p061"
+          ]
+        },
+        {
+          "sourceId": "cne_p065",
+          "name": "读懂书包里的物品",
+          "objective": "读书包描述，记录文具名称和颜色。",
+          "targets": [
+            "unit.p065"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第4单元 Healthy food",
+      "placements": [
+        {
+          "sourceId": "cne_p048",
+          "name": "短元音 u",
+          "objective": "在闭音节词里辨读 u 的短音 /ʌ/。",
+          "targets": [
+            "ph.short_vowels"
+          ]
+        },
+        {
+          "sourceId": "cne_p071",
+          "name": "u-e 的读音",
+          "objective": "通过 use、cute 等词辨认 u…e 的读音。",
+          "targets": [
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p020",
+          "name": "食物",
+          "objective": "认读食品名称并与实物或菜单图片对应。",
+          "targets": [
+            "unit.p020"
+          ],
+          "words": [
+            "bread",
+            "egg",
+            "rice",
+            "milk"
+          ]
+        },
+        {
+          "sourceId": "cne_p022",
+          "name": "表达想吃什么",
+          "objective": "向同伴表达食物喜好，并用 Have some … 邀请品尝。",
+          "targets": [
+            "unit.p022"
+          ]
+        },
+        {
+          "sourceId": "cne_p023",
+          "name": "读懂喜好短文",
+          "objective": "从饮食偏好短文中找出人物喜欢吃的食物。",
+          "targets": [
+            "unit.p023"
+          ]
+        },
+        {
+          "sourceId": "cne_p077",
+          "name": "晚餐食物",
+          "objective": "把晚餐食材或菜品的英文名称与图片对应。",
+          "targets": [
+            "unit.p077"
+          ],
+          "words": [
+            "beef",
+            "chicken",
+            "noodles",
+            "soup"
+          ]
+        },
+        {
+          "sourceId": "cne_p078",
+          "name": "Would you like 用餐",
+          "objective": "在用餐场合用 Would you like some …? 礼貌招待和回应。",
+          "targets": [
+            "vb.would_like",
+            "nn.quantity"
+          ]
+        },
+        {
+          "sourceId": "cne_p079",
+          "name": "读懂晚餐对话",
+          "objective": "从餐桌对话中记录每个人想要的食物。",
+          "targets": [
+            "unit.p079"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第5单元 Old things",
+      "placements": [
+        {
+          "sourceId": "cne_p034",
+          "name": "短元音 e",
+          "objective": "在短词里辨读 e 的短音 /e/。",
+          "targets": [
+            "ph.short_vowels"
+          ]
+        },
+        {
+          "sourceId": "cne_p076",
+          "name": "长元音 e",
+          "objective": "辨读 he、me、we 等开音节词中的 /iː/。",
+          "targets": [
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p025",
+          "name": "玩具和礼物",
+          "objective": "识别玩具或礼物并说出名称。",
+          "targets": [
+            "unit.p025"
+          ],
+          "words": [
+            "ball",
+            "doll",
+            "kite",
+            "boat"
+          ]
+        },
+        {
+          "sourceId": "cne_p044",
+          "name": "房间里的物品",
+          "objective": "给房间里的家具和个人用品标上英文名称。",
+          "targets": [
+            "unit.p044"
+          ],
+          "words": [
+            "desk",
+            "chair",
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "sourceId": "cne_p045",
+          "name": "in、on、under",
+          "objective": "用 in、on、under 描述物体的相对位置。",
+          "targets": [
+            "pp.place"
+          ]
+        },
+        {
+          "sourceId": "cne_p046",
+          "name": "询问位置",
+          "objective": "用 Where is …? 询问位置并听懂地点回答。",
+          "targets": [
+            "cpp.G0-U4.pragmatics"
+          ]
+        },
+        {
+          "sourceId": "cne_p047",
+          "name": "读懂位置",
+          "objective": "依照文字说明把物品放到正确位置。",
+          "targets": [
+            "unit.p047"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "semester": "下",
+      "unit": "第6单元 Numbers in life",
+      "placements": [
+        {
+          "sourceId": "cne_p049",
+          "name": "五个短元音复习",
+          "objective": "对照有无词尾 e 的拼写，比较短元音与长元音。",
+          "targets": [
+            "ph.short_vowels",
+            "ph.magic_e"
+          ]
+        },
+        {
+          "sourceId": "cne_p054",
+          "name": "11 到 20",
+          "objective": "听读 11 至 20，将英文数词与数字对应。",
+          "targets": [
+            "nu.cardinal"
+          ],
+          "words": [
+            "eleven",
+            "twelve",
+            "thirteen",
+            "twenty"
+          ]
+        },
+        {
+          "sourceId": "cne_p055",
+          "name": "How many 与 11 到 20",
+          "objective": "在 11 至 20 的范围内用 How many …? 完成问答。",
+          "targets": [
+            "sy.how_phrases",
+            "nu.cardinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p056",
+          "name": "读懂 11 到 20 的数量",
+          "objective": "从句子中准确读出十几件物品的数量。",
+          "targets": [
+            "unit.p028"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第1单元 Helping at home",
+      "placements": [
+        {
+          "sourceId": "cne_p080",
+          "name": "职业",
+          "objective": "将职业名称与相应人物或工作场景配对。",
+          "targets": [
+            "unit.p080"
+          ],
+          "words": [
+            "doctor",
+            "nurse",
+            "driver",
+            "farmer"
+          ]
+        },
+        {
+          "sourceId": "cne_p081",
+          "name": "询问职业与 his、her",
+          "objective": "用 his 或 her 指明谈论对象，再询问其职业。",
+          "targets": [
+            "unit.p081"
+          ]
+        },
+        {
+          "sourceId": "cne_p082",
+          "name": "介绍家人的职业",
+          "objective": "说明某位家人的职业，把人物与工作正确对应。",
+          "targets": [
+            "unit.p082"
+          ]
+        },
+        {
+          "sourceId": "cne_p083",
+          "name": "读懂家人职业",
+          "objective": "读人物介绍，整理每位家人的职业信息。",
+          "targets": [
+            "unit.p083"
+          ]
+        },
+        {
+          "sourceId": "cne_p209",
+          "name": "家务活动",
+          "objective": "把家务动作与对应的英文动词或短语配对。",
+          "targets": [
+            "cpp.G1-U6.vocab"
+          ],
+          "words": [
+            "cook",
+            "clean",
+            "wash",
+            "sweep"
+          ]
+        },
+        {
+          "sourceId": "cne_p210",
+          "name": "帮忙做家务",
+          "objective": "用 I can help … 或 Let me … 主动承担家务。",
+          "targets": [
+            "unit.p210"
+          ]
+        },
+        {
+          "sourceId": "cne_p211",
+          "name": "读懂快乐家庭介绍",
+          "objective": "读家庭介绍，标明每位家人承担的任务。",
+          "targets": [
+            "unit.p211"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第2单元 My friends",
+      "placements": [
+        {
+          "sourceId": "cne_p067",
+          "name": "描述朋友",
+          "objective": "选用表达外貌或相处特点的词描述朋友。",
+          "targets": [
+            "unit.p067"
+          ],
+          "words": [
+            "friend",
+            "strong",
+            "quiet",
+            "friendly"
+          ]
+        },
+        {
+          "sourceId": "cne_p068",
+          "name": "He has 与 I have",
+          "objective": "按主语在人称变化时正确选用 have 或 has。",
+          "targets": [
+            "vb.have"
+          ]
+        },
+        {
+          "sourceId": "cne_p069",
+          "name": "介绍朋友",
+          "objective": "结合 be 与 have 介绍朋友的外形特征。",
+          "targets": [
+            "unit.p069"
+          ]
+        },
+        {
+          "sourceId": "cne_p070",
+          "name": "读懂朋友介绍",
+          "objective": "从朋友介绍中提取姓名和人物特点。",
+          "targets": [
+            "unit.p070"
+          ]
+        },
+        {
+          "sourceId": "cne_p212",
+          "name": "朋友的品质",
+          "objective": "用性格与品质词说明朋友具有的特点。",
+          "targets": [
+            "unit.p212"
+          ],
+          "words": [
+            "kind",
+            "helpful",
+            "funny",
+            "honest"
+          ]
+        },
+        {
+          "sourceId": "cne_p213",
+          "name": "介绍并选择朋友",
+          "objective": "介绍朋友的优点，并给出选择伙伴的理由。",
+          "targets": [
+            "unit.p213"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第3单元 Places we live in",
+      "placements": [
+        {
+          "sourceId": "cne_p072",
+          "name": "家里的房间",
+          "objective": "根据家庭平面图说出不同房间的名称。",
+          "targets": [
+            "unit.p072"
+          ],
+          "words": [
+            "bedroom",
+            "kitchen",
+            "bathroom",
+            "study"
+          ]
+        },
+        {
+          "sourceId": "cne_p073",
+          "name": "is 和 are 说明人在哪里",
+          "objective": "看人物数量选 is 或 are，再用 in 说明所在房间。",
+          "targets": [
+            "unit.p073"
+          ]
+        },
+        {
+          "sourceId": "cne_p074",
+          "name": "询问家人在哪个房间",
+          "objective": "用 Where …? 确认家人在哪个房间。",
+          "targets": [
+            "unit.p074"
+          ]
+        },
+        {
+          "sourceId": "cne_p075",
+          "name": "读懂家里的位置",
+          "objective": "结合家庭场景短文定位人或物。",
+          "targets": [
+            "unit.p075"
+          ]
+        },
+        {
+          "sourceId": "cne_p214",
+          "name": "社区场所",
+          "objective": "识别社区场所及其英文名称。",
+          "targets": [
+            "unit.p214"
+          ],
+          "words": [
+            "park",
+            "shop",
+            "hospital",
+            "library"
+          ]
+        },
+        {
+          "sourceId": "cne_p215",
+          "name": "社区里人们做什么",
+          "objective": "描述人们在社区不同场所进行的活动。",
+          "targets": [
+            "unit.p215"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第4单元 Helping in the community",
+      "placements": [
+        {
+          "sourceId": "cne_p084",
+          "name": "学校场所",
+          "objective": "在校园图中辨认常见场所的英文名称。",
+          "targets": [
+            "unit.p084"
+          ],
+          "words": [
+            "school",
+            "playground",
+            "library",
+            "computer"
+          ]
+        },
+        {
+          "sourceId": "cne_p085",
+          "name": "楼层与 first、second",
+          "objective": "用 on the first/second floor 说明场所的楼层。",
+          "targets": [
+            "unit.p085"
+          ]
+        },
+        {
+          "sourceId": "cne_p086",
+          "name": "问路：学校里的场所",
+          "objective": "在校园里询问图书馆、操场等场所的位置。",
+          "targets": [
+            "unit.p086"
+          ]
+        },
+        {
+          "sourceId": "cne_p087",
+          "name": "读懂学校平面说明",
+          "objective": "读校园布局说明，找出地点所在的位置或楼层。",
+          "targets": [
+            "unit.p087"
+          ]
+        },
+        {
+          "sourceId": "cne_p216",
+          "name": "年轻人如何帮助社区",
+          "objective": "说明学生能以哪些行动帮助社区。",
+          "targets": [
+            "unit.p216"
+          ]
+        },
+        {
+          "sourceId": "cne_p217",
+          "name": "读懂学校帮手介绍",
+          "objective": "从学校帮手的介绍中找出帮忙的人和具体任务。",
+          "targets": [
+            "unit.p217"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第5单元 The weather and us",
+      "placements": [
+        {
+          "sourceId": "cne_p092",
+          "name": "天气",
+          "objective": "用常见天气词描述气温或天气状况。",
+          "targets": [
+            "unit.p092"
+          ],
+          "words": [
+            "warm",
+            "cold",
+            "cool",
+            "hot"
+          ]
+        },
+        {
+          "sourceId": "cne_p093",
+          "name": "It is 描述天气",
+          "objective": "问答某地天气，用 It’s … 描述当天状况。",
+          "targets": [
+            "unit.p093"
+          ]
+        },
+        {
+          "sourceId": "cne_p094",
+          "name": "谈论天气并给建议",
+          "objective": "结合天气给出适合当天的活动建议。",
+          "targets": [
+            "unit.p094"
+          ]
+        },
+        {
+          "sourceId": "cne_p095",
+          "name": "读懂天气预报",
+          "objective": "从天气消息中匹配城市和当地天气。",
+          "targets": [
+            "unit.p095"
+          ]
+        },
+        {
+          "sourceId": "cne_p218",
+          "name": "不同天气做什么",
+          "objective": "选择适合某种天气的活动并说出建议。",
+          "targets": [
+            "unit.p094"
+          ]
+        },
+        {
+          "sourceId": "cne_p219",
+          "name": "恶劣天气提醒",
+          "objective": "阅读恶劣天气提示，指出需要采取的防护行动。",
+          "targets": [
+            "unit.p219"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "第6单元 Changing for the seasons",
+      "placements": [
+        {
+          "sourceId": "cne_p100",
+          "name": "衣服",
+          "objective": "认读服装名称，留意 pants 等复数形式。",
+          "targets": [
+            "cpp.G0-U9.vocab"
+          ],
+          "words": [
+            "shirt",
+            "dress",
+            "skirt",
+            "pants"
+          ]
+        },
+        {
+          "sourceId": "cne_p101",
+          "name": "Whose 与名词所有格",
+          "objective": "用 Whose …? 询问衣物主人，用人名所有格回答。",
+          "targets": [
+            "sy.wh_questions",
+            "nn.possessive"
+          ]
+        },
+        {
+          "sourceId": "cne_p102",
+          "name": "谈论穿着",
+          "objective": "谈论喜欢的衣物，并说明所指衣物属于谁。",
+          "targets": [
+            "unit.p102"
+          ]
+        },
+        {
+          "sourceId": "cne_p103",
+          "name": "读懂衣服是谁的",
+          "objective": "从穿着或物品描述中找出主人。",
+          "targets": [
+            "unit.p103"
+          ]
+        },
+        {
+          "sourceId": "cne_p220",
+          "name": "季节里的活动",
+          "objective": "按季节归类常见活动，并读出相应动词短语。",
+          "targets": [
+            "unit.p220"
+          ],
+          "words": [
+            "swim",
+            "fly a kite",
+            "make a snowman",
+            "pick apples"
+          ]
+        },
+        {
+          "sourceId": "cne_p221",
+          "name": "读懂旅行卡片",
+          "objective": "读旅行卡，整理季节、衣着和活动之间的关系。",
+          "targets": [
+            "unit.p221"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "上",
+      "unit": "复习 Let's help!",
+      "placements": [
+        {
+          "sourceId": "cne_p222",
+          "name": "复习：一起帮忙",
+          "objective": "综合不同场景，找出提供帮助的人和所做的事。",
+          "targets": [
+            "unit.p222"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第1单元 Class rules",
+      "placements": [
+        {
+          "sourceId": "cne_p151",
+          "name": "规则用词",
+          "objective": "识别课堂公约中表示动作或动作方式的词。",
+          "targets": [
+            "unit.p151"
+          ],
+          "words": [
+            "quietly",
+            "talk",
+            "keep",
+            "desk"
+          ]
+        },
+        {
+          "sourceId": "cne_p152",
+          "name": "祈使句",
+          "objective": "用动词原形开头发布指令，用 Don’t … 表示禁止。",
+          "targets": [
+            "sy.imperative"
+          ]
+        },
+        {
+          "sourceId": "cne_p153",
+          "name": "说规则",
+          "objective": "用祈使句说明在教室或图书馆应怎样做。",
+          "targets": [
+            "unit.p153"
+          ]
+        },
+        {
+          "sourceId": "cne_p154",
+          "name": "读懂规则",
+          "objective": "读场所守则，判断给定行为是否允许。",
+          "targets": [
+            "unit.p154"
+          ]
+        },
+        {
+          "sourceId": "cne_p246",
+          "name": "must 与 mustn't 说班规",
+          "objective": "用 must/mustn’t 表达班级的要求与禁令。",
+          "targets": [
+            "unit.p246"
+          ]
+        },
+        {
+          "sourceId": "cne_p247",
+          "name": "制作班级规则海报",
+          "objective": "读班规海报，并挑选适合写入海报的规则句。",
+          "targets": [
+            "unit.p247"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第2单元 Family rules",
+      "placements": [
+        {
+          "sourceId": "cne_p199",
+          "name": "家规：have to 与 can't",
+          "objective": "用 have to、don’t have to 和 can’t 区分家庭义务、可选行为和禁止事项。",
+          "targets": [
+            "unit.p199"
+          ]
+        },
+        {
+          "sourceId": "cne_p229",
+          "name": "家规用词",
+          "objective": "认读描述家庭常规的家务与作息短语。",
+          "targets": [
+            "unit.p229"
+          ],
+          "words": [
+            "make the bed",
+            "do housework",
+            "keep quiet",
+            "go to bed early"
+          ]
+        },
+        {
+          "sourceId": "cne_p230",
+          "name": "用 have to 说家规",
+          "objective": "谈家规时区分必须、无须以及不允许做的事。",
+          "targets": [
+            "unit.p199"
+          ]
+        },
+        {
+          "sourceId": "cne_p231",
+          "name": "读懂家规短文",
+          "objective": "从家庭约定中找出义务和禁止事项。",
+          "targets": [
+            "unit.p231"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第3单元 Time for school",
+      "placements": [
+        {
+          "sourceId": "cne_p088",
+          "name": "一天中的活动",
+          "objective": "认读与日程有关的三餐及课程活动词。",
+          "targets": [
+            "unit.p088"
+          ],
+          "words": [
+            "breakfast",
+            "lunch",
+            "dinner",
+            "music"
+          ]
+        },
+        {
+          "sourceId": "cne_p089",
+          "name": "What time is it",
+          "objective": "根据钟面问答时刻，整点用 o’clock。",
+          "targets": [
+            "nu.time_date"
+          ]
+        },
+        {
+          "sourceId": "cne_p090",
+          "name": "说时刻和该做的事",
+          "objective": "用 It’s time for … 说明现在该进行的活动。",
+          "targets": [
+            "pr.it"
+          ]
+        },
+        {
+          "sourceId": "cne_p091",
+          "name": "读懂作息时刻",
+          "objective": "把作息描述整理为“时间—活动”对应表。",
+          "targets": [
+            "unit.p091"
+          ]
+        },
+        {
+          "sourceId": "cne_p248",
+          "name": "It's time to 该做什么",
+          "objective": "根据后接名词或动词选 It’s time for/to …。",
+          "targets": [
+            "pr.it"
+          ]
+        },
+        {
+          "sourceId": "cne_p249",
+          "name": "读懂作息时间表",
+          "objective": "从时刻表中配对钟点和活动。",
+          "targets": [
+            "rd.practical"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第4单元 Going shopping",
+      "placements": [
+        {
+          "sourceId": "cne_p104",
+          "name": "商店物品",
+          "objective": "认读商店所售配饰和日用品。",
+          "targets": [
+            "unit.p104"
+          ],
+          "words": [
+            "glove",
+            "scarf",
+            "umbrella",
+            "sunglasses"
+          ]
+        },
+        {
+          "sourceId": "cne_p105",
+          "name": "How much 询问价格",
+          "objective": "根据物品单复数，用 How much is/are …? 询价。",
+          "targets": [
+            "fn.shopping"
+          ]
+        },
+        {
+          "sourceId": "cne_p106",
+          "name": "在商店购物",
+          "objective": "完成招呼、询价、决定购买的购物对话。",
+          "targets": [
+            "fn.shopping"
+          ]
+        },
+        {
+          "sourceId": "cne_p107",
+          "name": "读懂价签",
+          "objective": "从商品标签或购买记录中匹配商品与标价。",
+          "targets": [
+            "unit.p107"
+          ]
+        },
+        {
+          "sourceId": "cne_p250",
+          "name": "购物用语 I'll take",
+          "objective": "购物时依次完成询价、确认物品与成交表达。",
+          "targets": [
+            "fn.shopping"
+          ]
+        },
+        {
+          "sourceId": "cne_p251",
+          "name": "读懂购物小票与价签",
+          "objective": "核对小票或价签上的品名与价格。",
+          "targets": [
+            "unit.p107"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第5单元 Farms and us",
+      "placements": [
+        {
+          "sourceId": "cne_p096",
+          "name": "农场",
+          "objective": "区分农场中的动物、蔬菜与作物名称。",
+          "targets": [
+            "unit.p096"
+          ],
+          "words": [
+            "tomato",
+            "potato",
+            "horse",
+            "cow"
+          ]
+        },
+        {
+          "sourceId": "cne_p097",
+          "name": "These are 与 Those are",
+          "objective": "指称多个物品时按远近选择 these 或 those。",
+          "targets": [
+            "pr.demonstrative"
+          ]
+        },
+        {
+          "sourceId": "cne_p098",
+          "name": "在农场谈论动物和蔬菜",
+          "objective": "用 Are these …? 确认所指的农产品。",
+          "targets": [
+            "unit.p098"
+          ]
+        },
+        {
+          "sourceId": "cne_p099",
+          "name": "读懂农场短文",
+          "objective": "从农场介绍中找出每种动物或蔬菜的数量。",
+          "targets": [
+            "unit.p099"
+          ]
+        },
+        {
+          "sourceId": "cne_p252",
+          "name": "农场动物与作物",
+          "objective": "区分农场动物和种植的作物。",
+          "targets": [
+            "unit.p096"
+          ],
+          "words": [
+            "hen",
+            "cow",
+            "horse",
+            "tomato",
+            "potato",
+            "carrot"
+          ]
+        },
+        {
+          "sourceId": "cne_p253",
+          "name": "There be 说农场有什么",
+          "objective": "用 There is/are 说明农场里有什么。",
+          "targets": [
+            "vb.there_be"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "第6单元 On the farm",
+      "placements": [
+        {
+          "sourceId": "cne_p200",
+          "name": "从农场到餐桌的食物",
+          "objective": "识别常见食物，并说明它们来自哪种农产品。",
+          "targets": [
+            "unit.p200"
+          ],
+          "words": [
+            "rice",
+            "wheat",
+            "milk",
+            "egg",
+            "bread"
+          ]
+        },
+        {
+          "sourceId": "cne_p232",
+          "name": "农场活动",
+          "objective": "认读种植、采摘、喂养等农场劳动短语。",
+          "targets": [
+            "unit.p232"
+          ],
+          "words": [
+            "milk cows",
+            "pick vegetables",
+            "feed chickens",
+            "plant seeds"
+          ]
+        },
+        {
+          "sourceId": "cne_p233",
+          "name": "在农场做什么",
+          "objective": "说明自己在农场能参与哪些劳动。",
+          "targets": [
+            "unit.p233"
+          ]
+        },
+        {
+          "sourceId": "cne_p234",
+          "name": "读懂农场劳动短文",
+          "objective": "从农场劳动记录中提取人物所做的工作。",
+          "targets": [
+            "unit.p234"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "semester": "下",
+      "unit": "复习 A great weekend plan",
+      "placements": [
+        {
+          "sourceId": "cne_p254",
+          "name": "周末计划词汇",
+          "objective": "认读制订休闲计划时用到的地点和活动词。",
+          "targets": [
+            "unit.p163"
+          ],
+          "words": [
+            "picnic",
+            "cinema",
+            "museum",
+            "visit",
+            "plan"
+          ]
+        },
+        {
+          "sourceId": "cne_p255",
+          "name": "用 will 说周末打算",
+          "objective": "用 will 加动词原形说出周末打算。",
+          "targets": [
+            "te.future"
+          ]
+        },
+        {
+          "sourceId": "cne_p256",
+          "name": "讨论精彩周末计划",
+          "objective": "询问周末打算，用 Let’s … 协商共同活动。",
+          "targets": [
+            "unit.p256"
+          ]
+        },
+        {
+          "sourceId": "cne_p257",
+          "name": "读懂周末计划短文",
+          "objective": "从周末计划提取时间、地点和活动。",
+          "targets": [
+            "unit.p166"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第1单元 Different friends",
+      "placements": [
+        {
+          "sourceId": "cne_p108",
+          "name": "开头辅音连缀 bl、cl、fl",
+          "objective": "听辨或拼读以 bl、cl、fl 起始的单词。",
+          "targets": [
+            "cpp.G3-U2.phonics"
+          ]
+        },
+        {
+          "sourceId": "cne_p198",
+          "name": "ai 和 ay 的读音",
+          "objective": "比较 rain 与 day 中不同拼写表示的相同元音。",
+          "targets": [
+            "ph.letter_teams"
+          ]
+        },
+        {
+          "sourceId": "cne_p109",
+          "name": "性格和外貌",
+          "objective": "辨认描写人物性格、年龄和外貌的形容词。",
+          "targets": [
+            "unit.p067"
+          ],
+          "words": [
+            "old",
+            "young",
+            "kind",
+            "strict"
+          ]
+        },
+        {
+          "sourceId": "cne_p110",
+          "name": "What is he like",
+          "objective": "用 What is … like? 询问性格，并与询问喜好区分。",
+          "targets": [
+            "unit.p110"
+          ]
+        },
+        {
+          "sourceId": "cne_p111",
+          "name": "描述老师",
+          "objective": "用 He/She is … 介绍老师的特点。",
+          "targets": [
+            "unit.p111"
+          ]
+        },
+        {
+          "sourceId": "cne_p112",
+          "name": "读懂老师介绍",
+          "objective": "从老师介绍中圈出反映其性格的词。",
+          "targets": [
+            "unit.p112"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第2单元 My feelings",
+      "placements": [
+        {
+          "sourceId": "cne_p175",
+          "name": "感受",
+          "objective": "用情绪词区分害怕、生气、高兴和难过。",
+          "targets": [
+            "unit.p175"
+          ],
+          "words": [
+            "angry",
+            "afraid",
+            "sad",
+            "happy"
+          ]
+        },
+        {
+          "sourceId": "cne_p177",
+          "name": "询问感受并建议",
+          "objective": "先询问对方的感受，再依据情绪提出建议。",
+          "targets": [
+            "unit.p177"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第3单元 Work and play",
+      "placements": [
+        {
+          "sourceId": "cne_p121",
+          "name": "能力动词",
+          "objective": "把才艺或运动动作与正确的动词配对。",
+          "targets": [
+            "unit.p121"
+          ],
+          "words": [
+            "sing",
+            "dance",
+            "draw",
+            "swim"
+          ]
+        },
+        {
+          "sourceId": "cne_p122",
+          "name": "can 表示能力",
+          "objective": "用 can 加动词原形说明具备某项能力。",
+          "targets": [
+            "vb.modal_can"
+          ]
+        },
+        {
+          "sourceId": "cne_p123",
+          "name": "谈论会做的事",
+          "objective": "用 What can you do? 问答自己会做的事。",
+          "targets": [
+            "unit.p123"
+          ]
+        },
+        {
+          "sourceId": "cne_p124",
+          "name": "读懂能力短文",
+          "objective": "把短文中提到的人物与其具备的能力配对。",
+          "targets": [
+            "unit.p124"
+          ]
+        },
+        {
+          "sourceId": "cne_p167",
+          "name": "爱好",
+          "objective": "认读常见兴趣项目，区分爱好和一次性活动。",
+          "targets": [
+            "unit.p167"
+          ],
+          "words": [
+            "hobby",
+            "hiking",
+            "puzzle",
+            "dancing"
+          ]
+        },
+        {
+          "sourceId": "cne_p168",
+          "name": "does 与第三人称单数",
+          "objective": "把三单陈述句改为 does 疑问句，实义动词还原。",
+          "targets": [
+            "te.present_simple_3rd",
+            "vb.third_person"
+          ]
+        },
+        {
+          "sourceId": "cne_p169",
+          "name": "谈论笔友和爱好",
+          "objective": "用第三人称介绍笔友的爱好。",
+          "targets": [
+            "unit.p169"
+          ]
+        },
+        {
+          "sourceId": "cne_p170",
+          "name": "读懂笔友介绍",
+          "objective": "从笔友介绍中找出居住地和兴趣。",
+          "targets": [
+            "unit.p170"
+          ]
+        },
+        {
+          "sourceId": "cne_p171",
+          "name": "更多职业",
+          "objective": "认读工业、邮政、商业等场景中的职业名称。",
+          "targets": [
+            "unit.p080"
+          ],
+          "words": [
+            "factory",
+            "worker",
+            "postman",
+            "businessman"
+          ]
+        },
+        {
+          "sourceId": "cne_p172",
+          "name": "What does he do",
+          "objective": "询问某人的职业，并追问其工作地点。",
+          "targets": [
+            "unit.p172"
+          ]
+        },
+        {
+          "sourceId": "cne_p173",
+          "name": "介绍职业和工作地点",
+          "objective": "把某人的职业和工作地点连成完整介绍。",
+          "targets": [
+            "unit.p082"
+          ]
+        },
+        {
+          "sourceId": "cne_p174",
+          "name": "读懂职业短文",
+          "objective": "读职业介绍，分别提取人物、岗位和工作地点。",
+          "targets": [
+            "unit.p174"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第4单元 Healthy habits",
+      "placements": [
+        {
+          "sourceId": "cne_p113",
+          "name": "星期",
+          "objective": "按一周顺序认读星期名称，注意首字母大写。",
+          "targets": [
+            "unit.p113"
+          ],
+          "words": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Friday"
+          ]
+        },
+        {
+          "sourceId": "cne_p114",
+          "name": "have 与 on Mondays",
+          "objective": "用 have 加学科、on 加星期说出某天的课程。",
+          "targets": [
+            "unit.p114"
+          ]
+        },
+        {
+          "sourceId": "cne_p115",
+          "name": "周末活动",
+          "objective": "认读表示周末家务、休闲和学习活动的词。",
+          "targets": [
+            "unit.p115"
+          ],
+          "words": [
+            "wash",
+            "watch",
+            "read",
+            "play"
+          ]
+        },
+        {
+          "sourceId": "cne_p116",
+          "name": "用 often 谈论日常",
+          "objective": "用 often 等频率词讲述自己的周末习惯。",
+          "targets": [
+            "ad.frequency",
+            "te.present_simple"
+          ]
+        },
+        {
+          "sourceId": "cne_p117",
+          "name": "读懂一周课程",
+          "objective": "从课程安排中查出某天上的课。",
+          "targets": [
+            "unit.p117"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第5单元 Food we eat",
+      "placements": [
+        {
+          "sourceId": "cne_p118",
+          "name": "餐食",
+          "objective": "认读餐点与饮料名称，能从菜单上找到它们。",
+          "targets": [
+            "unit.p077"
+          ],
+          "words": [
+            "tea",
+            "sandwich",
+            "salad",
+            "hamburger"
+          ]
+        },
+        {
+          "sourceId": "cne_p119",
+          "name": "What would you like to eat",
+          "objective": "用 What would you like …? 询问用餐选择并点餐。",
+          "targets": [
+            "cpp.G3-U2.pragmatics"
+          ]
+        },
+        {
+          "sourceId": "cne_p120",
+          "name": "读懂点餐",
+          "objective": "读点餐记录，确定人物所点的食品。",
+          "targets": [
+            "unit.p079"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "上",
+      "unit": "第6单元 Nature and us",
+      "placements": [
+        {
+          "sourceId": "cne_p125",
+          "name": "房间里的东西",
+          "objective": "为房间内的摆设和家具选择合适的英文名。",
+          "targets": [
+            "unit.p044"
+          ],
+          "words": [
+            "bed",
+            "photo",
+            "plant",
+            "clock"
+          ]
+        },
+        {
+          "sourceId": "cne_p126",
+          "name": "There is 与 There are",
+          "objective": "根据后面名词的数选用 There is 或 There are。",
+          "targets": [
+            "vb.there_be"
+          ]
+        },
+        {
+          "sourceId": "cne_p127",
+          "name": "描述自己的房间",
+          "objective": "用 there be 句型列举房间中的物品。",
+          "targets": [
+            "unit.p127"
+          ]
+        },
+        {
+          "sourceId": "cne_p128",
+          "name": "读懂房间短文",
+          "objective": "从房间描述里找出有哪些物品。",
+          "targets": [
+            "unit.p128"
+          ]
+        },
+        {
+          "sourceId": "cne_p129",
+          "name": "自然公园",
+          "objective": "认读公园中常见的自然地貌词。",
+          "targets": [
+            "unit.p129"
+          ],
+          "words": [
+            "river",
+            "lake",
+            "mountain",
+            "forest"
+          ]
+        },
+        {
+          "sourceId": "cne_p130",
+          "name": "Is there 与 Are there",
+          "objective": "用 Is there …? 或 Are there …? 询问是否存在某物。",
+          "targets": [
+            "vb.there_be",
+            "sy.yes_no"
+          ]
+        },
+        {
+          "sourceId": "cne_p131",
+          "name": "谈论公园里有什么",
+          "objective": "结合公园场景询问有哪些设施或自然景物。",
+          "targets": [
+            "unit.p131"
+          ]
+        },
+        {
+          "sourceId": "cne_p132",
+          "name": "读懂自然公园",
+          "objective": "根据公园介绍核对景物清单。",
+          "targets": [
+            "unit.p132"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第1单元 My day",
+      "placements": [
+        {
+          "sourceId": "cne_p133",
+          "name": "一天的活动",
+          "objective": "把从起床到睡觉的一天活动用英文短语排列。",
+          "targets": [
+            "unit.p133"
+          ],
+          "words": [
+            "get up",
+            "go to school",
+            "eat dinner",
+            "go to bed"
+          ]
+        },
+        {
+          "sourceId": "cne_p134",
+          "name": "When do you 询问时间",
+          "objective": "用 When do you …? 问日程，并以 at 加钟点回答。",
+          "targets": [
+            "unit.p134"
+          ]
+        },
+        {
+          "sourceId": "cne_p135",
+          "name": "谈论作息",
+          "objective": "用动作短语和时刻完整介绍自己的作息。",
+          "targets": [
+            "unit.p135"
+          ]
+        },
+        {
+          "sourceId": "cne_p136",
+          "name": "读懂一天的作息",
+          "objective": "读作息短文，把时间与事件逐项对应。",
+          "targets": [
+            "unit.p091"
+          ]
+        },
+        {
+          "sourceId": "cne_p258",
+          "name": "频率词 often usually sometimes",
+          "objective": "按频率高低区分 always、usually、often 等词。",
+          "targets": [
+            "ad.frequency"
+          ],
+          "words": [
+            "often",
+            "usually",
+            "sometimes",
+            "always",
+            "never"
+          ]
+        },
+        {
+          "sourceId": "cne_p259",
+          "name": "用频率词谈作息",
+          "objective": "用频度副词与具体时刻讲述生活习惯。",
+          "targets": [
+            "ad.frequency",
+            "wr.daily"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第2单元 My favourite season",
+      "placements": [
+        {
+          "sourceId": "cne_p137",
+          "name": "季节",
+          "objective": "辨认并拼写四季名称。",
+          "targets": [
+            "vo.activity_themes"
+          ],
+          "words": [
+            "spring",
+            "summer",
+            "autumn",
+            "winter"
+          ]
+        },
+        {
+          "sourceId": "cne_p138",
+          "name": "谈论最喜欢的季节",
+          "objective": "用 Which season … best? 交流最喜欢的季节。",
+          "targets": [
+            "unit.p138"
+          ]
+        },
+        {
+          "sourceId": "cne_p139",
+          "name": "读懂季节短文",
+          "objective": "阅读季节偏好介绍，找出所选季节及理由。",
+          "targets": [
+            "unit.p139"
+          ]
+        },
+        {
+          "sourceId": "cne_p260",
+          "name": "季节活动词汇",
+          "objective": "把季节与适合进行的活动短语配对。",
+          "targets": [
+            "unit.p220"
+          ],
+          "words": [
+            "plant flowers",
+            "swim",
+            "pick apples",
+            "make a snowman"
+          ]
+        },
+        {
+          "sourceId": "cne_p261",
+          "name": "Why 与 because 说理由",
+          "objective": "用 Why …? 和 Because … 解释选择某季节的理由。",
+          "targets": [
+            "sy.wh_questions",
+            "sy.conjunctions"
+          ]
+        },
+        {
+          "sourceId": "cne_p262",
+          "name": "读懂季节与理由短文",
+          "objective": "从短文中联系季节偏好、活动和原因。",
+          "targets": [
+            "unit.p139"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第3单元 My school calendar",
+      "placements": [
+        {
+          "sourceId": "cne_p140",
+          "name": "月份",
+          "objective": "把月份名称与一年中的顺序对应。",
+          "targets": [
+            "vo.activity_themes"
+          ],
+          "words": [
+            "March",
+            "May",
+            "October",
+            "December"
+          ]
+        },
+        {
+          "sourceId": "cne_p141",
+          "name": "in 加月份",
+          "objective": "表达在某月发生的事时选用介词 in。",
+          "targets": [
+            "pp.time"
+          ]
+        },
+        {
+          "sourceId": "cne_p142",
+          "name": "谈论节日在几月",
+          "objective": "说出某一节日在一年中的哪个月。",
+          "targets": [
+            "unit.p142"
+          ]
+        },
+        {
+          "sourceId": "cne_p143",
+          "name": "读懂校历",
+          "objective": "从校历中查找活动所在月份。",
+          "targets": [
+            "unit.p143"
+          ]
+        },
+        {
+          "sourceId": "cne_p263",
+          "name": "更多月份",
+          "objective": "辨认其余月份名称，补全全年十二个月。",
+          "targets": [
+            "vo.activity_themes"
+          ],
+          "words": [
+            "January",
+            "February",
+            "April",
+            "June",
+            "July",
+            "August",
+            "September",
+            "November"
+          ]
+        },
+        {
+          "sourceId": "cne_p264",
+          "name": "谈论校历活动月份",
+          "objective": "用 When is …? 和 in 加月份交流校历。",
+          "targets": [
+            "unit.p142"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第4单元 When is the art show",
+      "placements": [
+        {
+          "sourceId": "cne_p144",
+          "name": "序数词",
+          "objective": "区分“第几”和“几个”，读出常用序数词。",
+          "targets": [
+            "nu.ordinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p145",
+          "name": "说出日期",
+          "objective": "用月份和序数词说日期，具体日期前用 on。",
+          "targets": [
+            "nu.time_date",
+            "pp.time"
+          ]
+        },
+        {
+          "sourceId": "cne_p146",
+          "name": "读懂日期通知",
+          "objective": "从活动通知里定位日期。",
+          "targets": [
+            "rd.practical"
+          ]
+        },
+        {
+          "sourceId": "cne_p265",
+          "name": "更多序数词",
+          "objective": "辨读易错和复合序数词，如 twelfth、twenty-first。",
+          "targets": [
+            "nu.ordinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p266",
+          "name": "When is your birthday",
+          "objective": "问答生日的具体日期，选用 on 加日期。",
+          "targets": [
+            "unit.p266"
+          ]
+        },
+        {
+          "sourceId": "cne_p267",
+          "name": "读懂活动日程表",
+          "objective": "从活动日程中核对日期和对应事项。",
+          "targets": [
+            "rd.practical"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第5单元 Whose dog is it",
+      "placements": [
+        {
+          "sourceId": "cne_p147",
+          "name": "名词性物主代词",
+          "objective": "在名词省略时用 mine、yours 等说明归属。",
+          "targets": [
+            "pr.possessive_pron"
+          ]
+        },
+        {
+          "sourceId": "cne_p148",
+          "name": "现在进行时",
+          "objective": "用 be 加现在分词描述眼前正发生的动作。",
+          "targets": [
+            "te.present_continuous"
+          ]
+        },
+        {
+          "sourceId": "cne_p149",
+          "name": "Whose 与正在做的事",
+          "objective": "用 Whose …? 问主人，再用名词性物主代词回答。",
+          "targets": [
+            "unit.p149"
+          ]
+        },
+        {
+          "sourceId": "cne_p150",
+          "name": "读懂正在做的事",
+          "objective": "读进行时短文，把人物与正在做的事配对。",
+          "targets": [
+            "unit.p150"
+          ]
+        },
+        {
+          "sourceId": "cne_p268",
+          "name": "现在分词变化",
+          "objective": "按直接加、去 e、双写等规则构成现在分词。",
+          "targets": [
+            "vb.ing_form"
+          ]
+        },
+        {
+          "sourceId": "cne_p269",
+          "name": "看图说谁的与正在做什么",
+          "objective": "结合图片问答物品归属和人物当下的动作。",
+          "targets": [
+            "unit.p269"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "semester": "下",
+      "unit": "第6单元 Work quietly",
+      "placements": [
+        {
+          "sourceId": "cne_p270",
+          "name": "安静做事用词",
+          "objective": "认读公共秩序提示中表示安静、方向和整洁的词。",
+          "targets": [
+            "unit.p151"
+          ],
+          "words": [
+            "quietly",
+            "loudly",
+            "keep",
+            "clean",
+            "turn",
+            "right"
+          ]
+        },
+        {
+          "sourceId": "cne_p271",
+          "name": "Keep 与 No 类规则",
+          "objective": "辨认 Keep …、No + doing 等公共场所提示。",
+          "targets": [
+            "unit.p271"
+          ]
+        },
+        {
+          "sourceId": "cne_p272",
+          "name": "说图书馆与教室规则",
+          "objective": "用祈使句表达图书馆或教室对安静的要求。",
+          "targets": [
+            "unit.p153"
+          ]
+        },
+        {
+          "sourceId": "cne_p273",
+          "name": "正在做与遵守规则",
+          "objective": "描述眼前行为，并依据场所规则判断是否守规。",
+          "targets": [
+            "unit.p273"
+          ]
+        },
+        {
+          "sourceId": "cne_p274",
+          "name": "排队与轮流",
+          "objective": "用排队、轮流、靠右等表达提醒同伴。",
+          "targets": [
+            "unit.p274"
+          ]
+        },
+        {
+          "sourceId": "cne_p275",
+          "name": "读懂公共场所规则",
+          "objective": "阅读公共场所守则并判断某项行为是否合规。",
+          "targets": [
+            "unit.p154"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第1单元 Amazing places",
+      "placements": [
+        {
+          "sourceId": "cne_p155",
+          "name": "城市场所",
+          "objective": "把城市公共场所名称与对应服务配对。",
+          "targets": [
+            "unit.p155"
+          ],
+          "words": [
+            "hospital",
+            "cinema",
+            "bookstore",
+            "post office"
+          ]
+        },
+        {
+          "sourceId": "cne_p156",
+          "name": "左转、右转和直行",
+          "objective": "依路线用英语指示直行和左右转弯。",
+          "targets": [
+            "fn.ask_way"
+          ]
+        },
+        {
+          "sourceId": "cne_p157",
+          "name": "问路和指路",
+          "objective": "询问如何到达目的地，用方向和地标作答。",
+          "targets": [
+            "fn.ask_way"
+          ]
+        },
+        {
+          "sourceId": "cne_p158",
+          "name": "读懂指路",
+          "objective": "阅读路线指示，确定转弯位置和目的地。",
+          "targets": [
+            "unit.p158"
+          ]
+        },
+        {
+          "sourceId": "cne_p185",
+          "name": "规则动词过去式",
+          "objective": "按规则把动作动词改为一般过去式。",
+          "targets": [
+            "vb.past_form"
+          ]
+        },
+        {
+          "sourceId": "cne_p189",
+          "name": "不规则动词过去式",
+          "objective": "在叙述往事时正确选用不规则动词过去式。",
+          "targets": [
+            "vb.past_form"
+          ]
+        },
+        {
+          "sourceId": "cne_p186",
+          "name": "Did 提问",
+          "objective": "用 Did 开头询问过去动作，注意后接动词原形。",
+          "targets": [
+            "te.past_simple"
+          ]
+        },
+        {
+          "sourceId": "cne_p190",
+          "name": "谈论去过哪里",
+          "objective": "用 Where did … go? 询问过去的去向。",
+          "targets": [
+            "unit.p190"
+          ]
+        },
+        {
+          "sourceId": "cne_p191",
+          "name": "读懂旅行日记",
+          "objective": "读旅行日记，提取地点和所见所做。",
+          "targets": [
+            "unit.p191"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第2单元 Getting together",
+      "placements": [
+        {
+          "sourceId": "cne_p163",
+          "name": "周末计划",
+          "objective": "认读制订周末计划时涉及的地点和活动词。",
+          "targets": [
+            "unit.p163"
+          ],
+          "words": [
+            "film",
+            "trip",
+            "supermarket",
+            "dictionary"
+          ]
+        },
+        {
+          "sourceId": "cne_p164",
+          "name": "be going to 一般将来时",
+          "objective": "用 be going to 加动词原形说出已有打算。",
+          "targets": [
+            "te.future"
+          ]
+        },
+        {
+          "sourceId": "cne_p165",
+          "name": "谈论计划",
+          "objective": "用将来时介绍自己的周末安排。",
+          "targets": [
+            "te.future",
+            "wr.plan_wish"
+          ]
+        },
+        {
+          "sourceId": "cne_p166",
+          "name": "读懂周末计划",
+          "objective": "从计划中提取人物及其准备进行的活动。",
+          "targets": [
+            "unit.p166"
+          ]
+        },
+        {
+          "sourceId": "cne_p238",
+          "name": "聚会与邀请词汇",
+          "objective": "认读聚会邀请、参加和庆祝的相关词。",
+          "targets": [
+            "unit.p238"
+          ],
+          "words": [
+            "party",
+            "invite",
+            "together",
+            "join",
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第3单元 Healthy life",
+      "placements": [
+        {
+          "sourceId": "cne_p176",
+          "name": "should 提建议",
+          "objective": "用 should 或 shouldn’t 给出合适的建议。",
+          "targets": [
+            "vb.modal_must"
+          ]
+        },
+        {
+          "sourceId": "cne_p178",
+          "name": "读懂感受和建议",
+          "objective": "从对话中对应人物的情绪、困难及收到的建议。",
+          "targets": [
+            "unit.p178"
+          ]
+        },
+        {
+          "sourceId": "cne_p235",
+          "name": "健康生活词汇",
+          "objective": "识别饮食、运动和睡眠等健康习惯词。",
+          "targets": [
+            "unit.p235"
+          ],
+          "words": [
+            "healthy",
+            "exercise",
+            "sleep",
+            "diet",
+            "habit"
+          ]
+        },
+        {
+          "sourceId": "cne_p236",
+          "name": "健康习惯建议",
+          "objective": "针对日常习惯，用 should/shouldn’t 提出健康建议。",
+          "targets": [
+            "fn.advice_health",
+            "vb.modal_must"
+          ]
+        },
+        {
+          "sourceId": "cne_p237",
+          "name": "读懂健康生活短文",
+          "objective": "读健康生活介绍，整理习惯及相应建议。",
+          "targets": [
+            "unit.p237"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第4单元 Managing money well",
+      "placements": [
+        {
+          "sourceId": "cne_p201",
+          "name": "金钱与花销词汇",
+          "objective": "区分零花钱、储蓄、花费等概念的英文表达。",
+          "targets": [
+            "unit.p201"
+          ],
+          "words": [
+            "money",
+            "save",
+            "spend",
+            "cost",
+            "pocket money"
+          ]
+        },
+        {
+          "sourceId": "cne_p202",
+          "name": "用 hundred 和 thousand 说价格",
+          "objective": "用 hundred、thousand 准确读出较大金额。",
+          "targets": [
+            "nu.cardinal"
+          ]
+        },
+        {
+          "sourceId": "cne_p203",
+          "name": "读懂零花钱计划",
+          "objective": "阅读收支安排，分别找出打算花掉和存下的钱数。",
+          "targets": [
+            "unit.p203"
+          ]
+        },
+        {
+          "sourceId": "cne_p239",
+          "name": "谈论存钱计划",
+          "objective": "用将来表达说清零花钱准备怎样存、怎样用。",
+          "targets": [
+            "unit.p239"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第5单元 Exploring space",
+      "placements": [
+        {
+          "sourceId": "cne_p204",
+          "name": "太空词汇",
+          "objective": "给天体、航天器等太空主题词分类。",
+          "targets": [
+            "unit.p204"
+          ],
+          "words": [
+            "space",
+            "earth",
+            "moon",
+            "star",
+            "planet",
+            "rocket"
+          ]
+        },
+        {
+          "sourceId": "cne_p205",
+          "name": "用 will 说未来的太空生活",
+          "objective": "用 will 描述想象中的太空生活。",
+          "targets": [
+            "unit.p205"
+          ]
+        },
+        {
+          "sourceId": "cne_p206",
+          "name": "读懂太空短文",
+          "objective": "读一段航天介绍，整理人物、时间与事件。",
+          "targets": [
+            "unit.p206"
+          ]
+        },
+        {
+          "sourceId": "cne_p240",
+          "name": "谈论太空探索",
+          "objective": "用将来时讨论太空旅行或探索的设想。",
+          "targets": [
+            "unit.p205"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "上",
+      "unit": "第6单元 Energy, nature and us",
+      "placements": [
+        {
+          "sourceId": "cne_p159",
+          "name": "交通工具",
+          "objective": "辨认并比较日常交通工具的英文名称。",
+          "targets": [
+            "unit.p159"
+          ],
+          "words": [
+            "bus",
+            "plane",
+            "ship",
+            "train"
+          ]
+        },
+        {
+          "sourceId": "cne_p160",
+          "name": "must 与交通规则",
+          "objective": "用 must 或否定祈使句说明交通要求。",
+          "targets": [
+            "unit.p160"
+          ]
+        },
+        {
+          "sourceId": "cne_p161",
+          "name": "说明出行方式",
+          "objective": "说明上学采取的交通方式，恰当使用 by。",
+          "targets": [
+            "unit.p161"
+          ]
+        },
+        {
+          "sourceId": "cne_p162",
+          "name": "读懂交通规则",
+          "objective": "阅读交通提示并判断应当如何通行。",
+          "targets": [
+            "unit.p162"
+          ]
+        },
+        {
+          "sourceId": "cne_p207",
+          "name": "能源与节约词汇",
+          "objective": "辨认能源和节约用电有关的词语。",
+          "targets": [
+            "unit.p207"
+          ],
+          "words": [
+            "energy",
+            "power",
+            "save",
+            "turn off",
+            "solar",
+            "wind"
+          ]
+        },
+        {
+          "sourceId": "cne_p208",
+          "name": "读懂节能倡议",
+          "objective": "读节能倡议，提取建议实施的做法。",
+          "targets": [
+            "unit.p208"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "下",
+      "unit": "第1单元 How tall are you",
+      "placements": [
+        {
+          "sourceId": "cne_p179",
+          "name": "陈述句和疑问句的语调",
+          "objective": "朗读时根据陈述、祈使和问句类型调整句末语调。",
+          "targets": [
+            "ph.stress_intonation"
+          ]
+        },
+        {
+          "sourceId": "cne_p180",
+          "name": "身高和体重",
+          "objective": "区分身高与体重的单位及相关描述词。",
+          "targets": [
+            "unit.p180"
+          ],
+          "words": [
+            "metre",
+            "kilogram",
+            "size",
+            "heavy"
+          ]
+        },
+        {
+          "sourceId": "cne_p181",
+          "name": "形容词比较级",
+          "objective": "按拼写规则写出形容词比较级。",
+          "targets": [
+            "ad.comparative_form"
+          ]
+        },
+        {
+          "sourceId": "cne_p182",
+          "name": "用 than 比较",
+          "objective": "用比较级和 than 明确比较的双方。",
+          "targets": [
+            "ad.comparative_use"
+          ]
+        },
+        {
+          "sourceId": "cne_p183",
+          "name": "询问身高",
+          "objective": "用 How tall/heavy …? 分别询问身高和体重。",
+          "targets": [
+            "unit.p183"
+          ]
+        },
+        {
+          "sourceId": "cne_p184",
+          "name": "读懂比较短文",
+          "objective": "从人物数据中比较谁更高、更重等。",
+          "targets": [
+            "unit.p184"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "下",
+      "unit": "第2单元 Last weekend",
+      "placements": [
+        {
+          "sourceId": "cne_p241",
+          "name": "周末活动词汇",
+          "objective": "识别叙述上周末活动所用的动词短语及其过去式。",
+          "targets": [
+            "unit.p115"
+          ],
+          "words": [
+            "cleaned my room",
+            "washed my clothes",
+            "stayed at home",
+            "had a cold",
+            "slept",
+            "read a book"
+          ]
+        },
+        {
+          "sourceId": "cne_p242",
+          "name": "Did you 问周末活动",
+          "objective": "用 Did you …? 确认对方上周末是否做过某事。",
+          "targets": [
+            "te.past_simple",
+            "sy.yes_no"
+          ]
+        },
+        {
+          "sourceId": "cne_p243",
+          "name": "How was your weekend",
+          "objective": "用 How was …? 问体验，用 was 或 wasn’t 作评价。",
+          "targets": [
+            "unit.p243"
+          ]
+        },
+        {
+          "sourceId": "cne_p187",
+          "name": "谈论上周末",
+          "objective": "围绕上周末的行动用过去时问答。",
+          "targets": [
+            "unit.p187"
+          ]
+        },
+        {
+          "sourceId": "cne_p244",
+          "name": "用过去式说周末安排",
+          "objective": "连贯说出上周末做了什么、没做什么以及感受。",
+          "targets": [
+            "unit.p187"
+          ]
+        },
+        {
+          "sourceId": "cne_p188",
+          "name": "读懂上周末日记",
+          "objective": "从周末日记中找出已完成的活动。",
+          "targets": [
+            "unit.p188"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "下",
+      "unit": "第3单元 Where did you go",
+      "placements": [
+        {
+          "sourceId": "cne_p223",
+          "name": "假期活动词汇",
+          "objective": "认读假期活动短语，并识别其常用过去式。",
+          "targets": [
+            "unit.p223"
+          ],
+          "words": [
+            "rode a horse",
+            "went camping",
+            "went fishing",
+            "hurt my foot",
+            "took pictures",
+            "bought gifts"
+          ]
+        },
+        {
+          "sourceId": "cne_p224",
+          "name": "Where did you go 问去向",
+          "objective": "询问旅途目的地，用过去时回答。",
+          "targets": [
+            "unit.p190"
+          ]
+        },
+        {
+          "sourceId": "cne_p225",
+          "name": "What did you do 问活动",
+          "objective": "用 What did … do? 询问并说明已做的假期活动。",
+          "targets": [
+            "unit.p225"
+          ]
+        },
+        {
+          "sourceId": "cne_p226",
+          "name": "怎么去的与和谁去的",
+          "objective": "追问出行方式和同行的人，分别选用 how 和 who。",
+          "targets": [
+            "unit.p226"
+          ]
+        },
+        {
+          "sourceId": "cne_p227",
+          "name": "谈论假期旅行",
+          "objective": "连贯交流假期的目的地、活动、交通和同行者。",
+          "targets": [
+            "unit.p227"
+          ]
+        },
+        {
+          "sourceId": "cne_p228",
+          "name": "读懂假期旅行短文",
+          "objective": "读假期记录，归纳出行地点、同伴、方式和活动。",
+          "targets": [
+            "unit.p228"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "下",
+      "unit": "第4单元 Then and now",
+      "placements": [
+        {
+          "sourceId": "cne_p192",
+          "name": "过去和现在",
+          "objective": "辨认讲述今昔变化的时间词及描述词。",
+          "targets": [
+            "unit.p192"
+          ],
+          "words": [
+            "ago",
+            "different",
+            "active",
+            "Internet"
+          ]
+        },
+        {
+          "sourceId": "cne_p193",
+          "name": "was 与 were",
+          "objective": "按照主语选择 was/were，描述过去的状态或存在。",
+          "targets": [
+            "te.past_be",
+            "vb.there_be"
+          ]
+        },
+        {
+          "sourceId": "cne_p194",
+          "name": "比较过去和现在",
+          "objective": "用 before 与 now 对照过去和现在的状态。",
+          "targets": [
+            "te.past_be"
+          ]
+        },
+        {
+          "sourceId": "cne_p195",
+          "name": "读懂今昔对比",
+          "objective": "读变化描述，分清哪个细节属于过去或现在。",
+          "targets": [
+            "unit.p195"
+          ]
+        },
+        {
+          "sourceId": "cne_p196",
+          "name": "易混词 there、its、too",
+          "objective": "在句子中辨别 there/their、its/it’s 和 too/two。",
+          "targets": [
+            "unit.p196"
+          ],
+          "words": [
+            "there",
+            "their",
+            "its",
+            "it's",
+            "too",
+            "two"
+          ],
+          "note": "参考库将此项放在本册复习，册次仍待核。"
+        },
+        {
+          "sourceId": "cne_p197",
+          "name": "读懂一封短信",
+          "objective": "读一封简短信件，提取时间、地点和事件。",
+          "targets": [
+            "unit.p197"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "semester": "下",
+      "unit": "复习 Mike's happy days",
+      "placements": [
+        {
+          "sourceId": "cne_p245",
+          "name": "复习：Mike 的快乐日子",
+          "objective": "从综合复习材料中区分人物比较、周末和假期信息。",
+          "targets": [
+            "unit.p245"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "预备单元1 Hello!",
+      "placements": [
+        {
+          "sourceId": "cne_j003",
+          "name": "姓名与称呼",
+          "objective": "从初次结识的场景中辨认姓名、朋友和称呼用词。",
+          "targets": [
+            "unit.j003"
+          ],
+          "words": [
+            "name",
+            "friend",
+            "girl",
+            "boy"
+          ]
+        },
+        {
+          "sourceId": "cne_j005",
+          "name": "问候与自我介绍",
+          "objective": "向初次见面的人问好，并报出自己的名字。",
+          "targets": [
+            "fn.greetings"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "预备单元2 Keep Tidy!",
+      "placements": [
+        {
+          "sourceId": "cne_j013",
+          "name": "学习用品",
+          "objective": "识别书包或课桌上的个人物品及文具。",
+          "targets": [
+            "unit.p063"
+          ],
+          "words": [
+            "key",
+            "cap",
+            "pencil",
+            "ruler"
+          ]
+        },
+        {
+          "sourceId": "cne_j016",
+          "name": "确认物品是谁的",
+          "objective": "询问个人用品是否属于对方，并说明物主。",
+          "targets": [
+            "unit.p149"
+          ]
+        },
+        {
+          "sourceId": "cne_j017",
+          "name": "读物品归属",
+          "objective": "读物品说明，确定主人及放置位置。",
+          "targets": [
+            "unit.p103"
+          ]
+        },
+        {
+          "sourceId": "cne_j018",
+          "name": "房间与家具",
+          "objective": "辨认房间家具和物品的名称。",
+          "targets": [
+            "unit.p044"
+          ],
+          "words": [
+            "room",
+            "bed",
+            "table",
+            "chair"
+          ]
+        },
+        {
+          "sourceId": "cne_j020",
+          "name": "询问位置",
+          "objective": "问清一件物品在哪里，并用方位短语答复。",
+          "targets": [
+            "cpp.G0-U4.pragmatics"
+          ]
+        },
+        {
+          "sourceId": "cne_j021",
+          "name": "读房间描述",
+          "objective": "根据房间描述定位不同物品。",
+          "targets": [
+            "unit.p047"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "预备单元3 Welcome!",
+      "placements": [
+        {
+          "sourceId": "cne_j008",
+          "name": "指示代词 this、that、these、those",
+          "objective": "按距离和数量选择指示代词，并回答所指物品是什么。",
+          "targets": [
+            "pr.demonstrative"
+          ]
+        },
+        {
+          "sourceId": "cne_j009",
+          "name": "名词复数",
+          "objective": "在农场情境中区分规则复数与 sheep、geese 等特殊形式。",
+          "targets": [
+            "nn.plural",
+            "nn.plural_irregular"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第1单元 You and Me",
+      "placements": [
+        {
+          "sourceId": "cne_j004",
+          "name": "be 动词 am、is、are",
+          "objective": "在人物介绍中随主语选择 am、is 或 are。",
+          "targets": [
+            "vb.be"
+          ]
+        },
+        {
+          "sourceId": "cne_j014",
+          "name": "形容词性物主代词",
+          "objective": "在名词前依据物主选择 my、his、her 等词。",
+          "targets": [
+            "pr.possessive_adj"
+          ]
+        },
+        {
+          "sourceId": "cne_j015",
+          "name": "be 动词一般疑问句",
+          "objective": "把含 be 的陈述句转换为问句，确认对方身份。",
+          "targets": [
+            "sy.yes_no",
+            "vb.be"
+          ]
+        },
+        {
+          "sourceId": "cne_j006",
+          "name": "读自我介绍",
+          "objective": "读自我介绍，辨认说话者的姓名与身份。",
+          "targets": [
+            "unit.p008"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第2单元 We're Family!",
+      "placements": [
+        {
+          "sourceId": "cne_j001",
+          "name": "单词重音",
+          "objective": "在多音节词中标出重读音节，并按重音朗读。",
+          "targets": [
+            "ph.stress_intonation"
+          ]
+        },
+        {
+          "sourceId": "cne_j007",
+          "name": "家庭成员",
+          "objective": "用亲属称谓描述家庭成员之间的关系。",
+          "targets": [
+            "cpp.G1-U1.vocab"
+          ],
+          "words": [
+            "family",
+            "parent",
+            "sister",
+            "brother"
+          ]
+        },
+        {
+          "sourceId": "cne_j024",
+          "name": "do 与 does",
+          "objective": "用 do 或 does 构成关于家庭活动的问句及否定句。",
+          "targets": [
+            "te.present_simple",
+            "te.present_simple_3rd"
+          ]
+        },
+        {
+          "sourceId": "cne_j246",
+          "name": "名词所有格 's",
+          "objective": "用单数及复数所有格表达亲属或物品的归属。",
+          "targets": [
+            "nn.possessive"
+          ]
+        },
+        {
+          "sourceId": "cne_j011",
+          "name": "介绍家人",
+          "objective": "向新朋友说明家庭成员及其身份。",
+          "targets": [
+            "unit.p037"
+          ]
+        },
+        {
+          "sourceId": "cne_j012",
+          "name": "读家庭介绍",
+          "objective": "从家庭介绍中梳理人物之间的关系。",
+          "targets": [
+            "unit.p038"
+          ]
+        },
+        {
+          "sourceId": "cne_j079",
+          "name": "外貌",
+          "objective": "辨认描写家人身材、头发与长相的词。",
+          "targets": [
+            "unit.p067"
+          ],
+          "words": [
+            "handsome",
+            "tall",
+            "short",
+            "hair"
+          ]
+        },
+        {
+          "sourceId": "cne_j080",
+          "name": "描述外貌",
+          "objective": "用 be 描述身材，用 have 描述头发等外形特征。",
+          "targets": [
+            "unit.p069"
+          ]
+        },
+        {
+          "sourceId": "cne_j081",
+          "name": "询问长什么样",
+          "objective": "用 What does … look like? 询问人物外貌。",
+          "targets": [
+            "unit.j081"
+          ]
+        },
+        {
+          "sourceId": "cne_j082",
+          "name": "读人物外貌",
+          "objective": "根据外貌短文提取人物的辨识特征。",
+          "targets": [
+            "unit.p070"
+          ]
+        },
+        {
+          "sourceId": "cne_j023",
+          "name": "have 与 has",
+          "objective": "视主语选择 have 或 has 介绍家人的所有物。",
+          "targets": [
+            "vb.have"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第3单元 My School",
+      "placements": [
+        {
+          "sourceId": "cne_j075",
+          "name": "学校场所",
+          "objective": "辨认校园建筑、活动区域和阅读角等场所。",
+          "targets": [
+            "unit.p084"
+          ],
+          "words": [
+            "hall",
+            "building",
+            "dining hall",
+            "reading corner"
+          ]
+        },
+        {
+          "sourceId": "cne_j076",
+          "name": "There be 句型",
+          "objective": "用 there be 介绍校园中有哪些设施。",
+          "targets": [
+            "vb.there_be"
+          ]
+        },
+        {
+          "sourceId": "cne_j019",
+          "name": "方位介词",
+          "objective": "用 across from、in front of 等说明学校场所的相对位置。",
+          "targets": [
+            "pp.place"
+          ]
+        },
+        {
+          "sourceId": "cne_j077",
+          "name": "询问学校场所",
+          "objective": "询问校园是否有某处，并借助周边地标定位。",
+          "targets": [
+            "unit.j077"
+          ]
+        },
+        {
+          "sourceId": "cne_j078",
+          "name": "读学校位置",
+          "objective": "读校园布局说明，定位各处设施。",
+          "targets": [
+            "unit.p087"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第4单元 My Favourite Subject",
+      "placements": [
+        {
+          "sourceId": "cne_j098",
+          "name": "辅音与元音连读",
+          "objective": "前词以辅音结尾、后词以元音开头时，尝试把两个词连贯读出。",
+          "targets": [
+            "unit.j098"
+          ]
+        },
+        {
+          "sourceId": "cne_j040",
+          "name": "学科词汇",
+          "objective": "辨认课程表中各门学科的英文名称。",
+          "targets": [
+            "unit.j040"
+          ],
+          "words": [
+            "subject",
+            "science",
+            "history",
+            "geography"
+          ]
+        },
+        {
+          "sourceId": "cne_j029",
+          "name": "like 的句型",
+          "objective": "围绕学科喜好，用 like 完成肯定、否定和疑问表达。",
+          "targets": [
+            "te.present_simple",
+            "sy.yes_no"
+          ]
+        },
+        {
+          "sourceId": "cne_j041",
+          "name": "because 说明原因",
+          "objective": "对 Why 引导的问题用 because 说明理由。",
+          "targets": [
+            "sy.wh_questions",
+            "sy.conjunctions"
+          ]
+        },
+        {
+          "sourceId": "cne_j042",
+          "name": "谈论最喜欢的学科",
+          "objective": "说明最喜爱的学科，并给出与学科有关的理由。",
+          "targets": [
+            "unit.j042"
+          ]
+        },
+        {
+          "sourceId": "cne_j043",
+          "name": "读课程介绍",
+          "objective": "从课程介绍中提取学科偏好和选择原因。",
+          "targets": [
+            "unit.j043"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第5单元 Fun Clubs",
+      "placements": [
+        {
+          "sourceId": "cne_j107",
+          "name": "不完全爆破",
+          "objective": "在相邻爆破音处控制前一音的气流释放。",
+          "targets": [
+            "unit.j107"
+          ]
+        },
+        {
+          "sourceId": "cne_j044",
+          "name": "才艺与俱乐部",
+          "objective": "把音乐、棋类、舞蹈等才艺与合适的俱乐部对应。",
+          "targets": [
+            "unit.j044"
+          ],
+          "words": [
+            "guitar",
+            "chess",
+            "club",
+            "dance"
+          ]
+        },
+        {
+          "sourceId": "cne_j045",
+          "name": "情态动词 can",
+          "objective": "用 can/can’t 表达会做或不会做的事。",
+          "targets": [
+            "vb.modal_can"
+          ]
+        },
+        {
+          "sourceId": "cne_j046",
+          "name": "谈论才能与俱乐部",
+          "objective": "询问同伴的才艺，并讨论适合报名的社团。",
+          "targets": [
+            "unit.j025"
+          ]
+        },
+        {
+          "sourceId": "cne_j047",
+          "name": "读俱乐部广告",
+          "objective": "从招募广告中定位社团对才艺的要求。",
+          "targets": [
+            "unit.j047"
+          ]
+        },
+        {
+          "sourceId": "cne_j022",
+          "name": "球类运动",
+          "objective": "辨认运动社团中常见的球类项目。",
+          "targets": [
+            "unit.j022"
+          ],
+          "words": [
+            "basketball",
+            "soccer",
+            "tennis",
+            "volleyball"
+          ]
+        },
+        {
+          "sourceId": "cne_j025",
+          "name": "谈论社团运动",
+          "objective": "交流会做的球类运动，并表达加入社团的意愿。",
+          "targets": [
+            "unit.j025"
+          ]
+        },
+        {
+          "sourceId": "cne_j026",
+          "name": "读体育社团短文",
+          "objective": "从体育社团介绍中查出成员能力和活动日期。",
+          "targets": [
+            "unit.j026"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第6单元 A Day in the Life",
+      "placements": [
+        {
+          "sourceId": "cne_j048",
+          "name": "日常作息",
+          "objective": "辨认描述个人日程、学习和锻炼的词语。",
+          "targets": [
+            "unit.p133"
+          ],
+          "words": [
+            "shower",
+            "exercise",
+            "quarter",
+            "homework"
+          ]
+        },
+        {
+          "sourceId": "cne_j049",
+          "name": "时刻表达",
+          "objective": "对同一钟点使用数字读法或 past/to 表达。",
+          "targets": [
+            "nu.time_date"
+          ]
+        },
+        {
+          "sourceId": "cne_j051",
+          "name": "谈论作息时间",
+          "objective": "询问并介绍每天做事的具体时间。",
+          "targets": [
+            "unit.p135"
+          ]
+        },
+        {
+          "sourceId": "cne_j052",
+          "name": "读一天的安排",
+          "objective": "从日程介绍中还原时间与活动的对应关系。",
+          "targets": [
+            "unit.p091"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "第7单元 Happy Birthday!",
+      "placements": [
+        {
+          "sourceId": "cne_j002",
+          "name": "句末升降调",
+          "objective": "比较陈述句与两类问句的句末音高走向。",
+          "targets": [
+            "ph.stress_intonation"
+          ]
+        },
+        {
+          "sourceId": "cne_j036",
+          "name": "月份与序数词",
+          "objective": "把英文月份与表示日期的序数词联系起来。",
+          "targets": [
+            "vo.activity_themes",
+            "nu.ordinal"
+          ],
+          "words": [
+            "January",
+            "February",
+            "March",
+            "April"
+          ]
+        },
+        {
+          "sourceId": "cne_j037",
+          "name": "When 问日期",
+          "objective": "用 When …? 和“月份＋日期”交换日程信息。",
+          "targets": [
+            "nu.time_date",
+            "sy.wh_questions"
+          ]
+        },
+        {
+          "sourceId": "cne_j038",
+          "name": "谈论生日",
+          "objective": "围绕生日交流具体日期与年龄。",
+          "targets": [
+            "unit.p266"
+          ]
+        },
+        {
+          "sourceId": "cne_j039",
+          "name": "读生日安排",
+          "objective": "读生日活动安排，找出日期与对应活动。",
+          "targets": [
+            "rd.practical"
+          ]
+        },
+        {
+          "sourceId": "cne_j032",
+          "name": "生日聚会",
+          "objective": "识别生日聚会中的物品和活动用语。",
+          "targets": [
+            "unit.p238"
+          ],
+          "words": [
+            "birthday",
+            "party",
+            "cake",
+            "balloon"
+          ]
+        },
+        {
+          "sourceId": "cne_j033",
+          "name": "How much 问价格",
+          "objective": "为生日聚会询问蛋糕或装饰物的价格。",
+          "targets": [
+            "fn.shopping"
+          ]
+        },
+        {
+          "sourceId": "cne_j034",
+          "name": "为聚会询价",
+          "objective": "为聚会采购时完成询价，并说明购买决定。",
+          "targets": [
+            "fn.shopping"
+          ]
+        },
+        {
+          "sourceId": "cne_j035",
+          "name": "读聚会购物",
+          "objective": "读购物对话，记录聚会用品的价格和购买决定。",
+          "targets": [
+            "unit.j035"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "上",
+      "unit": "待核",
+      "placements": [
+        {
+          "sourceId": "cne_j053",
+          "name": "交通方式",
+          "objective": "辨认并区分公共交通和个人出行工具。",
+          "targets": [
+            "unit.p159"
+          ],
+          "words": [
+            "train",
+            "subway",
+            "bike",
+            "bus"
+          ]
+        },
+        {
+          "sourceId": "cne_j054",
+          "name": "How 问交通",
+          "objective": "分别询问交通方式、通勤时长与路程。",
+          "targets": [
+            "unit.j054"
+          ]
+        },
+        {
+          "sourceId": "cne_j055",
+          "name": "谈论怎么上学",
+          "objective": "说明上学采用的交通工具及所需时间。",
+          "targets": [
+            "unit.p161"
+          ]
+        },
+        {
+          "sourceId": "cne_j056",
+          "name": "读上学方式",
+          "objective": "从通勤介绍中找出交通方式和花费时间。",
+          "targets": [
+            "unit.j056"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第1单元 Animal Friends",
+      "placements": [
+        {
+          "sourceId": "cne_j010",
+          "name": "词尾 s 的读音",
+          "objective": "根据前一个音区分复数或三单词尾的 /s/、/z/、/ɪz/。",
+          "targets": [
+            "cpp.G1-U6.phonics"
+          ]
+        },
+        {
+          "sourceId": "cne_j062",
+          "name": "动物",
+          "objective": "辨认常见野生动物的英文名称。",
+          "targets": [
+            "unit.p017"
+          ],
+          "words": [
+            "tiger",
+            "elephant",
+            "panda",
+            "koala"
+          ]
+        },
+        {
+          "sourceId": "cne_j063",
+          "name": "Why 与 because",
+          "objective": "用 why 提出原因问题，再给出 because 从句。",
+          "targets": [
+            "sy.wh_questions",
+            "sy.conjunctions"
+          ]
+        },
+        {
+          "sourceId": "cne_j064",
+          "name": "描述性形容词",
+          "objective": "选用 be 和形容词描述动物的特征。",
+          "targets": [
+            "ad.adj_basic",
+            "vb.be"
+          ]
+        },
+        {
+          "sourceId": "cne_j065",
+          "name": "谈论动物",
+          "objective": "谈论喜欢的动物、其来源及选择原因。",
+          "targets": [
+            "unit.j065"
+          ]
+        },
+        {
+          "sourceId": "cne_j066",
+          "name": "读动物介绍",
+          "objective": "从动物介绍中提取产地和特点。",
+          "targets": [
+            "unit.j066"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第2单元 No Rules, No Order",
+      "placements": [
+        {
+          "sourceId": "cne_j057",
+          "name": "校规词汇",
+          "objective": "识别校园行为规范中的场所、物品与行为词。",
+          "targets": [
+            "unit.j057"
+          ],
+          "words": [
+            "rule",
+            "hallway",
+            "fight",
+            "uniform"
+          ]
+        },
+        {
+          "sourceId": "cne_j058",
+          "name": "祈使句",
+          "objective": "将指令分别写为肯定和否定的祈使句。",
+          "targets": [
+            "sy.imperative"
+          ]
+        },
+        {
+          "sourceId": "cne_j059",
+          "name": "must 与 have to",
+          "objective": "比较 must、have to 与 can’t 所表达的义务或禁止。",
+          "targets": [
+            "vb.modal_must",
+            "vb.modal_can"
+          ]
+        },
+        {
+          "sourceId": "cne_j060",
+          "name": "说明规则",
+          "objective": "用表示义务或禁止的情态动词说明校规。",
+          "targets": [
+            "unit.p246"
+          ]
+        },
+        {
+          "sourceId": "cne_j061",
+          "name": "读校规",
+          "objective": "依照校规判断某种行为是否允许。",
+          "targets": [
+            "unit.p154"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第3单元 Keep Fit",
+      "placements": [
+        {
+          "sourceId": "cne_j103",
+          "name": "运动习惯",
+          "objective": "辨认锻炼习惯和运动频次的相关词。",
+          "targets": [
+            "unit.j103"
+          ],
+          "words": [
+            "exercise",
+            "hardly",
+            "twice",
+            "Internet"
+          ]
+        },
+        {
+          "sourceId": "cne_j247",
+          "name": "名词性物主代词",
+          "objective": "把物主形容词与名词替换为适当的名词性物主代词。",
+          "targets": [
+            "pr.possessive_pron"
+          ]
+        },
+        {
+          "sourceId": "cne_j050",
+          "name": "频度副词",
+          "objective": "按动作发生的频率选择 always、usually、sometimes 或 never。",
+          "targets": [
+            "ad.frequency"
+          ]
+        },
+        {
+          "sourceId": "cne_j104",
+          "name": "How often 问频率",
+          "objective": "围绕 How often …? 用次数或频度副词回答。",
+          "targets": [
+            "ad.frequency"
+          ]
+        },
+        {
+          "sourceId": "cne_j105",
+          "name": "谈论锻炼频率",
+          "objective": "用频度副词或次数问答平日锻炼习惯。",
+          "targets": [
+            "ad.frequency"
+          ]
+        },
+        {
+          "sourceId": "cne_j106",
+          "name": "读锻炼调查",
+          "objective": "比较调查对象的锻炼记录，判断谁运动得更频繁。",
+          "targets": [
+            "unit.j106"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第4单元 Eat Well",
+      "placements": [
+        {
+          "sourceId": "cne_j027",
+          "name": "食物",
+          "objective": "从常用饮食词汇中识别水果、餐点和甜品。",
+          "targets": [
+            "unit.p020"
+          ],
+          "words": [
+            "banana",
+            "hamburger",
+            "salad",
+            "ice-cream"
+          ]
+        },
+        {
+          "sourceId": "cne_j028",
+          "name": "可数与不可数名词",
+          "objective": "依据名词是否可数选择 a、an 或 some。",
+          "targets": [
+            "nn.countable",
+            "ar.a_an",
+            "nn.quantity"
+          ]
+        },
+        {
+          "sourceId": "cne_j248",
+          "name": "选择疑问句",
+          "objective": "用 or 提供备选项，按选项内容作答。",
+          "targets": [
+            "unit.j248"
+          ]
+        },
+        {
+          "sourceId": "cne_j030",
+          "name": "谈论食物",
+          "objective": "与同伴交流饮食喜好，说明喜欢和不喜欢的食物。",
+          "targets": [
+            "cpp.G0-U7.grammar.p021"
+          ]
+        },
+        {
+          "sourceId": "cne_j031",
+          "name": "读饮食短文",
+          "objective": "把饮食短文中的人物与其偏好对应起来。",
+          "targets": [
+            "unit.p023"
+          ]
+        },
+        {
+          "sourceId": "cne_j083",
+          "name": "点餐食物",
+          "objective": "辨认点餐用的肉类、蔬菜和主食名。",
+          "targets": [
+            "unit.p077"
+          ],
+          "words": [
+            "noodle",
+            "mutton",
+            "cabbage",
+            "dumpling"
+          ]
+        },
+        {
+          "sourceId": "cne_j084",
+          "name": "would like",
+          "objective": "用 would like 点餐，按语境选 some 或 any。",
+          "targets": [
+            "vb.would_like",
+            "nn.quantity"
+          ]
+        },
+        {
+          "sourceId": "cne_j085",
+          "name": "点餐用语",
+          "objective": "在餐馆询问种类，向服务员说明要点的食物。",
+          "targets": [
+            "cpp.G3-U2.pragmatics"
+          ]
+        },
+        {
+          "sourceId": "cne_j086",
+          "name": "读点餐对话",
+          "objective": "从点餐对话里找出食物类型及份量大小。",
+          "targets": [
+            "unit.p079"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第5单元 Here and Now",
+      "placements": [
+        {
+          "sourceId": "cne_j067",
+          "name": "正在进行的活动",
+          "objective": "认读描述人物当下活动所需的生活词汇。",
+          "targets": [
+            "unit.j067"
+          ],
+          "words": [
+            "newspaper",
+            "soup",
+            "movie",
+            "just"
+          ]
+        },
+        {
+          "sourceId": "cne_j068",
+          "name": "现在进行时的构成",
+          "objective": "用 am/is/are 与现在分词组成进行时。",
+          "targets": [
+            "te.present_continuous"
+          ]
+        },
+        {
+          "sourceId": "cne_j069",
+          "name": "询问正在做什么",
+          "objective": "在电话里询问别人此刻正在做什么。",
+          "targets": [
+            "unit.j069"
+          ]
+        },
+        {
+          "sourceId": "cne_j070",
+          "name": "读正在发生的事",
+          "objective": "在进行时短文中把人物与当下的动作配对。",
+          "targets": [
+            "unit.p150"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第6单元 Rain or Shine",
+      "placements": [
+        {
+          "sourceId": "cne_j071",
+          "name": "天气",
+          "objective": "从天气词中区分降水与风、云、晴等天气状况。",
+          "targets": [
+            "unit.p092"
+          ],
+          "words": [
+            "rain",
+            "windy",
+            "cloudy",
+            "sunny"
+          ]
+        },
+        {
+          "sourceId": "cne_j073",
+          "name": "谈论天气",
+          "objective": "询问天气，并描述正在发生的天气变化。",
+          "targets": [
+            "unit.p093"
+          ]
+        },
+        {
+          "sourceId": "cne_j074",
+          "name": "读天气消息",
+          "objective": "从多地天气播报里对应地点和状况。",
+          "targets": [
+            "unit.p095"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第7单元 A Day to Remember",
+      "placements": [
+        {
+          "sourceId": "cne_j087",
+          "name": "旅行活动",
+          "objective": "识别游览场所与旅途中可能参与的活动。",
+          "targets": [
+            "unit.p223"
+          ],
+          "words": [
+            "museum",
+            "farm",
+            "fire",
+            "flower"
+          ]
+        },
+        {
+          "sourceId": "cne_j088",
+          "name": "was 与 were",
+          "objective": "描述旅行中已过去的状态并选择 was 或 were。",
+          "targets": [
+            "te.past_be"
+          ]
+        },
+        {
+          "sourceId": "cne_j089",
+          "name": "规则动词过去式",
+          "objective": "按规则拼写动词过去式。",
+          "targets": [
+            "vb.past_form"
+          ]
+        },
+        {
+          "sourceId": "cne_j090",
+          "name": "过去式 ed 的读音",
+          "objective": "按动词末音判断 -ed 应读 /t/、/d/ 还是 /ɪd/。",
+          "targets": [
+            "cpp.G2-U6.phonics"
+          ]
+        },
+        {
+          "sourceId": "cne_j091",
+          "name": "谈论一次旅行",
+          "objective": "询问旅途体验，并叙述已经完成的活动。",
+          "targets": [
+            "unit.p227"
+          ]
+        },
+        {
+          "sourceId": "cne_j092",
+          "name": "读旅行日记",
+          "objective": "从旅行日记中找出行程、活动和作者感受。",
+          "targets": [
+            "unit.p191"
+          ]
+        },
+        {
+          "sourceId": "cne_j093",
+          "name": "周末活动",
+          "objective": "识别与周末游玩地点和休闲活动有关的词。",
+          "targets": [
+            "unit.p115"
+          ],
+          "words": [
+            "lake",
+            "beach",
+            "badminton",
+            "visitor"
+          ]
+        },
+        {
+          "sourceId": "cne_j096",
+          "name": "谈论上周末",
+          "objective": "用过去时询问并讲述上周末的活动。",
+          "targets": [
+            "unit.p187"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "第8单元 Once upon a Time",
+      "placements": [
+        {
+          "sourceId": "cne_j094",
+          "name": "Did 提问",
+          "objective": "用 Did …? 开头询问过去的行为。",
+          "targets": [
+            "te.past_simple"
+          ]
+        },
+        {
+          "sourceId": "cne_j095",
+          "name": "不规则动词过去式",
+          "objective": "在过去时句子中写出常用动词的不规则变化。",
+          "targets": [
+            "vb.past_form"
+          ]
+        },
+        {
+          "sourceId": "cne_j163",
+          "name": "故事用词",
+          "objective": "识别传统故事中的人物、物品和性格词。",
+          "targets": [
+            "unit.j163"
+          ],
+          "words": [
+            "emperor",
+            "stupid",
+            "stone",
+            "weak"
+          ]
+        },
+        {
+          "sourceId": "cne_j166",
+          "name": "复述故事",
+          "objective": "按先后顺序用过去时复述人物、行动和结局。",
+          "targets": [
+            "unit.j166"
+          ]
+        },
+        {
+          "sourceId": "cne_j167",
+          "name": "读神话故事",
+          "objective": "整理神话故事的主要人物和关键行动。",
+          "targets": [
+            "unit.j167"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "semester": "下",
+      "unit": "待核",
+      "placements": [
+        {
+          "sourceId": "cne_j097",
+          "name": "读周末日记",
+          "objective": "从周末日记中提取活动及同行者。",
+          "targets": [
+            "unit.p188"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第1单元 Happy Holiday",
+      "placements": [
+        {
+          "sourceId": "cne_j099",
+          "name": "假期地点",
+          "objective": "辨认海滨、山地和博物馆等度假目的地。",
+          "targets": [
+            "unit.j099"
+          ],
+          "words": [
+            "vacation",
+            "beach",
+            "museum",
+            "mountain"
+          ]
+        },
+        {
+          "sourceId": "cne_j100",
+          "name": "一般过去时叙述假期",
+          "objective": "用一般过去时讲述假期的地点和经历。",
+          "targets": [
+            "te.past_simple",
+            "wr.experience"
+          ]
+        },
+        {
+          "sourceId": "cne_j249",
+          "name": "不定代词 something 与 anything",
+          "objective": "在假期叙述中选用表示人或事物的不定代词。",
+          "targets": [
+            "pr.indefinite"
+          ]
+        },
+        {
+          "sourceId": "cne_j101",
+          "name": "谈论假期去向",
+          "objective": "询问假期目的地，依据事实用过去时回答。",
+          "targets": [
+            "unit.p190"
+          ]
+        },
+        {
+          "sourceId": "cne_j102",
+          "name": "读假期短文",
+          "objective": "读假期记录，整理地点与发生的活动。",
+          "targets": [
+            "unit.p228"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第2单元 Home Sweet Home",
+      "placements": [
+        {
+          "sourceId": "cne_j137",
+          "name": "意群停顿",
+          "objective": "按句意把话语切分为意群，在合理边界停顿。",
+          "targets": [
+            "unit.j137"
+          ]
+        },
+        {
+          "sourceId": "cne_j150",
+          "name": "家务",
+          "objective": "认读家庭劳动和家务分工相关词。",
+          "targets": [
+            "cpp.G1-U6.vocab"
+          ],
+          "words": [
+            "chore",
+            "rubbish",
+            "fold",
+            "sweep"
+          ]
+        },
+        {
+          "sourceId": "cne_j151",
+          "name": "could 表示请求",
+          "objective": "用 Could you please …? 请求对方做事。",
+          "targets": [
+            "vb.modal_can",
+            "fn.request_help"
+          ]
+        },
+        {
+          "sourceId": "cne_j152",
+          "name": "礼貌提出请求",
+          "objective": "提出家务请求，并礼貌接受或拒绝。",
+          "targets": [
+            "fn.request_help"
+          ]
+        },
+        {
+          "sourceId": "cne_j153",
+          "name": "读家务对话",
+          "objective": "从家务协商对话整理每个人的任务。",
+          "targets": [
+            "unit.j153"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第3单元 Same or Different?",
+      "placements": [
+        {
+          "sourceId": "cne_j108",
+          "name": "性格形容词",
+          "objective": "辨认描述性格的形容词，区分外向、严肃和安静等特点。",
+          "targets": [
+            "unit.p212"
+          ],
+          "words": [
+            "outgoing",
+            "serious",
+            "loud",
+            "quiet"
+          ]
+        },
+        {
+          "sourceId": "cne_j109",
+          "name": "形容词比较级",
+          "objective": "为不同长度的形容词选择 -er 或 more。",
+          "targets": [
+            "ad.comparative_form"
+          ]
+        },
+        {
+          "sourceId": "cne_j110",
+          "name": "用 than 比较",
+          "objective": "借助 than 说明两个人或事物的差异。",
+          "targets": [
+            "ad.comparative_use"
+          ]
+        },
+        {
+          "sourceId": "cne_j250",
+          "name": "as ... as 同级比较",
+          "objective": "用 as … as 或 not as … as 表达同级比较。",
+          "targets": [
+            "unit.j250"
+          ]
+        },
+        {
+          "sourceId": "cne_j111",
+          "name": "比较两人",
+          "objective": "用比较句说出两个人在外貌或性格上的不同。",
+          "targets": [
+            "unit.j111"
+          ]
+        },
+        {
+          "sourceId": "cne_j112",
+          "name": "读人物比较",
+          "objective": "读人物对比，根据细节判断谁具有更突出的特征。",
+          "targets": [
+            "unit.p184"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第4单元 Amazing Plants and Animals",
+      "placements": [
+        {
+          "sourceId": "cne_j114",
+          "name": "形容词最高级",
+          "objective": "在三个及以上对象中用最高级描述最突出的一项。",
+          "targets": [
+            "ad.comparative_form",
+            "ad.superlative"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第5单元 What a Delicious Meal!",
+      "placements": [
+        {
+          "sourceId": "cne_j072",
+          "name": "感叹句",
+          "objective": "按中心词选择 What 或 How 构成感叹句。",
+          "targets": [
+            "sy.exclamation"
+          ]
+        },
+        {
+          "sourceId": "cne_j129",
+          "name": "烹饪用词",
+          "objective": "辨认食材、分量工具和厨房用具。",
+          "targets": [
+            "unit.j129"
+          ],
+          "words": [
+            "yogurt",
+            "honey",
+            "spoon",
+            "blender"
+          ]
+        },
+        {
+          "sourceId": "cne_j130",
+          "name": "顺序词 first、next、then",
+          "objective": "用顺序词组织一串祈使句，交代操作次序。",
+          "targets": [
+            "unit.j130"
+          ]
+        },
+        {
+          "sourceId": "cne_j131",
+          "name": "说明做法",
+          "objective": "询问一种食物的制作方法，并分步骤解释。",
+          "targets": [
+            "unit.j131"
+          ]
+        },
+        {
+          "sourceId": "cne_j132",
+          "name": "读食谱",
+          "objective": "读食谱，分别整理所需材料和制作顺序。",
+          "targets": [
+            "unit.j132"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第6单元 Plan for Yourself",
+      "placements": [
+        {
+          "sourceId": "cne_j121",
+          "name": "职业打算",
+          "objective": "认读谈职业理想时使用的职业词和教育地点词。",
+          "targets": [
+            "unit.p080"
+          ],
+          "words": [
+            "scientist",
+            "engineer",
+            "pilot",
+            "college"
+          ]
+        },
+        {
+          "sourceId": "cne_j122",
+          "name": "be going to 表示打算",
+          "objective": "用 be going to 表达已经形成的计划。",
+          "targets": [
+            "te.future"
+          ]
+        },
+        {
+          "sourceId": "cne_j118",
+          "name": "不定式作宾语",
+          "objective": "在 want、plan、hope 等动词后使用不定式作宾语。",
+          "targets": [
+            "vb.nonfinite"
+          ]
+        },
+        {
+          "sourceId": "cne_j123",
+          "name": "谈论将来打算",
+          "objective": "交流长大后想做的事以及准备采取的行动。",
+          "targets": [
+            "wr.plan_wish"
+          ]
+        },
+        {
+          "sourceId": "cne_j124",
+          "name": "读计划短文",
+          "objective": "从计划短文里区分职业目标和实现步骤。",
+          "targets": [
+            "unit.j124"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第7单元 When Tomorrow Comes",
+      "placements": [
+        {
+          "sourceId": "cne_j125",
+          "name": "未来生活",
+          "objective": "辨认未来生活、机器人、污染和预测相关用词。",
+          "targets": [
+            "unit.j125"
+          ],
+          "words": [
+            "robot",
+            "pollution",
+            "prediction",
+            "future"
+          ]
+        },
+        {
+          "sourceId": "cne_j126",
+          "name": "will 表示将来",
+          "objective": "用 will 表示预测或临时决定。",
+          "targets": [
+            "te.future"
+          ]
+        },
+        {
+          "sourceId": "cne_j127",
+          "name": "预测未来",
+          "objective": "就未来生活询问看法，并给出自己的预测。",
+          "targets": [
+            "unit.j127"
+          ]
+        },
+        {
+          "sourceId": "cne_j128",
+          "name": "读未来预测",
+          "objective": "读预测短文，找出作者认为会发生的变化。",
+          "targets": [
+            "unit.j128"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "第8单元 Let's Communicate!",
+      "placements": [
+        {
+          "sourceId": "cne_j139",
+          "name": "if 条件状语从句",
+          "objective": "使用 if 提出条件，并按主将从现表达结果。",
+          "targets": [
+            "sy.adverbial_clause"
+          ]
+        },
+        {
+          "sourceId": "cne_j140",
+          "name": "用条件句给建议",
+          "objective": "用条件句说明采取某行动的可能后果。",
+          "targets": [
+            "unit.j140"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "上",
+      "unit": "待核",
+      "placements": [
+        {
+          "sourceId": "cne_j113",
+          "name": "城镇设施",
+          "objective": "识别城镇娱乐设施、座位及服务相关用词。",
+          "targets": [
+            "unit.j113"
+          ],
+          "words": [
+            "theater",
+            "screen",
+            "seat",
+            "service"
+          ]
+        },
+        {
+          "sourceId": "cne_j115",
+          "name": "谈论最好的地方",
+          "objective": "询问并比较本地场所，说明哪处最好。",
+          "targets": [
+            "unit.j115"
+          ]
+        },
+        {
+          "sourceId": "cne_j116",
+          "name": "读影院介绍",
+          "objective": "读影院或设施评价，提取最优项目及其特点。",
+          "targets": [
+            "unit.j116"
+          ]
+        },
+        {
+          "sourceId": "cne_j138",
+          "name": "建议用词",
+          "objective": "辨认描述建议、组织安排和担忧的词语。",
+          "targets": [
+            "unit.j138"
+          ],
+          "words": [
+            "advice",
+            "organize",
+            "upset",
+            "careless"
+          ]
+        },
+        {
+          "sourceId": "cne_j141",
+          "name": "读聚会建议",
+          "objective": "从聚会建议中找出条件及其对应结果。",
+          "targets": [
+            "unit.j141"
+          ]
+        },
+        {
+          "sourceId": "cne_j133",
+          "name": "聚会活动",
+          "objective": "辨认邀请、筹备聚会和出席活动的相关词。",
+          "targets": [
+            "unit.p238"
+          ],
+          "words": [
+            "invitation",
+            "preparation",
+            "concert",
+            "available"
+          ]
+        },
+        {
+          "sourceId": "cne_j134",
+          "name": "用 can 发出邀请",
+          "objective": "用 Can you …? 向同伴发出活动邀请。",
+          "targets": [
+            "unit.j134"
+          ]
+        },
+        {
+          "sourceId": "cne_j135",
+          "name": "接受或拒绝邀请",
+          "objective": "接受活动邀请，或礼貌拒绝并说明缘由。",
+          "targets": [
+            "fn.invite_suggest"
+          ]
+        },
+        {
+          "sourceId": "cne_j136",
+          "name": "读邀请函",
+          "objective": "读邀请函和回复，确认时间、地点与出席情况。",
+          "targets": [
+            "unit.j136"
+          ]
+        },
+        {
+          "sourceId": "cne_j117",
+          "name": "电视节目",
+          "objective": "区分新闻、喜剧、卡通等节目类别。",
+          "targets": [
+            "unit.j117"
+          ],
+          "words": [
+            "sitcom",
+            "news",
+            "educational",
+            "cartoon"
+          ]
+        },
+        {
+          "sourceId": "cne_j119",
+          "name": "谈论想看的节目",
+          "objective": "说明想看的节目，并询问同伴的意见。",
+          "targets": [
+            "unit.j119"
+          ]
+        },
+        {
+          "sourceId": "cne_j120",
+          "name": "读节目选择",
+          "objective": "从节目选择对话中查明每个人想看什么。",
+          "targets": [
+            "unit.j120"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第1单元 Time to Relax",
+      "placements": [
+        {
+          "sourceId": "cne_j147",
+          "name": "不定式表示目的",
+          "objective": "用 to 加动词原形解释一个动作的目的。",
+          "targets": [
+            "unit.j147"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第2单元 Stay Healthy",
+      "placements": [
+        {
+          "sourceId": "cne_j142",
+          "name": "身体不适",
+          "objective": "认读症状名称，并按描述辨认身体不适。",
+          "targets": [
+            "unit.j142"
+          ],
+          "words": [
+            "headache",
+            "stomachache",
+            "fever",
+            "cough"
+          ]
+        },
+        {
+          "sourceId": "cne_j143",
+          "name": "should 表示建议",
+          "objective": "用 should/shouldn’t 区分建议采取和避免的行为。",
+          "targets": [
+            "vb.modal_must"
+          ]
+        },
+        {
+          "sourceId": "cne_j251",
+          "name": "反身代词",
+          "objective": "依据主语选择合适的反身代词。",
+          "targets": [
+            "pr.reflexive"
+          ]
+        },
+        {
+          "sourceId": "cne_j144",
+          "name": "关心身体",
+          "objective": "询问身体状况，并针对症状给出建议。",
+          "targets": [
+            "fn.advice_health"
+          ]
+        },
+        {
+          "sourceId": "cne_j145",
+          "name": "读健康建议",
+          "objective": "从健康对话中配对症状及相应建议。",
+          "targets": [
+            "unit.j145"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第3单元 Growing Up",
+      "placements": [
+        {
+          "sourceId": "cne_j154",
+          "name": "情绪与压力",
+          "objective": "辨认压力、争执和紧张情绪的表达。",
+          "targets": [
+            "unit.j154"
+          ],
+          "words": [
+            "pressure",
+            "argue",
+            "nervous",
+            "proper"
+          ]
+        },
+        {
+          "sourceId": "cne_j155",
+          "name": "although 引导让步",
+          "objective": "用 although 连接让步分句，避免与 but 重复使用。",
+          "targets": [
+            "unit.j155"
+          ]
+        },
+        {
+          "sourceId": "cne_j165",
+          "name": "so that 表示目的",
+          "objective": "用 so that 引出目的，并配合 can/could 说明预期结果。",
+          "targets": [
+            "unit.j165"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第4单元 The Wonders of Nature",
+      "placements": [
+        {
+          "sourceId": "cne_j168",
+          "name": "地理名称",
+          "objective": "认读地貌、地理环境及保护行动相关用词。",
+          "targets": [
+            "unit.j168"
+          ],
+          "words": [
+            "desert",
+            "ocean",
+            "ancient",
+            "protect"
+          ]
+        },
+        {
+          "sourceId": "cne_j169",
+          "name": "比较级与最高级的选用",
+          "objective": "根据比较对象和范围选择比较级或最高级。",
+          "targets": [
+            "ad.comparative_use",
+            "ad.superlative"
+          ]
+        },
+        {
+          "sourceId": "cne_j170",
+          "name": "陈述地理事实",
+          "objective": "用数据陈述地理事物的高度、长度或面积。",
+          "targets": [
+            "unit.j170"
+          ]
+        },
+        {
+          "sourceId": "cne_j171",
+          "name": "读地理短文",
+          "objective": "从地理短文中找出达到极值的事物及依据。",
+          "targets": [
+            "unit.j171"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第5单元 Nature's Temper",
+      "placements": [
+        {
+          "sourceId": "cne_j158",
+          "name": "暴风雨",
+          "objective": "认读暴风雨和应急用品相关词。",
+          "targets": [
+            "unit.j158"
+          ],
+          "words": [
+            "rainstorm",
+            "alarm",
+            "flashlight",
+            "wind"
+          ]
+        },
+        {
+          "sourceId": "cne_j159",
+          "name": "过去进行时",
+          "objective": "用 was/were doing 描述过去某时正在进行的动作。",
+          "targets": [
+            "te.past_continuous"
+          ]
+        },
+        {
+          "sourceId": "cne_j160",
+          "name": "when 与 while",
+          "objective": "用 when/while 把背景动作和同时发生或插入的事件连起来。",
+          "targets": [
+            "unit.j160"
+          ]
+        },
+        {
+          "sourceId": "cne_j161",
+          "name": "描述当时的动作",
+          "objective": "询问某人过去某时正在做的事并回答。",
+          "targets": [
+            "unit.j161"
+          ]
+        },
+        {
+          "sourceId": "cne_j162",
+          "name": "读暴风雨故事",
+          "objective": "读暴风雨经历，找出风暴来临时人物正在做什么。",
+          "targets": [
+            "unit.j162"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第6单元 Crossing Cultures",
+      "placements": [
+        {
+          "sourceId": "cne_j224",
+          "name": "社交习俗",
+          "objective": "识别不同文化中的礼节、动作和见面方式。",
+          "targets": [
+            "unit.j224"
+          ],
+          "words": [
+            "bow",
+            "kiss",
+            "greet",
+            "manner"
+          ]
+        },
+        {
+          "sourceId": "cne_j164",
+          "name": "unless 表示除非",
+          "objective": "用 unless 表达“如果不”，处理好条件分句的时态。",
+          "targets": [
+            "unit.j164"
+          ]
+        },
+        {
+          "sourceId": "cne_j226",
+          "name": "说明该怎么做",
+          "objective": "介绍在某一文化中见面时应采用的问候方式。",
+          "targets": [
+            "unit.j226"
+          ]
+        },
+        {
+          "sourceId": "cne_j227",
+          "name": "读习俗说明",
+          "objective": "阅读礼俗介绍，区分被鼓励与应避免的行为。",
+          "targets": [
+            "unit.j227"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第7单元 A Good Read",
+      "placements": [
+        {
+          "sourceId": "cne_j173",
+          "name": "书籍与阅读",
+          "objective": "辨认文学阅读和书籍相关用词。",
+          "targets": [
+            "unit.j173"
+          ],
+          "words": [
+            "treasure",
+            "island",
+            "classic",
+            "page"
+          ]
+        },
+        {
+          "sourceId": "cne_j174",
+          "name": "现在完成时",
+          "objective": "用 have/has 加过去分词说明截至现在的经历或结果。",
+          "targets": [
+            "te.present_perfect"
+          ]
+        },
+        {
+          "sourceId": "cne_j175",
+          "name": "already 与 yet",
+          "objective": "用 already 与 yet 表达已完成或尚未完成，留意句型。",
+          "targets": [
+            "cpp.G4-U4.grammar.j175"
+          ]
+        },
+        {
+          "sourceId": "cne_j176",
+          "name": "谈论读过的书",
+          "objective": "就某本书是否已读过进行问答。",
+          "targets": [
+            "unit.j176"
+          ]
+        },
+        {
+          "sourceId": "cne_j177",
+          "name": "读阅读记录",
+          "objective": "根据阅读记录判断哪些人已经完成阅读。",
+          "targets": [
+            "unit.j177"
+          ]
+        },
+        {
+          "sourceId": "cne_j179",
+          "name": "ever 与 never",
+          "objective": "用 ever 问经历，用 never 表示一次也没有。",
+          "targets": [
+            "cpp.G4-U4.grammar.j179"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "第8单元 Making a Difference",
+      "placements": [
+        {
+          "sourceId": "cne_j146",
+          "name": "志愿服务",
+          "objective": "识别志愿工作、服务对象和招募通知相关词。",
+          "targets": [
+            "unit.j146"
+          ],
+          "words": [
+            "volunteer",
+            "lonely",
+            "sign",
+            "notice"
+          ]
+        },
+        {
+          "sourceId": "cne_j148",
+          "name": "主动提供帮助",
+          "objective": "主动向有需要的人提供具体帮助。",
+          "targets": [
+            "fn.request_help"
+          ]
+        },
+        {
+          "sourceId": "cne_j149",
+          "name": "读志愿活动",
+          "objective": "读志愿者通知，确定服务时间和任务。",
+          "targets": [
+            "unit.j149"
+          ]
+        },
+        {
+          "sourceId": "cne_j184",
+          "name": "for 与 since",
+          "objective": "用 for 表达持续时段，用 since 标明起始时间。",
+          "targets": [
+            "cpp.G4-U5.grammar.j184"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "semester": "下",
+      "unit": "待核",
+      "placements": [
+        {
+          "sourceId": "cne_j156",
+          "name": "用 Why don't you 提建议",
+          "objective": "用 Why don’t you …? 或 Why not …? 提建议。",
+          "targets": [
+            "fn.advice_health"
+          ]
+        },
+        {
+          "sourceId": "cne_j157",
+          "name": "读建议信",
+          "objective": "读建议信，将读者的问题与作者的建议配对。",
+          "targets": [
+            "unit.j157"
+          ]
+        },
+        {
+          "sourceId": "cne_j172",
+          "name": "选词补全短文",
+          "objective": "综合上下文语义和语法选择合适的词补全篇章。",
+          "targets": [
+            "rd.cloze"
+          ]
+        },
+        {
+          "sourceId": "cne_j225",
+          "name": "be supposed to",
+          "objective": "用 be supposed to do 说明习惯或规范期待的行为。",
+          "targets": [
+            "unit.j225"
+          ]
+        },
+        {
+          "sourceId": "cne_j178",
+          "name": "场馆经历",
+          "objective": "识别参观场馆及记录体验相关词。",
+          "targets": [
+            "unit.j178"
+          ],
+          "words": [
+            "camera",
+            "progress",
+            "unusual",
+            "collect"
+          ]
+        },
+        {
+          "sourceId": "cne_j180",
+          "name": "been 与 gone",
+          "objective": "从是否已返回出发，区分 have been to 与 have gone to。",
+          "targets": [
+            "unit.j180"
+          ]
+        },
+        {
+          "sourceId": "cne_j181",
+          "name": "询问去过哪里",
+          "objective": "用现在完成时交流曾到过的地方。",
+          "targets": [
+            "unit.j181"
+          ]
+        },
+        {
+          "sourceId": "cne_j182",
+          "name": "读场馆经历",
+          "objective": "根据场馆经历描述判断人物去过哪里、是否已经返回。",
+          "targets": [
+            "unit.j182"
+          ]
+        },
+        {
+          "sourceId": "cne_j183",
+          "name": "旧物与回忆",
+          "objective": "认识旧物和回忆场景中的物品及描述词。",
+          "targets": [
+            "unit.j183"
+          ],
+          "words": [
+            "scarf",
+            "soft",
+            "yard",
+            "honest"
+          ]
+        },
+        {
+          "sourceId": "cne_j185",
+          "name": "谈论拥有多久",
+          "objective": "问答某件物品已拥有多久，注意持续性表达。",
+          "targets": [
+            "cpp.G4-U5.grammar.j185"
+          ]
+        },
+        {
+          "sourceId": "cne_j186",
+          "name": "读旧物故事",
+          "objective": "读旧物回忆，提取保留的时长和原因。",
+          "targets": [
+            "unit.j186"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第1单元 The Changing World",
+      "placements": [
+        {
+          "sourceId": "cne_j200",
+          "name": "今昔变化",
+          "objective": "辨认描述人物今昔变化的词语。",
+          "targets": [
+            "unit.j200"
+          ],
+          "words": [
+            "humorous",
+            "silent",
+            "score",
+            "background"
+          ]
+        },
+        {
+          "sourceId": "cne_j252",
+          "name": "一般过去时与现在完成时",
+          "objective": "区分特定过去时间发生的事与延续或影响到现在的事。",
+          "targets": [
+            "cpp.G4-U5.grammar.j184"
+          ]
+        },
+        {
+          "sourceId": "cne_j202",
+          "name": "比较过去和现在",
+          "objective": "对照过去和现在，描述人或事物发生的变化。",
+          "targets": [
+            "te.past_be"
+          ]
+        },
+        {
+          "sourceId": "cne_j203",
+          "name": "读变化短文",
+          "objective": "读变化短文，分辨过去状况和当前状态。",
+          "targets": [
+            "unit.p195"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第2单元 Inspiring People",
+      "placements": [
+        {
+          "sourceId": "cne_j253",
+          "name": "It is ... (for sb) to do",
+          "objective": "用形式主语 it 引出 for/of sb to do 的评价结构。",
+          "targets": [
+            "unit.j253"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第3单元 Smart Learning",
+      "placements": [
+        {
+          "sourceId": "cne_j187",
+          "name": "学习方法",
+          "objective": "识别描述发音、练习和学习习惯的词汇。",
+          "targets": [
+            "unit.j187"
+          ],
+          "words": [
+            "pronunciation",
+            "expression",
+            "repeat",
+            "patient"
+          ]
+        },
+        {
+          "sourceId": "cne_j189",
+          "name": "交流学习方法",
+          "objective": "询问同伴的学习办法，并举例说明自己的做法。",
+          "targets": [
+            "unit.j189"
+          ]
+        },
+        {
+          "sourceId": "cne_j190",
+          "name": "读学习建议",
+          "objective": "从学习建议中找出方法及其带来的结果。",
+          "targets": [
+            "unit.j190"
+          ]
+        },
+        {
+          "sourceId": "cne_j192",
+          "name": "that 引导宾语从句",
+          "objective": "用 that 引出陈述内容，识别可省略 that 的情况。",
+          "targets": [
+            "sy.object_clause"
+          ]
+        },
+        {
+          "sourceId": "cne_j193",
+          "name": "if 与 whether 宾语从句",
+          "objective": "把一般疑问含义用 if 或 whether 引入宾语从句，保持陈述语序。",
+          "targets": [
+            "unit.j193"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第4单元 Our Memory",
+      "placements": [
+        {
+          "sourceId": "cne_j197",
+          "name": "疑问词宾语从句",
+          "objective": "将疑问词保留在宾语从句开头，并调整为陈述语序。",
+          "targets": [
+            "sy.object_clause"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第5单元 Power of Ideas",
+      "placements": [
+        {
+          "sourceId": "cne_j205",
+          "name": "一般现在时被动语态",
+          "objective": "用 am/is/are 加过去分词表达现在的被动关系。",
+          "targets": [
+            "cpp.G5-U3.grammar.j205"
+          ]
+        },
+        {
+          "sourceId": "cne_j208",
+          "name": "发明物",
+          "objective": "认读发明、发明者和技术产品的相关词。",
+          "targets": [
+            "unit.j208"
+          ],
+          "words": [
+            "inventor",
+            "mention",
+            "website",
+            "daily"
+          ]
+        },
+        {
+          "sourceId": "cne_j209",
+          "name": "一般过去时被动语态",
+          "objective": "用 was/were 加过去分词表达过去的被动关系。",
+          "targets": [
+            "cpp.G5-U8.grammar.j209"
+          ]
+        },
+        {
+          "sourceId": "cne_j210",
+          "name": "询问发明时间",
+          "objective": "用被动问句询问发明年份和发明者。",
+          "targets": [
+            "unit.j210"
+          ]
+        },
+        {
+          "sourceId": "cne_j211",
+          "name": "读发明介绍",
+          "objective": "从发明介绍中找出发明者及其用途。",
+          "targets": [
+            "unit.j211"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第6单元 Beyond Earth",
+      "placements": [
+        {
+          "sourceId": "cne_j255",
+          "name": "太空探索词汇",
+          "objective": "识别航天器、宇航员和太空探索行动的用词。",
+          "targets": [
+            "unit.p204"
+          ],
+          "words": [
+            "astronaut",
+            "spaceship",
+            "universe",
+            "explore",
+            "launch"
+          ]
+        },
+        {
+          "sourceId": "cne_j254",
+          "name": "一般将来时的被动语态",
+          "objective": "用 will be 加过去分词表达将来的被动关系。",
+          "targets": [
+            "cpp.G6-U1.grammar.j254"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第7单元 Feel the Rhythm",
+      "placements": [
+        {
+          "sourceId": "cne_j220",
+          "name": "音乐类型",
+          "objective": "认读音乐类型、歌词与风格相关词。",
+          "targets": [
+            "unit.j220"
+          ],
+          "words": [
+            "prefer",
+            "lyrics",
+            "Australian",
+            "electronic"
+          ]
+        },
+        {
+          "sourceId": "cne_j221",
+          "name": "定语从句",
+          "objective": "用关系代词引导限定性定语从句，修饰人物或事物。",
+          "targets": [
+            "cpp.G6-U2.grammar.j221"
+          ]
+        },
+        {
+          "sourceId": "cne_j222",
+          "name": "说明喜欢的音乐",
+          "objective": "谈论偏爱的音乐风格，并给出音乐特征方面的理由。",
+          "targets": [
+            "unit.j222"
+          ]
+        },
+        {
+          "sourceId": "cne_j223",
+          "name": "读音乐偏好",
+          "objective": "从音乐偏好短文中对应人物与音乐类型。",
+          "targets": [
+            "unit.j223"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "第8单元 More than a Game",
+      "placements": [
+        {
+          "sourceId": "cne_j257",
+          "name": "体育赛事词汇",
+          "objective": "认读比赛、运动员、竞赛荣誉及奥运会用词。",
+          "targets": [
+            "unit.j257"
+          ],
+          "words": [
+            "Olympics",
+            "medal",
+            "champion",
+            "athlete",
+            "competition"
+          ]
+        },
+        {
+          "sourceId": "cne_j256",
+          "name": "主谓一致",
+          "objective": "从主语的数和意义判断谓语形式，尤其留意较长主语。",
+          "targets": [
+            "unit.j256"
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "semester": "上",
+      "unit": "待核",
+      "placements": [
+        {
+          "sourceId": "cne_j201",
+          "name": "used to 表示过去习惯",
+          "objective": "用 used to do 讲过去经常做而现在已改变的事。",
+          "targets": [
+            "cpp.G4-U3.grammar.j201"
+          ]
+        },
+        {
+          "sourceId": "cne_j188",
+          "name": "by 加动名词",
+          "objective": "用 by doing 说明通过哪种方法完成任务。",
+          "targets": [
+            "unit.j188"
+          ]
+        },
+        {
+          "sourceId": "cne_j196",
+          "name": "公共场所",
+          "objective": "识别公共服务场景中常见物品与礼貌用语。",
+          "targets": [
+            "unit.j196"
+          ],
+          "words": [
+            "restroom",
+            "stamp",
+            "postcard",
+            "politely"
+          ]
+        },
+        {
+          "sourceId": "cne_j198",
+          "name": "礼貌问路",
+          "objective": "用直接或间接问句礼貌地询问路线。",
+          "targets": [
+            "unit.j198"
+          ]
+        },
+        {
+          "sourceId": "cne_j199",
+          "name": "读问路对话",
+          "objective": "读问路对话，确定所指地点与路线信息。",
+          "targets": [
+            "unit.p158"
+          ]
+        },
+        {
+          "sourceId": "cne_j204",
+          "name": "材料",
+          "objective": "识别常见材料和生产过程用词。",
+          "targets": [
+            "unit.j204"
+          ],
+          "words": [
+            "cotton",
+            "steel",
+            "produce",
+            "widely"
+          ]
+        },
+        {
+          "sourceId": "cne_j206",
+          "name": "询问由什么制成",
+          "objective": "询问制品的材料和产地，分别作出回答。",
+          "targets": [
+            "unit.j206"
+          ]
+        },
+        {
+          "sourceId": "cne_j207",
+          "name": "读产品介绍",
+          "objective": "从产品介绍中提取材料与生产地。",
+          "targets": [
+            "unit.j207"
+          ]
+        },
+        {
+          "sourceId": "cne_j191",
+          "name": "节日食物",
+          "objective": "辨认节庆食品和民俗活动所涉及的词汇。",
+          "targets": [
+            "unit.j191"
+          ],
+          "words": [
+            "mooncake",
+            "lantern",
+            "stranger",
+            "relative"
+          ]
+        },
+        {
+          "sourceId": "cne_j194",
+          "name": "谈论节日",
+          "objective": "介绍节日里人们通常吃什么、做什么。",
+          "targets": [
+            "unit.j194"
+          ]
+        },
+        {
+          "sourceId": "cne_j195",
+          "name": "读中秋短文",
+          "objective": "从中秋介绍里提取食品及习俗活动。",
+          "targets": [
+            "unit.j195"
+          ]
+        },
+        {
+          "sourceId": "cne_j212",
+          "name": "青少年规则",
+          "objective": "辨认与青少年安全、许可和行为规范有关的词。",
+          "targets": [
+            "unit.j212"
+          ],
+          "words": [
+            "license",
+            "safety",
+            "society",
+            "choice"
+          ]
+        },
+        {
+          "sourceId": "cne_j213",
+          "name": "be allowed to",
+          "objective": "用 be allowed to do 表达某行为获得许可。",
+          "targets": [
+            "unit.j213"
+          ]
+        },
+        {
+          "sourceId": "cne_j214",
+          "name": "讨论是否允许",
+          "objective": "就某条规定说明是否赞同，并表达自己的观点。",
+          "targets": [
+            "unit.j214"
+          ]
+        },
+        {
+          "sourceId": "cne_j215",
+          "name": "读规则意见",
+          "objective": "读规则讨论，辨认不同对象得到的许可。",
+          "targets": [
+            "unit.j215"
+          ]
+        },
+        {
+          "sourceId": "cne_j216",
+          "name": "物品主人",
+          "objective": "识别描述失物、价值及物主线索的关键词。",
+          "targets": [
+            "unit.j216"
+          ],
+          "words": [
+            "whose",
+            "attend",
+            "valuable",
+            "picnic"
+          ]
+        },
+        {
+          "sourceId": "cne_j217",
+          "name": "must 表示推测",
+          "objective": "根据证据用 must 表示肯定推测，用 can’t 排除可能性。",
+          "targets": [
+            "cpp.G5-U8.grammar.j217"
+          ]
+        },
+        {
+          "sourceId": "cne_j218",
+          "name": "推测物品归属",
+          "objective": "根据线索推断物品归谁，并说明理由。",
+          "targets": [
+            "unit.j218"
+          ]
+        },
+        {
+          "sourceId": "cne_j219",
+          "name": "读推测短文",
+          "objective": "结合推理短文的证据判断物主。",
+          "targets": [
+            "unit.j219"
+          ]
+        },
+        {
+          "sourceId": "cne_j228",
+          "name": "情绪反应",
+          "objective": "辨认描写情绪反应的词语及其语境。",
+          "targets": [
+            "unit.j228"
+          ],
+          "words": [
+            "friendship",
+            "king",
+            "pale",
+            "queen"
+          ]
+        },
+        {
+          "sourceId": "cne_j229",
+          "name": "make 加宾语加动词原形",
+          "objective": "在 make sb do 与 make sb 加形容词之间作出选择。",
+          "targets": [
+            "vb.nonfinite",
+            "sy.basic_patterns"
+          ]
+        },
+        {
+          "sourceId": "cne_j230",
+          "name": "表达电影感受",
+          "objective": "用使役结构说明电影引起的情绪。",
+          "targets": [
+            "unit.j230"
+          ]
+        },
+        {
+          "sourceId": "cne_j231",
+          "name": "读观后感",
+          "objective": "从观后感中找出引发情绪的情节及人物感受。",
+          "targets": [
+            "unit.j231"
+          ]
+        },
+        {
+          "sourceId": "cne_j232",
+          "name": "意外事件",
+          "objective": "识别叙述意外事件所用的动作和物品词。",
+          "targets": [
+            "unit.j232"
+          ],
+          "words": [
+            "unexpected",
+            "backpack",
+            "block",
+            "burn"
+          ]
+        },
+        {
+          "sourceId": "cne_j233",
+          "name": "过去完成时",
+          "objective": "用 had 加过去分词标出两个过去事件中较早发生的一件。",
+          "targets": [
+            "cpp.G6-U6.grammar.j233"
+          ]
+        },
+        {
+          "sourceId": "cne_j234",
+          "name": "叙述意外经过",
+          "objective": "用时间线重述一件意外发生的经过。",
+          "targets": [
+            "unit.j234"
+          ]
+        },
+        {
+          "sourceId": "cne_j235",
+          "name": "读意外故事",
+          "objective": "读意外故事，依据时间标记判断先发生的事。",
+          "targets": [
+            "unit.j235"
+          ]
+        },
+        {
+          "sourceId": "cne_j236",
+          "name": "环境保护",
+          "objective": "辨认污染物、资源和环境保护相关词。",
+          "targets": [
+            "unit.j236"
+          ],
+          "words": [
+            "litter",
+            "bottom",
+            "coal",
+            "plastic"
+          ]
+        },
+        {
+          "sourceId": "cne_j237",
+          "name": "时态选择",
+          "objective": "结合时间线索选择现在、过去、将来、进行或完成形式。",
+          "targets": [
+            "te.tense_choice",
+            "te.present_perfect"
+          ]
+        },
+        {
+          "sourceId": "cne_j238",
+          "name": "谈论环保做法",
+          "objective": "提出可执行的环保行动并说明理由。",
+          "targets": [
+            "wr.advice"
+          ]
+        },
+        {
+          "sourceId": "cne_j239",
+          "name": "读环保倡议",
+          "objective": "从环保倡议中对应环境问题与建议采取的做法。",
+          "targets": [
+            "unit.p208"
+          ]
+        },
+        {
+          "sourceId": "cne_j240",
+          "name": "完形填空",
+          "objective": "依据上下文逻辑与词语搭配完成完形填空。",
+          "targets": [
+            "rd.cloze"
+          ]
+        },
+        {
+          "sourceId": "cne_j241",
+          "name": "毕业回忆",
+          "objective": "识别毕业典礼、评价和校园回忆相关词。",
+          "targets": [
+            "unit.j241"
+          ],
+          "words": [
+            "survey",
+            "standard",
+            "graduate",
+            "ceremony"
+          ]
+        },
+        {
+          "sourceId": "cne_j242",
+          "name": "动名词与不定式",
+          "objective": "依据前一动词选择后接 doing 或 to do。",
+          "targets": [
+            "vb.nonfinite"
+          ]
+        },
+        {
+          "sourceId": "cne_j243",
+          "name": "反意疑问句",
+          "objective": "给陈述句补上肯否、时态与主语对应的反意问句。",
+          "targets": [
+            "cpp.G4-U6.grammar.j243"
+          ]
+        },
+        {
+          "sourceId": "cne_j244",
+          "name": "回忆学校生活",
+          "objective": "回顾毕业前的校园生活并讲述具体经历。",
+          "targets": [
+            "unit.j244"
+          ]
+        },
+        {
+          "sourceId": "cne_j245",
+          "name": "书面表达要点",
+          "objective": "核对书面表达的要点、人称和时态，使内容完整连贯。",
+          "targets": [
+            "wr.sentence",
+            "wr.paragraph"
+          ]
+        }
+      ]
+    }
+  ]
+}

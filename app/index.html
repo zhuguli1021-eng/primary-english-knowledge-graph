@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>小学英语知识图谱</title>
+<title>小学与初中英语知识图谱</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
 <script src="data.js"></script>
@@ -37,6 +37,12 @@ main{padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));pad
 #cy{height:72vh;min-height:480px;background:var(--card);border:1px solid var(--line);border-radius:12px}
 #panel{height:72vh;min-height:480px;overflow:auto}
 @media (max-width:900px){#graphWrap{grid-template-columns:1fr}#cy{height:60vh}#panel{height:auto}}
+#currResults ul{list-style:none;padding:0}
+#currResults li{border-top:1px solid var(--line);padding:10px 0}
+#currResults li p{margin:4px 0}
+#currResults li:focus{outline:2px solid var(--accent)}
+.currLink{border:0;background:none;padding:0;font:inherit;color:var(--accent);cursor:pointer;text-align:left}
+#panel details{margin:12px 0}#panel summary{cursor:pointer}
 #panel h2{font-size:18px;margin:0 0 6px}
 #panel h3{font-size:14px;margin:14px 0 4px;color:var(--muted)}
 #panel ul{margin:0;padding-left:18px}
@@ -85,9 +91,10 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
 </head>
 <body>
 <header>
-  <h1>小学英语知识图谱</h1>
+  <h1>小学与初中英语知识图谱</h1>
   <nav id="nav">
     <button data-tab="graph" class="on">知识图谱</button>
+    <button data-tab="curriculum">教材目录</button>
     <button data-tab="paper">出题组卷</button>
     <button data-tab="report">诊断与训练</button>
     <button data-tab="ai">AI 出题</button>
@@ -95,6 +102,18 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
   <div class="who">学生 <input id="student" size="8" placeholder="姓名"></div>
 </header>
 <main>
+
+<section id="tab-curriculum" class="tab">
+  <div class="card row">
+    <label>年级 <select id="currGrade"><option value="3">三年级</option><option value="4">四年级</option><option value="5">五年级</option><option value="6">六年级</option><option value="7">七年级</option><option value="8">八年级</option><option value="9">九年级</option></select></label>
+    <label>册次 <select id="currSemester"><option value="上">上册</option><option value="下">下册</option></select></label>
+    <label>单元 <select id="currUnit"></select></label>
+    <label>本册搜索 <input id="currSearch" type="search" placeholder="知识点、单词或编号"></label>
+    <span id="currCount" class="meta" aria-live="polite"></span>
+  </div>
+  <div id="currResults"></div>
+  <p class="meta">教材位置参考 <a href="https://github.com/xiaoyang111222/cn-math-taxonomy/tree/601356aa39a9770e979819889846f6885ca9a468">xiaoyang111222 / cn-math-taxonomy</a>（<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>）。教学目标及考点关联由本项目整理。</p>
+</section>
 
 <section id="tab-graph" class="tab on">
   <div class="card row small noprint">
@@ -351,6 +370,7 @@ function showTopic(id) {
     <h3>掌握标准</h3><ul>${t.evidence.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
     <h3>孩子常见错误</h3><ul>${t.errors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
     <h3>教学建议</h3><p>${esc(t.tips)}</p>
+    ${curriculumForTopic(id)}
     <h3>先学（${prereq(id).length}）</h3><ul>${prereq(id).map(d => `<li>${topicLink(d.prerequisiteId)} <span class="meta">${d.strength === 'hard' ? '必须' : '建议'}：${esc(d.reason)}</span></li>`).join('') || '<li class="muted">无</li>'}</ul>
     <h3>学完可以学（${unlocks(id).length}）</h3><ul>${unlocks(id).map(d => `<li>${topicLink(d.topicId)}</li>`).join('') || '<li class="muted">无</li>'}</ul>
     ${related(id).length ? `<h3>真题中常一起考</h3><ul>${related(id).map(r => `<li>${topicLink(r.a === id ? r.b : r.a)} <span class="meta">${r.count} 道题</span></li>`).join('')}</ul>` : ''}
@@ -1750,5 +1770,6 @@ function switchTab(name) {
 $('#nav').onclick = e => e.target.dataset.tab && switchTab(e.target.dataset.tab);
 renderStats(); initGraph(); syncKind(); makePrompt(); updateCount(); initModels().then(() => loadBlueprintFromMode()); loadBlueprintFromMode();
 </script>
+<script src="curriculum.js"></script>
 </body>
 </html>

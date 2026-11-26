@@ -34,6 +34,10 @@ def get_topics(grade=None, domain=None, q=None):
     out.sort(key=lambda x: (-x['paperRate'], x['grade'], x['id']))
     return {'count': len(out), 'grade': g, 'topics': out}
 
+def get_curriculum(grade=None, semester=None, unit=None, q=None, topic=None):
+    from curriculum import select
+    return select(load('curriculum.json'), grade, semester, unit, q, topic)
+
 def get_cpp_units(level=None, unit=None):
     if not (D / 'cpp_units.json').exists():
         import cpp_map; cpp_map.build_cpp()
@@ -238,6 +242,7 @@ def post_generate(topic, grade, difficulty=None, n=5, qtype=None, provider=None,
 
 GET = {
     'topics': get_topics,
+    'curriculum': get_curriculum,
     'cpp-units': get_cpp_units,
     'exemplars': get_exemplars,
     'blueprint': get_blueprint,

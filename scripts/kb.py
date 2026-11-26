@@ -4,6 +4,7 @@
   python3 scripts/kb.py import <目录>          把新试卷文字版（.md/.txt/.docx/.pdf）导入 corpus/ 并更新索引
   python3 scripts/kb.py items                  把 corpus/ 拆成真题题目库（data/exam_items.json）与年级真卷蓝图
   python3 scripts/kb.py stats  [语料目录]      统计分年级真题考频、考法分布与共考关联 → data/exam_stats.json
+  python3 scripts/kb.py curriculum [--grade G] [--semester 上/下] [--unit 单元] [--q 关键词]
   python3 scripts/kb.py topics [--grade G]     列出知识点及该年级考频、常见题型
   python3 scripts/kb.py exemplars <id> <年级> [--qtype 题型]  查看该知识点在该年级的真题母题
   python3 scripts/kb.py blueprint [年级]       查看各年级真卷大题结构蓝图
@@ -195,6 +196,8 @@ def check():
     topics = load('topics.json'); deps = load('dependencies.json'); lv = load('levels.json')
     T = {t['id']: t for t in topics}; errs = []
     if len(T) != len(topics): errs.append('知识点 id 重复')
+    import curriculum
+    errs.extend(curriculum.validate(load('curriculum.json'), topics, load('cpp_units.json')))
     for d in deps:
         for k in ('topicId', 'prerequisiteId'):
             if d[k] not in T: errs.append(f'边引用了不存在的知识点 {d[k]}')
@@ -493,6 +496,7 @@ def bundle():
     data = {k: load(f'{k}.json') for k in ('topics', 'dependencies', 'levels', 'questions', 'exam_stats', 'wordlists')}
     for extra in ('exam_blueprint', 'cpp_units', 'real_pool'):
         if (D / f'{extra}.json').exists(): data[extra] = load(f'{extra}.json')
+    data['curriculum'] = load('curriculum.json')
     data['exemplars'] = _compact_exemplars()
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')
@@ -501,6 +505,8 @@ def bundle():
     html = re.sub(r'<!doctype html>\n|<html[^>]*>\n|</?head>\n|</?body>\n|</html>\n?|<meta charset[^>]*>\n|<meta name="viewport"[^>]*>\n', '', html)
     js = (ROOT / 'app' / 'data.js').read_text().replace('</', '<\\/')
     html = html.replace('<script src="data.js"></script>', '<script>window.KB_HOSTED=true;' + js + '</script>')
+    curriculum_js = (ROOT / 'app' / 'curriculum.js').read_text()
+    html = html.replace('<script src="curriculum.js"></script>', '<script>' + curriculum_js + '</script>')
     (ROOT / 'app' / 'publish.html').write_text(html)
     print('app/publish.html', round(len(html.encode()) / 1024), 'KB')
 
@@ -543,6 +549,9 @@ if __name__ == '__main__':
                         print(f"  [{row['role']}] {row['topic']:22s} {row['name']}  {row['cells']}  ({row['basis']})")
     elif cmd == 'stats':
         stats(pos[0] if pos else None)
+    elif cmd == 'curriculum':
+        import api
+        print(json.dumps(api.get_curriculum(**kv), ensure_ascii=False, indent=2))
     elif cmd == 'topics':
         import api
         r = api.get_topics(kv.get('grade') or (pos[0] if pos else None), kv.get('domain'), kv.get('q'))

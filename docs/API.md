@@ -100,3 +100,10 @@ curl -s -X POST http://127.0.0.1:8765/api/ingest \
   -H 'Content-Type: application/json' \
   -d '{"task_id":"<上一步返回的task_id>","questions":[...],"model":"my-agent"}'
 ```
+
+
+## 教材目录
+
+`GET /api/curriculum` 与 MCP 工具 `list_curriculum` 支持相同的可选参数。用 `grade`（3 至 9）、`semester`（上或下）和 `unit`（单元名或其片段）选课，用 `q` 查学习要求、词语或编号。传入 `topic` 可按原考点、上级领域或细目编号反查教材位置。
+
+返回的 `units[].placements[]` 保存每次教学要求；`targets` 指向已有知识点、`details` 中的细目或 `cppRefs` 中的原单元目标。待核条目保留来源册次和编号。出题接口使用原题库的考点编号。
