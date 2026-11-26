@@ -496,7 +496,8 @@ def bundle():
     data = {k: load(f'{k}.json') for k in ('topics', 'dependencies', 'levels', 'questions', 'exam_stats', 'wordlists')}
     for extra in ('exam_blueprint', 'cpp_units', 'real_pool'):
         if (D / f'{extra}.json').exists(): data[extra] = load(f'{extra}.json')
-    data['curriculum'] = load('curriculum.json')
+    for name in ('curriculum', 'cpp_sessions', 'cpp_homework_items'):
+        data[name] = load(f'{name}.json')
     data['exemplars'] = _compact_exemplars()
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')
@@ -505,8 +506,9 @@ def bundle():
     html = re.sub(r'<!doctype html>\n|<html[^>]*>\n|</?head>\n|</?body>\n|</html>\n?|<meta charset[^>]*>\n|<meta name="viewport"[^>]*>\n', '', html)
     js = (ROOT / 'app' / 'data.js').read_text().replace('</', '<\\/')
     html = html.replace('<script src="data.js"></script>', '<script>window.KB_HOSTED=true;' + js + '</script>')
-    curriculum_js = (ROOT / 'app' / 'curriculum.js').read_text()
-    html = html.replace('<script src="curriculum.js"></script>', '<script>' + curriculum_js + '</script>')
+    for asset in ('curriculum.js', 'cpp-homework.js'):
+        html = html.replace(f'<script src="{asset}"></script>',
+                            '<script>' + (ROOT / 'app' / asset).read_text() + '</script>')
     (ROOT / 'app' / 'publish.html').write_text(html)
     print('app/publish.html', round(len(html.encode()) / 1024), 'KB')
 

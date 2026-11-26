@@ -1,0 +1,2018 @@
+{
+  "G0-U1": {
+    "grammar": {
+      "S4": "I [am/is/are] six years old.",
+      "S12": "My friends [are/am/is] happy today."
+    },
+    "vocabulary": {
+      "S1": {
+        "favorite": "最喜爱的",
+        "colors": "颜色"
+      },
+      "S2": {
+        "short": "短的",
+        "long": "长的"
+      },
+      "S3": {
+        "class": "班级",
+        "different": "不同的"
+      },
+      "S7": {
+        "old": "年老的",
+        "slow": "慢的"
+      }
+    },
+    "phonics": {
+      "stem": "按字母顺序，F 后面紧接哪个大写字母？",
+      "options": [
+        "G",
+        "E",
+        "H"
+      ]
+    }
+  },
+  "G0-U2": {
+    "grammar": {
+      "S4": "I have [an/a/two] orange in my bag.",
+      "S12": "The pen belongs to me. It is [my/I/me] pen."
+    },
+    "vocabulary": {
+      "S1": {
+        "desk": "书桌",
+        "teacher": "老师"
+      },
+      "S2": {
+        "library": "图书馆",
+        "schoolbag": "书包"
+      },
+      "S3": {
+        "classmates": "同班同学",
+        "apple": "苹果"
+      },
+      "S7": {
+        "story": "故事",
+        "sad": "难过的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的开头和 bag 的开头读音相同？",
+      "options": [
+        "bed",
+        "pen",
+        "hat"
+      ]
+    }
+  },
+  "G0-U3": {
+    "grammar": {
+      "S4": "Please [open/opens/opening] the toy box.",
+      "S12": "Don't [throw/throws/throwing] the ball inside."
+    },
+    "vocabulary": {
+      "S1": {
+        "toys": "玩具",
+        "box": "盒子"
+      },
+      "S2": {
+        "robot": "机器人",
+        "fun": "乐趣"
+      },
+      "S3": {
+        "children": "孩子们",
+        "jump": "跳"
+      },
+      "S7": {
+        "monkey bars": "攀爬架",
+        "bike": "自行车"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 cat 一样以 -at 结尾？",
+      "options": [
+        "hat",
+        "pen",
+        "hen"
+      ]
+    }
+  },
+  "G0-U4": {
+    "grammar": {
+      "S4": "The toy is inside the box. It is [in/on/under] the box.",
+      "S12": "[Is/Are/Am] this your bedroom?"
+    },
+    "vocabulary": {
+      "S1": {
+        "home": "家",
+        "family": "家庭"
+      },
+      "S2": {
+        "apartment": "公寓",
+        "room": "房间"
+      },
+      "S3": {
+        "room": "房间",
+        "stairs": "楼梯"
+      },
+      "S7": {
+        "snail": "蜗牛",
+        "ladybug": "瓢虫"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 big 有相同的词尾读音？",
+      "options": [
+        "pig",
+        "nut",
+        "cup"
+      ]
+    }
+  },
+  "G0-U5": {
+    "grammar": {
+      "S4": "What [are/is/am] those animals called?",
+      "S12": "[Are/Is/Am] those your rabbits?"
+    },
+    "vocabulary": {
+      "S1": {
+        "zebra": "斑马",
+        "land": "陆地"
+      },
+      "S2": {
+        "teeth": "牙齿",
+        "tail": "尾巴"
+      },
+      "S3": {
+        "feathers": "羽毛",
+        "insects": "昆虫"
+      },
+      "S7": {
+        "rabbit": "兔子",
+        "moon": "月亮"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 fish 的开头读音相同？",
+      "options": [
+        "fan",
+        "sun",
+        "run"
+      ]
+    }
+  },
+  "G0-U6": {
+    "grammar": {
+      "S4": "I can [swim/swims/swimming] very well.",
+      "S12": "Can you [dance/dances/dancing] like that?"
+    },
+    "vocabulary": {
+      "S1": {
+        "ability": "能力",
+        "paint": "绘画"
+      },
+      "S2": {
+        "see": "看见",
+        "ride": "骑"
+      },
+      "S3": {
+        "blind": "失明的",
+        "backwards": "向后"
+      },
+      "S7": {
+        "music": "音乐",
+        "love": "喜爱"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 hop 的开头读音相同？",
+      "options": [
+        "hat",
+        "top",
+        "pop"
+      ]
+    }
+  },
+  "G0-U7": {
+    "grammar": {
+      "S4": "I [don't/doesn't/isn't] like cold soup.",
+      "S12": "[Do/Does/Is] you like rice?"
+    },
+    "vocabulary": {
+      "S1": {
+        "fruit": "水果",
+        "banana": "香蕉"
+      },
+      "S2": {
+        "juice": "果汁",
+        "water": "水"
+      },
+      "S3": {
+        "freezer": "冷冻柜",
+        "fried": "油炸的"
+      },
+      "S7": {
+        "broccoli": "西兰花",
+        "fish": "鱼"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 box 的最后一个音一致？",
+      "options": [
+        "fox",
+        "jam",
+        "cub"
+      ]
+    }
+  },
+  "G0-U8": {
+    "grammar": {
+      "S4": "We [walk/walks/walking] to school every day.",
+      "S12": "She [doesn't/don't/isn't] get up late."
+    },
+    "vocabulary": {
+      "S1": {
+        "brush my teeth": "刷牙",
+        "eat breakfast": "吃早饭"
+      },
+      "S2": {
+        "sleep": "睡觉",
+        "do exercise": "锻炼"
+      },
+      "S3": {
+        "before": "在……之前",
+        "after": "在……之后"
+      },
+      "S7": {
+        "wake up": "醒来",
+        "collect": "收集"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词以与 desk 相同的两个辅音结尾？",
+      "options": [
+        "mask",
+        "ant",
+        "fast"
+      ]
+    }
+  },
+  "G0-U9": {
+    "grammar": {
+      "S4": "Look! They [are/is/am] wearing hats.",
+      "S12": "[Is/Are/Am] she wearing a blue skirt now?"
+    },
+    "vocabulary": {
+      "S1": {
+        "clothes": "衣服",
+        "cold": "寒冷的"
+      },
+      "S2": {
+        "wear": "穿着",
+        "hat": "帽子"
+      },
+      "S3": {
+        "wool": "羊毛",
+        "cold": "寒冷的"
+      },
+      "S7": {
+        "emperor": "皇帝",
+        "thief": "小偷"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词以 gr- 开头？",
+      "options": [
+        "green",
+        "play",
+        "pen"
+      ]
+    }
+  },
+  "G1-U1": {
+    "grammar": {
+      "S4": "My brothers [are/am/is] at home.",
+      "S12": "[Is/Are/Am] he your grandfather?"
+    },
+    "vocabulary": {
+      "S1": {
+        "father": "父亲",
+        "brother": "兄弟"
+      },
+      "S2": {
+        "family": "家庭",
+        "parents": "父母"
+      },
+      "S3": {
+        "tent": "帐篷",
+        "evening": "傍晚"
+      },
+      "S7": {
+        "aunt": "姑妈或姨妈",
+        "uncle": "叔叔或舅舅"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音和 cat 的元音相同？",
+      "options": [
+        "bag",
+        "cake",
+        "bike"
+      ]
+    }
+  },
+  "G1-U2": {
+    "grammar": {
+      "S4": "[These/This/That] are my pencils here.",
+      "S12": "We bring [our/us/we] books to class."
+    },
+    "vocabulary": {
+      "S1": {
+        "school": "学校",
+        "classroom": "教室"
+      },
+      "S2": {
+        "music room": "音乐室",
+        "gym": "体育馆"
+      },
+      "S3": {
+        "drawing": "绘画",
+        "snack": "点心"
+      },
+      "S7": {
+        "new": "新的",
+        "old": "旧的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音和 sit 的元音相同？",
+      "options": [
+        "fish",
+        "five",
+        "feet"
+      ]
+    }
+  },
+  "G1-U3": {
+    "grammar": {
+      "S4": "There [are/is/am] three frogs in the pond.",
+      "S12": "The pond is in the middle of two trees. It is [between/under/in] them."
+    },
+    "vocabulary": {
+      "S1": {
+        "grass": "草",
+        "flower": "花"
+      },
+      "S2": {
+        "pond": "池塘",
+        "water lily": "睡莲"
+      },
+      "S3": {
+        "tail": "尾巴",
+        "helicopter": "直升机"
+      },
+      "S7": {
+        "puppet": "木偶",
+        "wood": "木材"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音和 hot 的元音相同？",
+      "options": [
+        "pot",
+        "home",
+        "hat"
+      ]
+    }
+  },
+  "G1-U4": {
+    "grammar": {
+      "S4": "My friend [plays/play/playing] soccer on Fridays.",
+      "S12": "[Does/Do/Is] your friend read after school?"
+    },
+    "vocabulary": {
+      "S1": {
+        "draw pictures": "画画",
+        "play soccer": "踢足球"
+      },
+      "S2": {
+        "friend": "朋友",
+        "recess": "课间休息"
+      },
+      "S3": {
+        "same": "相同的",
+        "homework": "家庭作业"
+      },
+      "S7": {
+        "hare": "野兔",
+        "hound": "猎犬"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音和 bed 的元音相同？",
+      "options": [
+        "pen",
+        "bee",
+        "bag"
+      ]
+    }
+  },
+  "G1-U5": {
+    "grammar": {
+      "S4": "I [like/likes/liking] board games.",
+      "S12": "This toy belongs to Sam. It is [Sam's/Sam/Sams] toy."
+    },
+    "vocabulary": {
+      "S1": {
+        "jump rope": "跳绳",
+        "listen to music": "听音乐"
+      },
+      "S2": {
+        "inside": "在里面",
+        "artisan": "手艺人"
+      },
+      "S3": {
+        "fit": "合适",
+        "kind": "种类"
+      },
+      "S7": {
+        "tie": "系紧",
+        "pick up": "捡起"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音和 sun 的元音相同？",
+      "options": [
+        "cup",
+        "cute",
+        "cap"
+      ]
+    }
+  },
+  "G1-U6": {
+    "grammar": {
+      "S4": "My sister [has/have/having] two chores.",
+      "S12": "What chores [does/do/is] your dad have?"
+    },
+    "vocabulary": {
+      "S1": {
+        "sweep the floor": "扫地",
+        "make the bed": "铺床"
+      },
+      "S2": {
+        "help": "帮助",
+        "choose": "选择"
+      },
+      "S3": {
+        "list": "清单",
+        "chat": "聊天"
+      },
+      "S7": {
+        "tidy": "整洁的",
+        "naughty": "淘气的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的复数词尾读 /ɪz/？",
+      "options": [
+        "boxes",
+        "cats",
+        "dogs"
+      ]
+    }
+  },
+  "G1-U7": {
+    "grammar": {
+      "S4": "Birds can [fly/flies/flying].",
+      "S12": "We have [some/a/an] honey in the jar."
+    },
+    "vocabulary": {
+      "S1": {
+        "cheese": "奶酪",
+        "eggs": "鸡蛋"
+      },
+      "S2": {
+        "forest": "森林",
+        "cave": "洞穴"
+      },
+      "S3": {
+        "wake up": "醒来",
+        "crop": "庄稼"
+      },
+      "S7": {
+        "hive": "蜂巢",
+        "tree": "树"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词以 -nk 结尾？",
+      "options": [
+        "pink",
+        "ring",
+        "back"
+      ]
+    }
+  },
+  "G1-U8": {
+    "grammar": {
+      "S4": "She [needs/need/needing] a paintbrush.",
+      "S12": "What [does/do/is] he want to draw?"
+    },
+    "vocabulary": {
+      "S1": {
+        "painting": "绘画作品",
+        "paintbrush": "画笔"
+      },
+      "S2": {
+        "craft": "手工艺",
+        "dream": "梦想"
+      },
+      "S3": {
+        "creator": "创造者",
+        "dots": "圆点"
+      },
+      "S7": {
+        "take care": "当心",
+        "hot": "热的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中 c 的读音和 city 中的 c 相同？",
+      "options": [
+        "cent",
+        "cat",
+        "cup"
+      ]
+    }
+  },
+  "G1-U9": {
+    "grammar": {
+      "S4": "Look! The girl [is/are/am] wearing a scarf.",
+      "S12": "Are the boys [wearing/wear/wears] boots today?"
+    },
+    "vocabulary": {
+      "S1": {
+        "clothes": "衣服",
+        "tennis shoes": "运动鞋"
+      },
+      "S2": {
+        "sunny": "晴朗的",
+        "cold": "寒冷的"
+      },
+      "S3": {
+        "warm": "温暖的",
+        "bloom": "开花"
+      },
+      "S7": {
+        "pants": "裤子",
+        "boots": "靴子"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 chair 的开头读音相同？",
+      "options": [
+        "chop",
+        "ship",
+        "shop"
+      ]
+    }
+  },
+  "G2-U1": {
+    "grammar": {
+      "S4": "The train leaves [at/on/in] six o'clock.",
+      "S12": "The bank is in the middle of two shops. It is [between/behind/under] them."
+    },
+    "vocabulary": {
+      "S1": {
+        "firefighter": "消防员",
+        "fire station": "消防站"
+      },
+      "S2": {
+        "security guard": "保安",
+        "wax": "蜡"
+      },
+      "S3": {
+        "break": "打破",
+        "greet": "问候"
+      },
+      "S7": {
+        "barbershop": "理发店",
+        "street": "街道"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 day 相同？",
+      "options": [
+        "rain",
+        "cat",
+        "red"
+      ]
+    }
+  },
+  "G2-U2": {
+    "grammar": {
+      "S4": "Every single year, without exception, we celebrate together. We [always/never/sometimes] celebrate together.",
+      "S12": "Ben is at the door. Please invite [him/he/his] inside."
+    },
+    "vocabulary": {
+      "S1": {
+        "cake": "蛋糕",
+        "candle": "蜡烛"
+      },
+      "S2": {
+        "birthday": "生日",
+        "give": "给"
+      },
+      "S3": {
+        "cover": "覆盖",
+        "coin": "硬币"
+      },
+      "S7": {
+        "bored": "感到无聊的",
+        "detective": "侦探"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 ride 相同？",
+      "options": [
+        "kite",
+        "sit",
+        "red"
+      ]
+    }
+  },
+  "G2-U3": {
+    "grammar": {
+      "S4": "We haven't got [any/a/an] rice left.",
+      "S12": "How [much/many/a] water do we need?"
+    },
+    "vocabulary": {
+      "S1": {
+        "ice cream": "冰淇淋",
+        "sandwich": "三明治"
+      },
+      "S2": {
+        "banana": "香蕉",
+        "tomato": "番茄"
+      },
+      "S3": {
+        "plate": "盘子",
+        "glass": "玻璃杯"
+      },
+      "S7": {
+        "flour": "面粉",
+        "bread": "面包"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 rose 相同？",
+      "options": [
+        "home",
+        "hot",
+        "hat"
+      ]
+    }
+  },
+  "G2-U4": {
+    "grammar": {
+      "S4": "The hills [were/was/is] green last spring.",
+      "S12": "[Was/Were/Are] the lake frozen yesterday?"
+    },
+    "vocabulary": {
+      "S1": {
+        "river": "河流",
+        "rain": "雨"
+      },
+      "S2": {
+        "shake": "摇晃",
+        "cornfield": "玉米地"
+      },
+      "S3": {
+        "crack": "裂缝",
+        "safe": "安全的"
+      },
+      "S7": {
+        "dry": "干燥的",
+        "wet": "湿的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 see 相同？",
+      "options": [
+        "beach",
+        "bed",
+        "bag"
+      ]
+    }
+  },
+  "G2-U5": {
+    "grammar": {
+      "S4": "Yesterday we [went/go/going] to a concert.",
+      "S12": "That drum belongs to me. It is [mine/my/me]."
+    },
+    "vocabulary": {
+      "S1": {
+        "classical music": "古典音乐",
+        "folk music": "民间音乐"
+      },
+      "S2": {
+        "keyboard": "键盘",
+        "composition": "乐曲"
+      },
+      "S3": {
+        "musician": "音乐家",
+        "composer": "作曲家"
+      },
+      "S7": {
+        "weak": "虚弱的",
+        "meet": "遇见"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 use 中的 u 发音相同？",
+      "options": [
+        "music",
+        "bus",
+        "sun"
+      ]
+    }
+  },
+  "G2-U6": {
+    "grammar": {
+      "S4": "Last week we [visited/visit/visiting] a museum.",
+      "S12": "Did they [look/looked/looks] for fossils?"
+    },
+    "vocabulary": {
+      "S1": {
+        "dinosaur": "恐龙",
+        "herbivore": "食草动物"
+      },
+      "S2": {
+        "fossil": "化石",
+        "die": "死亡"
+      },
+      "S3": {
+        "theory": "理论",
+        "mystery": "谜"
+      },
+      "S7": {
+        "dark": "黑暗的",
+        "path": "小路"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的 -ed 结尾读 /t/？",
+      "options": [
+        "worked",
+        "played",
+        "needed"
+      ]
+    }
+  },
+  "G2-U7": {
+    "grammar": {
+      "S4": "Yesterday I [took/take/taking] a new game home.",
+      "S12": "Where did you [go/went/going] last Saturday?"
+    },
+    "vocabulary": {
+      "S1": {
+        "go to the park": "去公园",
+        "play video games": "玩电子游戏"
+      },
+      "S2": {
+        "pyramid": "金字塔",
+        "date": "日期"
+      },
+      "S3": {
+        "invent": "发明",
+        "responsibility": "责任"
+      },
+      "S7": {
+        "robot": "机器人",
+        "speak": "说话"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的开头读 /f/？",
+      "options": [
+        "phone",
+        "what",
+        "when"
+      ]
+    }
+  },
+  "G2-U8": {
+    "grammar": {
+      "S4": "This bag is [lighter/light/lightest] than that one.",
+      "S12": "Of all five runners, Kim is the [fastest/faster/fast]."
+    },
+    "vocabulary": {
+      "S1": {
+        "hero": "英雄",
+        "save": "救助"
+      },
+      "S2": {
+        "healthy": "健康的",
+        "blind": "失明的"
+      },
+      "S3": {
+        "affection": "关爱",
+        "disabled": "有残障的"
+      },
+      "S7": {
+        "itchy": "发痒的",
+        "hives": "荨麻疹"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的第一个音是 /v/？",
+      "options": [
+        "very",
+        "fish",
+        "brave"
+      ]
+    }
+  },
+  "G2-U9": {
+    "grammar": {
+      "S4": "You should [rest/rests/resting] after the race.",
+      "S12": "May I [use/uses/using] your camera?"
+    },
+    "vocabulary": {
+      "S1": {
+        "shampoo": "洗发水",
+        "toothbrush": "牙刷"
+      },
+      "S2": {
+        "inventor": "发明家",
+        "toaster": "烤面包机"
+      },
+      "S3": {
+        "melt": "融化",
+        "burnt": "烧焦的"
+      },
+      "S7": {
+        "jar": "罐子",
+        "knock over": "碰倒"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中的 th 与 mother 中的 th 一样是浊辅音？",
+      "options": [
+        "these",
+        "thin",
+        "thirty"
+      ]
+    }
+  },
+  "G3-U1": {
+    "grammar": {
+      "S4": "When I was five, I could [ride/rode/riding] a bike.",
+      "S12": "Yesterday our class [visited/visits/visiting] the market."
+    },
+    "vocabulary": {
+      "S1": {
+        "community": "社区",
+        "special": "特别的"
+      },
+      "S2": {
+        "ancient": "古老的",
+        "modern": "现代的"
+      },
+      "S3": {
+        "port": "港口",
+        "ferry": "渡船"
+      },
+      "S7": {
+        "hungry": "饥饿的",
+        "serious": "严肃的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词以与 swim 相同的辅音组合开头？",
+      "options": [
+        "sweet",
+        "sleep",
+        "sport"
+      ]
+    }
+  },
+  "G3-U2": {
+    "grammar": {
+      "S4": "We've already arranged it. We [are meeting/is meeting/am meeting] the cook tomorrow.",
+      "S12": "You must [wash/washes/washing] your hands before cooking."
+    },
+    "vocabulary": {
+      "S1": {
+        "energy": "能量",
+        "balanced diet": "均衡饮食"
+      },
+      "S2": {
+        "syrup": "糖浆",
+        "soup": "汤"
+      },
+      "S3": {
+        "carbohydrates": "碳水化合物",
+        "grilled": "烤制的"
+      },
+      "S7": {
+        "fry": "油煎",
+        "sausage": "香肠"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词与 bread 的开头辅音组合相同？",
+      "options": [
+        "brown",
+        "blue",
+        "class"
+      ]
+    }
+  },
+  "G3-U3": {
+    "grammar": {
+      "S4": "At eight last night, the birds [were/was/is] sleeping.",
+      "S12": "I was feeding the rabbit when the gate [opened/opens/opening]."
+    },
+    "vocabulary": {
+      "S1": {
+        "rainforest": "雨林",
+        "habitat": "栖息地"
+      },
+      "S2": {
+        "survive": "生存",
+        "desert": "沙漠"
+      },
+      "S3": {
+        "melting": "融化中的",
+        "rising": "上升中的"
+      },
+      "S7": {
+        "branch": "树枝",
+        "worried": "担心的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词与 boy 的元音相同？",
+      "options": [
+        "coin",
+        "coat",
+        "cat"
+      ]
+    }
+  },
+  "G3-U4": {
+    "grammar": {
+      "S4": "This picture is more colorful [than/that/as] the first one.",
+      "S12": "Of all the dancers, Jo moved the most [gracefully/graceful/grace]."
+    },
+    "vocabulary": {
+      "S1": {
+        "painting": "绘画",
+        "photography": "摄影"
+      },
+      "S2": {
+        "artist": "艺术家",
+        "pattern": "图案"
+      },
+      "S3": {
+        "temporary": "临时的",
+        "ordinary": "普通的"
+      },
+      "S7": {
+        "nest": "鸟巢",
+        "hummingbird": "蜂鸟"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词与 cow 的元音相同？",
+      "options": [
+        "house",
+        "snow",
+        "toe"
+      ]
+    }
+  },
+  "G3-U5": {
+    "grammar": {
+      "S4": "The train is [faster/fastest/fast] than the bus.",
+      "S12": "[Traveling/Travel/Travels] by train is my favorite activity."
+    },
+    "vocabulary": {
+      "S1": {
+        "tourist": "游客",
+        "culture": "文化"
+      },
+      "S2": {
+        "damage": "损害",
+        "coast": "海岸"
+      },
+      "S3": {
+        "unspoiled": "未受破坏的",
+        "creature": "生物"
+      },
+      "S7": {
+        "album": "相册",
+        "village": "村庄"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的重读元音与 shirt 的重读元音相同？",
+      "options": [
+        "nurse",
+        "short",
+        "start"
+      ]
+    }
+  },
+  "G3-U6": {
+    "grammar": {
+      "S4": "If water freezes, it [becomes/become/becoming] ice.",
+      "S12": "Each player has to [wear/wears/wearing] a helmet."
+    },
+    "vocabulary": {
+      "S1": {
+        "stay in shape": "保持体形",
+        "compete": "比赛"
+      },
+      "S2": {
+        "gymnastics": "体操",
+        "volleyball": "排球"
+      },
+      "S3": {
+        "disability": "残障",
+        "world record": "世界纪录"
+      },
+      "S7": {
+        "captain": "队长",
+        "player": "队员"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中元音部分的发音与 car 相同？",
+      "options": [
+        "arm",
+        "fork",
+        "sport"
+      ]
+    }
+  },
+  "G3-U7": {
+    "grammar": {
+      "S4": "It might [rain/rains/rained] during our visit.",
+      "S12": "Please show [me/I/my] the old photo."
+    },
+    "vocabulary": {
+      "S1": {
+        "artifact": "文物",
+        "headdress": "头饰"
+      },
+      "S2": {
+        "buried": "被埋的",
+        "treasure": "宝藏"
+      },
+      "S3": {
+        "excavation": "挖掘",
+        "sailor": "水手"
+      },
+      "S7": {
+        "dusty": "布满灰尘的",
+        "drawer": "抽屉"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 catch 的词尾拼写模式相同？",
+      "options": [
+        "match",
+        "lunch",
+        "branch"
+      ]
+    }
+  },
+  "G3-U8": {
+    "grammar": {
+      "S4": "Tomorrow the lights will [work/works/worked] again.",
+      "S12": "We are [going/go/went] to fix the lamp this weekend."
+    },
+    "vocabulary": {
+      "S1": {
+        "microwave oven": "微波炉",
+        "electricity": "电"
+      },
+      "S2": {
+        "coal": "煤",
+        "gas": "燃气"
+      },
+      "S3": {
+        "alternative": "替代的",
+        "power plant": "发电厂"
+      },
+      "S7": {
+        "switch off": "关掉",
+        "fridge": "冰箱"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词以与 camp 相同的两个辅音结尾？",
+      "options": [
+        "jump",
+        "next",
+        "wind"
+      ]
+    }
+  },
+  "G3-U9": {
+    "grammar": {
+      "S4": "Your bag looks heavy. I will [carry/carries/carried] it for you.",
+      "S12": "I was singing while my friends [were/was/is] playing the drums."
+    },
+    "vocabulary": {
+      "S1": {
+        "pop music": "流行音乐",
+        "classical music": "古典音乐"
+      },
+      "S2": {
+        "lullaby": "摇篮曲",
+        "flute": "长笛"
+      },
+      "S3": {
+        "express": "表达",
+        "wonder": "想知道"
+      },
+      "S7": {
+        "sleep in": "睡懒觉",
+        "speech": "演讲"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词和 string 以同样的三个辅音字母开头？",
+      "options": [
+        "street",
+        "spring",
+        "screen"
+      ]
+    }
+  },
+  "G4-U1": {
+    "grammar": {
+      "S4": "Mia was smiling when her friend [arrived/arrives/arriving].",
+      "S12": "If you call me tonight, I [will help/helped/helping] you."
+    },
+    "vocabulary": {
+      "S1": {
+        "stomp your feet": "跺脚",
+        "smile": "微笑"
+      },
+      "S2": {
+        "sweat": "流汗",
+        "tantrum": "发脾气"
+      },
+      "S3": {
+        "rant": "怒气冲冲地说",
+        "calm down": "平静下来"
+      },
+      "S7": {
+        "embarrassed": "尴尬的",
+        "stand out": "突出"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中 ea 的读音与 day 的元音相同？",
+      "options": [
+        "steak",
+        "bread",
+        "seat"
+      ]
+    }
+  },
+  "G4-U2": {
+    "grammar": {
+      "S4": "The astronaut checked the suit by [herself/her/she].",
+      "S12": "This rocket is more powerful [than/as/that] the old one."
+    },
+    "vocabulary": {
+      "S1": {
+        "space probe": "太空探测器",
+        "space station": "空间站"
+      },
+      "S2": {
+        "solar system": "太阳系",
+        "planet": "行星"
+      },
+      "S3": {
+        "land": "着陆",
+        "atmosphere": "大气层"
+      },
+      "S7": {
+        "disappointed": "失望的",
+        "float": "漂浮"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 green 相同？",
+      "options": [
+        "clean",
+        "head",
+        "rain"
+      ]
+    }
+  },
+  "G4-U3": {
+    "grammar": {
+      "S4": "[Have/Has/Did] you ever used a robot?",
+      "S12": "My dad used to [write/wrote/writing] letters by hand."
+    },
+    "vocabulary": {
+      "S1": {
+        "invention": "发明",
+        "Internet": "互联网"
+      },
+      "S2": {
+        "smartphone": "智能手机",
+        "drone": "无人机"
+      },
+      "S3": {
+        "image": "图像",
+        "selfie": "自拍照"
+      },
+      "S7": {
+        "owner": "主人",
+        "female": "雌性的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 road 相同？",
+      "options": [
+        "blow",
+        "cow",
+        "how"
+      ]
+    }
+  },
+  "G4-U4": {
+    "grammar": {
+      "S4": "Have you [ever/ago/since] collected coins in your life?",
+      "S12": "I haven't finished my collection [yet/since/ago]."
+    },
+    "vocabulary": {
+      "S1": {
+        "leisure": "闲暇",
+        "imagination": "想象力"
+      },
+      "S2": {
+        "blog": "博客",
+        "board game": "桌游"
+      },
+      "S3": {
+        "review": "评论",
+        "design": "设计"
+      },
+      "S7": {
+        "lonely": "孤单的",
+        "excitement": "兴奋"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 moon 相同？",
+      "options": [
+        "glue",
+        "book",
+        "cup"
+      ]
+    }
+  },
+  "G4-U5": {
+    "grammar": {
+      "S4": "How long [have/did/are] you lived here?",
+      "S12": "We have lived here [since/for/ago] 2020."
+    },
+    "vocabulary": {
+      "S1": {
+        "century": "世纪",
+        "document": "文件"
+      },
+      "S2": {
+        "bean": "豆子",
+        "pod": "豆荚"
+      },
+      "S3": {
+        "fake": "假的",
+        "flavor": "味道"
+      },
+      "S7": {
+        "basement": "地下室",
+        "chilly": "寒冷的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 cry 相同？",
+      "options": [
+        "night",
+        "sit",
+        "feet"
+      ]
+    }
+  },
+  "G4-U6": {
+    "grammar": {
+      "S4": "There isn't [anything/something/every] in the box.",
+      "S12": "The meal was delicious, [wasn't it/isn't it/doesn't it]?"
+    },
+    "vocabulary": {
+      "S1": {
+        "livestock": "牲畜",
+        "orchard": "果园"
+      },
+      "S2": {
+        "import": "进口",
+        "package": "包装"
+      },
+      "S3": {
+        "go bad": "变质",
+        "local": "当地的"
+      },
+      "S7": {
+        "flyswatter": "苍蝇拍",
+        "produce (n)": "农产品"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中 oo 的读音与 book 相同？",
+      "options": [
+        "look",
+        "food",
+        "moon"
+      ]
+    }
+  },
+  "G4-U7": {
+    "grammar": {
+      "S4": "Call me before the river [gets/get/getting] too high.",
+      "S12": "Yesterday we had to [leave/left/leaving] early."
+    },
+    "vocabulary": {
+      "S1": {
+        "valuable": "宝贵的",
+        "involve": "涉及"
+      },
+      "S2": {
+        "bridge": "桥",
+        "canal": "运河"
+      },
+      "S3": {
+        "aqueduct": "高架引水渠",
+        "giant": "巨大的"
+      },
+      "S7": {
+        "erode": "侵蚀",
+        "water supply": "供水"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的第一个字母不发音？",
+      "options": [
+        "knee",
+        "key",
+        "keep"
+      ]
+    }
+  },
+  "G4-U8": {
+    "grammar": {
+      "S4": "She enjoys [solving/solve/solves] number puzzles.",
+      "S12": "They decided [to measure/measuring/measure] the tree."
+    },
+    "vocabulary": {
+      "S1": {
+        "distance": "距离",
+        "quantity": "数量"
+      },
+      "S2": {
+        "symmetry": "对称",
+        "formula": "公式"
+      },
+      "S3": {
+        "doubling": "加倍",
+        "zero": "零"
+      },
+      "S7": {
+        "wallpaper": "墙纸",
+        "concrete": "混凝土"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中的 b 不发音？",
+      "options": [
+        "lamb",
+        "blue",
+        "boat"
+      ]
+    }
+  },
+  "G4-U9": {
+    "grammar": {
+      "S4": "There are only a [few/little/much] caves near here.",
+      "S12": "The guide [who/where/when] led us underground was very helpful."
+    },
+    "vocabulary": {
+      "S1": {
+        "harsh": "严酷的",
+        "beautiful": "美丽的"
+      },
+      "S2": {
+        "formation": "形成",
+        "geologist": "地质学家"
+      },
+      "S3": {
+        "herd": "兽群",
+        "related": "有关联的"
+      },
+      "S7": {
+        "warrior": "战士",
+        "tribe": "部落"
+      }
+    },
+    "phonics": {
+      "stem": "填一个与 see 同音、意思是“大海”的词。",
+      "options": [
+        "sea",
+        "say",
+        "she"
+      ]
+    }
+  },
+  "G5-U1": {
+    "grammar": {
+      "S4": "Only a [few/little/much] volunteers came early.",
+      "S12": "We had the broken sign [repaired/repairing/repairs] yesterday."
+    },
+    "vocabulary": {
+      "S1": {
+        "international": "国际的",
+        "society": "社会"
+      },
+      "S2": {
+        "react": "作出反应",
+        "developer": "开发者"
+      },
+      "S3": {
+        "canvas": "画布",
+        "generator": "发电机"
+      },
+      "S7": {
+        "introduce": "介绍",
+        "hang out with": "与……一起消磨时间"
+      }
+    },
+    "phonics": {
+      "stem": "选择表示“收到”的正确拼写。",
+      "options": [
+        "receive",
+        "recieve",
+        "receeve"
+      ]
+    }
+  },
+  "G5-U2": {
+    "grammar": {
+      "S4": "We finished the project two days [ago/since/for].",
+      "S12": "It might [be/is/was] a useful way to learn."
+    },
+    "vocabulary": {
+      "S1": {
+        "ambition": "抱负",
+        "design": "设计"
+      },
+      "S2": {
+        "veterinarian": "兽医",
+        "undergraduate": "本科生"
+      },
+      "S3": {
+        "patient": "耐心的或病人",
+        "poison": "毒物"
+      },
+      "S7": {
+        "disappointed": "失望的",
+        "make sure": "确保"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中有与 spear 末尾相近的读音，且拼作 -eer？",
+      "options": [
+        "engineer",
+        "repair",
+        "shore"
+      ]
+    }
+  },
+  "G5-U3": {
+    "grammar": {
+      "S4": "Safety instructions are [printed/print/printing] on the box.",
+      "S12": "The bag is too heavy [to carry/carrying/carried] alone."
+    },
+    "vocabulary": {
+      "S1": {
+        "disaster": "灾难",
+        "volcanic eruption": "火山喷发"
+      },
+      "S2": {
+        "crust": "地壳",
+        "mantle": "地幔"
+      },
+      "S3": {
+        "demolish": "拆毁",
+        "architect": "建筑师"
+      },
+      "S7": {
+        "deadly": "致命的",
+        "panic": "惊慌"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词用 -oor 拼出与 oar 相近的元音部分？",
+      "options": [
+        "door",
+        "boat",
+        "shore"
+      ]
+    }
+  },
+  "G5-U4": {
+    "grammar": {
+      "S4": "According to the timetable, the show [starts/start/starting] at six tomorrow.",
+      "S12": "Who [painted/did painted/painting] the stage yesterday?"
+    },
+    "vocabulary": {
+      "S1": {
+        "show": "演出",
+        "concert": "音乐会"
+      },
+      "S2": {
+        "opera": "歌剧",
+        "musical": "音乐剧"
+      },
+      "S3": {
+        "lighting": "舞台灯光",
+        "elaborate": "精心设计的"
+      },
+      "S7": {
+        "triplets": "三胞胎",
+        "attic": "阁楼"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词含有 oa，并与 show 的元音相同？",
+      "options": [
+        "boat",
+        "cow",
+        "toe"
+      ]
+    }
+  },
+  "G5-U5": {
+    "grammar": {
+      "S4": "They have been [walking/walk/walked] for two hours.",
+      "S12": "I wish I [had/have/having] a bigger tent now."
+    },
+    "vocabulary": {
+      "S1": {
+        "bone": "骨头",
+        "muscle": "肌肉"
+      },
+      "S2": {
+        "cell": "细胞",
+        "tissue": "组织"
+      },
+      "S3": {
+        "aerobic": "有氧的",
+        "injury": "损伤"
+      },
+      "S7": {
+        "season": "赛季",
+        "defender": "防守队员"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的元音与 hair 相同？",
+      "options": [
+        "pear",
+        "here",
+        "hear"
+      ]
+    }
+  },
+  "G5-U6": {
+    "grammar": {
+      "S4": "Our teacher told [us/we/our] that practice helps.",
+      "S12": "She asked me where I [lived/did I live/do I live]."
+    },
+    "vocabulary": {
+      "S1": {
+        "communicate": "沟通",
+        "unique": "独特的"
+      },
+      "S2": {
+        "symbol": "符号",
+        "shape": "形状"
+      },
+      "S3": {
+        "transmit": "传递",
+        "multilingual": "使用多种语言的"
+      },
+      "S7": {
+        "completely": "完全地",
+        "legally": "合法地"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词与 few 有相同的元音部分？",
+      "options": [
+        "view",
+        "cow",
+        "bed"
+      ]
+    }
+  },
+  "G5-U7": {
+    "grammar": {
+      "S4": "Tomorrow the robot will be able to [lift/lifts/lifted] the box.",
+      "S12": "We could [try/tried/trying] a smaller wheel."
+    },
+    "vocabulary": {
+      "S1": {
+        "simple machine": "简单机械",
+        "pulley": "滑轮"
+      },
+      "S2": {
+        "science fiction": "科幻小说",
+        "advance": "进步"
+      },
+      "S3": {
+        "factory": "工厂",
+        "operation": "运转"
+      },
+      "S7": {
+        "sail": "航行",
+        "coconut": "椰子"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的重读元音与 purse 相同？",
+      "options": [
+        "dirt",
+        "door",
+        "part"
+      ]
+    }
+  },
+  "G5-U8": {
+    "grammar": {
+      "S4": "This photo was [taken/take/taking] in 1990.",
+      "S12": "That can't [be/is/was] her bag. Hers is here beside me."
+    },
+    "vocabulary": {
+      "S1": {
+        "monument": "纪念碑",
+        "hidden": "隐藏的"
+      },
+      "S2": {
+        "detective": "侦探",
+        "pottery": "陶器"
+      },
+      "S3": {
+        "primary": "首要的或第一手的",
+        "evidence": "证据"
+      },
+      "S7": {
+        "foundations": "地基",
+        "Roman": "古罗马的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词中 gh 读 /f/？",
+      "options": [
+        "laugh",
+        "eight",
+        "light"
+      ]
+    }
+  },
+  "G5-U9": {
+    "grammar": {
+      "S4": "If I had a garden, I [would build/builds/built] a bug hotel.",
+      "S12": "Could you tell me where the nest [is/is it/does]?"
+    },
+    "vocabulary": {
+      "S1": {
+        "biodiversity": "生物多样性",
+        "interact": "相互作用"
+      },
+      "S2": {
+        "snail": "蜗牛",
+        "algae": "藻类"
+      },
+      "S3": {
+        "crisis": "危机",
+        "predator": "捕食者"
+      },
+      "S7": {
+        "grasses": "草类",
+        "cricket": "蟋蟀"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词用 aw 拼出与 claw 相同的元音？",
+      "options": [
+        "draw",
+        "clay",
+        "crew"
+      ]
+    }
+  },
+  "G6-U1": {
+    "grammar": {
+      "S4": "Festival tickets are [sold/sell/selling] at the gate.",
+      "S12": "The flags will be [hung/hang/hanging] tomorrow."
+    },
+    "vocabulary": {
+      "S1": {
+        "feature": "特征",
+        "landscape": "景观"
+      },
+      "S2": {
+        "rural": "乡村的",
+        "merchant": "商人"
+      },
+      "S3": {
+        "dye": "染料",
+        "stilts": "高跷"
+      },
+      "S7": {
+        "blanket": "毯子",
+        "spectacular": "壮观的"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的第一个 a 是非重读弱元音 /ə/？",
+      "options": [
+        "about",
+        "apple",
+        "ant"
+      ]
+    }
+  },
+  "G6-U2": {
+    "grammar": {
+      "S4": "This is the place [where/who/whose] we took the photo.",
+      "S12": "The girl [whose/where/which] camera broke is my friend."
+    },
+    "vocabulary": {
+      "S1": {
+        "extreme sport": "极限运动",
+        "motive": "动机"
+      },
+      "S2": {
+        "essential": "必不可少的",
+        "smoke": "烟"
+      },
+      "S3": {
+        "grazing": "吃草",
+        "prey": "猎物"
+      },
+      "S7": {
+        "sand dune": "沙丘",
+        "binoculars": "双筒望远镜"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的结尾与 teacher 的非重读词尾读音相近？",
+      "options": [
+        "doctor",
+        "tablet",
+        "hotel"
+      ]
+    }
+  },
+  "G6-U3": {
+    "grammar": {
+      "S4": "The river, [which/that/where] runs through town, is wide.",
+      "S12": "It was [such/so/too] a steep hill that we stopped twice."
+    },
+    "vocabulary": {
+      "S1": {
+        "genre": "体裁",
+        "narrative": "叙事"
+      },
+      "S2": {
+        "moral": "寓意",
+        "foreground": "前景"
+      },
+      "S3": {
+        "drown": "溺水",
+        "suffering": "痛苦"
+      },
+      "S7": {
+        "depict": "描绘",
+        "shade": "阴影"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词与 table 的结尾拼写相同，都是 -le？",
+      "options": [
+        "purple",
+        "travel",
+        "total"
+      ]
+    }
+  },
+  "G6-U4": {
+    "grammar": {
+      "S4": "The teacher told us [to save/saving/saved] the video.",
+      "S12": "He asked me why I [was/was I/am I] filming."
+    },
+    "vocabulary": {
+      "S1": {
+        "virtual reality": "虚拟现实",
+        "headset": "头戴设备"
+      },
+      "S2": {
+        "foe": "敌人",
+        "access": "使用权"
+      },
+      "S3": {
+        "offline": "离线的",
+        "sociable": "喜交际的"
+      },
+      "S7": {
+        "anxiety": "焦虑",
+        "confident": "自信的"
+      }
+    },
+    "phonics": {
+      "stem": "选择由 inform 构成的名词的正确拼写。",
+      "options": [
+        "information",
+        "informasian",
+        "informashun"
+      ]
+    }
+  },
+  "G6-U5": {
+    "grammar": {
+      "S4": "This time tomorrow we will be [cleaning/cleaned/clean] the river.",
+      "S12": "These bottles are clean. Please use the blue [ones/one/anyone]."
+    },
+    "vocabulary": {
+      "S1": {
+        "natural resource": "自然资源",
+        "global warming": "全球变暖"
+      },
+      "S2": {
+        "reliable": "可靠的",
+        "greenhouse effect": "温室效应"
+      },
+      "S3": {
+        "dweller": "居民",
+        "household": "家庭"
+      },
+      "S7": {
+        "scrap": "废料",
+        "moss": "苔藓"
+      }
+    },
+    "phonics": {
+      "stem": "选择“可饮用的”这个词的正确拼写。",
+      "options": [
+        "drinkable",
+        "drinkible",
+        "drinkeble"
+      ]
+    }
+  },
+  "G6-U6": {
+    "grammar": {
+      "S4": "We should have [checked/check/checking] the final page.",
+      "S12": "By the time I arrived, the author had [left/leave/leaves]."
+    },
+    "vocabulary": {
+      "S1": {
+        "literature": "文学",
+        "hero": "英雄"
+      },
+      "S2": {
+        "version": "版本",
+        "nursery rhyme": "童谣"
+      },
+      "S3": {
+        "prehistoric": "史前的",
+        "misbehave": "行为不端"
+      },
+      "S7": {
+        "sweet": "甜的",
+        "deceive": "欺骗"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的前缀表示“再次”？",
+      "options": [
+        "rebuild",
+        "preview",
+        "subway"
+      ]
+    }
+  },
+  "G6-U7": {
+    "grammar": {
+      "S4": "Before the nurse arrived, we had been [waiting/waited/wait] for an hour.",
+      "S12": "Before the clinic opened, the floor had been [cleaned/clean/cleaning]."
+    },
+    "vocabulary": {
+      "S1": {
+        "malaria": "疟疾",
+        "parasite": "寄生虫"
+      },
+      "S2": {
+        "antibiotic": "抗生素",
+        "organism": "生物体"
+      },
+      "S3": {
+        "single‐celled": "单细胞的",
+        "immune system": "免疫系统"
+      },
+      "S7": {
+        "influenza": "流感",
+        "respiratory system": "呼吸系统"
+      }
+    },
+    "phonics": {
+      "stem": "给 safe 加上表示相反意思的前缀，得到哪个词？",
+      "options": [
+        "unsafe",
+        "presafe",
+        "resafe"
+      ]
+    }
+  },
+  "G6-U8": {
+    "grammar": {
+      "S4": "If we had more money, we [would open/opened/opens] a second shop.",
+      "S12": "If they had ordered earlier, the goods [would have arrived/are arriving/arrive] on time."
+    },
+    "vocabulary": {
+      "S1": {
+        "cash": "现金",
+        "credit card": "信用卡"
+      },
+      "S2": {
+        "support": "支持",
+        "campaign": "活动"
+      },
+      "S3": {
+        "lack": "缺乏",
+        "sanitation": "环境卫生"
+      },
+      "S7": {
+        "beekeeper": "养蜂人",
+        "sterilize": "消毒"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词的后缀表示“没有”？",
+      "options": [
+        "sleepless",
+        "playful",
+        "active"
+      ]
+    }
+  },
+  "G6-U9": {
+    "grammar": {
+      "S4": "If only I [had/have/having] more time to learn now!",
+      "S12": "Her book is still here. She might have [forgotten/forget/forgetting] it."
+    },
+    "vocabulary": {
+      "S1": {
+        "control": "控制",
+        "cerebrum": "大脑"
+      },
+      "S2": {
+        "neuron": "神经元",
+        "network": "网络"
+      },
+      "S3": {
+        "spinal cord": "脊髓",
+        "synaptic connection": "突触连接"
+      },
+      "S7": {
+        "intriguing": "引人入胜的",
+        "assignment": "任务"
+      }
+    },
+    "phonics": {
+      "stem": "哪个词把 kind 变成了表示性质的名词？",
+      "options": [
+        "kindness",
+        "kindly",
+        "kinder"
+      ]
+    }
+  }
+}

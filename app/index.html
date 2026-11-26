@@ -33,6 +33,13 @@ main{padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));pad
 .chip.off{opacity:.35}
 .tier3{background:#fde3df;color:#9b2c22}.tier2{background:#fdf0d5;color:#8a5a00}.tier1{background:var(--chip);color:var(--muted)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tier3{background:#4a2422;color:#ffb4aa}:root:not([data-theme="light"]) .tier2{background:#3f3418;color:#ffd27a}}
+.hwForm h3{margin-top:0}.hwForm select{max-width:100%}
+#hwTier{display:flex;gap:12px;border:1px solid var(--line);border-radius:8px;padding:3px 10px 7px}
+#hwTier legend{font-size:12px;color:var(--muted)}
+#hwScope{margin-top:14px}#hwScope summary{cursor:pointer}
+#hwResult{scroll-margin-top:85px}.hwActions{margin:8px 0}.hwSheet{max-width:900px;margin:0 auto}
+.hwSheet h2{text-align:center}.hwSheet .q{white-space:pre-line}.hwOptions{padding:4px 14px}.hwLines div{height:24px;border-bottom:1px solid var(--line)}
+@media print{.hwSheet{max-width:none}.hwSheet .q{break-inside:avoid}.hwSheet .sec{break-after:avoid}.hwLines div{border-color:#888}}
 #graphWrap{display:grid;grid-template-columns:1fr 380px;gap:14px}
 #cy{height:72vh;min-height:480px;background:var(--card);border:1px solid var(--line);border-radius:12px}
 #panel{height:72vh;min-height:480px;overflow:auto}
@@ -136,6 +143,25 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
 </section>
 
 <section id="tab-paper" class="tab">
+  <div class="row noprint" style="justify-content:space-between;margin-bottom:10px"><h2 style="margin:0">出题组卷</h2><button id="hwMode" class="btn">高级组卷</button></div>
+  <div id="hwQuick">
+    <div class="card noprint hwForm">
+      <h3>CPP 课次作业卷</h3>
+      <div class="row">
+        <label>CPP 单元 <select id="hwUnit"></select></label>
+        <label>Session <select id="hwSession"></select></label>
+        <fieldset id="hwTier"><legend>本卷难度</legend>
+          <label><input type="radio" name="hwTier" value="L"> L 低</label>
+          <label><input type="radio" name="hwTier" value="M" checked> M 中</label>
+          <label><input type="radio" name="hwTier" value="H"> H 高</label>
+        </fieldset>
+        <button class="btn primary" id="hwGenerate">一键生成作业卷</button>
+      </div>
+      <details class="small muted" id="hwScope"></details>
+    </div>
+    <div id="hwResult" aria-live="polite"></div>
+  </div>
+  <div id="hwAdvanced" hidden>
   <div class="steps-bar noprint" id="wbSteps">
     <button data-step="1" class="on"><b>第一步 · 定蓝图</b><small>CPP 单元映射 · 双向细目表</small></button>
     <button data-step="2"><b>第二步 · 抽素材</b><small>语料库真题优先 · 缺题 AI 补</small></button>
@@ -182,6 +208,7 @@ textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,monospace;fo
   <div id="wbStep3" class="wb-pane" hidden></div>
   <div id="wbStep4" class="wb-pane" hidden></div>
   <div id="wbStep5" class="wb-pane" hidden><div id="paperBox"></div></div>
+  </div>
 </section>
 
 <section id="tab-report" class="tab">
@@ -1771,5 +1798,6 @@ $('#nav').onclick = e => e.target.dataset.tab && switchTab(e.target.dataset.tab)
 renderStats(); initGraph(); syncKind(); makePrompt(); updateCount(); initModels().then(() => loadBlueprintFromMode()); loadBlueprintFromMode();
 </script>
 <script src="curriculum.js"></script>
+<script src="cpp-homework.js"></script>
 </body>
 </html>
