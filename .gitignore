@@ -3,3 +3,6 @@ llm.json
 work/
 .DS_Store
 __pycache__/
+
+# Local staff bundle; HTTP clients use the authenticated teacher API.
+data/teacher-homework.js

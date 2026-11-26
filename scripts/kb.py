@@ -367,17 +367,19 @@ def serve(port=8765):
     POST /api/generate {topic,grade,difficulty,n,qtype,provider,model,verify}  → 服务端直接调模型出题
     POST /api/llm      {prompt, cfg}                               → 透传给模型（网页用）
     """
-    import gen, urllib.parse
+    import gen, urllib.parse, teacher_access
     import api
     class H(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **k): super().__init__(*a, directory=str(ROOT / 'app'), **k)
         def send_json(self, code, obj):
             b = json.dumps(obj, ensure_ascii=False).encode()
-            self.send_response(code); self.send_header('Content-Type', 'application/json; charset=utf-8'); self.send_header('Content-Length', str(len(b)))
+            self.send_response(code); self.send_header('Cache-Control','no-store'); self.send_header('Content-Type', 'application/json; charset=utf-8'); self.send_header('Content-Length', str(len(b)))
             self.end_headers(); self.wfile.write(b)
         def do_GET(self):
             u = urllib.parse.urlparse(self.path); q = {k: v[0] for k, v in urllib.parse.parse_qs(u.query).items()}
             try:
+                if u.path == '/api/teacher/homework':
+                    return teacher_access.serve_bank(self, teacher_bank)
                 if u.path == '/api/llm-config':
                     c = gen.llm_config(); return self.send_json(200, {'configured': bool(c.get('api_key')) or c.get('provider') in ('codex', 'claude', 'cli'),
                                                                      'provider': c.get('provider'), 'model': c.get('model')})
@@ -492,15 +494,18 @@ def _compact_exemplars():
                                            'head': b['head'][:80], 'n': b['n'], 'text': b['text'][:1200]} for b in bs]
     return {'items': items_out, 'blocks': blocks_out}
 
+@functools.lru_cache(maxsize=1)
+def teacher_bank():
+    import homework_bank
+    return homework_bank.build_bank(load('exam_items.json'),load('corpus_index.json'),
+                                    load('cpp_units.json'),load('homework_reviewed_keys.json'),load('cpp_sessions.json'))
+
 def bundle():
     data = {k: load(f'{k}.json') for k in ('topics', 'dependencies', 'levels', 'questions', 'exam_stats', 'wordlists')}
     for extra in ('exam_blueprint', 'cpp_units', 'real_pool'):
         if (D / f'{extra}.json').exists(): data[extra] = load(f'{extra}.json')
-    for name in ('curriculum', 'cpp_sessions', 'cpp_homework_items'):
-        data[name] = load(f'{name}.json')
-    import session_corpus
-    data['cpp_corpus'] = session_corpus.build(load('exam_items.json'), data['real_pool'], load('corpus_index.json'),
-                                             data['cpp_units'], data['cpp_sessions'])
+    data['curriculum'] = load('curriculum.json')
+    (D / 'teacher-homework.js').write_text('window.CPP_TEACHER_BANK=' + json.dumps(teacher_bank(),ensure_ascii=False,separators=(',',':')) + ';')
     data['exemplars'] = _compact_exemplars()
     (ROOT / 'app' / 'data.js').write_text('window.KB=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';')
     print('app/data.js', round((ROOT / 'app' / 'data.js').stat().st_size / 1024), 'KB')
@@ -509,7 +514,7 @@ def bundle():
     html = re.sub(r'<!doctype html>\n|<html[^>]*>\n|</?head>\n|</?body>\n|</html>\n?|<meta charset[^>]*>\n|<meta name="viewport"[^>]*>\n', '', html)
     js = (ROOT / 'app' / 'data.js').read_text().replace('</', '<\\/')
     html = html.replace('<script src="data.js"></script>', '<script>window.KB_HOSTED=true;' + js + '</script>')
-    for asset in ('curriculum.js', 'cpp-homework.js'):
+    for asset in ('curriculum.js', 'homework-export.js', 'cpp-homework.js'):
         html = html.replace(f'<script src="{asset}"></script>',
                             '<script>' + (ROOT / 'app' / asset).read_text() + '</script>')
     (ROOT / 'app' / 'publish.html').write_text(html)
@@ -606,6 +611,8 @@ if __name__ == '__main__':
                      qtype=kv.get('qtype'), verify=not bool(kv.get('no_verify')), provider=kv.get('provider'),
                      model=kv.get('model'), seed=int(kv['seed']) if 'seed' in kv else None, material=kv.get('material', ''),
                      cpp_unit=kv.get('cpp_unit', ''))
+    elif cmd == 'teacher-add':
+        import teacher_access; teacher_access.add_teacher(pos[0])
     elif cmd == 'serve':
         serve(int(pos[0]) if pos else 8765)
     elif cmd == 'mcp':
