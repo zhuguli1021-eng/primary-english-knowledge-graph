@@ -73,11 +73,13 @@ const Homework = (() => {
     history.add(identity(bank.items[id]));
     return true;
   }
+  const guide=p=>p.unit.startsWith('G0-')?'请大人一次读一小题。选择题可以让孩子指一指或圈一圈。':'';
+  const instruction=(p,q)=>p.unit.startsWith('G0-')?q.childPrompt:q.head;
   function title(p){
     const [level,u]=p.unit.split('-');
     return level+' · Unit '+u.slice(1)+' '+(p.special?names[p.special]+'专项练习':'综合练习卷')+'（'+p.tier+'）';
   }
-  return {names,tiers,labels,gradeName,identity,create,edit,title,exposure};
+  return {names,tiers,labels,gradeName,identity,create,edit,title,exposure,guide,instruction};
 })();
 
 async function loadTeacherHomework(){
@@ -100,9 +102,12 @@ async function initHomework(){
   const result=$('#hwResult'),message=$('#hwMessage'), pref=store.get('cpp.unit-homework.v2',{});
   let bank,papers={},histories={},active='L';
   $('#hwGenerate').disabled=true;
-  try{bank=await loadTeacherHomework();}catch(e){message.textContent=e.message;return;}
+  try{
+    bank=await loadTeacherHomework();
+    if(!bank?.config?.ages?.G0)throw Error('当前题库缺少年龄筛选，请更新教师题库后刷新。本机工作副本可运行 python3 scripts/kb.py bundle。');
+  }catch(e){message.textContent=e.message;return;}
   const options=rows=>rows.map(([value,text])=>'<option value="'+esc(value)+'">'+esc(text)+'</option>').join('');
-  grade.innerHTML=options(Object.keys(bank.config.grades).map(g=>[g,g]));
+  grade.innerHTML=options(Object.keys(bank.config.grades).map(g=>[g,bank.config.ages[g]?g+'（'+bank.config.ages[g]+' 岁）':g]));
   if(bank.config.grades[pref.grade])grade.value=pref.grade;
   function fillUnits(){
     unit.innerHTML=options(KB.cpp_units.units.filter(u=>u.level===grade.value).map(u=>[u.id,'Unit '+u.unit.slice(1)+' · '+u.theme]));
@@ -136,21 +141,24 @@ async function initHomework(){
   function render(){
     const p=papers[active];
     const some=p.sections.some(s=>s.ids.length);
+    const awaitingPaper=p.unit.startsWith('G0-') && p.sections.every(s=>!Object.keys(bank.routes[p.unit][s.block]).some(id=>bank.items[id].grade===p.grade));
     const all=Object.values(papers).some(p=>p.sections.some(s=>s.ids.length));
     const sectionHTML=p.sections.map((s,i)=>{
-      const status=s.ids.length<s.goal?'<p class="muted small">当前 '+s.ids.length+' / '+s.goal+' 道</p>':'';
+      const awaiting=p.unit.startsWith('G0-') && !Object.keys(bank.routes[p.unit][s.block]).some(id=>bank.items[id].grade===p.grade);
+      const status=awaiting?'<p class="muted small">待补充适龄原题</p>':s.ids.length<s.goal?'<p class="muted small">'+(bank.config.ages[p.unit.split('-')[0]]?'适龄原题 ':'当前 ')+s.ids.length+' / '+s.goal+' 道</p>':'';
       return '<section><h3>'+('一二三四五'[i])+'、'+Homework.names[s.block]+'</h3>'+status+s.ids.map((id,j)=>{
         const q=bank.items[id],attr='data-s="'+i+'" data-i="'+j+'"';
-        return '<div class="q"><b>'+ (j+1)+'.</b> '+safeRich(q.head)+'<div>'+body(q)+'</div>'+
+        return '<div class="q"><b>'+ (j+1)+'.</b> '+safeRich(Homework.instruction(p,q))+'<div>'+body(q)+'</div>'+
           (q.parts||[]).map((sub,k)=>'<div class="hwPart">（'+(k+1)+'）'+body(sub)+'</div>').join('')+
           '<div class="small muted"><a target="_blank" rel="noopener" href="https://github.com/zhuguli1021-eng/primary-english-knowledge-graph/blob/main/corpus/'+q.file.split('/').map(encodeURIComponent).join('/')+'">'+esc(q.source)+'</a>'+esc(q.no?' · 第 '+q.no+' 题':'')+'</div><div class="row actions">'+btn('swap','换一题',attr)+btn('delete','删除',attr)+'</div></div>';
-      }).join('')+btn('add','增加 / 补题','data-s="'+i+'"')+'</section>';
+      }).join('')+btn('add','增加 / 补题','data-s="'+i+'" '+(awaiting?'disabled':''))+'</section>';
     }).join('');
     const toolbar=Homework.tiers.map((t,i)=>btn('tier',t+' '+Homework.labels[i],'data-tier="'+t+'" aria-pressed="'+(t===active)+'"')).join('');
     const answers=HomeworkExport.lines(bank,p,true).slice(2).map(l=>'<div>'+safeRich(l.text)+'</div>').join('');
     result.innerHTML='<div class="row hwTools">'+toolbar+btn('again','当前卷换一批')+btn('againAll','三套换一批')+'</div>'+
-      '<article class="card hwSheet"><h2>'+esc(Homework.title(p))+'</h2><p class="muted">'+Homework.gradeName(p.grade)+'</p>'+
-      sectionHTML+'<details><summary>教师参考答案</summary>'+answers+'</details></article>'+
+      '<article class="card hwSheet" data-level="'+p.unit.split('-')[0]+'"><h2>'+esc(Homework.title(p))+'</h2><p class="muted">原卷来源：'+Homework.gradeName(p.grade)+'</p>'+(Homework.guide(p)?'<p>'+esc(Homework.guide(p))+'</p>':'')+
+      (awaitingPaper?'<p role="status">本档暂时留空，待补充适龄原题。</p>':'')+
+      sectionHTML+(some?'<details><summary>教师参考答案</summary>'+answers+'</details>':'')+'</article>'+
       '<div class="row hwTools">'+['pdf','docx'].map(format=>btn('export','导出本套 '+(format==='pdf'?'PDF':'Word'),'data-format="'+format+'" '+(some?'':'disabled'))+
       btn('batch','三套 '+(format==='pdf'?'PDF':'Word')+' 打包','data-format="'+format+'" '+(all?'':'disabled'))).join('')+'</div>';
   }

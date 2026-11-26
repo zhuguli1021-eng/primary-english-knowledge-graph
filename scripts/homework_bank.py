@@ -5,10 +5,11 @@ import re
 
 import corpus
 import real_pool
+import homework_age
 from session_corpus import (STARTER_KEYS, STOP, LEADING, TAGS, FUNCTIONS, grammar_matches,
                             advanced_grammar, norm, keywords, forms, tokens)
 
-CONFIG = {'grades': {'G0': [3,4,5], 'G1': [3,4,5], 'G2': [4,5,6], 'G3': [5,6,7]},
+CONFIG = {'ages': {k:v['ages'] for k,v in homework_age.PROFILES.items()}, 'grades': {'G0': [3,4,5], 'G1': [3,4,5], 'G2': [4,5,6], 'G3': [5,6,7]},
           'counts': {'phonics':2,'vocab':5,'grammar':10,'dialogue':2,'reading':1}, 'special':10}
 # Topic anchors complement the exact four taught word lists across textbook editions.
 THEMES = {
@@ -546,12 +547,19 @@ def dialogue_patterns(card):
 
 def index_units(rows,units,lessons):
     routes={}; used=set()
-    for card in units['units']:
+    school_words,irregular=corpus.bands()
+    taught=set()
+    for card in sorted(units['units'],key=lambda c:(c['level'],int(c['unit'][1:]))):
         if card['level'] not in CONFIG['grades']:continue
         scopes=lessons['levels'][card['level']][card['unit']]['sessions']
         core=(w for s in scopes if s['id'] in ('S1','S2','S3','S7') for w in s['words'])
         wordset={form for w in itertools.chain(core,card['vocab']['words']) for form in forms(norm(w))}-STOP
         theme={v for zh,english in THEMES.items() if zh in card['theme'] for w in english.split() for v in forms(w)}
+        taught.update(card['vocab']['words'])
+        taught.update(card['phonics']['words'])
+        level=card['level']
+        everyday=school_words[3] | theme | {'which','why','when','whose'} if level in ('G1','G2') else set()
+        known=homework_age.familiar_words(taught | everyday)
         ph=card['phonics']
         grammar={t for g in card['grammar'] for t in g['topics']}
         sentence_pattern=dialogue_patterns(card)
@@ -574,7 +582,7 @@ def index_units(rows,units,lessons):
             if 'parts' in q:
                 block='reading' if qt=='阅读理解' else 'dialogue'
                 cnt=len(re.findall(r"[a-z]+(?:'[a-z]+)?",q['stem'],re.I))
-                if block=='reading' and card['level'] in ('G0','G1') and not 15<=cnt<=65:continue
+                if block=='reading' and not cnt:continue
                 if block=='dialogue' and ((sentence_pattern.search(norm(text)) if sentence_pattern else topics & ((grammar|fn)-{'fn.dialogue','sy.yes_no','sy.basic_patterns'})) or any(re.search(a,goals,re.I) and re.search(b,text,re.I) for a,b in FUNCTIONS)):
                     matches[block]=2
                 elif len(theme_hits)>=2 or hits-keywords('good new school have happy great nice'):matches[block]=1
@@ -610,6 +618,8 @@ def index_units(rows,units,lessons):
                 if lexical_hits and (qt in ('不同类','翻译','连词成句','汉语提示填词','首字母填空') or
                              qt=='单项选择' and lexical_hits & tokens(q.get('key',''))):
                     matches['vocab']=1
+            if matches and not homework_age.fits(q,level,known,irregular):continue
+            if matches and level=='G0':q['childPrompt']=homework_age.child_prompt(q)
             for block,priority in matches.items():
                 unit[block][id]=priority;used.add(id)
         routes[card['id']]=unit

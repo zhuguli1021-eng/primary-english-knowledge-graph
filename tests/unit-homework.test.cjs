@@ -44,12 +44,12 @@ test('public grade matrix, fixed structure, verified answer, and deduplication f
 });
 
 test('swap, top-up, reroll, and an empty pool retain their grade and scope',()=>{
-  const p=hw.create(bank,'G0-U1','vocab','L');
+  const p=hw.create(bank,'G1-U1','vocab','L');
   const s=p.sections[0],before=hw.exposure(bank,p);
   assert.equal(s.ids.length,10);
   assert.ok(hw.edit(bank,p,s,'swap',1,before));assert.equal(s.ids.length,10);
   const previous=hw.exposure(bank,p);
-  const newPaper=hw.create(bank,'G0-U1','vocab','L',p);
+  const newPaper=hw.create(bank,'G1-U1','vocab','L',p);
   assert.ok(newPaper.sections[0].ids.every(id=>!previous.has(hw.identity(bank.items[id]))));
   hw.edit(bank,p,s,'delete',0,before);assert.equal(s.ids.length,9);
   assert.ok(hw.edit(bank,p,s,'add',0,before));assert.equal(s.ids.length,10);
@@ -61,8 +61,17 @@ test('swap, top-up, reroll, and an empty pool retain their grade and scope',()=>
 });
 
 test('printed reading subtasks, dialogue blanks and phonics pairs have their own answer keys',()=>{
-  const items=Object.values(bank.items);
-  const unit3=items.filter(q=>q.file.startsWith('三年级上/03_') && q.parts && q.section);
+  // Verify the original question and key before age filtering removes a long group from G0.
+  const unit3=JSON.parse(execFileSync('python3',['-c',`
+import sys,json
+sys.path.insert(0,'scripts')
+import homework_bank as h
+from kb import load
+papers=load('corpus_index.json')
+paper=next(p for p in papers if p['file'].startswith('三年级上/03_'))
+keys=h.answer_books(papers)[paper['file']]
+print(json.dumps(list(h.recovered_groups(h.written_sections(paper),paper,keys))))
+`],{cwd:root}));
   const dialogue=unit3.find(q=>q.section==='七');
   assert.match(dialogue.stem,/Mike: Good morning/);
   assert.deepEqual(dialogue.parts.map(p=>p.key),['E','D','B','C','A']);
@@ -91,4 +100,29 @@ test('short clothing reading preserves the common options and the printed subtas
   assert.ok(reading.parts.every(p=>p.options.length===4));
   const gradeFivePast=Object.keys(bank.routes['G2-U6'].grammar).map(id=>bank.items[id]).filter(q=>q.grade===5);
   assert.ok(gradeFivePast.every(q=>q.key!=='You need to listen to your friends.'));
+});
+
+test('G0 age gate applies to every tier, source prompt and export, including empty pools',()=>{
+  assert.deepEqual(bank.config.ages,{G0:'5–6',G1:'6–8',G2:'8–10'});
+  for(const [unit,route] of Object.entries(bank.routes).filter(([u])=>u.startsWith('G0-'))){
+    for(const pool of Object.values(route))for(const id of Object.keys(pool)){
+      const q=bank.items[id];
+      assert.ok(q.childPrompt);
+      assert.ok(!['连词成句','句型转换','适当形式'].includes(q.qtype));
+      assert.notEqual(id,'printed-bfda2e0eba1a221a');
+    }
+  }
+  const p=hw.create(bank,'G0-U1','grammar','L');
+  const q=bank.items[p.sections[0].ids[0]];
+  assert.ok(out.lines(bank,p,false).some(l=>l.text.includes(q.childPrompt)));
+  assert.ok(out.lines(bank,p,false).some(l=>l.text.includes('请大人一次读一小题')));
+  const unit='G0-U9';
+  const unfilled={...bank,routes:{[unit]:Object.fromEntries(Object.keys(bank.routes[unit]).map(b=>[b,{}]))}};
+  for(const tier of hw.tiers){
+    const blank=hw.create(unfilled,unit,null,tier);
+    for(const section of blank.sections){
+      assert.equal(section.ids.length,0);
+      assert.equal(hw.edit(unfilled,blank,section,'add',0,new Set()),false);
+    }
+  }
 });

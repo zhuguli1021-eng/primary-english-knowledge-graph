@@ -6,8 +6,8 @@ const HomeworkExport=(()=>{
     const add=(text,style='normal')=>out.push({text:String(text),style});
     add(answers?'教师参考答案':Homework.title(p),'title');
     add(answers?Homework.title(p):'姓名：____________　班级：____________　日期：____________','subtitle');
-    for(const [i,s] of p.sections.entries()){
-      if(!s.ids.length)continue;
+    if(!answers && Homework.guide(p))add(Homework.guide(p));
+    for(const [i,s] of p.sections.filter(s=>s.ids.length).entries()){
       add('一二三四五'[i]+'、'+Homework.names[s.block],'heading');
       for(const [j,id] of s.ids.entries()){
         const q=bank.items[id];
@@ -20,7 +20,7 @@ const HomeworkExport=(()=>{
           add((j+1)+'. '+key+(q.explain?'　'+q.explain:''));
           continue;
         }
-        add((j+1)+'. '+q.head,'prompt');
+        add((j+1)+'. '+Homework.instruction(p,q),'prompt');
         if(q.stem)add(q.stem);
         if(q.options.length)add(q.options.map((v,n)=>String.fromCharCode(65+n)+'. '+v).join('　　'));
         for(const [k,part] of (q.parts||[]).entries()){
@@ -67,7 +67,7 @@ const HomeworkExport=(()=>{
   function docx(bank,p){
     function paragraph(line){
       const {style,text}=line;
-      const large=style==='title',bold=large||style==='heading', size=large?34:bold?27:23;
+      const large=style==='title',bold=large||style==='heading', size=large?34:bold?27:p.unit.startsWith('G0-')?28:23;
       const content=spans(text).map(({s,underline})=>'<w:r><w:rPr><w:rFonts w:ascii="Arial" w:eastAsia="宋体"/><w:sz w:val="'+size+'"/>'+(bold?'<w:b/>':'')+(underline?'<w:u w:val="single"/>':'')+'</w:rPr>'+
         s.split('\n').map(v=>'<w:t xml:space="preserve">'+xml(v)+'</w:t>').join('<w:br/>')+'</w:r>').join('');
       return '<w:p><w:pPr>'+(bold||style==='prompt'?'<w:keepNext/>':'')+(large?'<w:jc w:val="center"/>':'')+'<w:spacing w:after="90" w:line="300" w:lineRule="auto"/></w:pPr>'+content+'</w:p>';
@@ -96,7 +96,7 @@ const HomeworkExport=(()=>{
     for(const answers of [false,true]){
       start();
       for(const line of lines(bank,p,answers)){
-        const size=line.style==='title'?18:line.style==='heading'?14:11.5;
+        const size=line.style==='title'?18:line.style==='heading'?14:(!answers && p.unit.startsWith('G0-')?14:11.5);
         ctx.font=(line.style==='title'||line.style==='heading'?'bold ':'')+size+'px Arial,"PingFang SC","Microsoft YaHei",sans-serif';
         if((line.style==='heading'||line.style==='prompt')&&y>height-margin-55){await finish();start();}
         let x=margin;
